@@ -1,0 +1,216 @@
+[Line 3] [执行路径异常] Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6781] dhcp4 (ens33):   address 192.168.30.133
+[Line 4] [执行路径异常] Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6786] dhcp4 (ens33):   plen 24 (255.255.255.0)
+[Line 82] [执行路径异常] Nov 25 13:25:25 localhost systemd: Time has been changed
+[Line 83] [执行路径异常] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.5805] manager: disable requested (sleeping: no  enabled: yes)
+[Line 84] [执行路径异常] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.5839] device (virbr0): state change: disconnected -> unmanaged (reason 'sleeping', sys-iface-state: 'managed')
+[Line 85] [执行路径异常] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.6369] manager: NetworkManager state is now ASLEEP
+[Line 86] [执行路径异常] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7412] audit: op="networking-control" arg="off" pid=11369 uid=0 result="success"
+[Line 87] [执行路径异常] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7438] device (ens33): state change: activated -> deactivating (reason 'sleeping', sys-iface-state: 'managed')
+[Line 88] [执行路径异常] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7905] device (ens33): state change: deactivating -> disconnected (reason 'sleeping', sys-iface-state: 'managed')
+[Line 89] [执行路径异常] Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for fe80::20c:29ff:fe34:765 on ens33.
+[Line 90] [执行路径异常] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9318] dhcp4 (ens33): canceled DHCP transaction, DHCP client pid 8987
+[Line 91] [执行路径异常] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9323] dhcp4 (ens33): state changed bound -> done
+[Line 92] [执行路径异常] Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for 192.168.30.133 on ens33.
+[Line 93] [执行路径异常] Nov 25 13:25:42 localhost avahi-daemon[599]: Leaving mDNS multicast group on interface ens33.IPv4 with address 192.168.30.133.
+[Line 94] [执行路径异常] Nov 25 13:25:42 localhost avahi-daemon[599]: Interface ens33.IPv4 no longer relevant for mDNS.
+[Line 95] [执行路径异常] Nov 25 13:25:43 localhost kernel: usb 2-2.1: USB disconnect, device number 6
+[Line 96] [执行路径异常] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9318] dhcp4 (ens33): canceled DHCP transaction, DHCP client pid 8987
+[Line 97] [执行路径异常] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9323] dhcp4 (ens33): state changed bound -> done
+[Line 98] [执行路径异常] Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for 192.168.30.133 on ens33.
+[Line 99] [执行路径异常] Nov 25 13:25:42 localhost avahi-daemon[599]: Leaving mDNS multicast group on interface ens33.IPv4 with address 192.168.30.133.
+[Line 100] [执行路径异常] Nov 25 13:25:42 localhost avahi-daemon[599]: Interface ens33.IPv4 no longer relevant for mDNS.
+[Line 101] [执行路径异常] Nov 25 13:25:43 localhost kernel: usb 2-2.1: USB disconnect, device number 6
+[Line 102] [执行路径异常] Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint unregistered: sender=:1.74 path=/MediaEndpoint/A2DPSource
+[Line 103] [执行路径异常] Jan 20 10:44:56 localhost systemd: Time has been changed
+[Line 104] [执行路径异常] Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint unregistered: sender=:1.74 path=/MediaEndpoint/A2DPSink
+[Line 105] [执行路径异常] Jan 20 10:44:56 localhost systemd: Starting update of the root trust anchor for DNSSEC validation in unbound...
+[Line 106] [执行路径异常] Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+[Line 107] [执行路径异常] Jan 20 10:44:56 localhost systemd: Stopping Load/Save RF Kill Switch Status of rfkill2...
+[Line 108] [执行路径异常] Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+[Line 109] [执行路径异常] Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+[Line 110] [执行路径异常] Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+[Line 111] [执行路径异常] Jan 20 10:44:56 localhost dnsmasq[1388]: no servers found in /etc/resolv.conf, will retry
+[Line 112] [执行路径异常] Jan 20 10:44:56 localhost systemd: Stopped target Bluetooth.
+[Line 113] [执行路径异常] Jan 20 10:44:56 localhost rsyslogd: imjournal: journal reloaded... [v8.24.0-57.el7_9.3 try http://www.rsyslog.com/e/0 ]
+[Line 114] [执行路径异常] Jan 20 10:44:56 localhost NetworkManager[3530]: <info>  [1768877096.4665] device (ens33): state change: disconnected -> unmanaged (reason 'sleeping', sys-iface-state: 'managed')
+[Line 115] [执行路径异常] Jan 20 10:44:56 localhost systemd: Stopped Load/Save RF Kill Switch Status of rfkill2.
+[Line 116] [执行路径异常] Jan 20 10:44:56 localhost kernel: usb 2-2.1: new full-speed USB device number 7 using uhci_hcd
+[Line 117] [执行路径异常] Jan 20 10:44:56 localhost systemd: Started update of the root trust anchor for DNSSEC validation in unbound.
+[Line 118] [执行路径异常] Jan 20 10:44:56 localhost kernel: usb 2-2.1: New USB device found, idVendor=0e0f, idProduct=0008, bcdDevice= 1.00
+[Line 119] [执行路径异常] Jan 20 10:44:56 localhost kernel: usb 2-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[Line 120] [执行路径异常] Jan 20 10:44:56 localhost kernel: usb 2-2.1: Product: Virtual Bluetooth Adapter
+[Line 121] [执行路径异常] Jan 20 10:44:56 localhost kernel: usb 2-2.1: Manufacturer: VMware
+[Line 122] [执行路径异常] Jan 20 10:44:56 localhost kernel: usb 2-2.1: SerialNumber: 000650268328
+[Line 123] [执行路径异常] Jan 20 10:44:56 localhost systemd: Starting Load/Save RF Kill Switch Status of rfkill3...
+[Line 124] [执行路径异常] Jan 20 10:44:56 localhost systemd: Reached target Bluetooth.
+[Line 125] [执行路径异常] Jan 20 10:44:56 localhost systemd: Started Load/Save RF Kill Switch Status of rfkill3.
+[Line 126] [执行路径异常] Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint registered: sender=:1.74 path=/MediaEndpoint/A2DPSource
+[Line 127] [执行路径异常] Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint registered: sender=:1.74 path=/MediaEndpoint/A2DPSink
+[Line 128] [执行路径异常] Jan 20 10:44:57 localhost journal: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+[Line 129] [执行路径异常] Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+[Line 130] [执行路径异常] Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+[Line 131] [执行路径异常] Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): virbr0: link is not ready
+[Line 132] [执行路径异常] Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): virbr0: link is not ready
+[Line 133] [执行路径异常] Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): virbr0: link is not ready
+[Line 134] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3780] manager: enable requested (sleeping: no  enabled: no)
+[Line 135] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3781] device (ens33): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'managed')
+[Line 136] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3827] device (virbr0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'managed')
+[Line 137] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3844] manager: NetworkManager state is now DISCONNECTED
+[Line 138] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3846] audit: op="networking-control" arg="on" pid=11424 uid=0 result="success"
+[Line 139] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3847] device (virbr0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+[Line 140] [执行路径异常] Jan 20 10:44:57 localhost kernel: e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[Line 141] [执行路径异常] Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_CHANGE): ens33: link becomes ready
+[Line 142] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4158] device (ens33): carrier: link connected
+[Line 143] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4161] device (ens33): state change: unavailable -> disconnected (reason 'carrier-changed', sys-iface-state: 'managed')
+[Line 144] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4175] policy: auto-activating connection 'ens33' (c96bc909-188e-ec64-3a96-6a90982b08ad)
+[Line 145] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4179] device (ens33): Activation: starting connection 'ens33' (c96bc909-188e-ec64-3a96-6a90982b08ad)
+[Line 146] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4180] device (ens33): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+[Line 147] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4182] manager: NetworkManager state is now CONNECTING
+[Line 148] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4184] device (ens33): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+[Line 149] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4190] device (ens33): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+[Line 150] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4195] dhcp4 (ens33): activation: beginning transaction (timeout in 45 seconds)
+[Line 151] [执行路径异常] Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4999] dhcp4 (ens33): dhclient started with pid 11426
+[Line 152] [执行路径异常] Jan 20 10:44:57 localhost journal: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+[Line 153] [执行路径异常] Jan 20 10:44:57 localhost dbus[586]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service'
+[Line 154] [执行路径异常] Jan 20 10:44:57 localhost systemd: Starting Fingerprint Authentication Daemon...
+[Line 155] [执行路径异常] Jan 20 10:44:57 localhost dhclient[11426]: DHCPDISCOVER on ens33 to 255.255.255.255 port 67 interval 6 (xid=0x4771c881)
+[Line 156] [执行路径异常] Jan 20 10:44:57 localhost dbus[586]: [system] Successfully activated service 'net.reactivated.Fprint'
+[Line 157] [执行路径异常] Jan 20 10:44:57 localhost systemd: Started Fingerprint Authentication Daemon.
+[Line 158] [执行路径异常] Jan 20 10:44:57 localhost journal: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+[Line 159] [执行路径异常] Jan 20 10:44:57 localhost journal: clutter_actor_get_n_children: assertion 'CLUTTER_IS_ACTOR (self)' failed
+[Line 160] [执行路径异常] Jan 20 10:44:58 localhost dhclient[11426]: DHCPREQUEST on ens33 to 255.255.255.255 port 67 (xid=0x4771c881)
+[Line 161] [执行路径异常] Jan 20 10:44:58 localhost dhclient[11426]: DHCPOFFER from 192.168.30.254
+[Line 162] [执行路径异常] Jan 20 10:44:58 localhost dhclient[11426]: DHCPACK from 192.168.30.254 (xid=0x4771c881)
+[Line 163] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6724] dhcp4 (ens33):   address 192.168.30.133
+[Line 164] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6728] dhcp4 (ens33):   plen 24 (255.255.255.0)
+[Line 165] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6729] dhcp4 (ens33):   gateway 192.168.30.2
+[Line 166] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6729] dhcp4 (ens33):   lease time 1800
+[Line 167] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6729] dhcp4 (ens33):   nameserver '192.168.30.2'
+[Line 168] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6729] dhcp4 (ens33):   domain name 'localdomain'
+[Line 169] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6729] dhcp4 (ens33): state changed unknown -> bound
+[Line 170] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6740] device (ens33): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+[Line 171] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6743] device (ens33): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+[Line 172] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6744] device (ens33): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+[Line 173] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6751] manager: NetworkManager state is now CONNECTED_LOCAL
+[Line 174] [执行路径异常] Jan 20 10:44:58 localhost avahi-daemon[599]: Joining mDNS multicast group on interface ens33.IPv4 with address 192.168.30.133.
+[Line 175] [执行路径异常] Jan 20 10:44:58 localhost avahi-daemon[599]: New relevant interface ens33.IPv4 for mDNS.
+[Line 176] [执行路径异常] Jan 20 10:44:58 localhost avahi-daemon[599]: Registering new address record for 192.168.30.133 on ens33.IPv4.
+[Line 177] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.7173] manager: NetworkManager state is now CONNECTED_SITE
+[Line 178] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.7174] policy: set 'ens33' (ens33) as default for IPv4 routing and DNS
+[Line 179] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.7314] device (ens33): Activation: successful, device activated.
+[Line 180] [执行路径异常] Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.7316] manager: NetworkManager state is now CONNECTED_GLOBAL
+[Line 181] [执行路径异常] Jan 20 10:44:58 localhost dnsmasq[1388]: reading /etc/resolv.conf
+[Line 182] [执行路径异常] Jan 20 10:44:58 localhost dnsmasq[1388]: using nameserver 192.168.30.2#53
+[Line 183] [执行路径异常] Jan 20 10:44:58 localhost dhclient[11426]: bound to 192.168.30.133 -- renewal in 710 seconds.
+[Line 184] [执行路径异常] Jan 20 10:44:59 localhost avahi-daemon[599]: Registering new address record for fe80::20c:29ff:fe34:765 on ens33.*.
+[Line 185] [执行路径异常] Jan 20 10:45:07 localhost dbus[586]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+[Line 186] [执行路径异常] Jan 20 10:45:07 localhost systemd: Starting Hostname Service...
+[Line 187] [执行路径异常] Jan 20 10:45:07 localhost dbus[586]: [system] Successfully activated service 'org.freedesktop.hostname1'
+[Line 188] [执行路径异常] Jan 20 10:45:07 localhost systemd: Started Hostname Service.
+[Line 189] [执行路径异常] Jan 20 10:45:07 localhost NetworkManager[3530]: <info>  [1768877107.2675] agent-manager: req[0x5639b71331f0, :1.70/org.gnome.Shell.NetworkAgent/1000]: agent registered
+[Line 190] [执行路径异常] Jan 20 10:45:17 localhost journal: shell-extensions did not set error for gs_plugin_refresh
+[Line 191] [执行路径异常] Jan 20 10:46:19 localhost chronyd[605]: Forward time jump detected!
+[Line 192] [执行路径异常] Jan 20 10:46:19 localhost chronyd[605]: Can't synchronise: no selectable sources
+[Line 193] [执行路径异常] Jan 20 10:47:28 localhost journal: clutter_actor_set_size: assertion 'CLUTTER_IS_ACTOR (self)' failed
+[Line 201] [执行路径异常] Jan 20 10:48:15 localhost su: (to root) dzx on pts/2
+[Line 202] [执行路径异常] Jan 20 10:48:15 localhost dbus[586]: [system] Activating service name='org.freedesktop.problems' (using servicehelper)
+[Line 203] [执行路径异常] Jan 20 10:48:15 localhost dbus[586]: [system] Successfully activated service 'org.freedesktop.problems'
+[Line 204] [执行路径异常] Jan 20 10:49:32 localhost chronyd[605]: Selected source 139.199.215.251
+[Line 205] [执行路径异常] Jan 20 10:49:32 localhost chronyd[605]: System clock wrong by 2.342484 seconds, adjustment started
+[Line 206] [执行路径异常] Jan 20 10:50:01 localhost systemd: Created slice User Slice of root.
+[Line 207] [执行路径异常] Jan 20 10:50:02 localhost systemd: Started Session 57 of user root.
+[Line 208] [执行路径异常] Jan 20 10:50:02 localhost systemd: Removed slice User Slice of root.
+[Line 209] [执行路径异常] Jan 20 10:51:44 localhost chronyd[605]: Source 162.159.200.1 replaced with 5.79.108.34
+[Line 210] [执行路径异常] vi redis.conf
+[Line 211] [执行路径异常] cd redis-7.0.0
+[Line 212] [执行路径异常] vi redis.conf
+[Line 213] [执行路径异常] ./redis-server /usr/local/redis-7.0.0/redis.conf
+[Line 214] [执行路径异常] ./redis-server /user/local/redis-7.0.0/redis-conf
+[Line 216] [执行路径异常] cat redis.conf
+[Line 219] [执行路径异常] ps -ef|grep redis
+[Line 220] [执行路径异常] ./redis-cli
+[Line 221] [执行路径异常] ./redis-cli shutdown
+[Line 222] [执行路径异常] yum install redis-cil
+[Line 223] [执行路径异常] yum install redis-cli
+[Line 224] [执行路径异常] ./redis-cli
+[Line 225] [执行路径异常] ./redis-cli
+[Line 226] [执行路径异常] find / -name redis
+[Line 227] [执行路径异常] uninstall redis
+[Line 228] [执行路径异常] sudo yum remove redis
+[Line 229] [执行路径异常] ps -ef|grep redis
+[Line 230] [执行路径异常] vm redis.conf
+[Line 231] [执行路径异常] vi redis.conf
+[Line 232] [执行路径异常] ./redis-cli
+[Line 233] [执行路径异常] vim redis.conf
+[Line 234] [执行路径异常] ./redis-cli
+[Line 235] [执行路径异常] ./redis-cli
+[Line 236] [执行路径异常] cd redis-7.0.0/
+[Line 237] [执行路径异常] ps -ef | grep redis
+[Line 238] [执行路径异常] ps -ef | grep redis
+[Line 239] [执行路径异常] ps -ef | grep redis
+[Line 240] [执行路径异常] ps -ef | grep redis
+[Line 241] [执行路径异常] ps -ef | grep redis
+[Line 242] [执行路径异常] vim redis.conf
+[Line 243] [执行路径异常] cd /usr/local/redis-7.0.0
+[Line 244] [执行路径异常] ./redis
+[Line 245] [执行路径异常] ./redis-cli
+[Line 246] [执行路径异常] sudo systemctl status redis
+[Line 247] [执行路径异常] ./redis-server
+[Line 248] [执行路径异常] cd redis-bin/
+[Line 249] [执行路径异常] sudo systemctl restart redis --protected-mode no
+[Line 250] [执行路径异常] cd redis-bin
+[Line 251] [执行路径异常] ./redis-server
+[Line 252] [执行路径异常] cd /usr/local/redis-7.0.0
+[Line 253] [执行路径异常] cd redis.conf
+[Line 254] [执行路径异常] vim redis.conf
+[Line 255] [执行路径异常] vim redis.conf
+[Line 256] [执行路径异常] vim redis.conf
+[Line 257] [执行路径异常] ps -ef | grep redis-server
+[Line 258] [执行路径异常] ps -ef | grep redis-server
+[Line 259] [执行路径异常] cp /usr/local/redis-7.0.0
+[Line 260] [执行路径异常] cp /usr/local/redis-7.0.0 /bin
+[Line 261] [执行路径异常] cp /usr/local/redis-7.0.0/src /bin
+[Line 262] [执行路径异常] cp /usr/local/redis-7.0.0/src ~/bin
+[Line 263] [执行路径异常] mkdir -p ~/redis-bin
+[Line 264] [执行路径异常] cp /usr/local/redis-7.0.0/src/redis-server ~/redis-bin/
+[Line 265] [执行路径异常] cp /usr/local/redis-7.0.0/src/redis-cli ~/redis-bin/
+[Line 266] [执行路径异常] export PATH=$PATH:~/redis-bin
+[Line 267] [执行路径异常] ./redis-server
+[Line 268] [执行路径异常] vim redis.conf
+[Line 269] [执行路径异常] sudo systemctl restart redis
+[Line 270] [执行路径异常] sudo systemctl restart redis.server
+[Line 271] [执行路径异常] redis-server /etc/redis.conf
+[Line 272] [执行路径异常] 1月 20 10:48:09 localhost.localdomain sudo[11559]:      dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/grep -i ^logfile /etc/redis.conf /etc/redis/redis.conf
+[Line 273] [执行路径异常] 1月 20 10:49:33 localhost.localdomain sudo[11624]:      dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/cp /var/log/redis/redis.log /root/redis_unauth_all.log
+[Line 274] [执行路径异常] 1月 20 10:52:29 localhost.localdomain sudo[11677]:      dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/messages
+[Line 275] [执行路径异常] 1月 20 10:52:38 localhost.localdomain sudo[11680]:      dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/secure
+[Line 276] [执行路径异常] 1月 20 10:52:49 localhost.localdomain sudo[11683]:      dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/chown dzx:dzx redis_in_messages.log redis_in_secure.log
+[Line 277] [执行路径异常] Jan 20 10:48:09 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/grep -i ^logfile /etc/redis.conf /etc/redis/redis.conf
+[Line 278] [执行路径异常] Jan 20 10:49:33 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/cp /var/log/redis/redis.log /root/redis_unauth_all.log
+[Line 279] [执行路径异常] Jan 20 10:52:29 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/messages
+[Line 280] [执行路径异常] Jan 20 10:52:38 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/secure
+[Line 281] [执行路径异常] Jan 20 10:45:06 localhost gdm-password]: gkr-pam: unlocked login keyring
+[Line 282] [执行路径异常] Jan 20 10:47:27 localhost su: pam_unix(su:session): session closed for user root
+[Line 283] [执行路径异常] Jan 20 10:48:09 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/grep -i ^logfile /etc/redis.conf /etc/redis/redis.conf
+[Line 284] [执行路径异常] Jan 20 10:48:09 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[Line 285] [执行路径异常] Jan 20 10:48:09 localhost sudo: pam_unix(sudo:session): session closed for user root
+[Line 286] [执行路径异常] Jan 20 10:48:15 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/su
+[Line 287] [执行路径异常] Jan 20 10:48:15 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[Line 288] [执行路径异常] Jan 20 10:48:15 localhost su: pam_unix(su:session): session opened for user root by dzx(uid=0)
+[Line 289] [执行路径异常] Jan 20 10:49:33 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/cp /var/log/redis/redis.log /root/redis_unauth_all.log
+[Line 290] [执行路径异常] Jan 20 10:49:33 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[Line 291] [执行路径异常] Jan 20 10:49:33 localhost sudo: pam_unix(sudo:session): session closed for user root
+[Line 292] [执行路径异常] Jan 20 10:52:29 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/messages
+[Line 293] [执行路径异常] Jan 20 10:52:29 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[Line 294] [执行路径异常] Jan 20 10:52:29 localhost sudo: pam_unix(sudo:session): session closed for user root
+[Line 295] [执行路径异常] Jan 20 10:52:38 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/secure
+[Line 296] [执行路径异常] Jan 20 10:52:38 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[Line 297] [执行路径异常] Jan 20 10:52:38 localhost sudo: pam_unix(sudo:session): session closed for user root
+[Line 298] [执行路径异常] Jan 20 10:52:49 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/chown dzx:dzx redis_in_messages.log redis_in_secure.log
+[Line 299] [执行路径异常] Jan 20 10:52:49 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[Line 300] [执行路径异常] Jan 20 10:52:49 localhost sudo: pam_unix(sudo:session): session closed for user root
+[Line 301] [执行路径异常] Jan 20 10:53:04 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/cp /var/log/messages ./messages_all.log
+[Line 302] [执行路径异常] Jan 20 10:53:04 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[Line 303] [执行路径异常] Jan 20 10:53:04 localhost sudo: pam_unix(sudo:session): session closed for user root
+[Line 304] [执行路径异常] Jan 20 10:53:12 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/cp /var/log/secure ./secure_all.log
+[Line 305] [执行路径异常] Jan 20 10:53:12 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)

@@ -1,0 +1,61 @@
+[执行路径异常] ./redis-cli
+[执行路径异常] sudo systemctl status redis
+[执行路径异常] ./redis-server
+[执行路径异常] cd redis-bin/
+[执行路径异常] sudo systemctl restart redis --protected-mode no
+[执行路径异常] cd redis-bin
+[执行路径异常] ./redis-server
+[执行路径异常] cd /usr/local/redis-7.0.0
+[执行路径异常] cd redis.conf
+[执行路径异常] vim redis.conf
+[执行路径异常] vim redis.conf
+[执行路径异常] vim redis.conf
+[执行路径异常] ps -ef | grep redis-server
+[执行路径异常] ps -ef | grep redis-server
+[执行路径异常] cp /usr/local/redis-7.0.0
+[执行路径异常] cp /usr/local/redis-7.0.0 /bin
+[执行路径异常] cp /usr/local/redis-7.0.0/src /bin
+[执行路径异常] cp /usr/local/redis-7.0.0/src ~/bin
+[执行路径异常] mkdir -p ~/redis-bin
+[执行路径异常] cp /usr/local/redis-7.0.0/src/redis-server ~/redis-bin/
+[执行路径异常] cp /usr/local/redis-7.0.0/src/redis-cli ~/redis-bin/
+[执行路径异常] export PATH=$PATH:~/redis-bin
+[执行路径异常] ./redis-server
+[执行路径异常] vim redis.conf
+[执行路径异常] sudo systemctl restart redis
+[执行路径异常] sudo systemctl restart redis.server
+[执行路径异常] redis-server /etc/redis.conf
+[执行路径异常] 1月 20 10:48:09 localhost.localdomain sudo[11559]:      dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/grep -i ^logfile /etc/redis.conf /etc/redis/redis.conf
+[执行路径异常] 1月 20 10:49:33 localhost.localdomain sudo[11624]:      dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/cp /var/log/redis/redis.log /root/redis_unauth_all.log
+[执行路径异常] 1月 20 10:52:29 localhost.localdomain sudo[11677]:      dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/messages
+[执行路径异常] 1月 20 10:52:38 localhost.localdomain sudo[11680]:      dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/secure
+[执行路径异常] 1月 20 10:52:49 localhost.localdomain sudo[11683]:      dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/chown dzx:dzx redis_in_messages.log redis_in_secure.log
+[执行路径异常] Jan 20 10:48:09 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/grep -i ^logfile /etc/redis.conf /etc/redis/redis.conf
+[执行路径异常] Jan 20 10:49:33 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/cp /var/log/redis/redis.log /root/redis_unauth_all.log
+[执行路径异常] Jan 20 10:52:29 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/messages
+[执行路径异常] Jan 20 10:52:38 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/secure
+[执行路径异常] Jan 20 10:45:06 localhost gdm-password]: gkr-pam: unlocked login keyring
+[执行路径异常] Jan 20 10:47:27 localhost su: pam_unix(su:session): session closed for user root
+[执行路径异常] Jan 20 10:48:09 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/grep -i ^logfile /etc/redis.conf /etc/redis/redis.conf
+[执行路径异常] Jan 20 10:48:09 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[执行路径异常] Jan 20 10:48:09 localhost sudo: pam_unix(sudo:session): session closed for user root
+[执行路径异常] Jan 20 10:48:15 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/su
+[执行路径异常] Jan 20 10:48:15 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[执行路径异常] Jan 20 10:48:15 localhost su: pam_unix(su:session): session opened for user root by dzx(uid=0)
+[执行路径异常] Jan 20 10:49:33 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/cp /var/log/redis/redis.log /root/redis_unauth_all.log
+[执行路径异常] Jan 20 10:49:33 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[执行路径异常] Jan 20 10:49:33 localhost sudo: pam_unix(sudo:session): session closed for user root
+[执行路径异常] Jan 20 10:52:29 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/messages
+[执行路径异常] Jan 20 10:52:29 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[执行路径异常] Jan 20 10:52:29 localhost sudo: pam_unix(sudo:session): session closed for user root
+[执行路径异常] Jan 20 10:52:38 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/secure
+[执行路径异常] Jan 20 10:52:38 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[执行路径异常] Jan 20 10:52:38 localhost sudo: pam_unix(sudo:session): session closed for user root
+[执行路径异常] Jan 20 10:52:49 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/chown dzx:dzx redis_in_messages.log redis_in_secure.log
+[执行路径异常] Jan 20 10:52:49 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[执行路径异常] Jan 20 10:52:49 localhost sudo: pam_unix(sudo:session): session closed for user root
+[执行路径异常] Jan 20 10:53:04 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/cp /var/log/messages ./messages_all.log
+[执行路径异常] Jan 20 10:53:04 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+[执行路径异常] Jan 20 10:53:04 localhost sudo: pam_unix(sudo:session): session closed for user root
+[执行路径异常] Jan 20 10:53:12 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/cp /var/log/secure ./secure_all.log
+[执行路径异常] Jan 20 10:53:12 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)

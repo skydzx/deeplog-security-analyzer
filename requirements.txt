@@ -1,0 +1,18 @@
+tensorflow>=2.16.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# 推荐版本 (已测试兼容)
+# tensorflow==2.20.0
+# numpy==2.2.6
+# scikit-learn==1.5.2
+# pandas==2.2.3
+# scipy==1.13.1
+
+# 测试依赖
+pytest>=8.0.0
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0
+pytest-xdist>=3.5.0

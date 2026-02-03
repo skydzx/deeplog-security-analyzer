@@ -1,0 +1,161 @@
+DeepLog日志分析报告
+==================================================
+
+统计信息:
+------------------------------
+总日志数: 1000
+异常日志: 901
+正常日志: 99
+.1f
+异常日志详情:
+------------------------------
+行 6: Jan 15 15:36:17 dzx dbus-daemon[180]: [system] Activating via systemd: service name='org.freedesktop.network1' unit='dbus-org.freedesktop.network1.service' requested by ':1.4' (uid=0 pid=249 comm="/usr/bin/networkctl list --no-pager --no-legend ")
+  类型: 执行路径异常
+
+行 7: Jan 15 15:36:17 dzx dbus-daemon[180]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.network1.service': Unit dbus-org.freedesktop.network1.service not found.
+  类型: 执行路径异常
+
+行 8: Jan 15 15:36:17 dzx networkd-dispatcher[249]: WARNING: systemd-networkd is not running, output will be incomplete.
+  类型: 执行路径异常
+
+行 9: Jan 15 15:36:17 dzx networkd-dispatcher[186]: ERROR:Unknown state for interface NetworkctlListState(idx=1, name='lo', type='loopback', operational='n/a', administrative='unmanaged'): n/a
+  类型: 执行路径异常
+
+行 10: Jan 15 15:36:17 dzx networkd-dispatcher[186]: Traceback (most recent call last):
+  类型: 执行路径异常
+
+行 11: Jan 15 15:36:17 dzx networkd-dispatcher[186]:   File "/usr/bin/networkd-dispatcher", line 298, in trigger_all
+  类型: 执行路径异常
+
+行 12: Jan 15 15:36:17 dzx networkd-dispatcher[186]:     self.handle_state(iface_name,
+  类型: 执行路径异常
+
+行 13: Jan 15 15:36:17 dzx networkd-dispatcher[186]:   File "/usr/bin/networkd-dispatcher", line 348, in handle_state
+  类型: 执行路径异常
+
+行 14: Jan 15 15:36:17 dzx networkd-dispatcher[186]:     raise UnknownState(operational_state)
+  类型: 执行路径异常
+
+行 15: Jan 15 15:36:17 dzx networkd-dispatcher[186]: UnknownState: n/a
+  类型: 执行路径异常
+
+行 16: Jan 15 15:36:17 dzx networkd-dispatcher[186]: ERROR:Unknown state for interface NetworkctlListState(idx=2, name='eth0', type='ether', operational='n/a', administrative='unmanaged'): n/a
+  类型: 执行路径异常
+
+行 17: Jan 15 15:36:17 dzx networkd-dispatcher[186]: Traceback (most recent call last):
+  类型: 执行路径异常
+
+行 18: Jan 15 15:36:17 dzx networkd-dispatcher[186]:   File "/usr/bin/networkd-dispatcher", line 298, in trigger_all
+  类型: 执行路径异常
+
+行 19: Jan 15 15:36:17 dzx networkd-dispatcher[186]:     self.handle_state(iface_name,
+  类型: 执行路径异常
+
+行 20: Jan 15 15:36:17 dzx networkd-dispatcher[186]:   File "/usr/bin/networkd-dispatcher", line 348, in handle_state
+  类型: 执行路径异常
+
+行 21: Jan 15 15:36:17 dzx networkd-dispatcher[186]:     raise UnknownState(operational_state)
+  类型: 执行路径异常
+
+行 22: Jan 15 15:36:17 dzx networkd-dispatcher[186]: UnknownState: n/a
+  类型: 执行路径异常
+
+行 23: Jan 15 15:36:17 dzx systemd[1]: Started Dispatcher daemon for systemd-networkd.
+  类型: 执行路径异常
+
+行 24: Jan 15 15:36:17 dzx snapd[191]: overlord.go:288: Acquiring state lock file
+  类型: 执行路径异常
+
+行 25: Jan 15 15:36:17 dzx snapd[191]: overlord.go:293: Acquired state lock file
+  类型: 执行路径异常
+
+行 26: Jan 15 15:36:17 dzx ollama[188]: time=2026-01-15T15:36:17.547+08:00 level=INFO source=routes.go:1554 msg="server config" env="map[CUDA_VISIBLE_DEVICES: GGML_VK_VISIBLE_DEVICES: GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES: HSA_OVERRIDE_GFX_VERSION: HTTPS_PROXY: HTTP_PROXY: NO_PROXY: OLLAMA_CONTEXT_LENGTH:4096 OLLAMA_DEBUG:INFO OLLAMA_FLASH_ATTENTION:false OLLAMA_GPU_OVERHEAD:0 OLLAMA_HOST:http://127.0.0.1:11434 OLLAMA_KEEP_ALIVE:5m0s OLLAMA_KV_CACHE_TYPE: OLLAMA_LLM_LIBRARY: OLLAMA_LOAD_TIMEOUT:5m0s OLLAMA_MAX_LOADED_MODELS:0 OLLAMA_MAX_QUEUE:512 OLLAMA_MODELS:/usr/share/ollama/.ollama/models OLLAMA_MULTIUSER_CACHE:false OLLAMA_NEW_ENGINE:false OLLAMA_NOHISTORY:false OLLAMA_NOPRUNE:false OLLAMA_NUM_PARALLEL:1 OLLAMA_ORIGINS:[http://localhost https://localhost http://localhost:* https://localhost:* http://127.0.0.1 https://127.0.0.1 http://127.0.0.1:* https://127.0.0.1:* http://0.0.0.0 https://0.0.0.0 http://0.0.0.0:* https://0.0.0.0:* app://* file://* tauri://* vscode-webview://* vscode-file://*] OLLAMA_REMOTES:[ollama.com] OLLAMA_SCHED_SPREAD:false OLLAMA_VULKAN:false ROCR_VISIBLE_DEVICES: http_proxy: https_proxy: no_proxy:]"
+  类型: 执行路径异常
+
+行 27: Jan 15 15:36:17 dzx ollama[188]: time=2026-01-15T15:36:17.551+08:00 level=INFO source=images.go:493 msg="total blobs: 0"
+  类型: 执行路径异常
+
+行 28: Jan 15 15:36:17 dzx ollama[188]: time=2026-01-15T15:36:17.551+08:00 level=INFO source=images.go:500 msg="total unused blobs removed: 0"
+  类型: 执行路径异常
+
+行 29: Jan 15 15:36:17 dzx ollama[188]: time=2026-01-15T15:36:17.551+08:00 level=INFO source=routes.go:1607 msg="Listening on 127.0.0.1:11434 (version 0.13.5)"
+  类型: 执行路径异常
+
+行 30: Jan 15 15:36:17 dzx ollama[188]: time=2026-01-15T15:36:17.555+08:00 level=INFO source=runner.go:67 msg="discovering available GPUs..."
+  类型: 执行路径异常
+
+行 31: Jan 15 15:36:17 dzx ollama[188]: time=2026-01-15T15:36:17.562+08:00 level=INFO source=server.go:429 msg="starting runner" cmd="/usr/local/bin/ollama runner --ollama-engine --port 39503"
+  类型: 执行路径异常
+
+行 32: Jan 15 15:36:17 dzx snapd[191]: daemon.go:276: started snapd/2.72+ubuntu22.04 (series 16; classic; devmode; wsl) ubuntu/22.04 (amd64) linux/5.15.167.4-microsoft-stan.
+  类型: 执行路径异常
+
+行 33: Jan 15 15:36:17 dzx systemd[1]: tmp-syscheck\x2dmountpoint\x2d1793439456.mount: Deactivated successfully.
+  类型: 执行路径异常
+
+行 34: Jan 15 15:36:17 dzx snapd[191]: daemon.go:370: adjusting startup timeout by 30s (pessimistic estimate of 30s plus 5s per snap)
+  类型: 执行路径异常
+
+行 35: Jan 15 15:36:17 dzx snapd[191]: backends.go:70: AppArmor status: apparmor not enabled
+  类型: 执行路径异常
+
+行 36: Jan 15 15:36:17 dzx systemd[1]: Started Snap Daemon.
+  类型: 执行路径异常
+
+行 37: Jan 15 15:36:17 dzx dbus-daemon[180]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.7' (uid=0 pid=191 comm="/usr/lib/snapd/snapd ")
+  类型: 执行路径异常
+
+行 38: Jan 15 15:36:17 dzx systemd[1]: Starting Time & Date Service...
+  类型: 执行路径异常
+
+行 39: Jan 15 15:36:17 dzx systemd[1]: Started firewalld - dynamic firewall daemon.
+  类型: 执行路径异常
+
+行 40: Jan 15 15:36:17 dzx systemd[1]: Reached target Preparation for Network.
+  类型: 执行路径异常
+
+行 41: Jan 15 15:36:17 dzx dbus-daemon[180]: [system] Successfully activated service 'org.freedesktop.timedate1'
+  类型: 执行路径异常
+
+行 42: Jan 15 15:36:17 dzx systemd[1]: Started Time & Date Service.
+  类型: 执行路径异常
+
+行 43: Jan 15 15:36:17 dzx systemd[1]: Finished Wait until snapd is fully seeded.
+  类型: 执行路径异常
+
+行 44: Jan 15 15:36:17 dzx systemd[1]: Condition check resulted in Auto import assertions from block devices being skipped.
+  类型: 执行路径异常
+
+行 45: Jan 15 15:36:17 dzx landscape-config[185]: Registered:    False
+  类型: 执行路径异常
+
+行 46: Jan 15 15:36:17 dzx landscape-config[185]: Config Path:   /etc/landscape/client.conf
+  类型: 执行路径异常
+
+行 47: Jan 15 15:36:17 dzx landscape-config[185]: Data Path      /var/lib/landscape/client
+  类型: 执行路径异常
+
+行 48: Jan 15 15:36:17 dzx systemd[1]: landscape-client.service: Skipped due to 'exec-condition'.
+  类型: 执行路径异常
+
+行 49: Jan 15 15:36:17 dzx systemd[1]: Condition check resulted in Landscape client daemons being skipped.
+  类型: 执行路径异常
+
+行 50: Jan 15 15:36:17 dzx systemd[1]: Reached target Multi-User System.
+  类型: 执行路径异常
+
+行 51: Jan 15 15:36:17 dzx systemd[1]: Reached target Graphical Interface.
+  类型: 执行路径异常
+
+行 52: Jan 15 15:36:17 dzx systemd[1]: Starting Record Runlevel Change in UTMP...
+  类型: 执行路径异常
+
+行 53: Jan 15 15:36:17 dzx systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+  类型: 执行路径异常
+
+行 54: Jan 15 15:36:17 dzx systemd[1]: Finished Record Runlevel Change in UTMP.
+  类型: 执行路径异常
+
+行 55: Jan 15 15:36:17 dzx systemd[1]: Startup finished in 1.118s.
+  类型: 执行路径异常
+

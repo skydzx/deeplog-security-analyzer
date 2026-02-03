@@ -1,0 +1,161 @@
+DeepLog日志分析报告
+==================================================
+
+统计信息:
+------------------------------
+总日志数: 204
+异常日志: 138
+正常日志: 66
+.1f
+异常日志详情:
+------------------------------
+行 7: [Tue Mar 18 10:52:51.061418 2025] [core:warn] [pid 57656:tid 484] AH00098: pid file D:/phpstudy_pro/Extensions/Apache2.4.39/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+  类型: 执行路径异常
+
+行 8: [Tue Mar 18 10:52:51.068017 2025] [mpm_winnt:notice] [pid 57656:tid 484] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02 configured -- resuming normal operations
+  类型: 执行路径异常
+
+行 10: [Tue Mar 18 10:52:51.068017 2025] [core:notice] [pid 57656:tid 484] AH00094: Command line: 'D:\\phpstudy_pro\\COM\\..\\Extensions\\Apache2.4.39\\\\bin\\httpd.exe -d D:/phpstudy_pro/Extensions/Apache2.4.39'
+  类型: 执行路径异常
+
+行 13: [Mon Mar 24 12:10:44.095156 2025] [core:warn] [pid 16344:tid 516] AH00098: pid file D:/phpstudy_pro/Extensions/Apache2.4.39/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+  类型: 执行路径异常
+
+行 14: [Mon Mar 24 12:10:44.095156 2025] [mpm_winnt:notice] [pid 16344:tid 516] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02 configured -- resuming normal operations
+  类型: 执行路径异常
+
+行 15: [Mon Mar 24 12:10:44.095156 2025] [mpm_winnt:notice] [pid 16344:tid 516] AH00456: Server built: Mar 27 2019 11:06:20
+  类型: 执行路径异常
+
+行 20: [Mon Mar 24 18:57:33.474438 2025] [mpm_winnt:notice] [pid 12380:tid 456] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02 configured -- resuming normal operations
+  类型: 执行路径异常
+
+行 21: [Mon Mar 24 18:57:33.474438 2025] [mpm_winnt:notice] [pid 12380:tid 456] AH00456: Server built: Mar 27 2019 11:06:20
+  类型: 执行路径异常
+
+行 25: [Tue Mar 25 09:28:14.741670 2025] [core:warn] [pid 39088:tid 480] AH00098: pid file D:/phpstudy_pro/Extensions/Apache2.4.39/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+  类型: 执行路径异常
+
+行 26: [Tue Mar 25 09:28:14.743292 2025] [mpm_winnt:notice] [pid 39088:tid 480] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02 configured -- resuming normal operations
+  类型: 执行路径异常
+
+行 28: [Tue Mar 25 09:28:14.743292 2025] [core:notice] [pid 39088:tid 480] AH00094: Command line: 'D:\\phpstudy_pro\\COM\\..\\Extensions\\Apache2.4.39\\\\bin\\httpd.exe -d D:/phpstudy_pro/Extensions/Apache2.4.39'
+  类型: 执行路径异常
+
+行 31: [Thu Apr 24 20:07:54.667615 2025] [core:warn] [pid 4460:tid 632] AH00098: pid file D:/phpstudy_pro/Extensions/Apache2.4.39/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+  类型: 执行路径异常
+
+行 32: [Thu Apr 24 20:07:54.673121 2025] [mpm_winnt:notice] [pid 4460:tid 632] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02 configured -- resuming normal operations
+  类型: 执行路径异常
+
+行 33: [Thu Apr 24 20:07:54.673121 2025] [mpm_winnt:notice] [pid 4460:tid 632] AH00456: Server built: Mar 27 2019 11:06:20
+  类型: 执行路径异常
+
+行 34: [Thu Apr 24 20:07:54.673121 2025] [core:notice] [pid 4460:tid 632] AH00094: Command line: 'D:\\phpstudy_pro\\COM\\..\\Extensions\\Apache2.4.39\\\\bin\\httpd.exe -d D:/phpstudy_pro/Extensions/Apache2.4.39'
+  类型: 执行路径异常
+
+行 35: [Thu Apr 24 20:07:54.677121 2025] [mpm_winnt:notice] [pid 4460:tid 632] AH00418: Parent: Created child process 23528
+  类型: 执行路径异常
+
+行 36: [Thu Apr 24 20:07:55.335470 2025] [mpm_winnt:notice] [pid 23528:tid 628] AH00354: Child: Starting 1024 worker threads.
+  类型: 执行路径异常
+
+行 37: [Mon May 12 14:24:16.965520 2025] [core:warn] [pid 19204:tid 1864] AH00098: pid file D:/phpstudy_pro/Extensions/Apache2.4.39/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+  类型: 执行路径异常
+
+行 38: [Mon May 12 14:24:16.969138 2025] [mpm_winnt:notice] [pid 19204:tid 1864] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02 configured -- resuming normal operations
+  类型: 执行路径异常
+
+行 39: [Mon May 12 14:24:16.969138 2025] [mpm_winnt:notice] [pid 19204:tid 1864] AH00456: Server built: Mar 27 2019 11:06:20
+  类型: 执行路径异常
+
+行 40: [Mon May 12 14:24:16.969138 2025] [core:notice] [pid 19204:tid 1864] AH00094: Command line: 'D:\\phpstudy_pro\\COM\\..\\Extensions\\Apache2.4.39\\\\bin\\httpd.exe -d D:/phpstudy_pro/Extensions/Apache2.4.39'
+  类型: 执行路径异常
+
+行 41: [Mon May 12 14:24:16.973124 2025] [mpm_winnt:notice] [pid 19204:tid 1864] AH00418: Parent: Created child process 28716
+  类型: 执行路径异常
+
+行 42: [Mon May 12 14:24:17.710412 2025] [mpm_winnt:notice] [pid 28716:tid 648] AH00354: Child: Starting 1024 worker threads.
+  类型: 执行路径异常
+
+行 43: [Wed May 14 23:22:33.840438 2025] [core:warn] [pid 4720:tid 584] AH00098: pid file D:/phpstudy_pro/Extensions/Apache2.4.39/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+  类型: 执行路径异常
+
+行 44: [Wed May 14 23:22:33.843925 2025] [mpm_winnt:notice] [pid 4720:tid 584] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02 configured -- resuming normal operations
+  类型: 执行路径异常
+
+行 45: [Wed May 14 23:22:33.843925 2025] [mpm_winnt:notice] [pid 4720:tid 584] AH00456: Server built: Mar 27 2019 11:06:20
+  类型: 执行路径异常
+
+行 46: [Wed May 14 23:22:33.843925 2025] [core:notice] [pid 4720:tid 584] AH00094: Command line: 'D:\\phpstudy_pro\\COM\\..\\Extensions\\Apache2.4.39\\\\bin\\httpd.exe -d D:/phpstudy_pro/Extensions/Apache2.4.39'
+  类型: 执行路径异常
+
+行 47: [Wed May 14 23:22:33.848005 2025] [mpm_winnt:notice] [pid 4720:tid 584] AH00418: Parent: Created child process 79192
+  类型: 执行路径异常
+
+行 48: [Wed May 14 23:22:34.556146 2025] [mpm_winnt:notice] [pid 79192:tid 624] AH00354: Child: Starting 1024 worker threads.
+  类型: 执行路径异常
+
+行 49: [Wed May 14 23:35:52.195204 2025] [mpm_winnt:crit] [pid 79192:tid 624] AH02538: Child: Parent process exited abruptly. Child process is ending
+  类型: 执行路径异常
+
+行 50: [Thu Jun 12 17:28:07.591933 2025] [core:warn] [pid 23324:tid 588] AH00098: pid file D:/phpstudy_pro/Extensions/Apache2.4.39/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+  类型: 执行路径异常
+
+行 51: [Thu Jun 12 17:28:07.595342 2025] [mpm_winnt:notice] [pid 23324:tid 588] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02 configured -- resuming normal operations
+  类型: 执行路径异常
+
+行 53: [Thu Jun 12 17:28:07.595342 2025] [core:notice] [pid 23324:tid 588] AH00094: Command line: 'D:\\phpstudy_pro\\COM\\..\\Extensions\\Apache2.4.39\\\\bin\\httpd.exe -d D:/phpstudy_pro/Extensions/Apache2.4.39'
+  类型: 执行路径异常
+
+行 54: [Thu Jun 12 17:28:07.606862 2025] [mpm_winnt:notice] [pid 23324:tid 588] AH00418: Parent: Created child process 32860
+  类型: 执行路径异常
+
+行 55: [Thu Jun 12 17:28:08.066711 2025] [mpm_winnt:notice] [pid 32860:tid 656] AH00354: Child: Starting 1024 worker threads.
+  类型: 执行路径异常
+
+行 56: [Thu Jun 12 17:28:14.167274 2025] [core:warn] [pid 11860:tid 532] AH00098: pid file D:/phpstudy_pro/Extensions/Apache2.4.39/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+  类型: 执行路径异常
+
+行 57: [Thu Jun 12 17:28:14.175788 2025] [mpm_winnt:notice] [pid 11860:tid 532] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02 configured -- resuming normal operations
+  类型: 执行路径异常
+
+行 58: [Thu Jun 12 17:28:14.175788 2025] [mpm_winnt:notice] [pid 11860:tid 532] AH00456: Server built: Mar 27 2019 11:06:20
+  类型: 执行路径异常
+
+行 59: [Thu Jun 12 17:28:14.175788 2025] [core:notice] [pid 11860:tid 532] AH00094: Command line: 'D:\\phpstudy_pro\\COM\\..\\Extensions\\Apache2.4.39\\\\bin\\httpd.exe -d D:/phpstudy_pro/Extensions/Apache2.4.39'
+  类型: 执行路径异常
+
+行 60: [Thu Jun 12 17:28:14.188891 2025] [mpm_winnt:notice] [pid 11860:tid 532] AH00418: Parent: Created child process 35556
+  类型: 执行路径异常
+
+行 61: [Thu Jun 12 17:28:14.616559 2025] [mpm_winnt:notice] [pid 35556:tid 664] AH00354: Child: Starting 1024 worker threads.
+  类型: 执行路径异常
+
+行 62: [Mon Jun 23 16:39:37.784543 2025] [core:warn] [pid 13208:tid 708] AH00098: pid file D:/phpstudy_pro/Extensions/Apache2.4.39/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+  类型: 执行路径异常
+
+行 63: [Mon Jun 23 16:39:37.787522 2025] [mpm_winnt:notice] [pid 13208:tid 708] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02 configured -- resuming normal operations
+  类型: 执行路径异常
+
+行 64: [Mon Jun 23 16:39:37.787522 2025] [mpm_winnt:notice] [pid 13208:tid 708] AH00456: Server built: Mar 27 2019 11:06:20
+  类型: 执行路径异常
+
+行 65: [Mon Jun 23 16:39:37.787522 2025] [core:notice] [pid 13208:tid 708] AH00094: Command line: 'D:\\phpstudy_pro\\COM\\..\\Extensions\\Apache2.4.39\\\\bin\\httpd.exe -d D:/phpstudy_pro/Extensions/Apache2.4.39'
+  类型: 执行路径异常
+
+行 66: [Mon Jun 23 16:39:37.801957 2025] [mpm_winnt:notice] [pid 13208:tid 708] AH00418: Parent: Created child process 22912
+  类型: 执行路径异常
+
+行 67: [Mon Jun 23 16:39:38.204633 2025] [mpm_winnt:notice] [pid 22912:tid 620] AH00354: Child: Starting 1024 worker threads.
+  类型: 执行路径异常
+
+行 68: [Sat Oct 25 20:37:02.820479 2025] [core:warn] [pid 47036:tid 504] AH00098: pid file D:/phpstudy_pro/Extensions/Apache2.4.39/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+  类型: 执行路径异常
+
+行 69: [Sat Oct 25 20:37:02.829823 2025] [mpm_winnt:notice] [pid 47036:tid 504] AH00455: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02 configured -- resuming normal operations
+  类型: 执行路径异常
+
+行 70: [Sat Oct 25 20:37:02.829823 2025] [mpm_winnt:notice] [pid 47036:tid 504] AH00456: Server built: Mar 27 2019 11:06:20
+  类型: 执行路径异常
+

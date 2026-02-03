@@ -1,0 +1,340 @@
+scan_total=2000
+execution_path_anomalies=710
+unseen_log_key=143
+empty_predictions=0
+
+Top log_keys (execution path anomalies)
+60	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt (unseen)
+45	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * total interrupts. * critical input interrupts. * microseconds total spent on critical input interrupts, * microseconds max...
+34	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * microseconds spent in the rbs signal handler during * calls. * microseconds was the maximum time for a single instance of ...
+17	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data storage interrupt (unseen)
+8	* *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS APP FATAL ciod: Error reading message prefix after LOAD_MESSAGE on CioStream socket to *:*: Link has been severed (unseen)
+8	* *.*.* R*-M*-NC-C:J*-U* *-*-*-* R*-M*-NC-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+7	* *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS APP FATAL ciod: Error reading message prefix on CioStream socket to *:*, Link has been severed (unseen)
+7	* *.*.* R*-M*-NC-C:J*-U* *-*-*-* R*-M*-NC-C:J*-U* RAS KERNEL INFO * total interrupts. * critical input interrupts. * microseconds total spent on critical input interrupts, * microseconds max...
+6	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO * total interrupts. * critical input interrupts. * microseconds total spent on critical input interrupts, * microseconds max...
+5	* *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL FATAL Lustre mount FAILED : bglio* : point /* (unseen)
+5	* *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO * total interrupts. * critical input interrupts. * microseconds total spent on critical input interrupts, * microseconds max...
+4	* *.*.* R*-M*-NC-I:J*-U* *-*-*-* R*-M*-NC-I:J*-U* RAS KERNEL FATAL Lustre mount FAILED : bglio* : point /* (unseen)
+4	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO * microseconds spent in the rbs signal handler during * calls. * microseconds was the maximum time for a single instance of ...
+4	* *.*.* R*-M*-NF-C:J*-U* *-*-*-* R*-M*-NF-C:J*-U* RAS KERNEL INFO * microseconds spent in the rbs signal handler during * calls. * microseconds was the maximum time for a single instance of ...
+4	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO * total interrupts. * critical input interrupts. * microseconds total spent on critical input interrupts, * microseconds max...
+4	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * ddr error(s) detected and corrected on rank *, symbol * over * seconds
+3	* *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS APP FATAL ciod: failed to read message prefix on control stream (CioStream socket to *:* (unseen)
+3	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO CE sym *, at *x*, mask *x*
+3	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL FATAL data storage interrupt (unseen)
+3	* *.*.* R*-M*-NC-C:J*-U* *-*-*-* R*-M*-NC-C:J*-U* RAS KERNEL FATAL data storage interrupt (unseen)
+3	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL exception syndrome register: *x*
+3	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL program interrupt: privileged instruction...*
+3	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL program interrupt: imprecise exception......*
+3	* *.*.* R*-M*-NF-C:J*-U* *-*-*-* R*-M*-NF-C:J*-U* RAS KERNEL FATAL floating point instr. enabled.....*
+3	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL floating pt ex mode * enable......*
+3	* *.*.* R*-M*-N* *-*-*-* R*-M*-N* NULL DISCOVERY ERROR Node card status: no ALERTs are active. Clock Mode is Low. Clock Select is Midplane. Phy JTAG Reset is asserted. ASIC JTAG Reset is ass...
+3	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO iar * dear *c*ec
+3	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO iar *c* dear *c
+3	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO CE sym *, at *x*a*, mask *x*
+3	* *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS APP FATAL ciod: Error reading message prefix on CioStream socket to *:*, Connection reset by peer (unseen)
+
+Top prediction-context signatures (top-3 predicted keys)
+143	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.* | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+88	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.* | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+87	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL INFO ciod: generated * core files for program /*
+76	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.* | * *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+51	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+30	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.* | * *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.* | * *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+29	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL INFO ciod: generated * core files for program /*
+24	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.* | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+20	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+15	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.* | * *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+12	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+9	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions | * *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+9	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL INFO ciod: generated * core files for program /* | * *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+8	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL INFO ciod: generated * core files for program /* | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+7	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+7	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions | * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL INFO ciod: generated * core files for program /*
+6	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions | * *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL INFO ciod: generated * core files for program /*
+6	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions | * *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+5	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL INFO ciod: generated * core files for program /* | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+5	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.* | * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL INFO ciod: generated * core files for program /*
+4	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO iar *a* dear *a* | * *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO iar *fc dear *b*c | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO critical input interrupt (*=*x*b *=*x*a): warning for torus z+ wire, suppressing further interrupts of same type
+4	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO critical input interrupt (*=*x*b *=*x*a): warning for torus z+ wire, suppressing further interrupts of same type | * *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO * total interrupts. * critical input interrupts. * microseconds total spent on critical input interrupts, * microseconds max... | * *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO * total interrupts. * critical input interrupts. * microseconds total spent on critical input interrupts, * microseconds max...
+4	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL INFO ciod: generated * core files for program /* | * *.*.* R*-M*-NF-C:J*-U* *-*-*-* R*-M*-NF-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+3	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.* | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+3	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.* | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+3	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO iar *a* dear *a* | * *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO iar *fc dear *b*c | * *.*.* R*-M*-NF-C:J*-U* *-*-*-* R*-M*-NF-C:J*-U* RAS KERNEL FATAL dbcr*=*x* *=*x* ccr*=*x*
+3	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav... | * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL INFO ciod: generated * core files for program /* | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO auxiliary processor.........................*
+3	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO iar *a* dear *a* | * *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO iar *fc dear *b*c | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO iar *b*c dear *ce*c
+3	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO critical input interrupt (*=*x*b *=*x*a): warning for torus z+ wire, suppressing further interrupts of same type | * *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO * total interrupts. * critical input interrupts. * microseconds total spent on critical input interrupts, * microseconds max... | * *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO * ddr error(s) detected and corrected on rank *, symbol * over * seconds
+2	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.* | * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+
+Sample anomalies (first 30)
+[Line 8] 1117848119 2005.06.03 R16-M1-N2-C:J17-U01 2005-06-03-18.21.59.871925 R16-M1-N2-C:J17-U01 RAS KERNEL INFO CE sym 2, at 0x0b85eee0, mask 0x05
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO CE sym *, at *x*b*eee*, mask *x*
+  top_pred:
+    - 0.484233	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.072351	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.041702	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.023186	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+    - 0.016995	* *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+
+[Line 9] 1117869872 2005.06.04 R04-M1-N4-I:J18-U11 2005-06-04-00.24.32.432192 R04-M1-N4-I:J18-U11 RAS APP FATAL ciod: failed to read message prefix on control stream (CioStream socket to 172.16.96.116:33569
+  log_key: * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS APP FATAL ciod: failed to read message prefix on control stream (CioStream socket to *:*
+  top_pred:
+    - 0.439599	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.066744	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.038829	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.023174	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+    - 0.017969	* *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+
+[Line 10] 1117869876 2005.06.04 R27-M1-N4-I:J18-U01 2005-06-04-00.24.36.222560 R27-M1-N4-I:J18-U01 RAS APP FATAL ciod: failed to read message prefix on control stream (CioStream socket to 172.16.96.116:33370
+  log_key: * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS APP FATAL ciod: failed to read message prefix on control stream (CioStream socket to *:*
+  top_pred:
+    - 0.328144	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.134496	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.040769	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.033371	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+    - 0.025869	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+
+[Line 11] 1117942120 2005.06.04 R30-M0-N7-C:J08-U01 2005-06-04-20.28.40.767551 R30-M0-N7-C:J08-U01 RAS KERNEL INFO CE sym 20, at 0x1438f9e0, mask 0x40
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO CE sym *, at *x*f*e*, mask *x*
+  top_pred:
+    - 0.333126	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.058438	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.055219	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.048370	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.043405	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO generating core.*
+
+[Line 32] 1117984246 2005.06.05 R30-M1-N3-C:J02-U01 2005-06-05-08.10.46.344235 R30-M1-N3-C:J02-U01 RAS KERNEL FATAL force load/store alignment...............0
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL force load/* alignment...............*
+  top_pred:
+    - 0.588758	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.071468	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.068385	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.052916	* *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.050631	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO generating core.*
+
+[Line 57] 1118070512 2005.06.06 R01-M1-NB-C:J03-U11 2005-06-06-08.08.32.984716 R01-M1-NB-C:J03-U11 RAS KERNEL INFO CE sym 20, at 0x01228120, mask 0x10
+  log_key: * *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO CE sym *, at *x*, mask *x*
+  top_pred:
+    - 0.587667	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.071594	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.068682	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.052815	* *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.051004	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO generating core.*
+
+[Line 69] 1118112700 2005.06.06 R23-M0-N0-I:J18-U01 2005-06-06-19.51.40.376079 R23-M0-N0-I:J18-U01 RAS KERNEL INFO ciod: cpu 0 at treeaddr 438 sent unrecognized message 0xffffffff
+  log_key: * *.*.* R*-M*-N*-I:J*-U* *-*-*-* R*-M*-N*-I:J*-U* RAS KERNEL INFO ciod: cpu * at treeaddr * sent unrecognized message *xffffffff
+  top_pred:
+    - 0.533035	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.073504	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.067962	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.055006	* *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.051608	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO generating core.*
+
+[Line 88] 1118251556 2005.06.08 R16-M1-N2-C:J12-U01 2005-06-08-10.25.56.322381 R16-M1-N2-C:J12-U01 RAS KERNEL INFO CE sym 28, at 0x110067e0, mask 0x02
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO CE sym *, at *x*e*, mask *x*
+  top_pred:
+    - 0.077213	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.041978	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.026197	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.025026	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.023761	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO generating core.*
+
+[Line 90] 1118285722 2005.06.08 R15-M1-N6-C:J04-U11 2005-06-08-19.55.22.798062 R15-M1-N6-C:J04-U11 RAS KERNEL INFO CE sym 14, at 0x06047860, mask 0x20
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO CE sym *, at *x*, mask *x*
+  top_pred:
+    - 0.284081	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.093350	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.048689	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.044137	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.041347	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO generating core.*
+
+[Line 98] 1118351098 2005.06.09 R16-M1-N2-C:J17-U01 2005-06-09-14.04.58.329635 R16-M1-N2-C:J17-U01 RAS KERNEL INFO CE sym 2, at 0x1b85f080, mask 0x02
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO CE sym *, at *x*b*f*, mask *x*
+  top_pred:
+    - 0.587388	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.071628	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.068608	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.052891	* *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.050866	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO generating core.*
+
+[Line 101] 1118363168 2005.06.09 R16-M1-N2-C:J17-U01 2005-06-09-17.26.08.386218 R16-M1-N2-C:J17-U01 RAS KERNEL INFO CE sym 2, at 0x1b85fe80, mask 0x02
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO CE sym *, at *x*b*fe*, mask *x*
+  top_pred:
+    - 0.269496	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.058985	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.057165	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.048861	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.048594	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+
+[Line 104] 1118536327 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-17.32.07.581048 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.297922	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.061598	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.058726	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.050316	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.047812	* *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO generating core.*
+
+[Line 105] 1118536959 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-17.42.39.794840 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.583994	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.071790	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.068416	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.052604	* *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.051308	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO generating core.*
+
+[Line 106] 1118537212 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-17.46.52.020435 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.511415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.071120	* *.*.* R*-M*-ND-C:J*-U* *-*-*-* R*-M*-ND-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.063794	* *.*.* R*-M*-NB-C:J*-U* *-*-*-* R*-M*-NB-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.053463	* *.*.* R*-M*-NA-C:J*-U* *-*-*-* R*-M*-NA-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.048672	* *.*.* R*-M*-NE-C:J*-U* *-*-*-* R*-M*-NE-C:J*-U* RAS KERNEL INFO generating core.*
+
+[Line 107] 1118537261 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-17.47.41.103595 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 108] 1118537622 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-17.53.42.323869 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 109] 1118537694 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-17.54.54.024829 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 110] 1118538129 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-18.02.09.666558 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 111] 1118538182 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-18.03.02.884252 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 112] 1118538836 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-18.13.56.287869 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 113] 1118539141 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-18.19.01.277745 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 114] 1118539342 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-18.22.22.630540 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 115] 1118539682 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-18.28.02.964604 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 116] 1118539891 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-18.31.31.276036 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 117] 1118540457 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-18.40.57.217361 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 118] 1118541065 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-18.51.05.246165 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 119] 1118541373 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-18.56.13.781741 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 120] 1118541965 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-19.06.05.431824 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 121] 1118542012 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-19.06.52.571964 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+
+[Line 122] 1118542376 2005.06.11 R30-M0-N9-C:J16-U01 2005-06-11-19.12.56.115636 R30-M0-N9-C:J16-U01 RAS KERNEL FATAL data TLB error interrupt
+  log_key: * *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL FATAL data TLB error interrupt
+  top_pred:
+    - 0.090001	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO generating core.*
+    - 0.066507	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * floating point alignment exceptions
+    - 0.038245	* *.*.* NULL *-*-*-* NULL RAS MMCS ERROR idoproxydb hit ASSERT condition: ASSERT *=* Source file=idotransportmgr.cpp Source *=* Function=int IdoTransportMgr::SendPacket(IdoUdpMgr*, BglCtlPav...
+    - 0.037753	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO * double-hummer alignment exceptions
+    - 0.025415	* *.*.* R*-M*-N*-C:J*-U* *-*-*-* R*-M*-N*-C:J*-U* RAS KERNEL INFO instruction cache parity error corrected
+

@@ -1,0 +1,162 @@
+DeepLog日志分析报告
+==================================================
+
+统计信息:
+------------------------------
+总日志数: 209
+异常日志: 209
+正常日志: 0
+.1f
+异常日志详情:
+------------------------------
+行 1: Nov 25 10:13:52 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 2: Nov 25 10:13:52 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 3: Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6781] dhcp4 (ens33):   address 192.168.30.133
+  类型: 执行路径异常
+
+行 4: Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6786] dhcp4 (ens33):   plen 24 (255.255.255.0)
+  类型: 执行路径异常
+
+行 5: Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 6: Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 7: Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6788] dhcp4 (ens33):   nameserver '192.168.30.2'
+  类型: 执行路径异常
+
+行 8: Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6789] dhcp4 (ens33):   domain name 'localdomain'
+  类型: 执行路径异常
+
+行 9: Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6789] dhcp4 (ens33): state changed bound -> bound
+  类型: 执行路径异常
+
+行 10: Nov 25 10:13:52 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 879 seconds.
+  类型: 执行路径异常
+
+行 11: Nov 25 10:20:01 localhost systemd: Started Session 47 of user root.
+  类型: 执行路径异常
+
+行 12: Nov 25 10:28:31 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 13: Nov 25 10:28:31 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 14: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037711.9998] dhcp4 (ens33):   address 192.168.30.133
+  类型: 执行路径异常
+
+行 15: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   plen 24 (255.255.255.0)
+  类型: 执行路径异常
+
+行 16: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 17: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 18: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33):   nameserver '192.168.30.2'
+  类型: 执行路径异常
+
+行 19: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33):   domain name 'localdomain'
+  类型: 执行路径异常
+
+行 20: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33): state changed bound -> bound
+  类型: 执行路径异常
+
+行 21: Nov 25 10:28:32 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 764 seconds.
+  类型: 执行路径异常
+
+行 22: Nov 25 10:30:01 localhost systemd: Started Session 48 of user root.
+  类型: 执行路径异常
+
+行 23: Nov 25 10:40:01 localhost systemd: Started Session 49 of user root.
+  类型: 执行路径异常
+
+行 24: Nov 25 10:41:16 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 25: Nov 25 10:41:16 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 26: Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7431] dhcp4 (ens33):   address 192.168.30.133
+  类型: 执行路径异常
+
+行 27: Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7436] dhcp4 (ens33):   plen 24 (255.255.255.0)
+  类型: 执行路径异常
+
+行 28: Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7436] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 29: Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7437] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 30: Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7437] dhcp4 (ens33):   nameserver '192.168.30.2'
+  类型: 执行路径异常
+
+行 31: Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7438] dhcp4 (ens33):   domain name 'localdomain'
+  类型: 执行路径异常
+
+行 32: Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7438] dhcp4 (ens33): state changed bound -> bound
+  类型: 执行路径异常
+
+行 33: Nov 25 10:41:16 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 725 seconds.
+  类型: 执行路径异常
+
+行 34: Nov 25 10:50:01 localhost systemd: Started Session 50 of user root.
+  类型: 执行路径异常
+
+行 35: Nov 25 10:52:02 localhost systemd: Removed slice User Slice of root.
+  类型: 执行路径异常
+
+行 36: Nov 25 10:53:21 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 37: Nov 25 10:53:21 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 38: Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7705] dhcp4 (ens33):   address 192.168.30.133
+  类型: 执行路径异常
+
+行 39: Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7709] dhcp4 (ens33):   plen 24 (255.255.255.0)
+  类型: 执行路径异常
+
+行 40: Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 41: Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 42: Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7711] dhcp4 (ens33):   nameserver '192.168.30.2'
+  类型: 执行路径异常
+
+行 43: Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7711] dhcp4 (ens33):   domain name 'localdomain'
+  类型: 执行路径异常
+
+行 44: Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7712] dhcp4 (ens33): state changed bound -> bound
+  类型: 执行路径异常
+
+行 45: Nov 25 10:53:21 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 838 seconds.
+  类型: 执行路径异常
+
+行 46: Nov 25 11:00:01 localhost systemd: Created slice User Slice of root.
+  类型: 执行路径异常
+
+行 47: Nov 25 11:00:01 localhost systemd: Started Session 52 of user root.
+  类型: 执行路径异常
+
+行 48: Nov 25 11:00:01 localhost systemd: Started Session 51 of user root.
+  类型: 执行路径异常
+
+行 49: Nov 25 11:00:01 localhost systemd: Removed slice User Slice of root.
+  类型: 执行路径异常
+
+行 50: Nov 25 11:01:02 localhost systemd: Created slice User Slice of root.
+  类型: 执行路径异常
+
+... 还有 159 个异常日志

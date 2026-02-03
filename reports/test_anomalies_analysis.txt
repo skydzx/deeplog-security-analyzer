@@ -1,0 +1,149 @@
+DeepLog日志分析报告
+==================================================
+
+统计信息:
+------------------------------
+总日志数: 79
+异常日志: 46
+正常日志: 33
+.1f
+异常日志详情:
+------------------------------
+行 6: Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 12: Nov 25 10:28:31 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 13: Nov 25 10:28:31 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 14: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037711.9998] dhcp4 (ens33):   address 192.168.30.133
+  类型: 执行路径异常
+
+行 16: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 17: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 24: # ===== 插入第一个明显异常：数据库连接失败 =====
+  类型: 执行路径异常
+
+行 25: Nov 25 10:45:30 localhost mysql[12345]: ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+  类型: 执行路径异常
+
+行 26: Nov 25 10:45:31 localhost mysql[12345]: ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (111)
+  类型: 执行路径异常
+
+行 27: Nov 25 10:45:32 localhost mysql[12345]: FATAL ERROR: Unable to connect to database after 3 attempts
+  类型: 执行路径异常
+
+行 28: # ===== 正常日志继续 =====
+  类型: 执行路径异常
+
+行 31: Nov 25 10:53:21 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 35: Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 36: Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 41: # ===== 插入第二个明显异常：磁盘空间不足 =====
+  类型: 执行路径异常
+
+行 42: Nov 25 11:00:15 localhost systemd[1]: Started Cleanup of Temporary Directories.
+  类型: 执行路径异常
+
+行 43: Nov 25 11:00:16 localhost systemd-tmpfiles[6789]: No space left on device
+  类型: 执行路径异常
+
+行 44: Nov 25 11:00:17 localhost systemd-tmpfiles[6789]: rm: cannot remove '/tmp/large_file.dat': No space left on device
+  类型: 执行路径异常
+
+行 45: Nov 25 11:00:18 localhost kernel: EXT4-fs error (device sda1): ext4_find_entry:1431: inode #12345678: block 1234567: comm systemd-tmpfile: reading directory lblock 0
+  类型: 执行路径异常
+
+行 46: Nov 25 11:00:19 localhost kernel: EXT4-fs (sda1): previous I/O error to superblock detected
+  类型: 执行路径异常
+
+行 47: # ===== 正常日志继续 =====
+  类型: 执行路径异常
+
+行 48: Nov 25 11:00:01 localhost systemd: Created slice User Slice of root.
+  类型: 执行路径异常
+
+行 52: Nov 25 11:01:02 localhost systemd: Created slice User Slice of root.
+  类型: 执行路径异常
+
+行 53: # ===== 插入第三个明显异常：网络连接失败 =====
+  类型: 执行路径异常
+
+行 54: Nov 25 11:15:45 localhost sshd[9999]: Failed password for invalid user hacker from 192.168.1.100 port 22 ssh2
+  类型: 执行路径异常
+
+行 55: Nov 25 11:15:46 localhost sshd[9999]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+  类型: 执行路径异常
+
+行 56: Nov 25 11:15:47 localhost sshd[9999]: Failed password for invalid user root from 192.168.1.100 port 22 ssh2
+  类型: 执行路径异常
+
+行 57: Nov 25 11:15:48 localhost sshd[9999]: Connection closed by 192.168.1.100 port 22 [preauth]
+  类型: 执行路径异常
+
+行 58: Nov 25 11:15:49 localhost iptables[1]: IN=ens33 OUT= MAC=00:0c:29:3f:8e:1a:00:50:56:c0:00:08:08:00 SRC=192.168.1.100 DST=192.168.30.133 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=12345 DF PROTO=TCP SPT=22 DPT=22 WINDOW=0 RES=0x00 RST URGP=0
+  类型: 执行路径异常
+
+行 59: # ===== 正常日志继续 =====
+  类型: 执行路径异常
+
+行 60: Nov 25 11:20:01 localhost systemd: Created slice User Slice of root.
+  类型: 执行路径异常
+
+行 61: Nov 25 11:20:20 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 62: Nov 25 11:20:20 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 63: Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4160] dhcp4 (ens33):   address 192.168.30.133
+  类型: 执行路径异常
+
+行 64: Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4163] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 65: Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4164] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 68: Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4165] dhcp4 (ens33): state changed bound -> bound
+  类型: 执行路径异常
+
+行 70: # ===== 插入第四个明显异常：服务崩溃 =====
+  类型: 执行路径异常
+
+行 71: Nov 25 11:30:22 localhost httpd[7777]: [error] server reached MaxClients setting, consider raising the MaxClients setting
+  类型: 执行路径异常
+
+行 72: Nov 25 11:30:23 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex
+  类型: 执行路径异常
+
+行 73: Nov 25 11:30:24 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex
+  类型: 执行路径异常
+
+行 74: Nov 25 11:30:25 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex
+  类型: 执行路径异常
+
+行 75: Nov 25 11:30:26 localhost systemd[1]: httpd.service: Main process exited, code=exited, status=1/FAILURE
+  类型: 执行路径异常
+
+行 76: Nov 25 11:30:27 localhost systemd[1]: httpd.service: Failed with result 'exit-code'.
+  类型: 执行路径异常
+
+行 77: # ===== 正常日志结束 =====
+  类型: 执行路径异常
+
+行 78: Nov 25 11:30:01 localhost systemd: Created slice User Slice of root.
+  类型: 执行路径异常
+

@@ -1,0 +1,161 @@
+DeepLog日志分析报告
+==================================================
+
+统计信息:
+------------------------------
+总日志数: 1000
+异常日志: 880
+正常日志: 120
+.1f
+异常日志详情:
+------------------------------
+行 14: Jan 15 15:36:49 dzx kernel: [   35.806344] scsi 0:0:0:3: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+  类型: 执行路径异常
+
+行 15: Jan 15 15:36:49 dzx kernel: [   35.814626] sd 0:0:0:3: Attached scsi generic sg3 type 0
+  类型: 执行路径异常
+
+行 16: Jan 15 15:36:49 dzx kernel: [   35.815338] sd 0:0:0:3: [sdd] 2147483648 512-byte logical blocks: (1.10 TB/1.00 TiB)
+  类型: 执行路径异常
+
+行 17: Jan 15 15:36:49 dzx kernel: [   35.815341] sd 0:0:0:3: [sdd] 4096-byte physical blocks
+  类型: 执行路径异常
+
+行 18: Jan 15 15:36:49 dzx kernel: [   35.815476] sd 0:0:0:3: [sdd] Write Protect is off
+  类型: 执行路径异常
+
+行 19: Jan 15 15:36:49 dzx kernel: [   35.815479] sd 0:0:0:3: [sdd] Mode Sense: 0f 00 00 00
+  类型: 执行路径异常
+
+行 20: Jan 15 15:36:49 dzx kernel: [   35.815681] sd 0:0:0:3: [sdd] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+  类型: 执行路径异常
+
+行 21: Jan 15 15:36:49 dzx kernel: [   35.818094] sd 0:0:0:3: [sdd] Attached SCSI disk
+  类型: 执行路径异常
+
+行 22: Jan 15 15:36:49 dzx kernel: [   35.841732] EXT4-fs (sdd): recovery complete
+  类型: 执行路径异常
+
+行 23: Jan 15 15:36:49 dzx kernel: [   35.844787] EXT4-fs (sdd): mounted filesystem with ordered data mode. Opts: discard,errors=remount-ro,data=ordered. Quota mode: none.
+  类型: 执行路径异常
+
+行 25: Jan 15 15:36:49 dzx kernel: [   35.923682] FS-Cache: O-cookie c=00000030 [p=00000002 fl=222 nc=0 na=1]
+  类型: 执行路径异常
+
+行 26: Jan 15 15:36:49 dzx kernel: [   35.924368] FS-Cache: O-cookie d=0000000085917004{9P.session} n=00000000fa7835ce
+  类型: 执行路径异常
+
+行 27: Jan 15 15:36:49 dzx kernel: [   35.925065] FS-Cache: O-key=[10] '34323934393430383737'
+  类型: 执行路径异常
+
+行 28: Jan 15 15:36:49 dzx kernel: [   35.925813] FS-Cache: N-cookie c=00000031 [p=00000002 fl=2 nc=0 na=1]
+  类型: 执行路径异常
+
+行 29: Jan 15 15:36:49 dzx kernel: [   35.926602] FS-Cache: N-cookie d=0000000085917004{9P.session} n=00000000a81a0906
+  类型: 执行路径异常
+
+行 30: Jan 15 15:36:49 dzx kernel: [   35.927656] FS-Cache: N-key=[10] '34323934393430383737'
+  类型: 执行路径异常
+
+行 31: Jan 15 15:36:49 dzx kernel: [   36.056370] misc dxg: dxgk: dxgkio_is_feature_enabled: Ioctl failed: -22
+  类型: 执行路径异常
+
+行 40: Jan 15 15:36:49 dzx kernel: [   36.236562] scsi 0:0:0:4: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+  类型: 执行路径异常
+
+行 41: Jan 15 15:36:49 dzx kernel: [   36.245174] sd 0:0:0:4: Attached scsi generic sg4 type 0
+  类型: 执行路径异常
+
+行 42: Jan 15 15:36:49 dzx kernel: [   36.246326] sd 0:0:0:4: [sde] 2147483648 512-byte logical blocks: (1.10 TB/1.00 TiB)
+  类型: 执行路径异常
+
+行 43: Jan 15 15:36:49 dzx kernel: [   36.246330] sd 0:0:0:4: [sde] 4096-byte physical blocks
+  类型: 执行路径异常
+
+行 44: Jan 15 15:36:49 dzx kernel: [   36.246420] sd 0:0:0:4: [sde] Write Protect is off
+  类型: 执行路径异常
+
+行 45: Jan 15 15:36:49 dzx kernel: [   36.246423] sd 0:0:0:4: [sde] Mode Sense: 0f 00 00 00
+  类型: 执行路径异常
+
+行 46: Jan 15 15:36:49 dzx kernel: [   36.246635] sd 0:0:0:4: [sde] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+  类型: 执行路径异常
+
+行 47: Jan 15 15:36:49 dzx kernel: [   36.249330] sd 0:0:0:4: [sde] Attached SCSI disk
+  类型: 执行路径异常
+
+行 48: Jan 15 15:36:50 dzx kernel: [   37.240769] EXT4-fs (sde): recovery complete
+  类型: 执行路径异常
+
+行 49: Jan 15 15:36:50 dzx kernel: [   37.245257] EXT4-fs (sde): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+  类型: 执行路径异常
+
+行 50: Jan 15 15:36:50 dzx kernel: [   37.279125] loop0: detected capacity change from 0 to 1046316
+  类型: 执行路径异常
+
+行 51: Jan 15 15:36:50 dzx kernel: [   37.301209] ISO 9660 Extensions: Microsoft Joliet Level 3
+  类型: 执行路径异常
+
+行 52: Jan 15 15:36:50 dzx kernel: [   37.301437] ISO 9660 Extensions: RRIP_1991A
+  类型: 执行路径异常
+
+行 53: Jan 15 15:36:50 dzx kernel: [   37.335568] loop1: detected capacity change from 0 to 1326520
+  类型: 执行路径异常
+
+行 54: Jan 15 15:36:50 dzx kernel: [   37.357083] ISO 9660 Extensions: RRIP_1991A
+  类型: 执行路径异常
+
+行 55: Jan 15 15:36:50 dzx kernel: [   37.661146] new mount options do not match the existing superblock, will be ignored
+  类型: 执行路径异常
+
+行 57: Jan 15 15:36:49 dzx kernel: [   37.880231] IPv6: ADDRCONF(NETDEV_CHANGE): services1: link becomes ready
+  类型: 执行路径异常
+
+行 58: Jan 15 15:36:51 dzx kernel: [   38.329631] capability: warning: `lifecycle-serve' uses 32-bit capabilities (legacy support in use)
+  类型: 执行路径异常
+
+行 59: Jan 15 15:36:52 dzx kernel: [   38.823997] IPv6: ADDRCONF(NETDEV_CHANGE): services0: link becomes ready
+  类型: 执行路径异常
+
+行 60: Jan 15 15:36:56 dzx kernel: [   44.967945] br-f562f5c35560: port 1(veth5af5f44) entered blocking state
+  类型: 执行路径异常
+
+行 61: Jan 15 15:36:56 dzx kernel: [   44.967948] br-f562f5c35560: port 1(veth5af5f44) entered disabled state
+  类型: 执行路径异常
+
+行 62: Jan 15 15:36:56 dzx kernel: [   44.967969] device veth5af5f44 entered promiscuous mode
+  类型: 执行路径异常
+
+行 63: Jan 15 15:36:56 dzx kernel: [   44.969650] br-f74b97cd59ac: port 1(vethb1c39a7) entered blocking state
+  类型: 执行路径异常
+
+行 64: Jan 15 15:36:56 dzx kernel: [   44.969653] br-f74b97cd59ac: port 1(vethb1c39a7) entered disabled state
+  类型: 执行路径异常
+
+行 65: Jan 15 15:36:56 dzx kernel: [   44.969677] device vethb1c39a7 entered promiscuous mode
+  类型: 执行路径异常
+
+行 66: Jan 15 15:36:56 dzx kernel: [   44.970264] br-f74b97cd59ac: port 1(vethb1c39a7) entered blocking state
+  类型: 执行路径异常
+
+行 67: Jan 15 15:36:56 dzx kernel: [   44.970266] br-f74b97cd59ac: port 1(vethb1c39a7) entered forwarding state
+  类型: 执行路径异常
+
+行 68: Jan 15 15:36:56 dzx kernel: [   44.970315] br-f74b97cd59ac: port 1(vethb1c39a7) entered disabled state
+  类型: 执行路径异常
+
+行 69: Jan 15 15:36:56 dzx kernel: [   44.970525] br-5fd3e2aa491e: port 1(vethd277756) entered blocking state
+  类型: 执行路径异常
+
+行 70: Jan 15 15:36:56 dzx kernel: [   44.970527] br-5fd3e2aa491e: port 1(vethd277756) entered disabled state
+  类型: 执行路径异常
+
+行 71: Jan 15 15:36:56 dzx kernel: [   44.970547] device vethd277756 entered promiscuous mode
+  类型: 执行路径异常
+
+行 72: Jan 15 15:36:56 dzx kernel: [   44.970602] br-5fd3e2aa491e: port 1(vethd277756) entered blocking state
+  类型: 执行路径异常
+
+行 73: Jan 15 15:36:56 dzx kernel: [   44.970602] br-5fd3e2aa491e: port 1(vethd277756) entered forwarding state
+  类型: 执行路径异常
+

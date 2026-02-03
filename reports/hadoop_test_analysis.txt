@@ -1,0 +1,119 @@
+DeepLog日志分析报告
+==================================================
+
+统计信息:
+------------------------------
+总日志数: 41
+异常日志: 36
+正常日志: 5
+.1f
+异常日志详情:
+------------------------------
+行 6: 2015-10-18 18:01:50,509 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+  类型: 执行路径异常
+
+行 7: 2015-10-18 18:01:50,556 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler
+  类型: 执行路径异常
+
+行 8: 2015-10-18 18:01:50,556 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher
+  类型: 执行路径异常
+
+行 9: # ===== 插入第一个异常：DataNode故障 =====
+  类型: 执行路径异常
+
+行 10: 2015-10-18 18:02:15,123 ERROR [DataNode: [/data1/hadoop/dfs/data]] org.apache.hadoop.hdfs.server.datanode.DataNode: java.io.IOException: Cannot lock storage Storage Directory /data1/hadoop/dfs/data. The directory is already locked.
+  类型: 执行路径异常
+
+行 11: 2015-10-18 18:02:15,124 WARN [DataNode: [/data1/hadoop/dfs/data]] org.apache.hadoop.hdfs.server.datanode.DataNode: IOException in offerService
+  类型: 执行路径异常
+
+行 12: 2015-10-18 18:02:15,125 ERROR [DataNode: [/data1/hadoop/dfs/data]] org.apache.hadoop.hdfs.server.datanode.DataNode: DataNode is shutting down.
+  类型: 执行路径异常
+
+行 13: 2015-10-18 18:02:15,126 ERROR [DataNode: [/data1/hadoop/dfs/data]] org.apache.hadoop.hdfs.server.datanode.DataNode: Shutting down DataNode
+  类型: 执行路径异常
+
+行 14: # ===== 正常日志继续 =====
+  类型: 执行路径异常
+
+行 15: 2015-10-18 18:02:20,556 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskAttemptEventDispatcher
+  类型: 执行路径异常
+
+行 16: 2015-10-18 18:02:21,123 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Kind: YARN_AM_RM_TOKEN, Service: 192.168.1.100:8032, Ident: (appAttemptId { application_id { id: 20 cluster_timestamp: 1445144423722 } attemptId: 1 } keyId: -127633188)
+  类型: 执行路径异常
+
+行 17: 2015-10-18 18:02:22,456 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobFinishEventHandler
+  类型: 执行路径异常
+
+行 18: # ===== 插入第二个异常：内存不足错误 =====
+  类型: 执行路径异常
+
+行 19: 2015-10-18 18:05:33,789 ERROR [ContainerLauncher #0] org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch: Container failed to launch
+  类型: 执行路径异常
+
+行 20: 2015-10-18 18:05:33,790 ERROR [ContainerLauncher #0] org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch: java.lang.OutOfMemoryError: Java heap space
+  类型: 执行路径异常
+
+行 21: 2015-10-18 18:05:33,791 ERROR [ContainerLauncher #0] org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch: Container id: container_1445144423722_0020_01_000001
+  类型: 执行路径异常
+
+行 22: 2015-10-18 18:05:33,792 WARN [AsyncDispatcher event handler] org.apache.hadoop.yarn.server.nodemanager.containermanager.container.ContainerImpl: Container container_1445144423722_0020_01_000001 transitioned from RUNNING to EXITED_WITH_FAILURE
+  类型: 执行路径异常
+
+行 23: # ===== 正常日志继续 =====
+  类型: 执行路径异常
+
+行 24: 2015-10-18 18:06:10,123 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Application attempt appattempt_1445144423722_0020_000001 is running
+  类型: 执行路径异常
+
+行 25: 2015-10-18 18:06:11,456 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Dispatching the event org.apache.hadoop.mapreduce.jobhistory.JobSubmittedEvent
+  类型: 执行路径异常
+
+行 26: 2015-10-18 18:06:12,789 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Adding job token for job_1445144423722_0020
+  类型: 执行路径异常
+
+行 27: # ===== 插入第三个异常：网络连接失败 =====
+  类型: 执行路径异常
+
+行 28: 2015-10-18 18:10:45,321 WARN [IPC Client (47) connection to /192.168.1.101:8032 from hadoopuser] org.apache.hadoop.ipc.Client: Address change detected. Old: /192.168.1.101:8032 New: /192.168.1.102:8032
+  类型: 执行路径异常
+
+行 29: 2015-10-18 18:10:45,322 ERROR [IPC Client (47) connection to /192.168.1.101:8032 from hadoopuser] org.apache.hadoop.ipc.Client: Retrying connect to server: 192.168.1.101/192.168.1.101:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+  类型: 执行路径异常
+
+行 30: 2015-10-18 18:10:46,456 ERROR [IPC Client (47) connection to /192.168.1.101:8032 from hadoopuser] org.apache.hadoop.ipc.Client: java.net.ConnectException: Connection refused
+  类型: 执行路径异常
+
+行 31: 2015-10-18 18:10:47,789 ERROR [IPC Client (47) connection to /192.168.1.101:8032 from hadoopuser] org.apache.hadoop.ipc.Client: Failed to connect to server: 192.168.1.101/192.168.1.101:8032 after 1 attempts.
+  类型: 执行路径异常
+
+行 32: # ===== 正常日志继续 =====
+  类型: 执行路径异常
+
+行 33: 2015-10-18 18:11:20,123 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Setting job diagnostics to container_1445144423722_0020_01_000001
+  类型: 执行路径异常
+
+行 34: 2015-10-18 18:11:21,456 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Dispatching the event org.apache.hadoop.mapreduce.v2.app.job.event.JobEvent
+  类型: 执行路径异常
+
+行 35: # ===== 插入第四个异常：配置错误 =====
+  类型: 执行路径异常
+
+行 36: 2015-10-18 18:15:30,999 ERROR [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Error starting MRAppMaster
+  类型: 执行路径异常
+
+行 37: 2015-10-18 18:15:31,000 ERROR [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: java.lang.IllegalArgumentException: Invalid configuration: mapreduce.job.reduces must be greater than 0
+  类型: 执行路径异常
+
+行 38: 2015-10-18 18:15:31,001 ERROR [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Configuration problem with jar file
+  类型: 执行路径异常
+
+行 39: 2015-10-18 18:15:31,002 ERROR [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Failing this attempt. Failing the application.
+  类型: 执行路径异常
+
+行 40: # ===== 正常日志结束 =====
+  类型: 执行路径异常
+
+行 41: 2015-10-18 18:16:45,123 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Final Stats: PendingReds:0 LaunchedReds: 0 FailedReds:0
+  类型: 执行路径异常
+

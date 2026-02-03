@@ -1,0 +1,525 @@
+======================================================================
+应急响应日志溯源分析报告
+Incident Response Log Forensics Report
+======================================================================
+
+生成时间: 2026-02-03T10:37:50.767172
+日志类型: Linux
+数据来源: logs\test_anomalies.log
+总事件数: 71
+
+----------------------------------------------------------------------
+威胁等级分布
+----------------------------------------------------------------------
+  info: 67
+  medium: 4
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+攻击类型分布
+----------------------------------------------------------------------
+  未知: 67
+  暴力破解: 4
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+可疑IP统计
+----------------------------------------------------------------------
+  192.168.30.254: 4次
+  192.168.1.100: 3次
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+安全建议
+----------------------------------------------------------------------
+  - [信息] 未发现严重威胁，建议定期审计日志
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+完整时间线
+----------------------------------------------------------------------
+[2026-11-25T10:13:52] [INFO] 未知
+  Nov 25 10:13:52 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+
+[2026-11-25T10:13:52] [INFO] 未知
+  Nov 25 10:13:52 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+
+[2026-11-25T10:13:52] [INFO] 未知
+  Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6781] dhcp4 (ens33):   address 192.168.30.133
+
+[2026-11-25T10:13:52] [INFO] 未知
+  Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6786] dhcp4 (ens33):   plen 24 (255.255.255.0)
+
+[2026-11-25T10:13:52] [INFO] 未知
+  Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   gateway 192.168.30.2
+
+[2026-11-25T10:13:52] [INFO] 未知
+  Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   lease time 1800
+
+[2026-11-25T10:13:52] [INFO] 未知
+  Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6788] dhcp4 (ens33):   nameserver '192.168.30.2'
+
+[2026-11-25T10:13:52] [INFO] 未知
+  Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6789] dhcp4 (ens33):   domain name 'localdomain'
+
+[2026-11-25T10:13:52] [INFO] 未知
+  Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6789] dhcp4 (ens33): state changed bound -> bound
+
+[2026-11-25T10:13:52] [INFO] 未知
+  Nov 25 10:13:52 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 879 seconds.
+
+[2026-11-25T10:20:01] [INFO] 未知
+  Nov 25 10:20:01 localhost systemd: Started Session 47 of user root.
+
+[2026-11-25T10:28:31] [INFO] 未知
+  Nov 25 10:28:31 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+
+[2026-11-25T10:28:31] [INFO] 未知
+  Nov 25 10:28:31 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+
+[2026-11-25T10:28:32] [INFO] 未知
+  Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037711.9998] dhcp4 (ens33):   address 192.168.30.133
+
+[2026-11-25T10:28:32] [INFO] 未知
+  Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   plen 24 (255.255.255.0)
+
+[2026-11-25T10:28:32] [INFO] 未知
+  Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   gateway 192.168.30.2
+
+[2026-11-25T10:28:32] [INFO] 未知
+  Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   lease time 1800
+
+[2026-11-25T10:28:32] [INFO] 未知
+  Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33):   nameserver '192.168.30.2'
+
+[2026-11-25T10:28:32] [INFO] 未知
+  Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33):   domain name 'localdomain'
+
+[2026-11-25T10:28:32] [INFO] 未知
+  Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33): state changed bound -> bound
+
+[2026-11-25T10:28:32] [INFO] 未知
+  Nov 25 10:28:32 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 764 seconds.
+
+[2026-11-25T10:30:01] [INFO] 未知
+  Nov 25 10:30:01 localhost systemd: Started Session 48 of user root.
+
+[2026-11-25T10:40:01] [INFO] 未知
+  Nov 25 10:40:01 localhost systemd: Started Session 49 of user root.
+
+[2026-11-25T10:45:30] [INFO] 未知
+  Nov 25 10:45:30 localhost mysql[12345]: ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+[2026-11-25T10:45:31] [INFO] 未知
+  Nov 25 10:45:31 localhost mysql[12345]: ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (111)
+
+[2026-11-25T10:45:32] [INFO] 未知
+  Nov 25 10:45:32 localhost mysql[12345]: FATAL ERROR: Unable to connect to database after 3 attempts
+
+[2026-11-25T10:50:01] [INFO] 未知
+  Nov 25 10:50:01 localhost systemd: Started Session 50 of user root.
+
+[2026-11-25T10:52:02] [INFO] 未知
+  Nov 25 10:52:02 localhost systemd: Removed slice User Slice of root.
+
+[2026-11-25T10:53:21] [INFO] 未知
+  Nov 25 10:53:21 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+
+[2026-11-25T10:53:21] [INFO] 未知
+  Nov 25 10:53:21 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+
+[2026-11-25T10:53:21] [INFO] 未知
+  Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7705] dhcp4 (ens33):   address 192.168.30.133
+
+[2026-11-25T10:53:21] [INFO] 未知
+  Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7709] dhcp4 (ens33):   plen 24 (255.255.255.0)
+
+[2026-11-25T10:53:21] [INFO] 未知
+  Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   gateway 192.168.30.2
+
+[2026-11-25T10:53:21] [INFO] 未知
+  Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   lease time 1800
+
+[2026-11-25T10:53:21] [INFO] 未知
+  Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7711] dhcp4 (ens33):   nameserver '192.168.30.2'
+
+[2026-11-25T10:53:21] [INFO] 未知
+  Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7711] dhcp4 (ens33):   domain name 'localdomain'
+
+[2026-11-25T10:53:21] [INFO] 未知
+  Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7712] dhcp4 (ens33): state changed bound -> bound
+
+[2026-11-25T10:53:21] [INFO] 未知
+  Nov 25 10:53:21 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 838 seconds.
+
+[2026-11-25T11:00:01] [INFO] 未知
+  Nov 25 11:00:01 localhost systemd: Created slice User Slice of root.
+
+[2026-11-25T11:00:01] [INFO] 未知
+  Nov 25 11:00:01 localhost systemd: Started Session 52 of user root.
+
+[2026-11-25T11:00:01] [INFO] 未知
+  Nov 25 11:00:01 localhost systemd: Started Session 51 of user root.
+
+[2026-11-25T11:00:01] [INFO] 未知
+  Nov 25 11:00:01 localhost systemd: Removed slice User Slice of root.
+
+[2026-11-25T11:00:15] [INFO] 未知
+  Nov 25 11:00:15 localhost systemd[1]: Started Cleanup of Temporary Directories.
+
+[2026-11-25T11:00:16] [INFO] 未知
+  Nov 25 11:00:16 localhost systemd-tmpfiles[6789]: No space left on device
+
+[2026-11-25T11:00:17] [INFO] 未知
+  Nov 25 11:00:17 localhost systemd-tmpfiles[6789]: rm: cannot remove '/tmp/large_file.dat': No space left on device
+
+[2026-11-25T11:00:18] [INFO] 未知
+  Nov 25 11:00:18 localhost kernel: EXT4-fs error (device sda1): ext4_find_entry:1431: inode #12345678: block 1234567: comm systemd-tmpfile: reading directory lblock 0
+
+[2026-11-25T11:00:19] [INFO] 未知
+  Nov 25 11:00:19 localhost kernel: EXT4-fs (sda1): previous I/O error to superblock detected
+
+[2026-11-25T11:01:02] [INFO] 未知
+  Nov 25 11:01:02 localhost systemd: Created slice User Slice of root.
+
+[2026-11-25T11:15:45] [MEDIUM] 暴力破解
+  Nov 25 11:15:45 localhost sshd[9999]: Failed password for invalid user hacker from 192.168.1.100 port 22 ssh2
+
+[2026-11-25T11:15:46] [MEDIUM] 暴力破解
+  Nov 25 11:15:46 localhost sshd[9999]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2
+
+[2026-11-25T11:15:47] [MEDIUM] 暴力破解
+  Nov 25 11:15:47 localhost sshd[9999]: Failed password for invalid user root from 192.168.1.100 port 22 ssh2
+
+[2026-11-25T11:15:48] [MEDIUM] 暴力破解
+  Nov 25 11:15:48 localhost sshd[9999]: Connection closed by 192.168.1.100 port 22 [preauth]
+
+[2026-11-25T11:15:49] [INFO] 未知
+  Nov 25 11:15:49 localhost iptables[1]: IN=ens33 OUT= MAC=00:0c:29:3f:8e:1a:00:50:56:c0:00:08:08:00 SRC=192.168.1.100 DST=192.168.30.133 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=12345 DF PROTO=TCP SPT=22 DP
+
+[2026-11-25T11:20:01] [INFO] 未知
+  Nov 25 11:20:01 localhost systemd: Created slice User Slice of root.
+
+[2026-11-25T11:20:20] [INFO] 未知
+  Nov 25 11:20:20 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+
+[2026-11-25T11:20:20] [INFO] 未知
+  Nov 25 11:20:20 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+
+[2026-11-25T11:20:20] [INFO] 未知
+  Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4160] dhcp4 (ens33):   address 192.168.30.133
+
+[2026-11-25T11:20:20] [INFO] 未知
+  Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4163] dhcp4 (ens33):   gateway 192.168.30.2
+
+[2026-11-25T11:20:20] [INFO] 未知
+  Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4164] dhcp4 (ens33):   lease time 1800
+
+[2026-11-25T11:20:20] [INFO] 未知
+  Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4165] dhcp4 (ens33):   nameserver '192.168.30.2'
+
+[2026-11-25T11:20:20] [INFO] 未知
+  Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4165] dhcp4 (ens33):   domain name 'localdomain'
+
+[2026-11-25T11:20:20] [INFO] 未知
+  Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4165] dhcp4 (ens33): state changed bound -> bound
+
+[2026-11-25T11:20:20] [INFO] 未知
+  Nov 25 11:20:20 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 725 seconds.
+
+[2026-11-25T11:30:01] [INFO] 未知
+  Nov 25 11:30:01 localhost systemd: Created slice User Slice of root.
+
+[2026-11-25T11:30:22] [INFO] 未知
+  Nov 25 11:30:22 localhost httpd[7777]: [error] server reached MaxClients setting, consider raising the MaxClients setting
+
+[2026-11-25T11:30:23] [INFO] 未知
+  Nov 25 11:30:23 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex
+
+[2026-11-25T11:30:24] [INFO] 未知
+  Nov 25 11:30:24 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex
+
+[2026-11-25T11:30:25] [INFO] 未知
+  Nov 25 11:30:25 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex
+
+[2026-11-25T11:30:26] [INFO] 未知
+  Nov 25 11:30:26 localhost systemd[1]: httpd.service: Main process exited, code=exited, status=1/FAILURE
+
+[2026-11-25T11:30:27] [INFO] 未知
+  Nov 25 11:30:27 localhost systemd[1]: httpd.service: Failed with result 'exit-code'.
+
+[2026-11-25T11:40:01] [INFO] 未知
+  Nov 25 11:40:01 localhost systemd: Started Session 60 of user root.
+

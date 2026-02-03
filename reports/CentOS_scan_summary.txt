@@ -1,0 +1,332 @@
+scan_total=305
+execution_path_anomalies=216
+unseen_log_key=52
+empty_predictions=0
+
+Top log_keys (execution path anomalies)
+11	./*
+8	Jan * *:*:* localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(*=*) (unseen)
+6	vim redis.conf
+6	Jan * *:*:* localhost sudo: pam_unix(sudo:session): session closed for user root (unseen)
+5	ps -ef | grep redis
+4	Jan * *:*:* localhost dbus[*]: [system] Rejected send message, * matched rules; type="ERROR", sender=":*.*" (*=* *=* comm="/* --start --log-target=syslog ") interface="(unset)" member="(unse...
+4	Jan * *:*:* localhost sudo:     dzx : TTY=pts/* ; PWD=/* ; USER=root ; COMMAND=/* -i redis /* (unseen)
+3	Jan * *:*:* localhost journal: unable to get EDID for xrandr-Virtual*: unable to get EDID for output
+3	Jan * *:*:* localhost kernel: IPv*: ADDRCONF(NETDEV_UP): virbr*: link is not ready
+3	vi redis.conf
+3	cp /* ~/* (unseen)
+2	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): canceled DHCP transaction, DHCP client pid *
+2	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> done
+2	Nov * *:*:* localhost avahi-daemon[*]: Withdrawing address record for * on ens*.
+2	Nov * *:*:* localhost avahi-daemon[*]: Leaving mDNS multicast group on interface ens*.IPv* with address *.
+2	Nov * *:*:* localhost avahi-daemon[*]: Interface ens*.IPv* no longer relevant for mDNS.
+2	Nov * *:*:* localhost kernel: usb *-*.*: USB disconnect, device number *
+2	Jan * *:*:* localhost bluetoothd[*]: Endpoint unregistered: sender=:*.* path=/*
+2	Jan * *:*:* localhost bluetoothd[*]: Endpoint registered: sender=:*.* path=/*
+2	Jan * *:*:* localhost kernel: IPv*: ADDRCONF(NETDEV_UP): ens*: link is not ready
+2	./* /*
+2	ps -ef|grep redis
+2	cd /*
+2	ps -ef | grep redis-server (unseen)
+2	cp /* /* (unseen)
+2	*月 * *:*:* localhost.localdomain sudo[*]:      dzx : TTY=pts/* ; PWD=/* ; USER=root ; COMMAND=/* -i redis /* (unseen)
+2	Jan * *:*:* localhost sudo:     dzx : TTY=pts/* ; PWD=/* ; USER=root ; COMMAND=/* -i ^logfile /* /* (unseen)
+2	Jan * *:*:* localhost sudo:     dzx : TTY=pts/* ; PWD=/* ; USER=root ; COMMAND=/* /* /* (unseen)
+2	Jan * *:*:* localhost sudo:     dzx : TTY=pts/* ; PWD=/* ; USER=root ; COMMAND=/* /* ./* (unseen)
+1	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   address *
+
+Top prediction-context signatures (top-3 predicted keys)
+52	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*' | Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+30	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*) | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+26	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds. | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+20	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*) | Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+16	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost systemd: Removed slice User Slice of root. | Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+11	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*' | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+11	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain' | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+8	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*) | Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+8	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*) | Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*)
+6	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds. | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+5	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*) | Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+4	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain' | Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+3	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost systemd: Removed slice User Slice of root. | Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*)
+3	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds. | Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+3	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*) | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+3	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*) | Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+2	Jan * *:*:* localhost journal: clutter_actor_show: assertion 'CLUTTER_IS_ACTOR (self)' failed | Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*) | Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+1	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain' | Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+1	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost systemd: Removed slice User Slice of root. | Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+1	Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*) | Jan * *:*:* localhost journal: clutter_actor_show: assertion 'CLUTTER_IS_ACTOR (self)' failed | Nov * *:*:* localhost systemd: Started Session * of user root.
+1	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*' | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> bound
+1	Nov * *:*:* localhost systemd: Started Session * of user root. | Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*' | Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+
+Sample anomalies (first 30)
+[Line 3] Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6781] dhcp4 (ens33):   address 192.168.30.133
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   address *
+  top_pred:
+    - 0.039337	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.029999	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.029177	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.027673	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.027409	Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*)
+
+[Line 4] Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6786] dhcp4 (ens33):   plen 24 (255.255.255.0)
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   plen * (*)
+  top_pred:
+    - 0.046485	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.038599	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.034297	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.034283	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.034066	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   gateway *
+
+[Line 82] Nov 25 13:25:25 localhost systemd: Time has been changed
+  log_key: Nov * *:*:* localhost systemd: Time has been changed
+  top_pred:
+    - 0.110347	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.067555	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+    - 0.058191	Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*)
+    - 0.057582	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.042829	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   address *
+
+[Line 83] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.5805] manager: disable requested (sleeping: no  enabled: yes)
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] manager: disable requested (sleeping: no  enabled: yes)
+  top_pred:
+    - 0.095819	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.061618	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+    - 0.056060	Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*)
+    - 0.055466	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.042041	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   address *
+
+[Line 84] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.5839] device (virbr0): state change: disconnected -> unmanaged (reason 'sleeping', sys-iface-state: 'managed')
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] device (virbr*): state change: disconnected -> unmanaged (reason 'sleeping', sys-iface-state: 'managed')
+  top_pred:
+    - 0.087506	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.055428	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+    - 0.055273	Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*)
+    - 0.053092	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.041076	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   address *
+
+[Line 85] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.6369] manager: NetworkManager state is now ASLEEP
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] manager: NetworkManager state is now ASLEEP
+  top_pred:
+    - 0.069904	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.049256	Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*)
+    - 0.047391	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.045339	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+    - 0.039049	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+
+[Line 86] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7412] audit: op="networking-control" arg="off" pid=11369 uid=0 result="success"
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] audit: op="networking-control" arg="off" *=* *=* result="success"
+  top_pred:
+    - 0.051086	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.036736	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.036399	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.035597	Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*)
+    - 0.032579	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   gateway *
+
+[Line 87] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7438] device (ens33): state change: activated -> deactivating (reason 'sleeping', sys-iface-state: 'managed')
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] device (ens*): state change: activated -> deactivating (reason 'sleeping', sys-iface-state: 'managed')
+  top_pred:
+    - 0.021727	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.018339	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.018233	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.017532	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.016885	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   gateway *
+
+[Line 88] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7905] device (ens33): state change: deactivating -> disconnected (reason 'sleeping', sys-iface-state: 'managed')
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] device (ens*): state change: deactivating -> disconnected (reason 'sleeping', sys-iface-state: 'managed')
+  top_pred:
+    - 0.021930	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.018410	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.017943	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.017318	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.017017	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+
+[Line 89] Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for fe80::20c:29ff:fe34:765 on ens33.
+  log_key: Nov * *:*:* localhost avahi-daemon[*]: Withdrawing address record for fe*::*c:*ff:fe*:* on ens*.
+  top_pred:
+    - 0.024583	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.019996	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.018907	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+    - 0.018800	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.017987	Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*)
+
+[Line 90] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9318] dhcp4 (ens33): canceled DHCP transaction, DHCP client pid 8987
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): canceled DHCP transaction, DHCP client pid *
+  top_pred:
+    - 0.026261	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.020740	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.020548	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.019841	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.019468	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+
+[Line 91] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9323] dhcp4 (ens33): state changed bound -> done
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> done
+  top_pred:
+    - 0.026774	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.022357	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.022155	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.021282	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.020808	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> bound
+
+[Line 92] Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for 192.168.30.133 on ens33.
+  log_key: Nov * *:*:* localhost avahi-daemon[*]: Withdrawing address record for * on ens*.
+  top_pred:
+    - 0.038702	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.030950	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.030659	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.030486	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.028923	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> bound
+
+[Line 93] Nov 25 13:25:42 localhost avahi-daemon[599]: Leaving mDNS multicast group on interface ens33.IPv4 with address 192.168.30.133.
+  log_key: Nov * *:*:* localhost avahi-daemon[*]: Leaving mDNS multicast group on interface ens*.IPv* with address *.
+  top_pred:
+    - 0.039671	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.031473	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.030792	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.030350	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.028434	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> bound
+
+[Line 94] Nov 25 13:25:42 localhost avahi-daemon[599]: Interface ens33.IPv4 no longer relevant for mDNS.
+  log_key: Nov * *:*:* localhost avahi-daemon[*]: Interface ens*.IPv* no longer relevant for mDNS.
+  top_pred:
+    - 0.044106	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.035223	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.033705	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.031857	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> bound
+    - 0.031827	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+
+[Line 95] Nov 25 13:25:43 localhost kernel: usb 2-2.1: USB disconnect, device number 6
+  log_key: Nov * *:*:* localhost kernel: usb *-*.*: USB disconnect, device number *
+  top_pred:
+    - 0.045311	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.036314	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.032979	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.030937	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> bound
+    - 0.030890	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+
+[Line 96] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9318] dhcp4 (ens33): canceled DHCP transaction, DHCP client pid 8987
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): canceled DHCP transaction, DHCP client pid *
+  top_pred:
+    - 0.044567	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.033758	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.029658	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.028791	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+    - 0.028630	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+
+[Line 97] Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9323] dhcp4 (ens33): state changed bound -> done
+  log_key: Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> done
+  top_pred:
+    - 0.034330	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.028293	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.025188	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.024185	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+    - 0.023888	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+
+[Line 98] Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for 192.168.30.133 on ens33.
+  log_key: Nov * *:*:* localhost avahi-daemon[*]: Withdrawing address record for * on ens*.
+  top_pred:
+    - 0.029733	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.024457	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.021892	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.021883	Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*)
+    - 0.021755	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+
+[Line 99] Nov 25 13:25:42 localhost avahi-daemon[599]: Leaving mDNS multicast group on interface ens33.IPv4 with address 192.168.30.133.
+  log_key: Nov * *:*:* localhost avahi-daemon[*]: Leaving mDNS multicast group on interface ens*.IPv* with address *.
+  top_pred:
+    - 0.036938	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.029827	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.026555	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.025215	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.024768	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+
+[Line 100] Nov 25 13:25:42 localhost avahi-daemon[599]: Interface ens33.IPv4 no longer relevant for mDNS.
+  log_key: Nov * *:*:* localhost avahi-daemon[*]: Interface ens*.IPv* no longer relevant for mDNS.
+  top_pred:
+    - 0.053398	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.041846	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.037962	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.035687	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> bound
+    - 0.035559	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+
+[Line 101] Nov 25 13:25:43 localhost kernel: usb 2-2.1: USB disconnect, device number 6
+  log_key: Nov * *:*:* localhost kernel: usb *-*.*: USB disconnect, device number *
+  top_pred:
+    - 0.045311	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.036314	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.032979	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.030937	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> bound
+    - 0.030890	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+
+[Line 102] Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint unregistered: sender=:1.74 path=/MediaEndpoint/A2DPSource
+  log_key: Jan * *:*:* localhost bluetoothd[*]: Endpoint unregistered: sender=:*.* path=/*
+  top_pred:
+    - 0.044567	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.033758	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.029658	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.028791	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+    - 0.028630	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+
+[Line 103] Jan 20 10:44:56 localhost systemd: Time has been changed
+  log_key: Jan * *:*:* localhost systemd: Time has been changed
+  top_pred:
+    - 0.034360	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.028244	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.024966	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.024452	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+    - 0.024188	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+
+[Line 104] Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint unregistered: sender=:1.74 path=/MediaEndpoint/A2DPSink
+  log_key: Jan * *:*:* localhost bluetoothd[*]: Endpoint unregistered: sender=:*.* path=/*
+  top_pred:
+    - 0.029231	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.024354	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.021906	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.021850	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+    - 0.021742	Nov * *:*:* localhost dhclient[*]: DHCPACK from * (*=*xc*d*bb*)
+
+[Line 105] Jan 20 10:44:56 localhost systemd: Starting update of the root trust anchor for DNSSEC validation in unbound...
+  log_key: Jan * *:*:* localhost systemd: Starting update of the root trust anchor for DNSSEC validation in unbound...
+  top_pred:
+    - 0.035025	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.029305	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.025204	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.025101	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+    - 0.024402	Nov * *:*:* localhost systemd: Removed slice User Slice of root.
+
+[Line 106] Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+  log_key: Jan * *:*:* localhost dbus[*]: [system] Rejected send message, * matched rules; type="ERROR", sender=":*.*" (*=* *=* comm="/* --start --log-target=syslog ") interface="(unset)" member="(unse...
+  top_pred:
+    - 0.050352	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.041085	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.036210	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.034646	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> bound
+    - 0.033187	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+
+[Line 107] Jan 20 10:44:56 localhost systemd: Stopping Load/Save RF Kill Switch Status of rfkill2...
+  log_key: Jan * *:*:* localhost systemd: Stopping Load/* RF Kill Switch Status of rfkill*...
+  top_pred:
+    - 0.042748	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.034875	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.031816	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.029876	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*): state changed bound -> bound
+    - 0.029832	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+
+[Line 108] Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+  log_key: Jan * *:*:* localhost dbus[*]: [system] Rejected send message, * matched rules; type="ERROR", sender=":*.*" (*=* *=* comm="/* --start --log-target=syslog ") interface="(unset)" member="(unse...
+  top_pred:
+    - 0.043935	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.032912	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.031105	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.030465	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.029782	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+
+[Line 109] Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+  log_key: Jan * *:*:* localhost dbus[*]: [system] Rejected send message, * matched rules; type="ERROR", sender=":*.*" (*=* *=* comm="/* --start --log-target=syslog ") interface="(unset)" member="(unse...
+  top_pred:
+    - 0.044576	Nov * *:*:* localhost systemd: Started Session * of user root.
+    - 0.032080	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   nameserver '*'
+    - 0.031863	Nov * *:*:* localhost NetworkManager[*]: <INFO>  [*.*] dhcp* (ens*):   domain name 'localdomain'
+    - 0.031218	Nov * *:*:* localhost dhclient[*]: bound to * -- renewal in * seconds.
+    - 0.030256	Nov * *:*:* localhost dhclient[*]: DHCPREQUEST on ens* to * port * (*=*xc*d*bb*)
+

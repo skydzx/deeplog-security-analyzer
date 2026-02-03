@@ -1,0 +1,125 @@
+DeepLog日志分析报告
+==================================================
+
+统计信息:
+------------------------------
+总日志数: 119
+异常日志: 38
+正常日志: 81
+.1f
+异常日志详情:
+------------------------------
+行 9: Jan 15 15:36:29 dzx systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+  类型: 执行路径异常
+
+行 10: Jan 15 15:36:50 dzx login[916]: pam_unix(login:session): session opened for user root(uid=0) by (uid=0)
+  类型: 执行路径异常
+
+行 11: Jan 15 15:36:50 dzx systemd-logind[192]: New session 4 of user root.
+  类型: 执行路径异常
+
+行 12: Jan 15 15:36:50 dzx login[946]: ROOT LOGIN  on '/dev/pts/5'
+  类型: 执行路径异常
+
+行 15: Jan 15 15:45:03 dzx systemd-logind[192]: Session c1 logged out. Waiting for processes to exit.
+  类型: 执行路径异常
+
+行 19: Jan 15 15:47:24 dzx su: (to root) root on pts/2
+  类型: 执行路径异常
+
+行 22: Jan 15 15:56:52 dzx sudo:      dzx : TTY=pts/6 ; PWD=/mnt/c/Users/win11 ; USER=root ; COMMAND=/usr/bin/su
+  类型: 执行路径异常
+
+行 23: Jan 15 15:56:52 dzx sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+  类型: 执行路径异常
+
+行 35: Jan 15 16:47:23 dzx su: (to root) root on pts/2
+  类型: 执行路径异常
+
+行 44: Jan 15 17:31:07 dzx su: pam_unix(su:session): session closed for user root
+  类型: 执行路径异常
+
+行 45: Jan 15 17:31:08 dzx sudo: pam_unix(sudo:session): session closed for user root
+  类型: 执行路径异常
+
+行 46: Jan 15 17:31:08 dzx systemd-logind[192]: Session c3 logged out. Waiting for processes to exit.
+  类型: 执行路径异常
+
+行 48: Jan 16 08:50:21 dzx systemd-logind[192]: New seat seat0.
+  类型: 执行路径异常
+
+行 49: Jan 16 08:50:22 dzx login[352]: pam_unix(login:session): session opened for user dzx(uid=1000) by (uid=0)
+  类型: 执行路径异常
+
+行 50: Jan 16 08:50:23 dzx systemd-logind[192]: New session 1 of user dzx.
+  类型: 执行路径异常
+
+行 51: Jan 16 08:50:23 dzx systemd: pam_unix(systemd-user:session): session opened for user dzx(uid=1000) by (uid=0)
+  类型: 执行路径异常
+
+行 52: Jan 16 08:50:26 dzx login[533]: pam_unix(login:session): session opened for user root(uid=0) by (uid=0)
+  类型: 执行路径异常
+
+行 53: Jan 16 08:50:26 dzx systemd-logind[192]: New session 3 of user root.
+  类型: 执行路径异常
+
+行 54: Jan 16 08:50:26 dzx systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+  类型: 执行路径异常
+
+行 55: Jan 16 08:50:26 dzx login[571]: ROOT LOGIN  on '/dev/pts/4'
+  类型: 执行路径异常
+
+行 61: Jan 16 09:04:06 dzx su: pam_unix(su:session): session closed for user root
+  类型: 执行路径异常
+
+行 62: Jan 16 09:04:06 dzx systemd-logind[192]: Session c1 logged out. Waiting for processes to exit.
+  类型: 执行路径异常
+
+行 65: Jan 16 09:04:39 dzx sudo:      dzx : TTY=pts/0 ; PWD=/mnt/d/PycharmProjects/AI知识库 ; USER=root ; COMMAND=/usr/bin/su
+  类型: 执行路径异常
+
+行 75: Jan 16 10:20:28 dzx systemd-logind[192]: Session c2 logged out. Waiting for processes to exit.
+  类型: 执行路径异常
+
+行 88: Jan 16 12:54:38 dzx systemd-logind[192]: Session c3 logged out. Waiting for processes to exit.
+  类型: 执行路径异常
+
+行 91: Jan 16 13:17:03 dzx CRON[3141]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+  类型: 执行路径异常
+
+行 93: Jan 16 14:17:04 dzx CRON[3156]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+  类型: 执行路径异常
+
+行 95: Jan 16 15:17:03 dzx CRON[3170]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+  类型: 执行路径异常
+
+行 101: Jan 16 16:32:35 dzx su: (to root) root on pts/5
+  类型: 执行路径异常
+
+行 104: Jan 16 17:16:23 dzx su: pam_unix(su:session): session closed for user root
+  类型: 执行路径异常
+
+行 108: Jan 16 17:17:03 dzx CRON[3589]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+  类型: 执行路径异常
+
+行 110: Jan 19 09:37:54 dzx systemd-logind[197]: New seat seat0.
+  类型: 执行路径异常
+
+行 111: Jan 19 09:37:56 dzx login[354]: pam_unix(login:session): session opened for user dzx(uid=1000) by (uid=0)
+  类型: 执行路径异常
+
+行 112: Jan 19 09:37:56 dzx systemd-logind[197]: New session 1 of user dzx.
+  类型: 执行路径异常
+
+行 113: Jan 19 09:37:56 dzx systemd: pam_unix(systemd-user:session): session opened for user dzx(uid=1000) by (uid=0)
+  类型: 执行路径异常
+
+行 114: Jan 19 09:38:05 dzx sudo:      dzx : TTY=pts/0 ; PWD=/mnt/d/PycharmProjects/deeplog ; USER=root ; COMMAND=/usr/bin/su
+  类型: 执行路径异常
+
+行 115: Jan 19 09:38:05 dzx sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+  类型: 执行路径异常
+
+行 119: Jan 19 09:38:05 dzx systemd: pam_unix(systemd-user:session): session opened for user root(uid=0) by (uid=0)
+  类型: 执行路径异常
+

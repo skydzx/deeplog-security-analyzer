@@ -1,0 +1,1187 @@
+{
+  "analysis_time": "2026-02-03T10:44:46.072263",
+  "sources": [
+    {
+      "type": "log",
+      "path": "logs\\test_anomalies.log",
+      "log_type": "linux"
+    }
+  ],
+  "log_analysis": {
+    "log_type": "linux",
+    "stats": {
+      "total_events": 71,
+      "by_threat_level": {
+        "info": 59,
+        "medium": 12
+      },
+      "by_attack_type": {
+        "未知": 59,
+        "磁盘空间不足": 2,
+        "暴力破解": 4,
+        "服务崩溃": 6
+      },
+      "source_ips": {
+        "192.168.30.254": 4,
+        "192.168.1.100": 3
+      },
+      "critical_events": []
+    },
+    "timeline": [
+      {
+        "order": 1,
+        "timestamp": "2026-11-25T10:13:52",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:13:52 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)"
+      },
+      {
+        "order": 2,
+        "timestamp": "2026-11-25T10:13:52",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": "192.168.30.254",
+        "raw_log": "Nov 25 10:13:52 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)"
+      },
+      {
+        "order": 3,
+        "timestamp": "2026-11-25T10:13:52",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6781] dhcp4 (ens33):   address 192.168.30.133"
+      },
+      {
+        "order": 4,
+        "timestamp": "2026-11-25T10:13:52",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6786] dhcp4 (ens33):   plen 24 (255.255.255.0)"
+      },
+      {
+        "order": 5,
+        "timestamp": "2026-11-25T10:13:52",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   gateway 192.168.30.2"
+      },
+      {
+        "order": 6,
+        "timestamp": "2026-11-25T10:13:52",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   lease time 1800"
+      },
+      {
+        "order": 7,
+        "timestamp": "2026-11-25T10:13:52",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6788] dhcp4 (ens33):   nameserver '192.168.30.2'"
+      },
+      {
+        "order": 8,
+        "timestamp": "2026-11-25T10:13:52",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6789] dhcp4 (ens33):   domain name 'localdomain'"
+      },
+      {
+        "order": 9,
+        "timestamp": "2026-11-25T10:13:52",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6789] dhcp4 (ens33): state changed bound -> bound"
+      },
+      {
+        "order": 10,
+        "timestamp": "2026-11-25T10:13:52",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:13:52 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 879 seconds."
+      },
+      {
+        "order": 11,
+        "timestamp": "2026-11-25T10:20:01",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:20:01 localhost systemd: Started Session 47 of user root."
+      },
+      {
+        "order": 12,
+        "timestamp": "2026-11-25T10:28:31",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:28:31 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)"
+      },
+      {
+        "order": 13,
+        "timestamp": "2026-11-25T10:28:31",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": "192.168.30.254",
+        "raw_log": "Nov 25 10:28:31 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)"
+      },
+      {
+        "order": 14,
+        "timestamp": "2026-11-25T10:28:32",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037711.9998] dhcp4 (ens33):   address 192.168.30.133"
+      },
+      {
+        "order": 15,
+        "timestamp": "2026-11-25T10:28:32",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   plen 24 (255.255.255.0)"
+      },
+      {
+        "order": 16,
+        "timestamp": "2026-11-25T10:28:32",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   gateway 192.168.30.2"
+      },
+      {
+        "order": 17,
+        "timestamp": "2026-11-25T10:28:32",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   lease time 1800"
+      },
+      {
+        "order": 18,
+        "timestamp": "2026-11-25T10:28:32",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33):   nameserver '192.168.30.2'"
+      },
+      {
+        "order": 19,
+        "timestamp": "2026-11-25T10:28:32",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33):   domain name 'localdomain'"
+      },
+      {
+        "order": 20,
+        "timestamp": "2026-11-25T10:28:32",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33): state changed bound -> bound"
+      },
+      {
+        "order": 21,
+        "timestamp": "2026-11-25T10:28:32",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:28:32 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 764 seconds."
+      },
+      {
+        "order": 22,
+        "timestamp": "2026-11-25T10:30:01",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:30:01 localhost systemd: Started Session 48 of user root."
+      },
+      {
+        "order": 23,
+        "timestamp": "2026-11-25T10:40:01",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:40:01 localhost systemd: Started Session 49 of user root."
+      },
+      {
+        "order": 24,
+        "timestamp": "2026-11-25T10:45:30",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:45:30 localhost mysql[12345]: ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)"
+      },
+      {
+        "order": 25,
+        "timestamp": "2026-11-25T10:45:31",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:45:31 localhost mysql[12345]: ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (111)"
+      },
+      {
+        "order": 26,
+        "timestamp": "2026-11-25T10:45:32",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:45:32 localhost mysql[12345]: FATAL ERROR: Unable to connect to database after 3 attempts"
+      },
+      {
+        "order": 27,
+        "timestamp": "2026-11-25T10:50:01",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:50:01 localhost systemd: Started Session 50 of user root."
+      },
+      {
+        "order": 28,
+        "timestamp": "2026-11-25T10:52:02",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:52:02 localhost systemd: Removed slice User Slice of root."
+      },
+      {
+        "order": 29,
+        "timestamp": "2026-11-25T10:53:21",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:53:21 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)"
+      },
+      {
+        "order": 30,
+        "timestamp": "2026-11-25T10:53:21",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": "192.168.30.254",
+        "raw_log": "Nov 25 10:53:21 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)"
+      },
+      {
+        "order": 31,
+        "timestamp": "2026-11-25T10:53:21",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7705] dhcp4 (ens33):   address 192.168.30.133"
+      },
+      {
+        "order": 32,
+        "timestamp": "2026-11-25T10:53:21",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7709] dhcp4 (ens33):   plen 24 (255.255.255.0)"
+      },
+      {
+        "order": 33,
+        "timestamp": "2026-11-25T10:53:21",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   gateway 192.168.30.2"
+      },
+      {
+        "order": 34,
+        "timestamp": "2026-11-25T10:53:21",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   lease time 1800"
+      },
+      {
+        "order": 35,
+        "timestamp": "2026-11-25T10:53:21",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7711] dhcp4 (ens33):   nameserver '192.168.30.2'"
+      },
+      {
+        "order": 36,
+        "timestamp": "2026-11-25T10:53:21",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7711] dhcp4 (ens33):   domain name 'localdomain'"
+      },
+      {
+        "order": 37,
+        "timestamp": "2026-11-25T10:53:21",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7712] dhcp4 (ens33): state changed bound -> bound"
+      },
+      {
+        "order": 38,
+        "timestamp": "2026-11-25T10:53:21",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 10:53:21 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 838 seconds."
+      },
+      {
+        "order": 44,
+        "timestamp": "2026-11-25T11:00:01",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:00:01 localhost systemd: Created slice User Slice of root."
+      },
+      {
+        "order": 45,
+        "timestamp": "2026-11-25T11:00:01",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:00:01 localhost systemd: Started Session 52 of user root."
+      },
+      {
+        "order": 46,
+        "timestamp": "2026-11-25T11:00:01",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:00:01 localhost systemd: Started Session 51 of user root."
+      },
+      {
+        "order": 47,
+        "timestamp": "2026-11-25T11:00:01",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:00:01 localhost systemd: Removed slice User Slice of root."
+      },
+      {
+        "order": 39,
+        "timestamp": "2026-11-25T11:00:15",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:00:15 localhost systemd[1]: Started Cleanup of Temporary Directories."
+      },
+      {
+        "order": 40,
+        "timestamp": "2026-11-25T11:00:16",
+        "threat": "medium",
+        "attack_type": "磁盘空间不足",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:00:16 localhost systemd-tmpfiles[6789]: No space left on device"
+      },
+      {
+        "order": 41,
+        "timestamp": "2026-11-25T11:00:17",
+        "threat": "medium",
+        "attack_type": "磁盘空间不足",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:00:17 localhost systemd-tmpfiles[6789]: rm: cannot remove '/tmp/large_file.dat': No space left on device"
+      },
+      {
+        "order": 42,
+        "timestamp": "2026-11-25T11:00:18",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:00:18 localhost kernel: EXT4-fs error (device sda1): ext4_find_entry:1431: inode #12345678: block 1234567: comm systemd-tmpfile: reading directory lblock 0"
+      },
+      {
+        "order": 43,
+        "timestamp": "2026-11-25T11:00:19",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:00:19 localhost kernel: EXT4-fs (sda1): previous I/O error to superblock detected"
+      },
+      {
+        "order": 48,
+        "timestamp": "2026-11-25T11:01:02",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:01:02 localhost systemd: Created slice User Slice of root."
+      },
+      {
+        "order": 49,
+        "timestamp": "2026-11-25T11:15:45",
+        "threat": "medium",
+        "attack_type": "暴力破解",
+        "source_ip": "192.168.1.100",
+        "raw_log": "Nov 25 11:15:45 localhost sshd[9999]: Failed password for invalid user hacker from 192.168.1.100 port 22 ssh2"
+      },
+      {
+        "order": 50,
+        "timestamp": "2026-11-25T11:15:46",
+        "threat": "medium",
+        "attack_type": "暴力破解",
+        "source_ip": "192.168.1.100",
+        "raw_log": "Nov 25 11:15:46 localhost sshd[9999]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2"
+      },
+      {
+        "order": 51,
+        "timestamp": "2026-11-25T11:15:47",
+        "threat": "medium",
+        "attack_type": "暴力破解",
+        "source_ip": "192.168.1.100",
+        "raw_log": "Nov 25 11:15:47 localhost sshd[9999]: Failed password for invalid user root from 192.168.1.100 port 22 ssh2"
+      },
+      {
+        "order": 52,
+        "timestamp": "2026-11-25T11:15:48",
+        "threat": "medium",
+        "attack_type": "暴力破解",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:15:48 localhost sshd[9999]: Connection closed by 192.168.1.100 port 22 [preauth]"
+      },
+      {
+        "order": 53,
+        "timestamp": "2026-11-25T11:15:49",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:15:49 localhost iptables[1]: IN=ens33 OUT= MAC=00:0c:29:3f:8e:1a:00:50:56:c0:00:08:08:00 SRC=192.168.1.100 DST=192.168.30.133 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=12345 DF PROTO=TCP SPT=22 DP"
+      },
+      {
+        "order": 54,
+        "timestamp": "2026-11-25T11:20:01",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:20:01 localhost systemd: Created slice User Slice of root."
+      },
+      {
+        "order": 55,
+        "timestamp": "2026-11-25T11:20:20",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:20:20 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)"
+      },
+      {
+        "order": 56,
+        "timestamp": "2026-11-25T11:20:20",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": "192.168.30.254",
+        "raw_log": "Nov 25 11:20:20 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)"
+      },
+      {
+        "order": 57,
+        "timestamp": "2026-11-25T11:20:20",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4160] dhcp4 (ens33):   address 192.168.30.133"
+      },
+      {
+        "order": 58,
+        "timestamp": "2026-11-25T11:20:20",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4163] dhcp4 (ens33):   gateway 192.168.30.2"
+      },
+      {
+        "order": 59,
+        "timestamp": "2026-11-25T11:20:20",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4164] dhcp4 (ens33):   lease time 1800"
+      },
+      {
+        "order": 60,
+        "timestamp": "2026-11-25T11:20:20",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4165] dhcp4 (ens33):   nameserver '192.168.30.2'"
+      },
+      {
+        "order": 61,
+        "timestamp": "2026-11-25T11:20:20",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4165] dhcp4 (ens33):   domain name 'localdomain'"
+      },
+      {
+        "order": 62,
+        "timestamp": "2026-11-25T11:20:20",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4165] dhcp4 (ens33): state changed bound -> bound"
+      },
+      {
+        "order": 63,
+        "timestamp": "2026-11-25T11:20:20",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:20:20 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 725 seconds."
+      },
+      {
+        "order": 70,
+        "timestamp": "2026-11-25T11:30:01",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:30:01 localhost systemd: Created slice User Slice of root."
+      },
+      {
+        "order": 64,
+        "timestamp": "2026-11-25T11:30:22",
+        "threat": "medium",
+        "attack_type": "服务崩溃",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:30:22 localhost httpd[7777]: [error] server reached MaxClients setting, consider raising the MaxClients setting"
+      },
+      {
+        "order": 65,
+        "timestamp": "2026-11-25T11:30:23",
+        "threat": "medium",
+        "attack_type": "服务崩溃",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:30:23 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex"
+      },
+      {
+        "order": 66,
+        "timestamp": "2026-11-25T11:30:24",
+        "threat": "medium",
+        "attack_type": "服务崩溃",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:30:24 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex"
+      },
+      {
+        "order": 67,
+        "timestamp": "2026-11-25T11:30:25",
+        "threat": "medium",
+        "attack_type": "服务崩溃",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:30:25 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex"
+      },
+      {
+        "order": 68,
+        "timestamp": "2026-11-25T11:30:26",
+        "threat": "medium",
+        "attack_type": "服务崩溃",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:30:26 localhost systemd[1]: httpd.service: Main process exited, code=exited, status=1/FAILURE"
+      },
+      {
+        "order": 69,
+        "timestamp": "2026-11-25T11:30:27",
+        "threat": "medium",
+        "attack_type": "服务崩溃",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:30:27 localhost systemd[1]: httpd.service: Failed with result 'exit-code'."
+      },
+      {
+        "order": 71,
+        "timestamp": "2026-11-25T11:40:01",
+        "threat": "info",
+        "attack_type": "未知",
+        "source_ip": null,
+        "raw_log": "Nov 25 11:40:01 localhost systemd: Started Session 60 of user root."
+      }
+    ]
+  },
+  "webshell_analysis": null,
+  "timeline": [
+    {
+      "order": 1,
+      "timestamp": "2026-11-25T10:13:52",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:13:52 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)"
+    },
+    {
+      "order": 2,
+      "timestamp": "2026-11-25T10:13:52",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": "192.168.30.254",
+      "raw_log": "Nov 25 10:13:52 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)"
+    },
+    {
+      "order": 3,
+      "timestamp": "2026-11-25T10:13:52",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6781] dhcp4 (ens33):   address 192.168.30.133"
+    },
+    {
+      "order": 4,
+      "timestamp": "2026-11-25T10:13:52",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6786] dhcp4 (ens33):   plen 24 (255.255.255.0)"
+    },
+    {
+      "order": 5,
+      "timestamp": "2026-11-25T10:13:52",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   gateway 192.168.30.2"
+    },
+    {
+      "order": 6,
+      "timestamp": "2026-11-25T10:13:52",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   lease time 1800"
+    },
+    {
+      "order": 7,
+      "timestamp": "2026-11-25T10:13:52",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6788] dhcp4 (ens33):   nameserver '192.168.30.2'"
+    },
+    {
+      "order": 8,
+      "timestamp": "2026-11-25T10:13:52",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6789] dhcp4 (ens33):   domain name 'localdomain'"
+    },
+    {
+      "order": 9,
+      "timestamp": "2026-11-25T10:13:52",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6789] dhcp4 (ens33): state changed bound -> bound"
+    },
+    {
+      "order": 10,
+      "timestamp": "2026-11-25T10:13:52",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:13:52 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 879 seconds."
+    },
+    {
+      "order": 11,
+      "timestamp": "2026-11-25T10:20:01",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:20:01 localhost systemd: Started Session 47 of user root."
+    },
+    {
+      "order": 12,
+      "timestamp": "2026-11-25T10:28:31",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:28:31 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)"
+    },
+    {
+      "order": 13,
+      "timestamp": "2026-11-25T10:28:31",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": "192.168.30.254",
+      "raw_log": "Nov 25 10:28:31 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)"
+    },
+    {
+      "order": 14,
+      "timestamp": "2026-11-25T10:28:32",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037711.9998] dhcp4 (ens33):   address 192.168.30.133"
+    },
+    {
+      "order": 15,
+      "timestamp": "2026-11-25T10:28:32",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   plen 24 (255.255.255.0)"
+    },
+    {
+      "order": 16,
+      "timestamp": "2026-11-25T10:28:32",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   gateway 192.168.30.2"
+    },
+    {
+      "order": 17,
+      "timestamp": "2026-11-25T10:28:32",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   lease time 1800"
+    },
+    {
+      "order": 18,
+      "timestamp": "2026-11-25T10:28:32",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33):   nameserver '192.168.30.2'"
+    },
+    {
+      "order": 19,
+      "timestamp": "2026-11-25T10:28:32",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33):   domain name 'localdomain'"
+    },
+    {
+      "order": 20,
+      "timestamp": "2026-11-25T10:28:32",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33): state changed bound -> bound"
+    },
+    {
+      "order": 21,
+      "timestamp": "2026-11-25T10:28:32",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:28:32 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 764 seconds."
+    },
+    {
+      "order": 22,
+      "timestamp": "2026-11-25T10:30:01",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:30:01 localhost systemd: Started Session 48 of user root."
+    },
+    {
+      "order": 23,
+      "timestamp": "2026-11-25T10:40:01",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:40:01 localhost systemd: Started Session 49 of user root."
+    },
+    {
+      "order": 24,
+      "timestamp": "2026-11-25T10:45:30",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:45:30 localhost mysql[12345]: ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)"
+    },
+    {
+      "order": 25,
+      "timestamp": "2026-11-25T10:45:31",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:45:31 localhost mysql[12345]: ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (111)"
+    },
+    {
+      "order": 26,
+      "timestamp": "2026-11-25T10:45:32",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:45:32 localhost mysql[12345]: FATAL ERROR: Unable to connect to database after 3 attempts"
+    },
+    {
+      "order": 27,
+      "timestamp": "2026-11-25T10:50:01",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:50:01 localhost systemd: Started Session 50 of user root."
+    },
+    {
+      "order": 28,
+      "timestamp": "2026-11-25T10:52:02",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:52:02 localhost systemd: Removed slice User Slice of root."
+    },
+    {
+      "order": 29,
+      "timestamp": "2026-11-25T10:53:21",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:53:21 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)"
+    },
+    {
+      "order": 30,
+      "timestamp": "2026-11-25T10:53:21",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": "192.168.30.254",
+      "raw_log": "Nov 25 10:53:21 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)"
+    },
+    {
+      "order": 31,
+      "timestamp": "2026-11-25T10:53:21",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7705] dhcp4 (ens33):   address 192.168.30.133"
+    },
+    {
+      "order": 32,
+      "timestamp": "2026-11-25T10:53:21",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7709] dhcp4 (ens33):   plen 24 (255.255.255.0)"
+    },
+    {
+      "order": 33,
+      "timestamp": "2026-11-25T10:53:21",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   gateway 192.168.30.2"
+    },
+    {
+      "order": 34,
+      "timestamp": "2026-11-25T10:53:21",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   lease time 1800"
+    },
+    {
+      "order": 35,
+      "timestamp": "2026-11-25T10:53:21",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7711] dhcp4 (ens33):   nameserver '192.168.30.2'"
+    },
+    {
+      "order": 36,
+      "timestamp": "2026-11-25T10:53:21",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7711] dhcp4 (ens33):   domain name 'localdomain'"
+    },
+    {
+      "order": 37,
+      "timestamp": "2026-11-25T10:53:21",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7712] dhcp4 (ens33): state changed bound -> bound"
+    },
+    {
+      "order": 38,
+      "timestamp": "2026-11-25T10:53:21",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 10:53:21 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 838 seconds."
+    },
+    {
+      "order": 44,
+      "timestamp": "2026-11-25T11:00:01",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:00:01 localhost systemd: Created slice User Slice of root."
+    },
+    {
+      "order": 45,
+      "timestamp": "2026-11-25T11:00:01",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:00:01 localhost systemd: Started Session 52 of user root."
+    },
+    {
+      "order": 46,
+      "timestamp": "2026-11-25T11:00:01",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:00:01 localhost systemd: Started Session 51 of user root."
+    },
+    {
+      "order": 47,
+      "timestamp": "2026-11-25T11:00:01",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:00:01 localhost systemd: Removed slice User Slice of root."
+    },
+    {
+      "order": 39,
+      "timestamp": "2026-11-25T11:00:15",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:00:15 localhost systemd[1]: Started Cleanup of Temporary Directories."
+    },
+    {
+      "order": 40,
+      "timestamp": "2026-11-25T11:00:16",
+      "threat": "medium",
+      "attack_type": "磁盘空间不足",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:00:16 localhost systemd-tmpfiles[6789]: No space left on device"
+    },
+    {
+      "order": 41,
+      "timestamp": "2026-11-25T11:00:17",
+      "threat": "medium",
+      "attack_type": "磁盘空间不足",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:00:17 localhost systemd-tmpfiles[6789]: rm: cannot remove '/tmp/large_file.dat': No space left on device"
+    },
+    {
+      "order": 42,
+      "timestamp": "2026-11-25T11:00:18",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:00:18 localhost kernel: EXT4-fs error (device sda1): ext4_find_entry:1431: inode #12345678: block 1234567: comm systemd-tmpfile: reading directory lblock 0"
+    },
+    {
+      "order": 43,
+      "timestamp": "2026-11-25T11:00:19",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:00:19 localhost kernel: EXT4-fs (sda1): previous I/O error to superblock detected"
+    },
+    {
+      "order": 48,
+      "timestamp": "2026-11-25T11:01:02",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:01:02 localhost systemd: Created slice User Slice of root."
+    },
+    {
+      "order": 49,
+      "timestamp": "2026-11-25T11:15:45",
+      "threat": "medium",
+      "attack_type": "暴力破解",
+      "source_ip": "192.168.1.100",
+      "raw_log": "Nov 25 11:15:45 localhost sshd[9999]: Failed password for invalid user hacker from 192.168.1.100 port 22 ssh2"
+    },
+    {
+      "order": 50,
+      "timestamp": "2026-11-25T11:15:46",
+      "threat": "medium",
+      "attack_type": "暴力破解",
+      "source_ip": "192.168.1.100",
+      "raw_log": "Nov 25 11:15:46 localhost sshd[9999]: Failed password for invalid user admin from 192.168.1.100 port 22 ssh2"
+    },
+    {
+      "order": 51,
+      "timestamp": "2026-11-25T11:15:47",
+      "threat": "medium",
+      "attack_type": "暴力破解",
+      "source_ip": "192.168.1.100",
+      "raw_log": "Nov 25 11:15:47 localhost sshd[9999]: Failed password for invalid user root from 192.168.1.100 port 22 ssh2"
+    },
+    {
+      "order": 52,
+      "timestamp": "2026-11-25T11:15:48",
+      "threat": "medium",
+      "attack_type": "暴力破解",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:15:48 localhost sshd[9999]: Connection closed by 192.168.1.100 port 22 [preauth]"
+    },
+    {
+      "order": 53,
+      "timestamp": "2026-11-25T11:15:49",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:15:49 localhost iptables[1]: IN=ens33 OUT= MAC=00:0c:29:3f:8e:1a:00:50:56:c0:00:08:08:00 SRC=192.168.1.100 DST=192.168.30.133 LEN=40 TOS=0x00 PREC=0x00 TTL=64 ID=12345 DF PROTO=TCP SPT=22 DP"
+    },
+    {
+      "order": 54,
+      "timestamp": "2026-11-25T11:20:01",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:20:01 localhost systemd: Created slice User Slice of root."
+    },
+    {
+      "order": 55,
+      "timestamp": "2026-11-25T11:20:20",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:20:20 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)"
+    },
+    {
+      "order": 56,
+      "timestamp": "2026-11-25T11:20:20",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": "192.168.30.254",
+      "raw_log": "Nov 25 11:20:20 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)"
+    },
+    {
+      "order": 57,
+      "timestamp": "2026-11-25T11:20:20",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4160] dhcp4 (ens33):   address 192.168.30.133"
+    },
+    {
+      "order": 58,
+      "timestamp": "2026-11-25T11:20:20",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4163] dhcp4 (ens33):   gateway 192.168.30.2"
+    },
+    {
+      "order": 59,
+      "timestamp": "2026-11-25T11:20:20",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4164] dhcp4 (ens33):   lease time 1800"
+    },
+    {
+      "order": 60,
+      "timestamp": "2026-11-25T11:20:20",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4165] dhcp4 (ens33):   nameserver '192.168.30.2'"
+    },
+    {
+      "order": 61,
+      "timestamp": "2026-11-25T11:20:20",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4165] dhcp4 (ens33):   domain name 'localdomain'"
+    },
+    {
+      "order": 62,
+      "timestamp": "2026-11-25T11:20:20",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4165] dhcp4 (ens33): state changed bound -> bound"
+    },
+    {
+      "order": 63,
+      "timestamp": "2026-11-25T11:20:20",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:20:20 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 725 seconds."
+    },
+    {
+      "order": 70,
+      "timestamp": "2026-11-25T11:30:01",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:30:01 localhost systemd: Created slice User Slice of root."
+    },
+    {
+      "order": 64,
+      "timestamp": "2026-11-25T11:30:22",
+      "threat": "medium",
+      "attack_type": "服务崩溃",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:30:22 localhost httpd[7777]: [error] server reached MaxClients setting, consider raising the MaxClients setting"
+    },
+    {
+      "order": 65,
+      "timestamp": "2026-11-25T11:30:23",
+      "threat": "medium",
+      "attack_type": "服务崩溃",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:30:23 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex"
+    },
+    {
+      "order": 66,
+      "timestamp": "2026-11-25T11:30:24",
+      "threat": "medium",
+      "attack_type": "服务崩溃",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:30:24 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex"
+    },
+    {
+      "order": 67,
+      "timestamp": "2026-11-25T11:30:25",
+      "threat": "medium",
+      "attack_type": "服务崩溃",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:30:25 localhost httpd[7777]: [emerg] (22)Invalid argument: couldn't grab the accept mutex"
+    },
+    {
+      "order": 68,
+      "timestamp": "2026-11-25T11:30:26",
+      "threat": "medium",
+      "attack_type": "服务崩溃",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:30:26 localhost systemd[1]: httpd.service: Main process exited, code=exited, status=1/FAILURE"
+    },
+    {
+      "order": 69,
+      "timestamp": "2026-11-25T11:30:27",
+      "threat": "medium",
+      "attack_type": "服务崩溃",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:30:27 localhost systemd[1]: httpd.service: Failed with result 'exit-code'."
+    },
+    {
+      "order": 71,
+      "timestamp": "2026-11-25T11:40:01",
+      "threat": "info",
+      "attack_type": "未知",
+      "source_ip": null,
+      "raw_log": "Nov 25 11:40:01 localhost systemd: Started Session 60 of user root."
+    }
+  ],
+  "recommendations": [
+    "[信息] 未发现严重威胁，建议定期审计日志和文件"
+  ],
+  "executive_summary": {
+    "risk_level": "低",
+    "total_critical_events": 0,
+    "total_high_events": 0,
+    "webshell_detected": false,
+    "attack_types": [
+      "未知",
+      "磁盘空间不足",
+      "暴力破解",
+      "服务崩溃"
+    ]
+  }
+}

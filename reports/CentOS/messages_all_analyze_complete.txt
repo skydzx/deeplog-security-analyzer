@@ -1,0 +1,161 @@
+DeepLog日志分析报告
+==================================================
+
+统计信息:
+------------------------------
+总日志数: 209
+异常日志: 150
+正常日志: 59
+.1f
+异常日志详情:
+------------------------------
+行 6: Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 12: Nov 25 10:28:31 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 13: Nov 25 10:28:31 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 14: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037711.9998] dhcp4 (ens33):   address 192.168.30.133
+  类型: 执行路径异常
+
+行 16: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 17: Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 24: Nov 25 10:41:16 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 28: Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7436] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 29: Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7437] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 36: Nov 25 10:53:21 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 40: Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 41: Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 46: Nov 25 11:00:01 localhost systemd: Created slice User Slice of root.
+  类型: 执行路径异常
+
+行 50: Nov 25 11:01:02 localhost systemd: Created slice User Slice of root.
+  类型: 执行路径异常
+
+行 53: Nov 25 11:07:19 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 55: Nov 25 11:07:19 localhost NetworkManager[3530]: <info>  [1764040039.1225] dhcp4 (ens33):   address 192.168.30.133
+  类型: 执行路径异常
+
+行 57: Nov 25 11:07:19 localhost NetworkManager[3530]: <info>  [1764040039.1230] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 58: Nov 25 11:07:19 localhost NetworkManager[3530]: <info>  [1764040039.1231] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 63: Nov 25 11:10:01 localhost systemd: Created slice User Slice of root.
+  类型: 执行路径异常
+
+行 66: Nov 25 11:20:01 localhost systemd: Created slice User Slice of root.
+  类型: 执行路径异常
+
+行 69: Nov 25 11:20:20 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+  类型: 执行路径异常
+
+行 71: Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4160] dhcp4 (ens33):   address 192.168.30.133
+  类型: 执行路径异常
+
+行 73: Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4163] dhcp4 (ens33):   gateway 192.168.30.2
+  类型: 执行路径异常
+
+行 74: Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4164] dhcp4 (ens33):   lease time 1800
+  类型: 执行路径异常
+
+行 79: Nov 25 11:30:01 localhost systemd: Created slice User Slice of root.
+  类型: 执行路径异常
+
+行 82: Nov 25 13:25:25 localhost systemd: Time has been changed
+  类型: 执行路径异常
+
+行 83: Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.5805] manager: disable requested (sleeping: no  enabled: yes)
+  类型: 执行路径异常
+
+行 84: Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.5839] device (virbr0): state change: disconnected -> unmanaged (reason 'sleeping', sys-iface-state: 'managed')
+  类型: 执行路径异常
+
+行 85: Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.6369] manager: NetworkManager state is now ASLEEP
+  类型: 执行路径异常
+
+行 86: Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7412] audit: op="networking-control" arg="off" pid=11369 uid=0 result="success"
+  类型: 执行路径异常
+
+行 87: Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7438] device (ens33): state change: activated -> deactivating (reason 'sleeping', sys-iface-state: 'managed')
+  类型: 执行路径异常
+
+行 88: Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7905] device (ens33): state change: deactivating -> disconnected (reason 'sleeping', sys-iface-state: 'managed')
+  类型: 执行路径异常
+
+行 89: Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for fe80::20c:29ff:fe34:765 on ens33.
+  类型: 执行路径异常
+
+行 90: Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9318] dhcp4 (ens33): canceled DHCP transaction, DHCP client pid 8987
+  类型: 执行路径异常
+
+行 91: Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9323] dhcp4 (ens33): state changed bound -> done
+  类型: 执行路径异常
+
+行 92: Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for 192.168.30.133 on ens33.
+  类型: 执行路径异常
+
+行 93: Nov 25 13:25:42 localhost avahi-daemon[599]: Leaving mDNS multicast group on interface ens33.IPv4 with address 192.168.30.133.
+  类型: 执行路径异常
+
+行 94: Nov 25 13:25:42 localhost avahi-daemon[599]: Interface ens33.IPv4 no longer relevant for mDNS.
+  类型: 执行路径异常
+
+行 95: Nov 25 13:25:43 localhost kernel: usb 2-2.1: USB disconnect, device number 6
+  类型: 执行路径异常
+
+行 96: Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9318] dhcp4 (ens33): canceled DHCP transaction, DHCP client pid 8987
+  类型: 执行路径异常
+
+行 97: Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9323] dhcp4 (ens33): state changed bound -> done
+  类型: 执行路径异常
+
+行 98: Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for 192.168.30.133 on ens33.
+  类型: 执行路径异常
+
+行 99: Nov 25 13:25:42 localhost avahi-daemon[599]: Leaving mDNS multicast group on interface ens33.IPv4 with address 192.168.30.133.
+  类型: 执行路径异常
+
+行 100: Nov 25 13:25:42 localhost avahi-daemon[599]: Interface ens33.IPv4 no longer relevant for mDNS.
+  类型: 执行路径异常
+
+行 101: Nov 25 13:25:43 localhost kernel: usb 2-2.1: USB disconnect, device number 6
+  类型: 执行路径异常
+
+行 102: Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint unregistered: sender=:1.74 path=/MediaEndpoint/A2DPSource
+  类型: 执行路径异常
+
+行 103: Jan 20 10:44:56 localhost systemd: Time has been changed
+  类型: 执行路径异常
+
+行 104: Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint unregistered: sender=:1.74 path=/MediaEndpoint/A2DPSink
+  类型: 执行路径异常
+
+行 105: Jan 20 10:44:56 localhost systemd: Starting update of the root trust anchor for DNSSEC validation in unbound...
+  类型: 执行路径异常
+
+行 106: Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+  类型: 执行路径异常
+
