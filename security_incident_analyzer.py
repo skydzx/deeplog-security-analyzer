@@ -367,8 +367,19 @@ class EnhancedSecurityAnalyzer:
 
         # ============== WebShell (T1505) ==============
         patterns.extend([
+            # 可疑文件名
             AttackPattern(
-                pattern=re.compile(r'\?cmd=|\?action=|\?exec=', re.IGNORECASE),
+                pattern=re.compile(r'shell\.php|cmd\.php|backdoor\.php|hack\.php|admin\.php', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1505',
+                description='可疑PHP文件',
+                detection_rule='WEBSHELL_SUSPICIOUS_FILE',
+                remediation='检测到可疑文件名，立即隔离文件'
+            ),
+            # WebShell命令参数
+            AttackPattern(
+                pattern=re.compile(r'\?cmd=|\?action=|\?exec=|\?c=|\?_=', re.IGNORECASE),
                 attack_category=AttackCategory.WEBSHELL,
                 threat_level=ThreatLevel.HIGH,
                 mitre_technique='T1505',
@@ -376,14 +387,126 @@ class EnhancedSecurityAnalyzer:
                 detection_rule='WEBSHELL_CMD_PARAM',
                 remediation='检测到可能的WebShell，审查文件内容'
             ),
+            # 一句话木马 - eval/assert/system
             AttackPattern(
-                pattern=re.compile(r'shell\.php|cmd\.php|backdoor\.php', re.IGNORECASE),
+                pattern=re.compile(r'\$\w+\s*=\s*[\'"]?(eval|assert|system|shell_exec|passthru|proc_open|popen)', re.IGNORECASE),
                 attack_category=AttackCategory.WEBSHELL,
                 threat_level=ThreatLevel.CRITICAL,
                 mitre_technique='T1505',
-                description='可疑PHP文件',
-                detection_rule='WEBSHELL_SUSPICIOUS_FILE',
-                remediation='检测到可疑文件名，立即隔离文件'
+                description='一句话木马(eval/assert/system)',
+                detection_rule='WEBSHELL_EVAL_ASSERT',
+                remediation='检测到一句话木马，立即隔离文件'
+            ),
+            # Base64编码WebShell
+            AttackPattern(
+                pattern=re.compile(r'eval\s*\(\s*base64_decode\s*\(|gzinflate\s*\(\s*base64_decode', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1505',
+                description='Base64编码WebShell',
+                detection_rule='WEBSHELL_BASE64_ENCODED',
+                remediation='检测到编码WebShell，解码分析恶意代码'
+            ),
+            # 动态变量函数调用
+            AttackPattern(
+                pattern=re.compile(r'\$(\w+)\s*=\s*["\']?\w+["\']?;\s*\$(\w+)\s*=\s*\$(\w+)\s*\(', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1505',
+                description='动态变量函数调用',
+                detection_rule='WEBSHELL_DYNAMIC_FUNC',
+                remediation='检测到动态函数调用，可能存在混淆WebShell'
+            ),
+            # 文件包含利用
+            AttackPattern(
+                pattern=re.compile(r'(include|require|include_once|require_once)\s*\(?\s*\$_(GET|POST|REQUEST)', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1505',
+                description='动态文件包含',
+                detection_rule='WEBSHELL_FILE_INCLUDE',
+                remediation='检测到动态文件包含，可能存在远程文件包含漏洞'
+            ),
+            # 可疑字符串拼接
+            AttackPattern(
+                pattern=re.compile(r'\.\s*\$|\$\s*\.|\$[a-zA-Z_]\w*\s*\.\s*\$', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.MEDIUM,
+                mitre_technique='T1505',
+                confidence=0.6,
+                description='可疑字符串拼接',
+                detection_rule='WEBSHELL_STRING_CONCAT',
+                remediation='检测到可疑字符串拼接，检查是否为混淆代码'
+            ),
+            #preg_replace危险用法
+            AttackPattern(
+                pattern=re.compile(r'preg_replace\s*\(\s*["\']/.*["\']\s*,\s*.*\$_(GET|POST|REQUEST)', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1505',
+                description='preg_replace代码执行',
+                detection_rule='WEBSHELL_PREG_REPLACE',
+                remediation='检测到preg_replace动态代码执行，立即隔离'
+            ),
+            # ASP/ASPX WebShell
+            AttackPattern(
+                pattern=re.compile(r'<%@\s*Page|<%@.*Language=.*VB|eval\s*\(\s*Request', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1505',
+                description='ASP/ASPX WebShell',
+                detection_rule='WEBSHELL_ASP',
+                remediation='检测到ASP WebShell代码'
+            ),
+            # JavaScript Node.js WebShell
+            AttackPattern(
+                pattern=re.compile(r'(child_process|execSync|spawn)\s*\(.*\$_(GET|POST|REQUEST)', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1505',
+                description='Node.js命令注入WebShell',
+                detection_rule='WEBSHELL_NODEJS',
+                remediation='检测到Node.js恶意命令执行'
+            ),
+            # 可疑路径
+            AttackPattern(
+                pattern=re.compile(r'/uploads/.*\.(php|asp|aspx|jsp|js)|/temp/.*\.(php|asp|aspx|jsp)', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1505',
+                description='可疑路径访问',
+                detection_rule='WEBSHELL_SUSPICIOUS_PATH',
+                remediation='检测到可疑路径访问，可能上传了WebShell'
+            ),
+            # .htaccess恶意配置
+            AttackPattern(
+                pattern=re.compile(r'AddType\s+application/x-httpd-php|SetHandler\s+application/x-httpd-php', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1505',
+                description='.htaccess PHP解析配置',
+                detection_rule='WEBSHELL_HTACCESS',
+                remediation='检测到恶意.htaccess配置，可能导致任意文件作为PHP执行'
+            ),
+            # XML外部实体注入
+            AttackPattern(
+                pattern=re.compile(r'(simplexml_load_file|simplexml_load_string|xml_load|Entity.*SYSTEM)', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1505',
+                description='XML外部实体注入',
+                detection_rule='WEBSHELL_XXE',
+                remediation='检测到XXE可能，检查XML解析安全'
+            ),
+            # Python/Perl WebShell
+            AttackPattern(
+                pattern=re.compile(r'os\.system|subprocess|exec\(|eval\s*\(\s*\$|print\s*\(\s*\$', re.IGNORECASE),
+                attack_category=AttackCategory.WEBSHELL,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1505',
+                description='Python/Perl命令执行WebShell',
+                detection_rule='WEBSHELL_PYTHON_PERL',
+                remediation='检测到动态命令执行'
             ),
         ])
 

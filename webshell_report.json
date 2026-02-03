@@ -1,0 +1,1395 @@
+{
+  "report_info": {
+    "tool_version": "2.0.0",
+    "generated_at": "2026-02-03T15:51:59.346033",
+    "total_events": 225,
+    "critical_events": 225,
+    "deeplog_available": false,
+    "deeplog_trained": false
+  },
+  "executive_summary": {
+    "risk_level": "CRITICAL",
+    "total_events": 225,
+    "critical_events": 225,
+    "high_events": 141,
+    "medium_events": 0,
+    "top_attack_categories": {
+      "WebShell": 225
+    },
+    "top_source_ips": {}
+  },
+  "threat_level_distribution": {
+    "CRITICAL": 84,
+    "HIGH": 141
+  },
+  "attack_category_distribution": {
+    "WebShell": 225
+  },
+  "critical_events": [
+    {
+      "timestamp": "2024-12-20 10:03:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:03:30 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 200 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:01:40",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:01:40 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:09:10",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:09:10 45.154.255.147 - - \"GET /temp/shell.php HTTP/1.1\" 200 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:10:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "WebShell命令参数",
+      "raw_log": "2024-12-20 11:10:00 103.35.74.12 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\"",
+      "remediation": "检测到可能的WebShell，审查文件内容",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:10:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 11:10:00 103.35.74.12 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:10:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:10:00 103.35.74.12 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:12:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:12:00 45.154.255.147 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:32:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 11:32:30 185.220.101.46 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:24:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 11:24:30 45.154.255.147 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:15:50",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:15:50 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 403 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:10:50",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:10:50 45.154.255.147 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:21:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:21:00 103.35.74.12 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:51:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "WebShell命令参数",
+      "raw_log": "2024-12-20 10:51:00 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\"",
+      "remediation": "检测到可能的WebShell，审查文件内容",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:51:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:51:00 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:01:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:01:00 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 200 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:07:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 11:07:30 45.154.255.147 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:03:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:03:30 91.121.87.18 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:00:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:00:00 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 404 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:20:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 11:20:00 45.154.255.147 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:46:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "WebShell命令参数",
+      "raw_log": "2024-12-20 10:46:30 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\"",
+      "remediation": "检测到可能的WebShell，审查文件内容",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:46:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:46:30 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:01:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 11:01:00 91.121.87.18 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:11:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:11:00 91.121.87.18 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:19:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 11:19:00 103.35.74.12 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:14:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:14:30 91.121.87.18 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:15:10",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:15:10 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 404 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:53:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:53:30 91.121.87.18 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:11:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:11:00 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 404 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:25:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 11:25:30 185.220.101.46 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:11:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:11:30 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 404 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:08:50",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:08:50 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:03:10",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:03:10 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 404 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:11:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 11:11:30 185.220.101.46 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:10:40",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:10:40 185.220.101.46 - - \"GET /uploads/shell.php HTTP/1.1\" 403 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:55:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "WebShell命令参数",
+      "raw_log": "2024-12-20 10:55:00 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\"",
+      "remediation": "检测到可能的WebShell，审查文件内容",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:55:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:55:00 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:00:50",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:00:50 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:14:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:14:30 185.220.101.46 - - \"GET /uploads/shell.php HTTP/1.1\" 200 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:51:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:51:30 185.220.101.46 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:16:10",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:16:10 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 403 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:12:40",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:12:40 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:06:20",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:06:20 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 200 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:43:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "WebShell命令参数",
+      "raw_log": "2024-12-20 10:43:00 103.35.74.12 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\"",
+      "remediation": "检测到可能的WebShell，审查文件内容",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:43:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:43:00 103.35.74.12 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:10:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:10:30 45.154.255.147 - - \"GET /temp/shell.php HTTP/1.1\" 404 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:53:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:53:00 185.220.101.46 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:00:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:00:00 91.121.87.18 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:36:30",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 11:36:30 185.220.101.46 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 10:03:40",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 10:03:40 185.220.101.46 - - \"GET /uploads/shell.php HTTP/1.1\" 200 0 \"masscan\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    },
+    {
+      "timestamp": "2024-12-20 11:07:00",
+      "threat_level": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "description": "可疑路径访问",
+      "raw_log": "2024-12-20 11:07:00 185.220.101.46 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\"",
+      "remediation": "检测到可疑路径访问，可能上传了WebShell",
+      "mitre_technique": "T1505",
+      "deeplog_score": null
+    }
+  ],
+  "timeline": [
+    {
+      "order": 301,
+      "timestamp": "2024-12-20 10:03:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:03:30 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 200 0 \"masscan\""
+    },
+    {
+      "order": 299,
+      "timestamp": "2024-12-20 10:01:40",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:01:40 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 297,
+      "timestamp": "2024-12-20 10:09:10",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:09:10 45.154.255.147 - - \"GET /temp/shell.php HTTP/1.1\" 200 0 \"masscan\""
+    },
+    {
+      "order": 296,
+      "timestamp": "2024-12-20 11:10:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:10:00 103.35.74.12 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 296,
+      "timestamp": "2024-12-20 11:10:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:10:00 103.35.74.12 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 295,
+      "timestamp": "2024-12-20 10:10:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:10:00 103.35.74.12 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 294,
+      "timestamp": "2024-12-20 10:12:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:12:00 45.154.255.147 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 288,
+      "timestamp": "2024-12-20 11:32:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:32:30 185.220.101.46 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 287,
+      "timestamp": "2024-12-20 11:24:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:24:30 45.154.255.147 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 284,
+      "timestamp": "2024-12-20 10:15:50",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:15:50 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 282,
+      "timestamp": "2024-12-20 10:10:50",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:10:50 45.154.255.147 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 277,
+      "timestamp": "2024-12-20 10:21:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:21:00 103.35.74.12 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 276,
+      "timestamp": "2024-12-20 10:51:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:51:00 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 276,
+      "timestamp": "2024-12-20 10:51:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:51:00 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 274,
+      "timestamp": "2024-12-20 10:01:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:01:00 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 200 0 \"masscan\""
+    },
+    {
+      "order": 273,
+      "timestamp": "2024-12-20 11:07:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:07:30 45.154.255.147 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 268,
+      "timestamp": "2024-12-20 10:03:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:03:30 91.121.87.18 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 267,
+      "timestamp": "2024-12-20 10:00:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:00:00 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 404 0 \"masscan\""
+    },
+    {
+      "order": 262,
+      "timestamp": "2024-12-20 11:20:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:20:00 45.154.255.147 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 259,
+      "timestamp": "2024-12-20 10:46:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:46:30 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 259,
+      "timestamp": "2024-12-20 10:46:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:46:30 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 258,
+      "timestamp": "2024-12-20 11:01:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:01:00 91.121.87.18 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 255,
+      "timestamp": "2024-12-20 10:11:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:11:00 91.121.87.18 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 252,
+      "timestamp": "2024-12-20 11:19:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:19:00 103.35.74.12 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 251,
+      "timestamp": "2024-12-20 10:14:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:14:30 91.121.87.18 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 248,
+      "timestamp": "2024-12-20 10:15:10",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:15:10 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 404 0 \"masscan\""
+    },
+    {
+      "order": 244,
+      "timestamp": "2024-12-20 10:53:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:53:30 91.121.87.18 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 241,
+      "timestamp": "2024-12-20 10:11:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:11:00 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 404 0 \"masscan\""
+    },
+    {
+      "order": 240,
+      "timestamp": "2024-12-20 11:25:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:25:30 185.220.101.46 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 235,
+      "timestamp": "2024-12-20 10:11:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:11:30 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 404 0 \"masscan\""
+    },
+    {
+      "order": 234,
+      "timestamp": "2024-12-20 10:08:50",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:08:50 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 231,
+      "timestamp": "2024-12-20 10:03:10",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:03:10 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 404 0 \"masscan\""
+    },
+    {
+      "order": 228,
+      "timestamp": "2024-12-20 11:11:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:11:30 185.220.101.46 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 226,
+      "timestamp": "2024-12-20 10:10:40",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:10:40 185.220.101.46 - - \"GET /uploads/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 225,
+      "timestamp": "2024-12-20 10:55:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:55:00 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 225,
+      "timestamp": "2024-12-20 10:55:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:55:00 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 224,
+      "timestamp": "2024-12-20 10:00:50",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:00:50 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 223,
+      "timestamp": "2024-12-20 10:14:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:14:30 185.220.101.46 - - \"GET /uploads/shell.php HTTP/1.1\" 200 0 \"masscan\""
+    },
+    {
+      "order": 220,
+      "timestamp": "2024-12-20 10:51:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:51:30 185.220.101.46 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 215,
+      "timestamp": "2024-12-20 10:16:10",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:16:10 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 214,
+      "timestamp": "2024-12-20 10:12:40",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:12:40 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 213,
+      "timestamp": "2024-12-20 10:06:20",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:06:20 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 200 0 \"masscan\""
+    },
+    {
+      "order": 212,
+      "timestamp": "2024-12-20 10:43:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:43:00 103.35.74.12 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 212,
+      "timestamp": "2024-12-20 10:43:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:43:00 103.35.74.12 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 211,
+      "timestamp": "2024-12-20 10:10:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:10:30 45.154.255.147 - - \"GET /temp/shell.php HTTP/1.1\" 404 0 \"masscan\""
+    },
+    {
+      "order": 210,
+      "timestamp": "2024-12-20 10:53:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:53:00 185.220.101.46 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 209,
+      "timestamp": "2024-12-20 10:00:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:00:00 91.121.87.18 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 207,
+      "timestamp": "2024-12-20 11:36:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:36:30 185.220.101.46 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 201,
+      "timestamp": "2024-12-20 10:03:40",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:03:40 185.220.101.46 - - \"GET /uploads/shell.php HTTP/1.1\" 200 0 \"masscan\""
+    },
+    {
+      "order": 196,
+      "timestamp": "2024-12-20 11:07:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:07:00 185.220.101.46 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 195,
+      "timestamp": "2024-12-20 11:19:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:19:30 103.35.74.12 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 190,
+      "timestamp": "2024-12-20 10:34:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:34:30 103.35.74.12 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 189,
+      "timestamp": "2024-12-20 10:02:40",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:02:40 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 404 0 \"masscan\""
+    },
+    {
+      "order": 186,
+      "timestamp": "2024-12-20 10:56:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:56:30 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 186,
+      "timestamp": "2024-12-20 10:56:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:56:30 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 179,
+      "timestamp": "2024-12-20 10:58:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:58:30 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 179,
+      "timestamp": "2024-12-20 10:58:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:58:30 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 176,
+      "timestamp": "2024-12-20 10:05:20",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:05:20 185.220.101.46 - - \"GET /uploads/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 175,
+      "timestamp": "2024-12-20 10:02:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:02:30 45.154.255.147 - - \"GET /temp/shell.php HTTP/1.1\" 200 0 \"masscan\""
+    },
+    {
+      "order": 171,
+      "timestamp": "2024-12-20 11:28:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:28:00 45.154.255.147 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 168,
+      "timestamp": "2024-12-20 11:09:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:09:30 91.121.87.18 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 165,
+      "timestamp": "2024-12-20 10:35:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:35:30 185.220.101.46 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 163,
+      "timestamp": "2024-12-20 10:15:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:15:30 91.121.87.18 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 162,
+      "timestamp": "2024-12-20 10:32:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:32:00 103.35.74.12 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 160,
+      "timestamp": "2024-12-20 10:15:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:15:30 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 157,
+      "timestamp": "2024-12-20 10:04:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:04:30 103.35.74.12 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 154,
+      "timestamp": "2024-12-20 11:31:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:31:00 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 154,
+      "timestamp": "2024-12-20 11:31:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:31:00 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 144,
+      "timestamp": "2024-12-20 10:58:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:58:00 103.35.74.12 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 142,
+      "timestamp": "2024-12-20 10:05:10",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:05:10 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 140,
+      "timestamp": "2024-12-20 11:02:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:02:30 185.220.101.46 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 137,
+      "timestamp": "2024-12-20 10:18:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:18:00 45.154.255.147 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 136,
+      "timestamp": "2024-12-20 10:21:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:21:30 185.220.101.46 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 133,
+      "timestamp": "2024-12-20 10:05:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:05:00 185.220.101.46 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 132,
+      "timestamp": "2024-12-20 10:08:10",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:08:10 45.154.255.147 - - \"GET /temp/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 130,
+      "timestamp": "2024-12-20 11:21:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:21:30 45.154.255.147 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 129,
+      "timestamp": "2024-12-20 10:56:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:56:00 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 129,
+      "timestamp": "2024-12-20 10:56:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:56:00 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 126,
+      "timestamp": "2024-12-20 10:17:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:17:30 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 126,
+      "timestamp": "2024-12-20 10:17:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:17:30 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 123,
+      "timestamp": "2024-12-20 11:15:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:15:30 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 123,
+      "timestamp": "2024-12-20 11:15:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:15:30 91.121.87.18 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 122,
+      "timestamp": "2024-12-20 11:27:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:27:00 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 122,
+      "timestamp": "2024-12-20 11:27:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:27:00 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 121,
+      "timestamp": "2024-12-20 11:23:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:23:30 91.121.87.18 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 117,
+      "timestamp": "2024-12-20 10:19:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:19:30 103.35.74.12 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 114,
+      "timestamp": "2024-12-20 10:22:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:22:30 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 114,
+      "timestamp": "2024-12-20 10:22:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:22:30 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 112,
+      "timestamp": "2024-12-20 11:24:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:24:00 45.154.255.147 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 110,
+      "timestamp": "2024-12-20 11:06:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:06:30 45.154.255.147 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 107,
+      "timestamp": "2024-12-20 10:04:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:04:00 45.154.255.147 - - \"GET /uploads/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 106,
+      "timestamp": "2024-12-20 10:03:20",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:03:20 185.220.101.46 - - \"GET /uploads/shell.php HTTP/1.1\" 403 0 \"masscan\""
+    },
+    {
+      "order": 105,
+      "timestamp": "2024-12-20 10:25:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:25:00 185.220.101.46 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 104,
+      "timestamp": "2024-12-20 11:29:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:29:00 103.35.74.12 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 104,
+      "timestamp": "2024-12-20 11:29:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:29:00 103.35.74.12 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    },
+    {
+      "order": 95,
+      "timestamp": "2024-12-20 10:06:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:06:30 185.220.101.46 - - \"GET /temp/shell.php HTTP/1.1\" 200 0 \"masscan\""
+    },
+    {
+      "order": 87,
+      "timestamp": "2024-12-20 10:27:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:27:30 45.154.255.147 - - \"POST /uploads/shell.php HTTP/1.1\" 200 23 \"-\""
+    },
+    {
+      "order": 85,
+      "timestamp": "2024-12-20 10:06:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:06:30 91.121.87.18 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 79,
+      "timestamp": "2024-12-20 10:02:30",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 10:02:30 91.121.87.18 - - \"GET /uploads/test.php HTTP/1.1\" 403 213 \"-\""
+    },
+    {
+      "order": 78,
+      "timestamp": "2024-12-20 11:21:00",
+      "threat": "HIGH",
+      "attack_type": "WebShell",
+      "source_ip": null,
+      "raw_log": "2024-12-20 11:21:00 45.154.255.147 - - \"GET /temp/x.php?cmd=id HTTP/1.1\" 200 100 \"-\""
+    }
+  ],
+  "web_shell_scan": {
+    "total_suspect_files": 0,
+    "high_confidence": 0,
+    "suspect_files": []
+  },
+  "recommendations": [
+    {
+      "severity": "CRITICAL",
+      "category": "WebShell",
+      "finding": "检测到225次WebShell活动",
+      "recommendation": "1. 立即隔离可疑文件\n2. 检查文件上传功能\n3. 审查Web目录\n4. 检查Web服务器配置"
+    }
+  ]
+}
