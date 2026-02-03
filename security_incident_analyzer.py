@@ -85,6 +85,7 @@ class AttackCategory:
     SUSPICIOUS_PROCESS = "可疑进程"    # T1057
     NETWORK_ABUSE = "网络滥用"         # T1090
     CRYPTO_MINING = "挖矿活动"         # T1496
+    LOG4J = "Log4j漏洞利用"            # T1190 CVE-2021-44228
     UNKNOWN = "未知"
 
 
@@ -468,6 +469,73 @@ class EnhancedSecurityAnalyzer:
                 description='内部IP间SSH连接尝试',
                 detection_rule='INTERNAL_SSH_ATTEMPT',
                 remediation='检测到内部横向移动尝试'
+            ),
+        ])
+
+        # ============== Log4j漏洞利用 (CVE-2021-44228) ==============
+        patterns.extend([
+            AttackPattern(
+                pattern=re.compile(r'\$\{jndi:(ldap|rmi|dns):\/\/', re.IGNORECASE),
+                attack_category=AttackCategory.LOG4J,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1190',
+                description='Log4Shell JNDI注入尝试',
+                detection_rule='LOG4J_JNDI_INJECTION',
+                remediation='立即阻断！这是Log4j RCE漏洞利用尝试'
+            ),
+            AttackPattern(
+                pattern=re.compile(r'\$\{.*jndi.*ldap', re.IGNORECASE),
+                attack_category=AttackCategory.LOG4J,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1190',
+                description='Log4j JNDI LDAP调用',
+                detection_rule='LOG4J_JNDI_LDAP',
+                remediation='检测到JNDI LDAP调用，检查是否加载恶意类'
+            ),
+            AttackPattern(
+                pattern=re.compile(r'JNDI lookup for.*jndi', re.IGNORECASE),
+                attack_category=AttackCategory.LOG4J,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1190',
+                description='Log4j JNDI查找操作',
+                detection_rule='LOG4J_JNDI_LOOKUP',
+                remediation='检测到JNDI查找，可能存在漏洞利用'
+            ),
+            AttackPattern(
+                pattern=re.compile(r'Loaded remote class.*jndi', re.IGNORECASE),
+                attack_category=AttackCategory.LOG4J,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1190',
+                description='Log4j加载远程类',
+                detection_rule='LOG4J_REMOTE_CLASS',
+                remediation='已加载远程类，确认被入侵！'
+            ),
+            AttackPattern(
+                pattern=re.compile(r'CVE-2021-44228|Log4Shell', re.IGNORECASE),
+                attack_category=AttackCategory.LOG4J,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1190',
+                description='Log4j漏洞利用告警',
+                detection_rule='LOG4J_CVE_ALERT',
+                remediation='检测到CVE-2021-44228漏洞利用告警'
+            ),
+            AttackPattern(
+                pattern=re.compile(r'\$\{lower:.*\$\{upper:.*jndi', re.IGNORECASE),
+                attack_category=AttackCategory.LOG4J,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1190',
+                description='Log4j嵌套变量混淆',
+                detection_rule='LOG4J_OBFUSCATED',
+                remediation='检测到混淆的Log4j payload'
+            ),
+            AttackPattern(
+                pattern=re.compile(r'Exception thrown processing.*jndi', re.IGNORECASE),
+                attack_category=AttackCategory.LOG4J,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1190',
+                description='Log4j JNDI处理异常',
+                detection_rule='LOG4J_JNDI_EXCEPTION',
+                remediation='应用尝试处理JNDI时抛出异常'
             ),
         ])
 

