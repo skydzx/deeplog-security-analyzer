@@ -41,7 +41,8 @@ models/
 
 # Logs
 *.log
-logs/
+logs/*.log
+!logs/*_dataset.log
 
 # OS
 .DS_Store

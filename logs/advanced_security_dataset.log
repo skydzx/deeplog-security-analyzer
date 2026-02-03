@@ -1,0 +1,873 @@
+# ============================================================
+# 高级安全事件测试数据集
+# 生成时间: 2024-12-20
+# 包含: DDoS、DNS隧道、勒索软件、横向移动、钓鱼、数据库攻击
+# ============================================================
+2024-12-20 10:02:41 kernel: [ Firewall] UDP: UDP flood from 91.121.87.18:30237 to 192.168.1.10:53 rate=1086pps
+2024-12-20 10:30:00 192.168.1.100 - - "GET /api/orders HTTP/1.1" 200 4709
+2024-12-20 11:00:50 named[140]: query: TXT dns-tunnel.evil.net IN from 172.16.0.10:15089 size=1821 bytes
+2024-12-20 10:02:01 kernel: [ Firewall] ICMP: Echo flood from 23.129.64.213:15507 to 192.168.1.10:80 rate=3154pps
+2024-12-20 17:57:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 2725
+2024-12-20 10:01:37 kernel: [ Firewall] ICMP: Echo flood from 45.154.255.147:19348 to 192.168.1.10:53 rate=8531pps
+2024-12-20 15:09:30 45.154.255.147 mysql[3070]: SELECT username,password FROM users--
+2024-12-20 09:18:00 192.168.1.100 - - "GET /api/orders HTTP/1.1" 200 294
+2024-12-20 10:03:50 kernel: [ Firewall] TCP: RST flood from 45.154.255.147:20832 to 192.168.1.10:53 rate=8115pps
+2024-12-20 10:03:52 kernel: [ Firewall] TCP: ACK flood from 198.51.100.50:24811 to 192.168.1.10:53 rate=8256pps
+2024-12-20 10:03:44 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:64929 to 192.168.1.10:80 rate=6064pps
+2024-12-20 10:01:51 kernel: [ Firewall] TCP: RST flood from 185.220.101.46:10578 to 192.168.1.10:443 rate=2312pps
+2024-12-20 11:07:10 named[311]: query: MX c2.stealthy.io IN from 192.168.1.100:56645 size=1328 bytes
+2024-12-20 14:12:30 45.154.255.147 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 912 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 14:38:00 10.0.0.50 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 1497
+2024-12-20 11:05:15 named[347]: query: TXT stage1.malware.xyz IN from 10.0.0.50:9059 size=3411 bytes
+2024-12-20 10:00:07 kernel: [ Firewall] TCP: RST flood from 23.129.64.213:6865 to 192.168.1.10:443 rate=4982pps
+2024-12-20 11:03:20 named[285]: query: MX dns-tunnel.evil.net IN from 192.168.1.101:54235 size=1406 bytes
+2024-12-20 10:04:24 kernel: [ Firewall] ICMP: Echo flood from 23.129.64.213:1361 to 192.168.1.10:443 rate=5992pps
+2024-12-20 10:18:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 4673
+2024-12-20 10:01:12 kernel: [ Firewall] TCP: RST flood from 103.35.74.12:15129 to 192.168.1.10:443 rate=3906pps
+Dec 20 12:17:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /network/share/*.xls
+2024-12-20 10:02:38 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:30905 to 192.168.1.10:53 rate=3023pps
+2024-12-20 15:05:45 198.51.100.50 mysql[2100]: SELECT SLEEP(10)--
+2024-12-20 13:15:00 10.0.0.50 - - "GET /about HTTP/1.1" 200 3910
+2024-12-20 11:06:25 named[417]: query: TXT stage1.malware.xyz IN from 172.16.0.10:54839 size=2304 bytes
+2024-12-20 10:02:07 kernel: [ Firewall] UDP: UDP flood from 23.129.64.213:5124 to 192.168.1.10:443 rate=5629pps
+2024-12-20 10:02:29 kernel: [ Firewall] UDP: UDP flood from 91.121.87.18:9003 to 192.168.1.10:80 rate=2920pps
+2024-12-20 10:00:33 kernel: [ Firewall] ICMP: Echo flood from 185.220.101.46:29753 to 192.168.1.10:80 rate=5610pps
+2024-12-20 11:06:55 named[999]: query: CNAME stage1.malware.xyz IN from 192.168.1.100:42019 size=3080 bytes
+2024-12-20 11:08:10 named[114]: query: MX cmd.control.secure IN from 10.0.0.50:23399 size=4278 bytes
+2024-12-20 10:01:17 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:5139 to 192.168.1.10:443 rate=7015pps
+2024-12-20 14:03:20 45.154.255.147 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 14:28:00 10.0.0.50 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 1839
+2024-12-20 15:09:15 23.129.64.213 mysql[8778]: '; DROP TABLE users--
+2024-12-20 13:54:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 906
+2024-12-20 10:00:55 kernel: [ Firewall] TCP: ACK flood from 185.220.101.46:59072 to 192.168.1.10:443 rate=1312pps
+2024-12-20 17:15:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 3109
+2024-12-20 14:11:40 198.51.100.50 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 11:07:05 named[785]: query: TXT cmd.control.secure IN from 192.168.1.101:17069 size=4738 bytes
+2024-12-20 14:08:40 91.121.87.18 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 1130 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 11:03:35 named[302]: query: NULL data.exfil.org IN from 10.0.0.50:14084 size=4886 bytes
+2024-12-20 15:13:45 23.129.64.213 mysql[8384]: SELECT * FROM users WHERE id=1 OR 1=1
+2024-12-20 11:06:05 named[418]: query: NULL exfil.data.hopto.org IN from 10.0.0.50:56378 size=1464 bytes
+2024-12-20 12:03:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 3056
+2024-12-20 15:09:00 103.35.74.12 mysql[7005]: EXEC xp_cmdshell('whoami')
+2024-12-20 10:01:28 kernel: [ Firewall] HTTP: GET flood from 45.154.255.147:27398 to 192.168.1.10:80 rate=2861pps
+Dec 20 13:30:00 file-server useradd[7117]: new user with name 'backup_svc', UID 1263
+2024-12-20 10:03:32 kernel: [ Firewall] ICMP: Echo flood from 198.51.100.50:3048 to 192.168.1.10:80 rate=7803pps
+2024-12-20 17:00:00 192.168.1.101 - - "GET /api/orders HTTP/1.1" 200 1461
+2024-12-20 09:21:00 10.0.0.50 - - "GET /about HTTP/1.1" 200 4543
+2024-12-20 14:00:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 4484
+Dec 20 12:38:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 11:06:40 named[652]: response: TXT dns-tunnel.evil.net -> 192.168.1.101 answer="base64data=="
+2024-12-20 11:03:25 named[720]: query: TXT tunnel.encoded.io IN from 10.0.0.50:30082 size=4493 bytes
+2024-12-20 10:03:53 kernel: [ Firewall] HTTP: GET flood from 198.51.100.50:8917 to 192.168.1.10:53 rate=4175pps
+2024-12-20 10:04:08 kernel: [ Firewall] TCP: RST flood from 45.154.255.147:14525 to 192.168.1.10:80 rate=4703pps
+2024-12-20 10:01:47 kernel: [ Firewall] ICMP: Echo flood from 45.154.255.147:25215 to 192.168.1.10:443 rate=5018pps
+2024-12-20 15:04:30 23.129.64.213 mysql[9620]: GRANT ALL ON *.* TO 'hacker'@'%'
+2024-12-20 14:03:50 91.121.87.18 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 2409 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 11:33:00 192.168.1.101 - - "GET /contact HTTP/1.1" 200 532
+2024-12-20 10:03:35 kernel: [ Firewall] ICMP: Echo flood from 91.121.87.18:36047 to 192.168.1.10:443 rate=8501pps
+2024-12-20 15:11:15 198.51.100.50 mysql[8862]: SELECT SLEEP(10)--
+2024-12-20 15:08:15 198.51.100.50 mysql[8576]: LOAD_FILE('/etc/passwd')
+2024-12-20 14:14:00 192.168.1.100 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 1113
+2024-12-20 08:06:00 192.168.1.101 - - "GET /contact HTTP/1.1" 200 2883
+2024-12-20 13:15:00 db-server mysql[5880]: Connect root@10.0.0.50 on using TCP/IP
+2024-12-20 15:06:30 185.220.101.46 mysql[9152]: Warning: DROP TABLE detected in query
+2024-12-20 14:12:30 45.154.255.147 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 11:06:40 named[687]: query: MX dns-tunnel.evil.net IN from 192.168.1.101:5191 size=4192 bytes
+2024-12-20 14:00:20 45.154.255.147 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 2636 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:09:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 622
+Dec 20 12:39:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /shared/finance/report.xlsx
+2024-12-20 11:04:20 named[123]: query: NULL exfil.data.hopto.org IN from 10.0.0.50:33935 size=2996 bytes
+2024-12-20 09:15:00 192.168.1.100 - - "GET /api/orders HTTP/1.1" 200 2375
+2024-12-20 10:04:18 kernel: [ Firewall] DNS: QUERY flood from 103.35.74.12:26207 to 192.168.1.10:443 rate=6782pps
+2024-12-20 11:01:25 named[793]: query: NULL stage1.malware.xyz IN from 192.168.1.100:19808 size=4833 bytes
+2024-12-20 11:06:20 named[591]: query: CNAME TgtXfer.evil.com IN from 10.0.0.50:17408 size=2324 bytes
+2024-12-20 14:02:40 198.51.100.50 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 790 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 14:32:00 192.168.1.100 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 719
+2024-12-20 15:06:15 103.35.74.12 mysql[3824]: Warning: DROP TABLE detected in query
+Dec 20 12:01:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /network/share/*.xls
+2024-12-20 15:06:00 198.51.100.50 mysql[6487]: EXEC xp_cmdshell('whoami')
+Dec 20 12:26:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 15:00:15 185.220.101.46 mysql[3938]: GRANT ALL ON *.* TO 'hacker'@'%'
+Dec 20 12:32:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 10:03:16 kernel: [ Firewall] ICMP: Echo flood from 23.129.64.213:54739 to 192.168.1.10:80 rate=4191pps
+2024-12-20 15:06:30 185.220.101.46 mysql[9011]: '; DROP TABLE users--
+2024-12-20 09:30:00 192.168.1.100 - - "GET / HTTP/1.1" 200 504
+2024-12-20 10:04:27 kernel: [ Firewall] ICMP: Echo flood from 23.129.64.213:61503 to 192.168.1.10:53 rate=4620pps
+2024-12-20 10:01:57 kernel: [ Firewall] ICMP: Echo flood from 45.154.255.147:9674 to 192.168.1.10:443 rate=8132pps
+2024-12-20 10:01:30 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:40608 to 192.168.1.10:53 rate=3253pps
+2024-12-20 15:03:30 198.51.100.50 mysql[7523]: SELECT username,password FROM users--
+2024-12-20 10:02:46 kernel: [ Firewall] UDP: UDP flood from 103.35.74.12:7591 to 192.168.1.10:53 rate=1133pps
+2024-12-20 10:00:56 kernel: [ Firewall] DNS: QUERY flood from 103.35.74.12:36596 to 192.168.1.10:53 rate=2373pps
+2024-12-20 10:01:45 kernel: [ Firewall] DNS: QUERY flood from 23.129.64.213:27516 to 192.168.1.10:443 rate=1171pps
+2024-12-20 10:04:28 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:32283 to 192.168.1.10:443 rate=2803pps
+2024-12-20 10:01:05 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:24457 to 192.168.1.10:53 rate=7897pps
+Dec 20 13:00:00 web-server sshd[4286]: Accepted publickey for root from 192.168.1.100 port 39543 ssh2
+2024-12-20 15:14:45 45.154.255.147 mysql[6455]: Warning: UNION injection detected in query
+Dec 20 13:10:00 web-server sshd[1928]: Accepted password for 10.0.0.50 from 192.168.1.100 port 32700 ssh2
+2024-12-20 13:39:00 10.0.0.50 - - "GET / HTTP/1.1" 200 2174
+2024-12-20 15:10:30 198.51.100.50 mysql[9766]: LOAD_FILE('/etc/passwd')
+2024-12-20 11:01:55 named[878]: query: MX data.exfil.org IN from 172.16.0.10:56773 size=2509 bytes
+2024-12-20 10:04:50 kernel: [ Firewall] HTTP: GET flood from 45.154.255.147:24779 to 192.168.1.10:443 rate=3772pps
+2024-12-20 14:01:30 185.220.101.46 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 3389 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 14:20:00 192.168.1.100 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 1380
+Dec 20 12:18:00 server1 systemd[1]: mysql.service: Main process exited, code=killed, status=15/TERM
+2024-12-20 10:01:22 kernel: [ Firewall] HTTP: GET flood from 23.129.64.213:5744 to 192.168.1.10:80 rate=2195pps
+2024-12-20 10:00:20 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:49563 to 192.168.1.10:53 rate=3777pps
+2024-12-20 10:03:17 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:19266 to 192.168.1.10:80 rate=2448pps
+2024-12-20 15:02:30 91.121.87.18 MySQL[9268]: QueryError: Access denied for user to database
+2024-12-20 14:54:00 192.168.1.101 - - "GET /about HTTP/1.1" 200 1712
+2024-12-20 15:07:00 45.154.255.147 mysql[2264]: SELECT username,password FROM users--
+2024-12-20 11:36:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 1163
+2024-12-20 14:13:00 103.35.74.12 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 1770 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 11:06:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 2430
+2024-12-20 08:00:00 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 4140
+2024-12-20 10:04:34 kernel: [ Firewall] UDP: UDP flood from 45.154.255.147:45931 to 192.168.1.10:53 rate=5897pps
+2024-12-20 10:03:42 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:52052 to 192.168.1.10:80 rate=6352pps
+2024-12-20 10:03:18 kernel: [ Firewall] DNS: QUERY flood from 103.35.74.12:50033 to 192.168.1.10:80 rate=2351pps
+2024-12-20 10:00:24 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:3942 to 192.168.1.10:53 rate=6299pps
+2024-12-20 14:04:20 185.220.101.46 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 1681 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 15:04:15 185.220.101.46 mysql[6191]: SELECT username,password FROM users--
+2024-12-20 14:09:20 198.51.100.50 - - "GET /microsoft/login?redirect=https://account-update-secure.com HTTP/1.1" 200 3037 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:02:11 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:64481 to 192.168.1.10:80 rate=6087pps
+2024-12-20 15:51:00 192.168.1.101 - - "GET /about HTTP/1.1" 200 579
+2024-12-20 10:24:00 192.168.1.100 - - "GET / HTTP/1.1" 200 4159
+2024-12-20 12:24:00 192.168.1.101 - - "GET /about HTTP/1.1" 200 2195
+2024-12-20 10:04:45 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:13859 to 192.168.1.10:443 rate=2178pps
+2024-12-20 10:57:00 10.0.0.50 - - "GET / HTTP/1.1" 200 237
+2024-12-20 14:08:50 91.121.87.18 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 962 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 11:01:00 named[905]: query: MX cmd.control.secure IN from 172.16.0.10:41175 size=2500 bytes
+2024-12-20 10:04:48 kernel: [ Firewall] TCP: RST flood from 23.129.64.213:56942 to 192.168.1.10:53 rate=9868pps
+2024-12-20 11:00:50 named[785]: response: TXT dns-tunnel.evil.net -> 172.16.0.10 answer="encrypted=="
+2024-12-20 13:36:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 2944
+2024-12-20 10:04:00 kernel: [ Firewall] ICMP: Echo flood from 103.35.74.12:37470 to 192.168.1.10:443 rate=4093pps
+2024-12-20 08:27:00 192.168.1.101 - - "GET / HTTP/1.1" 200 4130
+2024-12-20 10:02:35 kernel: [ Firewall] ICMP: Echo flood from 185.220.101.46:15371 to 192.168.1.10:443 rate=7137pps
+2024-12-20 10:04:53 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:45969 to 192.168.1.10:443 rate=9185pps
+2024-12-20 10:00:23 kernel: [ Firewall] TCP: ACK flood from 45.154.255.147:24711 to 192.168.1.10:443 rate=4098pps
+2024-12-20 11:04:10 named[829]: response: TXT data.exfil.org -> 192.168.1.100 answer="encrypted=="
+2024-12-20 15:07:45 45.154.255.147 mysql[4211]: '; DROP TABLE users--
+2024-12-20 10:01:38 kernel: [ Firewall] UDP: UDP flood from 91.121.87.18:42514 to 192.168.1.10:53 rate=9036pps
+2024-12-20 09:54:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 732
+2024-12-20 10:04:19 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:30050 to 192.168.1.10:53 rate=1315pps
+2024-12-20 10:45:00 192.168.1.101 - - "GET / HTTP/1.1" 200 3952
+2024-12-20 12:45:00 192.168.1.100 - - "GET /contact HTTP/1.1" 200 209
+2024-12-20 10:01:27 kernel: [ Firewall] DNS: QUERY flood from 185.220.101.46:10704 to 192.168.1.10:80 rate=5362pps
+Dec 20 12:06:00 server1 kernel: [ENCRYPTOR] /var/backups/daily.bak DELETED
+2024-12-20 14:16:00 10.0.0.50 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 1693
+2024-12-20 10:02:04 kernel: [ Firewall] DNS: QUERY flood from 198.51.100.50:55858 to 192.168.1.10:80 rate=6698pps
+2024-12-20 10:00:01 kernel: [ Firewall] TCP: ACK flood from 45.154.255.147:18341 to 192.168.1.10:80 rate=5590pps
+2024-12-20 10:04:46 kernel: [ Firewall] DNS: QUERY flood from 91.121.87.18:13063 to 192.168.1.10:53 rate=8667pps
+2024-12-20 10:04:17 kernel: [ Firewall] UDP: UDP flood from 23.129.64.213:40730 to 192.168.1.10:443 rate=4212pps
+2024-12-20 10:02:12 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:46765 to 192.168.1.10:80 rate=2749pps
+2024-12-20 10:00:16 kernel: [ Firewall] TCP: ACK flood from 45.154.255.147:17901 to 192.168.1.10:443 rate=1882pps
+2024-12-20 10:00:37 kernel: [ Firewall] TCP: RST flood from 23.129.64.213:47602 to 192.168.1.10:443 rate=3738pps
+2024-12-20 14:04:10 185.220.101.46 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 4618 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 11:02:10 named[367]: query: TXT dns-tunnel.evil.net IN from 192.168.1.100:62549 size=3493 bytes
+2024-12-20 10:00:46 kernel: [ Firewall] ICMP: Echo flood from 23.129.64.213:63306 to 192.168.1.10:53 rate=3630pps
+2024-12-20 15:13:30 45.154.255.147 mysql[7380]: LOAD_FILE('/etc/passwd')
+2024-12-20 10:01:39 kernel: [ Firewall] HTTP: GET flood from 91.121.87.18:14789 to 192.168.1.10:80 rate=2912pps
+2024-12-20 10:02:53 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:26048 to 192.168.1.10:80 rate=2076pps
+2024-12-20 10:03:23 kernel: [ Firewall] TCP: SYN flood from 23.129.64.213:48037 to 192.168.1.10:53 rate=3578pps
+2024-12-20 10:04:29 kernel: [ Firewall] ICMP: Echo flood from 198.51.100.50:6092 to 192.168.1.10:443 rate=9879pps
+2024-12-20 10:04:21 kernel: [ Firewall] UDP: UDP flood from 103.35.74.12:61412 to 192.168.1.10:80 rate=8512pps
+2024-12-20 11:07:20 named[214]: query: CNAME dns-tunnel.evil.net IN from 10.0.0.50:55472 size=3483 bytes
+2024-12-20 15:01:00 91.121.87.18 mysql[5630]: SELECT SLEEP(10)--
+2024-12-20 10:00:34 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:63943 to 192.168.1.10:443 rate=7790pps
+2024-12-20 10:03:15 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:2253 to 192.168.1.10:443 rate=4619pps
+2024-12-20 16:45:00 10.0.0.50 - - "GET / HTTP/1.1" 200 2888
+2024-12-20 10:00:26 kernel: [ Firewall] TCP: ACK flood from 103.35.74.12:5793 to 192.168.1.10:53 rate=6439pps
+2024-12-20 10:01:03 kernel: [ Firewall] TCP: ACK flood from 185.220.101.46:23507 to 192.168.1.10:80 rate=5378pps
+2024-12-20 14:10:50 103.35.74.12 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 1728 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 14:09:40 91.121.87.18 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 1035 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:02:20 kernel: [ Firewall] TCP: ACK flood from 103.35.74.12:38234 to 192.168.1.10:443 rate=5217pps
+2024-12-20 09:36:00 10.0.0.50 - - "GET / HTTP/1.1" 200 2154
+2024-12-20 08:09:00 10.0.0.50 - - "GET /api/orders HTTP/1.1" 200 4097
+2024-12-20 08:12:00 192.168.1.101 - - "GET /contact HTTP/1.1" 200 1264
+2024-12-20 11:01:15 named[653]: query: NULL cmd.control.secure IN from 10.0.0.50:4673 size=790 bytes
+2024-12-20 16:54:00 192.168.1.100 - - "GET /products HTTP/1.1" 200 2962
+2024-12-20 10:03:02 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:1207 to 192.168.1.10:443 rate=4645pps
+2024-12-20 11:06:50 named[461]: query: TXT tunnel.encoded.io IN from 172.16.0.10:8091 size=2822 bytes
+2024-12-20 11:51:00 10.0.0.50 - - "GET /about HTTP/1.1" 200 1154
+2024-12-20 11:05:35 named[747]: query: MX cmd.control.secure IN from 10.0.0.50:26378 size=2295 bytes
+2024-12-20 14:08:30 185.220.101.46 - - "GET /api/auth?callback=https://phishing.org/steal HTTP/1.1" 200 1252 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:04:14 kernel: [ Firewall] DNS: QUERY flood from 103.35.74.12:31365 to 192.168.1.10:443 rate=2951pps
+2024-12-20 10:00:32 kernel: [ Firewall] DNS: QUERY flood from 91.121.87.18:20233 to 192.168.1.10:443 rate=8595pps
+2024-12-20 10:04:57 kernel: [ Firewall] HTTP: GET flood from 45.154.255.147:26009 to 192.168.1.10:53 rate=4476pps
+2024-12-20 15:10:45 103.35.74.12 mysql[3893]: BENCHMARK(10000000,SHA1('test'))
+2024-12-20 16:48:00 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 790
+2024-12-20 14:07:40 23.129.64.213 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 2284 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+Dec 20 12:46:00 server1 kernel: [ENCRYPTOR] /var/backups/daily.bak DELETED
+2024-12-20 15:36:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 4737
+2024-12-20 13:00:00 192.168.1.100 - - "GET /contact HTTP/1.1" 200 2977
+2024-12-20 10:04:03 kernel: [ Firewall] ICMP: Echo flood from 23.129.64.213:25616 to 192.168.1.10:80 rate=9366pps
+2024-12-20 14:21:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 3242
+2024-12-20 14:30:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 3213
+2024-12-20 15:09:45 45.154.255.147 mysql[6427]: LOAD_FILE('/etc/passwd')
+Dec 20 12:02:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+Dec 20 12:35:00 server1 apache[$7856]: POST /uploads/SeeHowToRecover.html HTTP/1.1 200
+2024-12-20 10:39:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 2480
+2024-12-20 16:09:00 192.168.1.101 - - "GET /api/orders HTTP/1.1" 200 438
+2024-12-20 10:04:37 kernel: [ Firewall] TCP: ACK flood from 198.51.100.50:2511 to 192.168.1.10:53 rate=7649pps
+2024-12-20 10:03:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 1484
+2024-12-20 10:04:13 kernel: [ Firewall] ICMP: Echo flood from 91.121.87.18:31041 to 192.168.1.10:80 rate=3625pps
+2024-12-20 11:00:40 named[168]: query: CNAME TgtXfer.evil.com IN from 192.168.1.101:31924 size=1110 bytes
+2024-12-20 14:04:00 192.168.1.101 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 1748
+2024-12-20 14:06:00 172.16.0.10 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 763
+2024-12-20 10:01:02 kernel: [ Firewall] TCP: SYN flood from 23.129.64.213:9112 to 192.168.1.10:80 rate=4076pps
+2024-12-20 15:09:15 23.129.64.213 mysql[9423]: Warning: DROP TABLE detected in query
+2024-12-20 15:11:00 185.220.101.46 mysql[8824]: '; DROP TABLE users--
+2024-12-20 10:02:06 kernel: [ Firewall] DNS: QUERY flood from 198.51.100.50:17266 to 192.168.1.10:443 rate=9507pps
+2024-12-20 14:10:00 185.220.101.46 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+Dec 20 12:19:00 server1 apache[$9538]: POST /uploads/SeeHowToRecover.html HTTP/1.1 200
+2024-12-20 08:54:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 951
+2024-12-20 11:03:45 named[382]: query: TXT dns-tunnel.evil.net IN from 172.16.0.10:18605 size=621 bytes
+2024-12-20 11:02:30 named[575]: query: CNAME TgtXfer.evil.com IN from 10.0.0.50:34009 size=2615 bytes
+2024-12-20 10:04:01 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:57950 to 192.168.1.10:443 rate=7661pps
+2024-12-20 10:02:22 kernel: [ Firewall] TCP: RST flood from 23.129.64.213:17504 to 192.168.1.10:443 rate=6068pps
+2024-12-20 14:04:40 103.35.74.12 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 2943 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 17:54:00 10.0.0.50 - - "GET / HTTP/1.1" 200 1661
+2024-12-20 15:01:15 198.51.100.50 mysql[8814]: BENCHMARK(10000000,SHA1('test'))
+Dec 20 12:13:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 14:10:20 185.220.101.46 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 4661 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+Dec 20 12:24:00 server1 kernel: [ENCRYPTOR] /var/www/html/uploads/document.pdf -> randomname.encrypted (AES-256)
+2024-12-20 10:01:08 kernel: [ Firewall] ICMP: Echo flood from 23.129.64.213:64242 to 192.168.1.10:53 rate=3601pps
+2024-12-20 10:00:13 kernel: [ Firewall] DNS: QUERY flood from 91.121.87.18:56795 to 192.168.1.10:80 rate=3582pps
+2024-12-20 14:08:20 185.220.101.46 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 853 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 10:03:13 kernel: [ Firewall] TCP: ACK flood from 198.51.100.50:7577 to 192.168.1.10:53 rate=2655pps
+2024-12-20 10:03:20 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:35542 to 192.168.1.10:443 rate=6354pps
+2024-12-20 10:04:41 kernel: [ Firewall] TCP: ACK flood from 45.154.255.147:56606 to 192.168.1.10:53 rate=9603pps
+2024-12-20 10:01:00 kernel: [ Firewall] UDP: UDP flood from 23.129.64.213:49765 to 192.168.1.10:443 rate=7102pps
+2024-12-20 10:04:32 kernel: [ Firewall] UDP: UDP flood from 91.121.87.18:37557 to 192.168.1.10:443 rate=9241pps
+2024-12-20 14:36:00 172.16.0.10 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 872
+2024-12-20 11:07:50 named[441]: query: NULL stage1.malware.xyz IN from 192.168.1.101:21676 size=1355 bytes
+2024-12-20 10:02:16 kernel: [ Firewall] TCP: ACK flood from 91.121.87.18:1785 to 192.168.1.10:53 rate=9941pps
+2024-12-20 15:12:00 91.121.87.18 mysql[2143]: SELECT SLEEP(10)--
+2024-12-20 10:02:59 kernel: [ Firewall] TCP: RST flood from 91.121.87.18:36060 to 192.168.1.10:80 rate=9890pps
+Dec 20 12:47:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /home/user/Documents/important.docx
+2024-12-20 15:03:45 91.121.87.18 mysql[5210]: SELECT * FROM users WHERE id=1 OR 1=1
+2024-12-20 10:02:39 kernel: [ Firewall] TCP: ACK flood from 198.51.100.50:6625 to 192.168.1.10:53 rate=1009pps
+2024-12-20 15:12:30 91.121.87.18 mysql[3557]: SELECT username,password FROM users--
+2024-12-20 14:10:50 103.35.74.12 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 08:24:00 10.0.0.50 - - "GET / HTTP/1.1" 200 3437
+2024-12-20 10:00:50 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:27414 to 192.168.1.10:80 rate=6051pps
+2024-12-20 15:14:30 91.121.87.18 mysql[2685]: BENCHMARK(10000000,SHA1('test'))
+2024-12-20 14:06:40 103.35.74.12 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 10:02:54 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:23716 to 192.168.1.10:53 rate=3185pps
+2024-12-20 14:06:20 91.121.87.18 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 2701 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:03:30 named[121]: query: MX cmd.control.secure IN from 172.16.0.10:6888 size=3281 bytes
+2024-12-20 11:03:05 named[350]: query: CNAME data.exfil.org IN from 192.168.1.101:35919 size=1628 bytes
+Dec 20 13:35:00 file-server rsync[6126]: sent 53081 bytes total speed is 2493 KB/s
+2024-12-20 10:03:09 kernel: [ Firewall] TCP: RST flood from 23.129.64.213:38495 to 192.168.1.10:443 rate=8939pps
+2024-12-20 10:03:56 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:45134 to 192.168.1.10:443 rate=7865pps
+2024-12-20 13:33:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 1773
+2024-12-20 13:09:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 4179
+2024-12-20 11:01:35 named[150]: query: TXT exfil.data.hopto.org IN from 192.168.1.100:19672 size=4928 bytes
+Dec 20 12:25:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 10:04:58 kernel: [ Firewall] ICMP: Echo flood from 185.220.101.46:48138 to 192.168.1.10:443 rate=9755pps
+2024-12-20 10:00:27 kernel: [ Firewall] TCP: RST flood from 91.121.87.18:35454 to 192.168.1.10:443 rate=2013pps
+2024-12-20 14:10:10 23.129.64.213 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 4057 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+Dec 20 12:44:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /network/share/*.xls
+2024-12-20 14:26:00 172.16.0.10 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 1607
+2024-12-20 11:02:35 named[171]: query: MX c2.stealthy.io IN from 172.16.0.10:26633 size=1992 bytes
+2024-12-20 10:01:01 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:56506 to 192.168.1.10:53 rate=3287pps
+2024-12-20 10:02:23 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:27783 to 192.168.1.10:443 rate=7043pps
+2024-12-20 10:04:05 kernel: [ Firewall] TCP: ACK flood from 185.220.101.46:19446 to 192.168.1.10:53 rate=7335pps
+2024-12-20 10:00:05 kernel: [ Firewall] DNS: QUERY flood from 91.121.87.18:40153 to 192.168.1.10:443 rate=7809pps
+Dec 20 12:03:00 server1 apache[$7863]: POST /uploads/SeeHowToRecover.html HTTP/1.1 200
+2024-12-20 15:11:00 185.220.101.46 mysql[4100]: Warning: DROP TABLE detected in query
+2024-12-20 10:00:17 kernel: [ Firewall] UDP: UDP flood from 103.35.74.12:51161 to 192.168.1.10:53 rate=8592pps
+2024-12-20 11:06:45 named[533]: query: NULL stage1.malware.xyz IN from 192.168.1.100:26430 size=4249 bytes
+2024-12-20 12:42:00 10.0.0.50 - - "GET /about HTTP/1.1" 200 923
+2024-12-20 10:02:02 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:20691 to 192.168.1.10:53 rate=3337pps
+2024-12-20 15:01:45 103.35.74.12 mysql[7347]: Warning: UNION injection detected in query
+2024-12-20 10:04:40 kernel: [ Firewall] HTTP: GET flood from 198.51.100.50:17552 to 192.168.1.10:80 rate=7105pps
+2024-12-20 15:00:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 642
+2024-12-20 10:03:00 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:63915 to 192.168.1.10:53 rate=8271pps
+2024-12-20 10:15:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 3578
+2024-12-20 15:57:00 192.168.1.100 - - "GET /contact HTTP/1.1" 200 1120
+2024-12-20 11:03:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 2195
+2024-12-20 11:06:35 named[538]: query: MX TgtXfer.evil.com IN from 172.16.0.10:46716 size=173 bytes
+Dec 20 12:36:00 server1 gnome-shell: WARNING: Desktop wallpaper modified by process 8931
+2024-12-20 15:03:45 91.121.87.18 mysql[8961]: Warning: UNION injection detected in query
+2024-12-20 11:01:05 named[973]: query: CNAME stage1.malware.xyz IN from 172.16.0.10:55667 size=4663 bytes
+2024-12-20 17:36:00 192.168.1.101 - - "GET / HTTP/1.1" 200 924
+2024-12-20 12:12:00 10.0.0.50 - - "GET /api/orders HTTP/1.1" 200 1715
+2024-12-20 12:21:00 192.168.1.101 - - "GET /contact HTTP/1.1" 200 1657
+2024-12-20 11:08:05 named[408]: query: MX stage1.malware.xyz IN from 192.168.1.100:60635 size=152 bytes
+2024-12-20 10:03:51 kernel: [ Firewall] HTTP: GET flood from 198.51.100.50:26140 to 192.168.1.10:80 rate=4657pps
+2024-12-20 15:02:45 185.220.101.46 mysql[7813]: SELECT username,password FROM users--
+2024-12-20 10:03:31 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:25057 to 192.168.1.10:443 rate=6591pps
+2024-12-20 10:04:43 kernel: [ Firewall] HTTP: GET flood from 91.121.87.18:22113 to 192.168.1.10:53 rate=9946pps
+2024-12-20 10:03:29 kernel: [ Firewall] HTTP: GET flood from 103.35.74.12:23896 to 192.168.1.10:443 rate=5313pps
+Dec 20 13:10:00 web-server sshd[3450]: Failed password for root from 192.168.1.100 port 16683 ssh2
+2024-12-20 14:04:10 185.220.101.46 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 10:04:59 kernel: [ Firewall] TCP: RST flood from 91.121.87.18:16623 to 192.168.1.10:80 rate=1107pps
+2024-12-20 15:06:45 103.35.74.12 mysql[9427]: SELECT SLEEP(10)--
+2024-12-20 08:15:00 192.168.1.100 - - "GET / HTTP/1.1" 200 3566
+2024-12-20 11:02:15 named[948]: query: MX cmd.control.secure IN from 192.168.1.100:28049 size=3480 bytes
+2024-12-20 11:00:55 named[314]: query: CNAME stage1.malware.xyz IN from 192.168.1.100:19233 size=4503 bytes
+2024-12-20 15:54:00 192.168.1.101 - - "GET /products HTTP/1.1" 200 2889
+2024-12-20 10:42:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 628
+Dec 20 12:07:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 16:30:00 192.168.1.100 - - "GET /contact HTTP/1.1" 200 1211
+2024-12-20 10:03:58 kernel: [ Firewall] HTTP: GET flood from 103.35.74.12:45339 to 192.168.1.10:80 rate=7738pps
+2024-12-20 10:00:22 kernel: [ Firewall] TCP: RST flood from 23.129.64.213:32277 to 192.168.1.10:443 rate=5739pps
+2024-12-20 14:09:00 23.129.64.213 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 2669 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:01:44 kernel: [ Firewall] TCP: ACK flood from 45.154.255.147:24561 to 192.168.1.10:443 rate=9947pps
+2024-12-20 11:00:15 named[742]: query: MX exfil.data.hopto.org IN from 192.168.1.100:34012 size=1308 bytes
+2024-12-20 08:21:00 10.0.0.50 - - "GET / HTTP/1.1" 200 3265
+2024-12-20 10:01:26 kernel: [ Firewall] TCP: RST flood from 198.51.100.50:27123 to 192.168.1.10:80 rate=5153pps
+2024-12-20 10:03:57 kernel: [ Firewall] UDP: UDP flood from 45.154.255.147:14272 to 192.168.1.10:443 rate=6756pps
+2024-12-20 14:30:00 172.16.0.10 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 1920
+2024-12-20 11:02:50 named[488]: query: NULL exfil.data.hopto.org IN from 192.168.1.100:8503 size=1161 bytes
+2024-12-20 14:04:50 103.35.74.12 - - "GET /microsoft/login?redirect=https://account-update-secure.com HTTP/1.1" 200 4967 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+Dec 20 12:14:00 server1 apache[$2694]: POST /uploads/SeeHowToRecover.html HTTP/1.1 200
+2024-12-20 15:30:00 192.168.1.101 - - "GET /products HTTP/1.1" 200 4163
+2024-12-20 14:05:40 103.35.74.12 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 4177 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:02:34 kernel: [ Firewall] TCP: RST flood from 185.220.101.46:28325 to 192.168.1.10:443 rate=6619pps
+2024-12-20 11:08:15 named[920]: query: CNAME exfil.data.hopto.org IN from 192.168.1.100:13587 size=1445 bytes
+2024-12-20 10:03:05 kernel: [ Firewall] DNS: QUERY flood from 198.51.100.50:59550 to 192.168.1.10:80 rate=4369pps
+2024-12-20 11:04:45 named[294]: query: TXT TgtXfer.evil.com IN from 10.0.0.50:41903 size=136 bytes
+2024-12-20 10:03:40 kernel: [ Firewall] HTTP: GET flood from 45.154.255.147:58714 to 192.168.1.10:53 rate=1422pps
+2024-12-20 14:09:50 103.35.74.12 - - "GET /api/auth?callback=https://phishing.org/steal HTTP/1.1" 200 3882 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 16:39:00 192.168.1.101 - - "GET /products HTTP/1.1" 200 1764
+2024-12-20 10:01:50 kernel: [ Firewall] DNS: QUERY flood from 91.121.87.18:19194 to 192.168.1.10:443 rate=8543pps
+2024-12-20 15:02:15 103.35.74.12 mysql[4137]: Warning: DROP TABLE detected in query
+2024-12-20 10:02:37 kernel: [ Firewall] HTTP: GET flood from 185.220.101.46:22511 to 192.168.1.10:80 rate=3374pps
+2024-12-20 15:04:45 91.121.87.18 mysql[2607]: Warning: UNION injection detected in query
+Dec 20 13:25:00 db-server sshd[9640]: Accepted password for 172.16.0.20 from 10.0.0.50 port 36757 ssh2
+2024-12-20 15:05:15 23.129.64.213 mysql[3281]: GRANT ALL ON *.* TO 'hacker'@'%'
+2024-12-20 11:54:00 192.168.1.101 - - "GET /products HTTP/1.1" 200 1693
+2024-12-20 10:00:00 192.168.1.101 - - "GET /contact HTTP/1.1" 200 1366
+2024-12-20 17:48:00 192.168.1.101 - - "GET / HTTP/1.1" 200 143
+2024-12-20 11:07:00 named[412]: query: CNAME dns-tunnel.evil.net IN from 192.168.1.101:64335 size=842 bytes
+2024-12-20 10:04:49 kernel: [ Firewall] TCP: RST flood from 91.121.87.18:41439 to 192.168.1.10:80 rate=2415pps
+2024-12-20 14:05:30 23.129.64.213 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 357 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 15:21:00 192.168.1.101 - - "GET /api/orders HTTP/1.1" 200 4105
+2024-12-20 14:06:50 198.51.100.50 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 4314 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 15:00:00 198.51.100.50 mysql[3523]: BENCHMARK(10000000,SHA1('test'))
+2024-12-20 10:04:09 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:27077 to 192.168.1.10:53 rate=9562pps
+2024-12-20 14:00:10 103.35.74.12 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 837 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 14:10:00 10.0.0.50 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 656
+2024-12-20 08:42:00 10.0.0.50 - - "GET /api/orders HTTP/1.1" 200 534
+2024-12-20 10:03:19 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:35403 to 192.168.1.10:80 rate=9272pps
+Dec 20 12:21:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /network/share/*.xls
+Dec 20 12:48:00 server1 kernel: [ENCRYPTOR] Created /home/user/Desktop/README.txt
+2024-12-20 15:39:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 3947
+2024-12-20 11:04:30 named[585]: query: CNAME cmd.control.secure IN from 192.168.1.101:12683 size=2245 bytes
+2024-12-20 10:51:00 192.168.1.101 - - "GET /contact HTTP/1.1" 200 3671
+2024-12-20 15:14:00 185.220.101.46 mysql[6355]: LOAD_FILE('/etc/passwd')
+2024-12-20 14:03:10 45.154.255.147 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 4972 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 11:21:00 192.168.1.100 - - "GET /products HTTP/1.1" 200 2772
+2024-12-20 10:02:05 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:22865 to 192.168.1.10:53 rate=5643pps
+2024-12-20 10:02:19 kernel: [ Firewall] UDP: UDP flood from 198.51.100.50:58448 to 192.168.1.10:443 rate=1741pps
+2024-12-20 14:22:00 10.0.0.50 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 995
+2024-12-20 10:01:32 kernel: [ Firewall] UDP: UDP flood from 45.154.255.147:53934 to 192.168.1.10:80 rate=4819pps
+2024-12-20 10:02:00 kernel: [ Firewall] TCP: SYN flood from 23.129.64.213:37117 to 192.168.1.10:80 rate=6270pps
+2024-12-20 14:03:00 10.0.0.50 - - "GET /api/orders HTTP/1.1" 200 3721
+2024-12-20 15:24:00 192.168.1.101 - - "GET /about HTTP/1.1" 200 2422
+2024-12-20 08:33:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 1772
+2024-12-20 14:11:40 198.51.100.50 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 4035 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 14:07:20 45.154.255.147 - - "GET /microsoft/login?redirect=https://account-update-secure.com HTTP/1.1" 200 1346 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 15:07:30 45.154.255.147 mysql[8641]: SELECT * FROM users WHERE id=1 OR 1=1
+2024-12-20 11:01:40 named[110]: query: MX c2.stealthy.io IN from 192.168.1.101:12626 size=538 bytes
+2024-12-20 11:05:55 named[643]: query: NULL dns-tunnel.evil.net IN from 192.168.1.100:60620 size=4358 bytes
+2024-12-20 10:00:52 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:25843 to 192.168.1.10:80 rate=7560pps
+2024-12-20 14:00:30 91.121.87.18 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 4963 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:06:30 named[110]: query: CNAME data.exfil.org IN from 192.168.1.101:25229 size=1506 bytes
+2024-12-20 10:12:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 4366
+2024-12-20 10:01:33 kernel: [ Firewall] TCP: RST flood from 91.121.87.18:40609 to 192.168.1.10:53 rate=8212pps
+2024-12-20 11:00:25 named[485]: query: CNAME exfil.data.hopto.org IN from 172.16.0.10:51766 size=3400 bytes
+2024-12-20 15:04:00 91.121.87.18 mysql[6726]: SELECT username,password FROM users--
+2024-12-20 10:04:12 kernel: [ Firewall] UDP: UDP flood from 45.154.255.147:57664 to 192.168.1.10:53 rate=5067pps
+2024-12-20 15:11:45 45.154.255.147 mysql[7149]: LOAD_FILE('/etc/passwd')
+2024-12-20 14:24:00 10.0.0.50 - - "GET / HTTP/1.1" 200 4987
+2024-12-20 12:33:00 10.0.0.50 - - "GET /api/orders HTTP/1.1" 200 4148
+2024-12-20 14:03:40 45.154.255.147 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 4505 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:02:00 named[702]: query: NULL exfil.data.hopto.org IN from 192.168.1.101:28268 size=2668 bytes
+2024-12-20 08:03:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 852
+2024-12-20 16:57:00 192.168.1.101 - - "GET /about HTTP/1.1" 200 1147
+Dec 20 12:43:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/www/html/uploads/document.pdf
+Dec 20 12:41:00 server1 kernel: [ENCRYPTOR] /var/backups/daily.bak DELETED
+2024-12-20 15:06:00 192.168.1.101 - - "GET /about HTTP/1.1" 200 4849
+2024-12-20 15:10:00 185.220.101.46 mysql[8584]: Warning: DROP TABLE detected in query
+2024-12-20 11:02:45 named[757]: query: MX cmd.control.secure IN from 10.0.0.50:61906 size=3828 bytes
+2024-12-20 10:01:56 kernel: [ Firewall] ICMP: Echo flood from 45.154.255.147:20476 to 192.168.1.10:80 rate=6878pps
+2024-12-20 10:00:29 kernel: [ Firewall] TCP: ACK flood from 103.35.74.12:39082 to 192.168.1.10:80 rate=1088pps
+2024-12-20 10:00:19 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:58051 to 192.168.1.10:443 rate=1733pps
+2024-12-20 11:01:50 named[379]: query: MX tunnel.encoded.io IN from 10.0.0.50:19265 size=3700 bytes
+2024-12-20 10:04:20 kernel: [ Firewall] TCP: SYN flood from 23.129.64.213:60582 to 192.168.1.10:53 rate=2996pps
+Dec 20 12:24:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/www/html/uploads/document.pdf
+2024-12-20 11:00:20 named[636]: query: CNAME tunnel.encoded.io IN from 10.0.0.50:60282 size=4335 bytes
+2024-12-20 08:57:00 192.168.1.100 - - "GET / HTTP/1.1" 200 1337
+2024-12-20 15:12:45 23.129.64.213 MySQL[8683]: QueryError: Access denied for user to database
+2024-12-20 11:05:05 named[294]: query: NULL cmd.control.secure IN from 10.0.0.50:11078 size=1414 bytes
+2024-12-20 10:01:46 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:4831 to 192.168.1.10:53 rate=6783pps
+2024-12-20 10:03:26 kernel: [ Firewall] TCP: RST flood from 103.35.74.12:5054 to 192.168.1.10:53 rate=2825pps
+2024-12-20 10:03:49 kernel: [ Firewall] TCP: RST flood from 103.35.74.12:14576 to 192.168.1.10:53 rate=7376pps
+2024-12-20 10:21:00 192.168.1.100 - - "GET /api/orders HTTP/1.1" 200 1140
+Dec 20 12:34:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 13:51:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 1651
+2024-12-20 17:24:00 10.0.0.50 - - "GET /about HTTP/1.1" 200 4884
+2024-12-20 14:27:00 192.168.1.100 - - "GET /api/orders HTTP/1.1" 200 2125
+2024-12-20 14:12:50 45.154.255.147 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 1569 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 10:02:48 kernel: [ Firewall] TCP: RST flood from 23.129.64.213:42227 to 192.168.1.10:443 rate=7538pps
+2024-12-20 14:05:50 45.154.255.147 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 4112 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 10:01:53 kernel: [ Firewall] DNS: QUERY flood from 198.51.100.50:59801 to 192.168.1.10:53 rate=7128pps
+2024-12-20 14:42:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 3570
+Dec 20 12:23:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /network/share/*.xls
+2024-12-20 10:02:52 kernel: [ Firewall] UDP: UDP flood from 23.129.64.213:20991 to 192.168.1.10:443 rate=4607pps
+Dec 20 12:29:00 server1 kernel: [ENCRYPTOR] /var/backups/daily.bak DELETED
+2024-12-20 15:06:15 103.35.74.12 mysql[6579]: '; DROP TABLE users--
+2024-12-20 11:02:55 named[282]: query: TXT TgtXfer.evil.com IN from 10.0.0.50:33374 size=1095 bytes
+2024-12-20 10:02:55 kernel: [ Firewall] ICMP: Echo flood from 23.129.64.213:4003 to 192.168.1.10:443 rate=1836pps
+2024-12-20 17:21:00 10.0.0.50 - - "GET /api/orders HTTP/1.1" 200 4909
+2024-12-20 14:06:30 45.154.255.147 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 570 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 10:00:08 kernel: [ Firewall] DNS: QUERY flood from 45.154.255.147:11729 to 192.168.1.10:443 rate=4165pps
+2024-12-20 13:24:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 4955
+2024-12-20 10:04:25 kernel: [ Firewall] ICMP: Echo flood from 91.121.87.18:64741 to 192.168.1.10:443 rate=5136pps
+Dec 20 12:15:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /network/share/*.xls
+2024-12-20 10:03:54 kernel: [ Firewall] UDP: UDP flood from 103.35.74.12:5572 to 192.168.1.10:80 rate=2561pps
+2024-12-20 10:00:30 kernel: [ Firewall] ICMP: Echo flood from 198.51.100.50:45035 to 192.168.1.10:80 rate=2753pps
+2024-12-20 11:06:10 named[576]: query: NULL data.exfil.org IN from 192.168.1.100:35018 size=1422 bytes
+2024-12-20 11:07:40 named[840]: query: TXT c2.stealthy.io IN from 172.16.0.10:12105 size=2809 bytes
+2024-12-20 14:18:00 192.168.1.100 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 1063
+Dec 20 12:30:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /shared/finance/report.xlsx
+2024-12-20 14:01:10 23.129.64.213 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 4972 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 10:03:10 kernel: [ Firewall] HTTP: GET flood from 45.154.255.147:35828 to 192.168.1.10:443 rate=5759pps
+Dec 20 12:00:00 server1 systemd[1]: mysql.service: Main process exited, code=killed, status=15/TERM
+2024-12-20 15:04:45 91.121.87.18 mysql[1027]: SELECT * FROM users WHERE id=1 OR 1=1
+2024-12-20 10:02:51 kernel: [ Firewall] ICMP: Echo flood from 91.121.87.18:44355 to 192.168.1.10:53 rate=9644pps
+Dec 20 12:11:00 server1 systemd[1]: mysql.service: Main process exited, code=killed, status=15/TERM
+2024-12-20 14:08:20 185.220.101.46 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 14:06:10 23.129.64.213 - - "GET /microsoft/login?redirect=https://account-update-secure.com HTTP/1.1" 200 4683 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 14:00:00 198.51.100.50 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 10:01:19 kernel: [ Firewall] HTTP: GET flood from 185.220.101.46:62462 to 192.168.1.10:443 rate=8798pps
+2024-12-20 10:00:45 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:45222 to 192.168.1.10:443 rate=1936pps
+2024-12-20 14:15:00 10.0.0.50 - - "GET / HTTP/1.1" 200 799
+2024-12-20 11:02:20 named[196]: query: NULL stage1.malware.xyz IN from 192.168.1.101:13219 size=322 bytes
+2024-12-20 10:02:24 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:32146 to 192.168.1.10:443 rate=8878pps
+2024-12-20 11:57:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 596
+2024-12-20 12:06:00 10.0.0.50 - - "GET / HTTP/1.1" 200 433
+2024-12-20 16:03:00 192.168.1.101 - - "GET /api/orders HTTP/1.1" 200 1369
+Dec 20 12:37:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /home/user/Documents/important.docx
+2024-12-20 15:18:00 192.168.1.100 - - "GET /contact HTTP/1.1" 200 3462
+2024-12-20 10:00:06 kernel: [ Firewall] ICMP: Echo flood from 103.35.74.12:49706 to 192.168.1.10:80 rate=9556pps
+2024-12-20 13:48:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 1681
+Dec 20 13:25:00 db-server sshd[1744]: Failed password for root from 10.0.0.50 port 40594 ssh2
+2024-12-20 10:04:38 kernel: [ Firewall] TCP: RST flood from 198.51.100.50:20894 to 192.168.1.10:80 rate=3138pps
+2024-12-20 14:39:00 192.168.1.101 - - "GET /products HTTP/1.1" 200 432
+2024-12-20 11:06:15 named[153]: query: TXT stage1.malware.xyz IN from 10.0.0.50:23811 size=4929 bytes
+2024-12-20 14:05:10 103.35.74.12 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 3137 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 10:03:06 kernel: [ Firewall] HTTP: GET flood from 198.51.100.50:1551 to 192.168.1.10:80 rate=6670pps
+2024-12-20 17:33:00 192.168.1.100 - - "GET /contact HTTP/1.1" 200 4232
+2024-12-20 17:06:00 192.168.1.100 - - "GET / HTTP/1.1" 200 3646
+2024-12-20 17:18:00 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 2753
+2024-12-20 10:01:43 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:46060 to 192.168.1.10:80 rate=5098pps
+2024-12-20 11:00:10 named[225]: query: TXT dns-tunnel.evil.net IN from 192.168.1.100:35603 size=565 bytes
+2024-12-20 11:45:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 821
+2024-12-20 14:11:00 45.154.255.147 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 957 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:04:40 named[503]: query: CNAME data.exfil.org IN from 10.0.0.50:63658 size=2220 bytes
+2024-12-20 14:09:10 23.129.64.213 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 527 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 15:48:00 192.168.1.101 - - "GET / HTTP/1.1" 200 3562
+2024-12-20 12:18:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 4833
+Dec 20 12:45:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /network/share/*.xls
+2024-12-20 11:05:10 named[724]: query: TXT TgtXfer.evil.com IN from 192.168.1.100:18278 size=2513 bytes
+2024-12-20 08:48:00 192.168.1.101 - - "GET /contact HTTP/1.1" 200 3607
+2024-12-20 17:42:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 2725
+2024-12-20 14:07:00 198.51.100.50 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 775 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 09:45:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 2952
+2024-12-20 10:03:07 kernel: [ Firewall] UDP: UDP flood from 198.51.100.50:39088 to 192.168.1.10:443 rate=3656pps
+2024-12-20 10:03:22 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:10610 to 192.168.1.10:443 rate=5751pps
+2024-12-20 10:00:41 kernel: [ Firewall] DNS: QUERY flood from 185.220.101.46:54144 to 192.168.1.10:53 rate=2190pps
+2024-12-20 14:04:00 91.121.87.18 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 3263 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 16:12:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 3652
+2024-12-20 14:45:00 192.168.1.100 - - "GET / HTTP/1.1" 200 1968
+2024-12-20 12:48:00 192.168.1.101 - - "GET / HTTP/1.1" 200 1358
+2024-12-20 14:11:50 198.51.100.50 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 3356 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 17:51:00 192.168.1.101 - - "GET / HTTP/1.1" 200 4899
+2024-12-20 12:51:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 2874
+2024-12-20 10:01:23 kernel: [ Firewall] DNS: QUERY flood from 185.220.101.46:60577 to 192.168.1.10:53 rate=6732pps
+2024-12-20 11:01:10 named[199]: query: NULL exfil.data.hopto.org IN from 192.168.1.101:28605 size=3763 bytes
+2024-12-20 14:01:50 185.220.101.46 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 2199 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:03:27 kernel: [ Firewall] TCP: ACK flood from 198.51.100.50:26212 to 192.168.1.10:53 rate=8397pps
+2024-12-20 10:04:36 kernel: [ Firewall] DNS: QUERY flood from 103.35.74.12:56783 to 192.168.1.10:443 rate=4960pps
+2024-12-20 10:02:30 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:62518 to 192.168.1.10:80 rate=9362pps
+Dec 20 12:20:00 server1 kernel: [ENCRYPTOR] /var/backups/daily.bak DELETED
+2024-12-20 10:01:35 kernel: [ Firewall] TCP: RST flood from 23.129.64.213:36928 to 192.168.1.10:80 rate=9758pps
+2024-12-20 10:02:31 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:24285 to 192.168.1.10:53 rate=7655pps
+2024-12-20 14:18:00 192.168.1.101 - - "GET /api/orders HTTP/1.1" 200 410
+2024-12-20 10:00:43 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:32231 to 192.168.1.10:80 rate=8812pps
+2024-12-20 11:04:05 named[330]: query: TXT dns-tunnel.evil.net IN from 10.0.0.50:31063 size=2336 bytes
+2024-12-20 10:00:44 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:63301 to 192.168.1.10:443 rate=1544pps
+2024-12-20 10:03:03 kernel: [ Firewall] UDP: UDP flood from 185.220.101.46:22413 to 192.168.1.10:53 rate=6104pps
+2024-12-20 09:03:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 4061
+2024-12-20 10:01:36 kernel: [ Firewall] DNS: QUERY flood from 23.129.64.213:26678 to 192.168.1.10:53 rate=9393pps
+2024-12-20 14:05:50 45.154.255.147 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+Dec 20 12:10:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 14:33:00 192.168.1.100 - - "GET /api/orders HTTP/1.1" 200 4543
+2024-12-20 10:02:32 kernel: [ Firewall] DNS: QUERY flood from 185.220.101.46:5175 to 192.168.1.10:80 rate=1927pps
+2024-12-20 16:36:00 192.168.1.100 - - "GET /contact HTTP/1.1" 200 537
+2024-12-20 10:03:14 kernel: [ Firewall] ICMP: Echo flood from 45.154.255.147:1428 to 192.168.1.10:53 rate=3235pps
+2024-12-20 11:24:00 192.168.1.100 - - "GET / HTTP/1.1" 200 1625
+2024-12-20 10:01:16 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:49615 to 192.168.1.10:53 rate=8427pps
+2024-12-20 11:05:00 named[912]: query: CNAME cmd.control.secure IN from 172.16.0.10:2552 size=1803 bytes
+2024-12-20 11:03:15 named[533]: query: CNAME stage1.malware.xyz IN from 192.168.1.101:38366 size=426 bytes
+2024-12-20 14:05:20 198.51.100.50 - - "GET /api/auth?callback=https://phishing.org/steal HTTP/1.1" 200 181 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 14:01:20 91.121.87.18 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 639 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 10:03:28 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:27143 to 192.168.1.10:53 rate=1443pps
+2024-12-20 15:12:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 4094
+2024-12-20 15:03:00 185.220.101.46 mysql[4310]: '; DROP TABLE users--
+2024-12-20 14:01:00 91.121.87.18 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 3335 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:02:08 kernel: [ Firewall] TCP: RST flood from 185.220.101.46:51911 to 192.168.1.10:80 rate=1383pps
+2024-12-20 10:00:02 kernel: [ Firewall] ICMP: Echo flood from 185.220.101.46:9468 to 192.168.1.10:53 rate=8466pps
+2024-12-20 10:02:57 kernel: [ Firewall] TCP: RST flood from 91.121.87.18:57575 to 192.168.1.10:80 rate=3760pps
+2024-12-20 15:00:45 198.51.100.50 mysql[3783]: BENCHMARK(10000000,SHA1('test'))
+2024-12-20 11:12:00 192.168.1.101 - - "GET /about HTTP/1.1" 200 3019
+2024-12-20 16:27:00 192.168.1.101 - - "GET /contact HTTP/1.1" 200 1567
+2024-12-20 10:01:13 kernel: [ Firewall] ICMP: Echo flood from 103.35.74.12:35726 to 192.168.1.10:53 rate=5599pps
+2024-12-20 10:04:22 kernel: [ Firewall] ICMP: Echo flood from 91.121.87.18:54177 to 192.168.1.10:53 rate=5104pps
+2024-12-20 14:57:00 192.168.1.100 - - "GET /api/orders HTTP/1.1" 200 2478
+Dec 20 12:05:00 server1 kernel: [ENCRYPTOR] /var/backups/daily.bak DELETED
+Dec 20 12:48:00 server1 gnome-shell: WARNING: Desktop wallpaper modified by process 2086
+2024-12-20 15:07:45 45.154.255.147 mysql[6110]: Warning: DROP TABLE detected in query
+2024-12-20 09:39:00 192.168.1.101 - - "GET /api/orders HTTP/1.1" 200 2566
+2024-12-20 10:03:24 kernel: [ Firewall] UDP: UDP flood from 103.35.74.12:32620 to 192.168.1.10:443 rate=2217pps
+2024-12-20 11:39:00 10.0.0.50 - - "GET /about HTTP/1.1" 200 134
+2024-12-20 09:24:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 3462
+2024-12-20 11:04:50 named[479]: query: CNAME exfil.data.hopto.org IN from 192.168.1.101:35171 size=1389 bytes
+2024-12-20 11:00:45 named[919]: query: NULL c2.stealthy.io IN from 172.16.0.10:62159 size=827 bytes
+2024-12-20 11:04:55 named[466]: query: CNAME data.exfil.org IN from 192.168.1.101:53680 size=1200 bytes
+2024-12-20 08:39:00 192.168.1.100 - - "GET /products HTTP/1.1" 200 1041
+2024-12-20 15:45:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 1999
+2024-12-20 10:04:06 kernel: [ Firewall] TCP: RST flood from 91.121.87.18:37018 to 192.168.1.10:53 rate=4163pps
+2024-12-20 14:05:00 198.51.100.50 - - "GET /api/auth?callback=https://phishing.org/steal HTTP/1.1" 200 785 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 11:01:45 named[158]: query: MX dns-tunnel.evil.net IN from 172.16.0.10:15026 size=321 bytes
+2024-12-20 15:01:30 185.220.101.46 mysql[4896]: EXEC xp_cmdshell('whoami')
+2024-12-20 12:54:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 1532
+2024-12-20 10:03:33 kernel: [ Firewall] TCP: ACK flood from 198.51.100.50:34094 to 192.168.1.10:53 rate=3567pps
+Dec 20 12:12:00 server1 systemd[1]: mysql.service: Main process exited, code=killed, status=15/TERM
+2024-12-20 10:01:18 kernel: [ Firewall] TCP: SYN flood from 23.129.64.213:1267 to 192.168.1.10:53 rate=7779pps
+2024-12-20 14:34:00 172.16.0.10 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 715
+2024-12-20 10:00:39 kernel: [ Firewall] DNS: QUERY flood from 185.220.101.46:49052 to 192.168.1.10:53 rate=7832pps
+Dec 20 12:32:00 server1 kernel: [ENCRYPTOR] /var/lib/postgresql/data/*.db -> ENCRYPTED (AES-256)
+2024-12-20 12:15:00 192.168.1.101 - - "GET /api/orders HTTP/1.1" 200 1913
+2024-12-20 10:03:59 kernel: [ Firewall] TCP: RST flood from 198.51.100.50:29352 to 192.168.1.10:443 rate=9751pps
+2024-12-20 10:04:30 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:60069 to 192.168.1.10:53 rate=3539pps
+2024-12-20 10:02:28 kernel: [ Firewall] TCP: ACK flood from 91.121.87.18:10463 to 192.168.1.10:53 rate=3963pps
+2024-12-20 10:02:18 kernel: [ Firewall] UDP: UDP flood from 198.51.100.50:15086 to 192.168.1.10:443 rate=4801pps
+2024-12-20 11:03:20 named[780]: response: TXT dns-tunnel.evil.net -> 192.168.1.101 answer="data123"
+2024-12-20 11:04:35 named[630]: query: MX c2.stealthy.io IN from 10.0.0.50:19650 size=2227 bytes
+2024-12-20 11:05:25 named[124]: query: TXT stage1.malware.xyz IN from 192.168.1.101:56459 size=1339 bytes
+2024-12-20 10:01:55 kernel: [ Firewall] DNS: QUERY flood from 198.51.100.50:37443 to 192.168.1.10:443 rate=5328pps
+2024-12-20 10:02:36 kernel: [ Firewall] ICMP: Echo flood from 198.51.100.50:20556 to 192.168.1.10:53 rate=3865pps
+2024-12-20 10:01:06 kernel: [ Firewall] ICMP: Echo flood from 103.35.74.12:31471 to 192.168.1.10:80 rate=8689pps
+2024-12-20 10:01:41 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:59451 to 192.168.1.10:53 rate=4248pps
+2024-12-20 10:04:16 kernel: [ Firewall] UDP: UDP flood from 103.35.74.12:63994 to 192.168.1.10:80 rate=6545pps
+2024-12-20 10:00:38 kernel: [ Firewall] TCP: ACK flood from 103.35.74.12:11248 to 192.168.1.10:443 rate=1196pps
+2024-12-20 10:01:15 kernel: [ Firewall] TCP: RST flood from 198.51.100.50:57714 to 192.168.1.10:80 rate=1790pps
+2024-12-20 10:01:49 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:43215 to 192.168.1.10:80 rate=6335pps
+2024-12-20 10:04:44 kernel: [ Firewall] ICMP: Echo flood from 91.121.87.18:15004 to 192.168.1.10:53 rate=8715pps
+2024-12-20 10:03:25 kernel: [ Firewall] TCP: ACK flood from 185.220.101.46:4839 to 192.168.1.10:80 rate=6339pps
+2024-12-20 11:03:40 named[926]: query: TXT TgtXfer.evil.com IN from 172.16.0.10:58231 size=466 bytes
+2024-12-20 14:07:30 198.51.100.50 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 1799 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:04:35 kernel: [ Firewall] TCP: ACK flood from 198.51.100.50:11682 to 192.168.1.10:80 rate=7478pps
+2024-12-20 10:36:00 192.168.1.101 - - "GET /contact HTTP/1.1" 200 3904
+2024-12-20 15:15:00 192.168.1.101 - - "GET /about HTTP/1.1" 200 1145
+2024-12-20 10:02:44 kernel: [ Firewall] TCP: ACK flood from 23.129.64.213:47077 to 192.168.1.10:80 rate=5221pps
+2024-12-20 16:24:00 192.168.1.101 - - "GET /products HTTP/1.1" 200 1846
+2024-12-20 08:45:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 1474
+2024-12-20 10:02:40 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:43751 to 192.168.1.10:80 rate=6259pps
+2024-12-20 10:04:23 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:41140 to 192.168.1.10:443 rate=7247pps
+Dec 20 12:22:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 14:04:30 23.129.64.213 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 3231 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 15:09:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 3600
+2024-12-20 11:07:55 named[913]: query: MX TgtXfer.evil.com IN from 192.168.1.101:8465 size=2236 bytes
+2024-12-20 10:02:26 kernel: [ Firewall] TCP: SYN flood from 23.129.64.213:65275 to 192.168.1.10:80 rate=4830pps
+2024-12-20 10:00:47 kernel: [ Firewall] TCP: ACK flood from 198.51.100.50:33778 to 192.168.1.10:443 rate=4587pps
+2024-12-20 13:57:00 192.168.1.100 - - "GET / HTTP/1.1" 200 4335
+2024-12-20 14:03:20 45.154.255.147 - - "GET /api/auth?callback=https://phishing.org/steal HTTP/1.1" 200 2236 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 14:12:00 45.154.255.147 - - "GET /microsoft/login?redirect=https://account-update-secure.com HTTP/1.1" 200 3002 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:03:55 kernel: [ Firewall] TCP: ACK flood from 45.154.255.147:23782 to 192.168.1.10:53 rate=6535pps
+2024-12-20 10:02:15 kernel: [ Firewall] TCP: RST flood from 45.154.255.147:10060 to 192.168.1.10:53 rate=1116pps
+2024-12-20 14:02:30 45.154.255.147 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 3109 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 11:02:05 named[288]: query: CNAME stage1.malware.xyz IN from 192.168.1.101:1668 size=3105 bytes
+2024-12-20 13:12:00 192.168.1.100 - - "GET /api/orders HTTP/1.1" 200 2216
+2024-12-20 14:01:40 185.220.101.46 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 2476 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:02:33 kernel: [ Firewall] DNS: QUERY flood from 91.121.87.18:47825 to 192.168.1.10:53 rate=9106pps
+2024-12-20 10:03:47 kernel: [ Firewall] TCP: ACK flood from 91.121.87.18:29516 to 192.168.1.10:443 rate=3577pps
+2024-12-20 14:12:10 45.154.255.147 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 1170 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 12:00:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 872
+2024-12-20 14:02:20 91.121.87.18 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 3023 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 09:06:00 192.168.1.101 - - "GET /api/orders HTTP/1.1" 200 2272
+2024-12-20 10:01:24 kernel: [ Firewall] TCP: ACK flood from 103.35.74.12:38656 to 192.168.1.10:53 rate=5531pps
+2024-12-20 10:03:46 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:13964 to 192.168.1.10:53 rate=9458pps
+2024-12-20 10:03:38 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:4828 to 192.168.1.10:80 rate=6378pps
+2024-12-20 11:01:30 named[986]: query: MX cmd.control.secure IN from 192.168.1.100:49364 size=2213 bytes
+2024-12-20 10:04:11 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:6121 to 192.168.1.10:80 rate=2365pps
+2024-12-20 09:57:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 2685
+2024-12-20 10:02:17 kernel: [ Firewall] ICMP: Echo flood from 91.121.87.18:34745 to 192.168.1.10:443 rate=2111pps
+2024-12-20 10:00:42 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:57933 to 192.168.1.10:443 rate=4617pps
+Dec 20 12:49:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 14:08:10 45.154.255.147 - - "GET /wp-admin/authorize?url=http://malicious.site HTTP/1.1" 200 714 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 13:30:00 192.168.1.100 - - "GET / HTTP/1.1" 200 4617
+2024-12-20 10:01:40 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:39758 to 192.168.1.10:53 rate=3656pps
+2024-12-20 10:02:47 kernel: [ Firewall] TCP: ACK flood from 23.129.64.213:64132 to 192.168.1.10:443 rate=9020pps
+2024-12-20 11:05:00 named[289]: response: TXT cmd.control.secure -> 172.16.0.10 answer="data123"
+2024-12-20 10:00:18 kernel: [ Firewall] HTTP: GET flood from 23.129.64.213:25469 to 192.168.1.10:80 rate=7176pps
+2024-12-20 10:02:13 kernel: [ Firewall] ICMP: Echo flood from 103.35.74.12:27333 to 192.168.1.10:443 rate=7030pps
+2024-12-20 15:13:00 45.154.255.147 mysql[1246]: BENCHMARK(10000000,SHA1('test'))
+2024-12-20 10:04:31 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:51760 to 192.168.1.10:80 rate=5138pps
+2024-12-20 15:08:45 198.51.100.50 mysql[4089]: Warning: UNION injection detected in query
+2024-12-20 13:42:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 2369
+2024-12-20 10:03:34 kernel: [ Firewall] DNS: QUERY flood from 198.51.100.50:58115 to 192.168.1.10:443 rate=3308pps
+Dec 20 13:05:00 web-server sudo: /etc/shadow: TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=cat /etc/shadow
+2024-12-20 14:00:40 103.35.74.12 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 2684 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 09:51:00 192.168.1.100 - - "GET /contact HTTP/1.1" 200 4516
+2024-12-20 11:05:50 named[323]: query: TXT exfil.data.hopto.org IN from 172.16.0.10:45370 size=4198 bytes
+2024-12-20 13:21:00 10.0.0.50 - - "GET / HTTP/1.1" 200 3869
+2024-12-20 10:04:51 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:17377 to 192.168.1.10:443 rate=9294pps
+2024-12-20 10:04:47 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:63131 to 192.168.1.10:443 rate=7507pps
+2024-12-20 10:04:33 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:37142 to 192.168.1.10:443 rate=1453pps
+2024-12-20 14:00:00 198.51.100.50 - - "GET /microsoft/login?redirect=https://account-update-secure.com HTTP/1.1" 200 2784 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 14:10:00 185.220.101.46 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 3526 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 15:08:30 185.220.101.46 mysql[2540]: Warning: DROP TABLE detected in query
+2024-12-20 17:09:00 10.0.0.50 - - "GET / HTTP/1.1" 200 1503
+2024-12-20 09:33:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 1114
+2024-12-20 10:03:41 kernel: [ Firewall] TCP: RST flood from 103.35.74.12:36102 to 192.168.1.10:53 rate=1422pps
+2024-12-20 15:05:30 91.121.87.18 mysql[4403]: SELECT username,password FROM users--
+2024-12-20 10:01:21 kernel: [ Firewall] ICMP: Echo flood from 185.220.101.46:33046 to 192.168.1.10:53 rate=9626pps
+2024-12-20 14:02:50 45.154.255.147 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 1875 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 16:06:00 192.168.1.101 - - "GET /products HTTP/1.1" 200 3391
+2024-12-20 11:02:40 named[621]: query: CNAME data.exfil.org IN from 10.0.0.50:12874 size=4918 bytes
+2024-12-20 14:07:10 198.51.100.50 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 1892 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 17:39:00 192.168.1.100 - - "GET / HTTP/1.1" 200 3844
+Dec 20 12:42:00 server1 systemd[1]: nginx.service: Main process exited, code=killed, status=15/TERM
+2024-12-20 11:01:40 named[454]: response: TXT c2.stealthy.io -> 192.168.1.101 answer="data123"
+2024-12-20 15:14:45 45.154.255.147 mysql[6101]: SELECT * FROM users WHERE id=1 OR 1=1
+2024-12-20 10:01:11 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:57526 to 192.168.1.10:80 rate=1082pps
+2024-12-20 11:03:50 named[914]: query: NULL tunnel.encoded.io IN from 192.168.1.100:7718 size=3012 bytes
+2024-12-20 17:30:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 3402
+2024-12-20 14:02:30 45.154.255.147 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 11:07:35 named[617]: query: CNAME dns-tunnel.evil.net IN from 192.168.1.101:56039 size=2186 bytes
+2024-12-20 10:04:26 kernel: [ Firewall] UDP: UDP flood from 91.121.87.18:27540 to 192.168.1.10:53 rate=3272pps
+2024-12-20 10:04:52 kernel: [ Firewall] ICMP: Echo flood from 198.51.100.50:46160 to 192.168.1.10:53 rate=7483pps
+2024-12-20 15:08:30 185.220.101.46 mysql[8566]: '; DROP TABLE users--
+2024-12-20 10:00:35 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:56742 to 192.168.1.10:80 rate=6532pps
+2024-12-20 14:03:30 23.129.64.213 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 979 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 14:06:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 3344
+2024-12-20 11:02:25 named[286]: query: TXT exfil.data.hopto.org IN from 192.168.1.100:20313 size=850 bytes
+Dec 20 12:31:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 10:00:14 kernel: [ Firewall] UDP: UDP flood from 198.51.100.50:58172 to 192.168.1.10:53 rate=9573pps
+2024-12-20 11:05:40 named[875]: query: MX TgtXfer.evil.com IN from 192.168.1.101:63586 size=593 bytes
+2024-12-20 16:00:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 949
+2024-12-20 11:27:00 10.0.0.50 - - "GET /about HTTP/1.1" 200 3444
+2024-12-20 10:00:51 kernel: [ Firewall] ICMP: Echo flood from 23.129.64.213:21879 to 192.168.1.10:80 rate=4264pps
+2024-12-20 15:13:45 23.129.64.213 mysql[8509]: Warning: UNION injection detected in query
+2024-12-20 10:01:20 kernel: [ Firewall] UDP: UDP flood from 198.51.100.50:29590 to 192.168.1.10:53 rate=3780pps
+2024-12-20 10:06:00 192.168.1.101 - - "GET /api/orders HTTP/1.1" 200 3231
+2024-12-20 11:07:25 named[582]: query: TXT c2.stealthy.io IN from 172.16.0.10:37096 size=1641 bytes
+2024-12-20 17:12:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 4746
+2024-12-20 11:07:45 named[358]: query: TXT TgtXfer.evil.com IN from 172.16.0.10:26948 size=1829 bytes
+2024-12-20 14:12:00 192.168.1.100 - - "GET /api/orders HTTP/1.1" 200 1975
+2024-12-20 10:00:57 kernel: [ Firewall] DNS: QUERY flood from 23.129.64.213:26595 to 192.168.1.10:443 rate=7026pps
+2024-12-20 11:03:55 named[669]: query: CNAME c2.stealthy.io IN from 192.168.1.101:38790 size=1949 bytes
+2024-12-20 10:02:50 kernel: [ Firewall] TCP: RST flood from 91.121.87.18:27316 to 192.168.1.10:443 rate=4453pps
+2024-12-20 10:00:40 kernel: [ Firewall] DNS: QUERY flood from 198.51.100.50:17891 to 192.168.1.10:443 rate=3318pps
+2024-12-20 10:02:43 kernel: [ Firewall] TCP: SYN flood from 23.129.64.213:34527 to 192.168.1.10:80 rate=2948pps
+2024-12-20 10:00:36 kernel: [ Firewall] DNS: QUERY flood from 198.51.100.50:49906 to 192.168.1.10:53 rate=2675pps
+2024-12-20 10:04:10 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:45225 to 192.168.1.10:80 rate=6583pps
+2024-12-20 11:05:30 named[292]: query: TXT data.exfil.org IN from 192.168.1.101:16730 size=1384 bytes
+2024-12-20 13:27:00 192.168.1.100 - - "GET /contact HTTP/1.1" 200 1122
+2024-12-20 10:02:56 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:35266 to 192.168.1.10:443 rate=8632pps
+2024-12-20 14:08:00 45.154.255.147 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 4765 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:04:07 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:4194 to 192.168.1.10:80 rate=7675pps
+2024-12-20 10:00:31 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:59998 to 192.168.1.10:443 rate=8314pps
+2024-12-20 14:07:50 198.51.100.50 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 415 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 13:06:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 4959
+2024-12-20 12:09:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 4948
+2024-12-20 10:03:48 kernel: [ Firewall] TCP: RST flood from 45.154.255.147:58963 to 192.168.1.10:53 rate=7649pps
+2024-12-20 08:51:00 192.168.1.100 - - "GET /contact HTTP/1.1" 200 349
+2024-12-20 13:18:00 192.168.1.101 - - "GET /api/users HTTP/1.1" 200 3547
+2024-12-20 14:08:00 192.168.1.100 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 843
+2024-12-20 10:00:11 kernel: [ Firewall] TCP: ACK flood from 198.51.100.50:46211 to 192.168.1.10:80 rate=8146pps
+2024-12-20 10:03:04 kernel: [ Firewall] HTTP: GET flood from 198.51.100.50:17249 to 192.168.1.10:53 rate=4546pps
+2024-12-20 11:04:25 named[223]: query: CNAME data.exfil.org IN from 192.168.1.100:63490 size=3659 bytes
+2024-12-20 08:18:00 192.168.1.101 - - "GET /about HTTP/1.1" 200 1936
+2024-12-20 10:01:29 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:20748 to 192.168.1.10:80 rate=4931pps
+2024-12-20 11:15:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 2687
+2024-12-20 15:27:00 192.168.1.101 - - "GET /products HTTP/1.1" 200 1160
+2024-12-20 09:27:00 10.0.0.50 - - "GET / HTTP/1.1" 200 401
+2024-12-20 11:09:00 192.168.1.100 - - "GET / HTTP/1.1" 200 104
+2024-12-20 10:00:03 kernel: [ Firewall] ICMP: Echo flood from 45.154.255.147:13927 to 192.168.1.10:443 rate=3612pps
+Dec 20 12:04:00 server1 systemd[1]: mysql.service: Main process exited, code=killed, status=15/TERM
+2024-12-20 15:02:15 103.35.74.12 mysql[5403]: '; DROP TABLE users--
+2024-12-20 09:09:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 2874
+2024-12-20 10:01:31 kernel: [ Firewall] UDP: UDP flood from 103.35.74.12:33093 to 192.168.1.10:53 rate=7076pps
+2024-12-20 11:05:20 named[843]: query: NULL c2.stealthy.io IN from 192.168.1.100:48022 size=3372 bytes
+2024-12-20 11:00:00 named[477]: response: TXT data.exfil.org -> 192.168.1.100 answer="base64data=="
+2024-12-20 14:02:00 198.51.100.50 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 4705 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 15:42:00 10.0.0.50 - - "GET /api/orders HTTP/1.1" 200 283
+2024-12-20 16:15:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 4075
+Dec 20 12:40:00 server1 systemd[1]: nginx.service: Main process exited, code=killed, status=15/TERM
+2024-12-20 15:02:00 91.121.87.18 mysql[6508]: EXEC xp_cmdshell('whoami')
+2024-12-20 09:00:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 1889
+2024-12-20 10:04:15 kernel: [ Firewall] HTTP: GET flood from 198.51.100.50:25449 to 192.168.1.10:53 rate=3244pps
+2024-12-20 14:05:00 198.51.100.50 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 15:13:15 45.154.255.147 MySQL[4130]: QueryError: Access denied for user to database
+2024-12-20 10:01:14 kernel: [ Firewall] DNS: QUERY flood from 45.154.255.147:29302 to 192.168.1.10:80 rate=8387pps
+2024-12-20 11:04:15 named[654]: query: TXT dns-tunnel.evil.net IN from 192.168.1.100:37020 size=3218 bytes
+2024-12-20 11:07:30 named[766]: response: TXT stage1.malware.xyz -> 192.168.1.100 answer="data123"
+Dec 20 12:27:00 server1 systemd[1]: mysql.service: Main process exited, code=killed, status=15/TERM
+Dec 20 12:08:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /home/user/Documents/important.docx
+2024-12-20 10:00:58 kernel: [ Firewall] ICMP: Echo flood from 45.154.255.147:42648 to 192.168.1.10:80 rate=3334pps
+2024-12-20 14:00:50 185.220.101.46 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 16:42:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 4201
+2024-12-20 10:04:04 kernel: [ Firewall] ICMP: Echo flood from 45.154.255.147:10940 to 192.168.1.10:80 rate=7566pps
+2024-12-20 16:51:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 3791
+2024-12-20 15:14:15 45.154.255.147 mysql[4283]: SELECT SLEEP(10)--
+2024-12-20 15:03:00 10.0.0.50 - - "GET /about HTTP/1.1" 200 1730
+2024-12-20 11:30:00 192.168.1.101 - - "GET /products HTTP/1.1" 200 3658
+2024-12-20 12:57:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 540
+2024-12-20 10:02:21 kernel: [ Firewall] UDP: UDP flood from 23.129.64.213:49816 to 192.168.1.10:80 rate=7140pps
+2024-12-20 09:48:00 10.0.0.50 - - "GET /api/orders HTTP/1.1" 200 1723
+2024-12-20 14:00:50 185.220.101.46 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 2687 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 14:09:10 23.129.64.213 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 10:00:54 kernel: [ Firewall] TCP: SYN flood from 45.154.255.147:30108 to 192.168.1.10:443 rate=7839pps
+2024-12-20 10:02:09 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:5769 to 192.168.1.10:443 rate=1550pps
+Dec 20 12:16:00 server1 kernel: [ENCRYPTOR] /var/backups/daily.bak DELETED
+2024-12-20 11:02:30 named[236]: response: TXT TgtXfer.evil.com -> 10.0.0.50 answer="data123"
+2024-12-20 10:03:37 kernel: [ Firewall] TCP: ACK flood from 23.129.64.213:5163 to 192.168.1.10:80 rate=4972pps
+2024-12-20 10:00:12 kernel: [ Firewall] ICMP: Echo flood from 103.35.74.12:14508 to 192.168.1.10:443 rate=5601pps
+2024-12-20 10:04:42 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:2702 to 192.168.1.10:80 rate=6094pps
+2024-12-20 14:12:40 103.35.74.12 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 4372 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:00:28 kernel: [ Firewall] UDP: UDP flood from 185.220.101.46:31647 to 192.168.1.10:53 rate=3680pps
+2024-12-20 10:02:27 kernel: [ Firewall] UDP: UDP flood from 91.121.87.18:21730 to 192.168.1.10:53 rate=8552pps
+2024-12-20 11:07:30 named[304]: query: TXT stage1.malware.xyz IN from 192.168.1.100:62661 size=410 bytes
+2024-12-20 11:00:30 named[142]: query: MX data.exfil.org IN from 192.168.1.101:6801 size=4139 bytes
+Dec 20 12:08:00 server1 kernel: [ENCRYPTOR] /home/user/Documents/important.docx -> important.docx.locked (AES-256)
+2024-12-20 14:48:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 4422
+2024-12-20 12:36:00 10.0.0.50 - - "GET / HTTP/1.1" 200 2302
+2024-12-20 10:03:45 kernel: [ Firewall] HTTP: GET flood from 45.154.255.147:5428 to 192.168.1.10:53 rate=1362pps
+2024-12-20 10:00:49 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:46539 to 192.168.1.10:53 rate=6413pps
+2024-12-20 10:00:15 kernel: [ Firewall] TCP: SYN flood from 103.35.74.12:60540 to 192.168.1.10:53 rate=6884pps
+Dec 20 12:33:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/lib/postgresql/data/*.db
+2024-12-20 11:08:00 named[421]: query: CNAME cmd.control.secure IN from 172.16.0.10:24490 size=1922 bytes
+2024-12-20 10:33:00 192.168.1.101 - - "GET /api/orders HTTP/1.1" 200 2265
+2024-12-20 15:10:15 185.220.101.46 mysql[4454]: LOAD_FILE('/etc/passwd')
+2024-12-20 15:03:15 91.121.87.18 mysql[3238]: BENCHMARK(10000000,SHA1('test'))
+2024-12-20 10:00:21 kernel: [ Firewall] DNS: QUERY flood from 23.129.64.213:63144 to 192.168.1.10:443 rate=6409pps
+2024-12-20 10:02:10 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:29195 to 192.168.1.10:80 rate=6567pps
+2024-12-20 10:04:55 kernel: [ Firewall] TCP: SYN flood from 23.129.64.213:11350 to 192.168.1.10:80 rate=4018pps
+2024-12-20 11:00:35 named[103]: query: MX c2.stealthy.io IN from 192.168.1.101:12198 size=2369 bytes
+2024-12-20 14:02:00 192.168.1.100 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 614
+2024-12-20 11:04:00 named[651]: query: NULL c2.stealthy.io IN from 192.168.1.100:13378 size=506 bytes
+2024-12-20 14:00:00 172.16.0.10 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 853
+2024-12-20 11:18:00 192.168.1.101 - - "GET /contact HTTP/1.1" 200 4407
+2024-12-20 14:01:40 185.220.101.46 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 10:03:01 kernel: [ Firewall] TCP: ACK flood from 91.121.87.18:54588 to 192.168.1.10:80 rate=1017pps
+2024-12-20 10:02:49 kernel: [ Firewall] DNS: QUERY flood from 198.51.100.50:60195 to 192.168.1.10:80 rate=2985pps
+2024-12-20 10:00:10 kernel: [ Firewall] UDP: UDP flood from 45.154.255.147:65146 to 192.168.1.10:53 rate=6855pps
+2024-12-20 15:05:00 185.220.101.46 mysql[6674]: '; DROP TABLE users--
+2024-12-20 15:03:00 185.220.101.46 mysql[4484]: Warning: DROP TABLE detected in query
+2024-12-20 10:02:25 kernel: [ Firewall] ICMP: Echo flood from 23.129.64.213:64749 to 192.168.1.10:80 rate=7087pps
+2024-12-20 10:03:43 kernel: [ Firewall] HTTP: GET flood from 198.51.100.50:47933 to 192.168.1.10:53 rate=9529pps
+2024-12-20 14:09:30 91.121.87.18 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 3908 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:03:08 kernel: [ Firewall] ICMP: Echo flood from 91.121.87.18:13148 to 192.168.1.10:53 rate=4077pps
+2024-12-20 10:01:10 kernel: [ Firewall] TCP: RST flood from 185.220.101.46:24957 to 192.168.1.10:53 rate=5576pps
+2024-12-20 10:01:25 kernel: [ Firewall] UDP: UDP flood from 91.121.87.18:45531 to 192.168.1.10:80 rate=6417pps
+2024-12-20 10:03:30 kernel: [ Firewall] HTTP: GET flood from 45.154.255.147:42413 to 192.168.1.10:53 rate=2407pps
+2024-12-20 10:48:00 192.168.1.101 - - "GET / HTTP/1.1" 200 2002
+2024-12-20 14:10:30 185.220.101.46 - - "GET /account/verify?token=PHISHING_TOKEN_123 HTTP/1.1" 200 4320 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 14:12:00 192.168.1.100 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 954
+2024-12-20 11:00:00 named[578]: query: MX data.exfil.org IN from 192.168.1.100:11609 size=2115 bytes
+2024-12-20 10:00:00 kernel: [ Firewall] DNS: QUERY flood from 185.220.101.46:46003 to 192.168.1.10:53 rate=4970pps
+2024-12-20 10:02:58 kernel: [ Firewall] TCP: RST flood from 91.121.87.18:63423 to 192.168.1.10:80 rate=5610pps
+2024-12-20 10:01:58 kernel: [ Firewall] ICMP: Echo flood from 23.129.64.213:27544 to 192.168.1.10:443 rate=4083pps
+2024-12-20 10:03:12 kernel: [ Firewall] DNS: QUERY flood from 185.220.101.46:32209 to 192.168.1.10:443 rate=3560pps
+2024-12-20 16:18:00 192.168.1.101 - - "GET /contact HTTP/1.1" 200 1071
+Dec 20 12:28:00 server1 gnome-shell: WARNING: Desktop wallpaper modified by process 6643
+2024-12-20 10:01:54 kernel: [ Firewall] ICMP: Echo flood from 185.220.101.46:45660 to 192.168.1.10:80 rate=1931pps
+2024-12-20 10:04:54 kernel: [ Firewall] TCP: ACK flood from 91.121.87.18:63063 to 192.168.1.10:80 rate=8460pps
+2024-12-20 13:45:00 192.168.1.100 - - "GET /products HTTP/1.1" 200 1163
+2024-12-20 15:00:30 23.129.64.213 MySQL[4884]: QueryError: Access denied for user to database
+2024-12-20 15:10:00 185.220.101.46 mysql[5194]: '; DROP TABLE users--
+2024-12-20 13:20:00 db-server mysqldump: Selected tables: customers_dump.sql
+2024-12-20 11:03:00 named[406]: query: NULL stage1.malware.xyz IN from 192.168.1.100:4296 size=3856 bytes
+2024-12-20 15:01:45 103.35.74.12 mysql[4028]: SELECT * FROM users WHERE id=1 OR 1=1
+2024-12-20 10:01:34 kernel: [ Firewall] UDP: UDP flood from 91.121.87.18:49953 to 192.168.1.10:443 rate=4842pps
+2024-12-20 10:54:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 2457
+2024-12-20 17:45:00 10.0.0.50 - - "GET /products HTTP/1.1" 200 4969
+2024-12-20 10:00:25 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:13035 to 192.168.1.10:53 rate=8451pps
+2024-12-20 11:06:00 named[932]: query: TXT dns-tunnel.evil.net IN from 172.16.0.10:14407 size=1392 bytes
+2024-12-20 14:02:10 103.35.74.12 - - "GET /microsoft/login?redirect=https://account-update-secure.com HTTP/1.1" 200 1533 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 14:09:00 192.168.1.100 - - "GET / HTTP/1.1" 200 3598
+2024-12-20 11:04:10 named[382]: query: CNAME data.exfil.org IN from 192.168.1.100:6453 size=271 bytes
+2024-12-20 15:12:15 103.35.74.12 mysql[2806]: LOAD_FILE('/etc/passwd')
+2024-12-20 14:10:40 198.51.100.50 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 1093 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:01:09 kernel: [ Firewall] TCP: ACK flood from 45.154.255.147:9383 to 192.168.1.10:80 rate=4013pps
+2024-12-20 10:02:42 kernel: [ Firewall] TCP: ACK flood from 185.220.101.46:61318 to 192.168.1.10:53 rate=7513pps
+2024-12-20 10:00:48 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:41018 to 192.168.1.10:53 rate=4667pps
+2024-12-20 14:13:10 103.35.74.12 - - "GET /login.php?user=admin&redirect=https://fake-bank.com/verify HTTP/1.1" 200 1541 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 08:30:00 192.168.1.100 - - "GET /api/orders HTTP/1.1" 200 3879
+2024-12-20 12:30:00 192.168.1.100 - - "GET /products HTTP/1.1" 200 877
+2024-12-20 10:04:02 kernel: [ Firewall] TCP: SYN flood from 185.220.101.46:46042 to 192.168.1.10:443 rate=1033pps
+2024-12-20 10:03:21 kernel: [ Firewall] HTTP: GET flood from 23.129.64.213:32235 to 192.168.1.10:53 rate=6026pps
+2024-12-20 12:27:00 192.168.1.100 - - "GET / HTTP/1.1" 200 241
+2024-12-20 10:02:45 kernel: [ Firewall] HTTP: GET flood from 103.35.74.12:8906 to 192.168.1.10:443 rate=6111pps
+2024-12-20 09:42:00 192.168.1.101 - - "GET /about HTTP/1.1" 200 419
+2024-12-20 10:01:59 kernel: [ Firewall] HTTP: GET flood from 91.121.87.18:23942 to 192.168.1.10:443 rate=6268pps
+2024-12-20 17:27:00 192.168.1.100 - - "GET / HTTP/1.1" 200 2013
+2024-12-20 10:27:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 4981
+2024-12-20 15:08:00 185.220.101.46 mysql[8684]: BENCHMARK(10000000,SHA1('test'))
+2024-12-20 10:01:42 kernel: [ Firewall] DNS: QUERY flood from 198.51.100.50:4378 to 192.168.1.10:80 rate=5663pps
+2024-12-20 08:36:00 10.0.0.50 - - "GET / HTTP/1.1" 200 1678
+2024-12-20 10:01:48 kernel: [ Firewall] DNS: QUERY flood from 91.121.87.18:23626 to 192.168.1.10:53 rate=9648pps
+2024-12-20 11:48:00 192.168.1.100 - - "GET /api/users HTTP/1.1" 200 3938
+2024-12-20 10:00:53 kernel: [ Firewall] TCP: ACK flood from 23.129.64.213:21680 to 192.168.1.10:443 rate=2480pps
+2024-12-20 11:42:00 192.168.1.100 - - "GET / HTTP/1.1" 200 1784
+2024-12-20 11:05:50 named[405]: response: TXT exfil.data.hopto.org -> 172.16.0.10 answer="encrypted=="
+2024-12-20 10:01:52 kernel: [ Firewall] UDP: UDP flood from 185.220.101.46:51914 to 192.168.1.10:53 rate=3813pps
+2024-12-20 14:06:00 198.51.100.50 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 2623 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:03:11 kernel: [ Firewall] UDP: UDP flood from 23.129.64.213:42900 to 192.168.1.10:443 rate=6524pps
+2024-12-20 11:07:15 named[867]: query: NULL stage1.malware.xyz IN from 172.16.0.10:62795 size=2064 bytes
+2024-12-20 10:04:39 kernel: [ Firewall] TCP: SYN flood from 198.51.100.50:5724 to 192.168.1.10:80 rate=9273pps
+2024-12-20 15:08:45 198.51.100.50 mysql[2976]: SELECT * FROM users WHERE id=1 OR 1=1
+2024-12-20 14:03:00 198.51.100.50 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 570 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+2024-12-20 10:02:03 kernel: [ Firewall] TCP: RST flood from 91.121.87.18:61208 to 192.168.1.10:53 rate=6997pps
+Dec 20 13:35:00 file-server rsync[4485]: sending incremental file list
+2024-12-20 15:07:15 198.51.100.50 mysql[8495]: EXEC xp_cmdshell('whoami')
+2024-12-20 10:01:07 kernel: [ Firewall] TCP: RST flood from 198.51.100.50:55304 to 192.168.1.10:443 rate=2410pps
+2024-12-20 14:11:10 45.154.255.147 - - "GET /microsoft/login?redirect=https://account-update-secure.com HTTP/1.1" 200 1945 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 09:12:00 10.0.0.50 - - "GET /api/orders HTTP/1.1" 200 526
+2024-12-20 15:33:00 192.168.1.100 - - "GET /api/orders HTTP/1.1" 200 1929
+2024-12-20 14:24:00 192.168.1.100 - - "GET /login.php?referrer=microsoft.com HTTP/1.1" 200 1273
+2024-12-20 13:03:00 10.0.0.50 - - "GET /contact HTTP/1.1" 200 1578
+2024-12-20 15:11:30 91.121.87.18 mysql[4790]: SELECT username,password FROM users--
+2024-12-20 14:51:00 192.168.1.100 - - "GET /products HTTP/1.1" 200 1184
+2024-12-20 10:00:04 kernel: [ Firewall] TCP: ACK flood from 185.220.101.46:4815 to 192.168.1.10:443 rate=3691pps
+2024-12-20 11:05:45 named[214]: query: TXT cmd.control.secure IN from 172.16.0.10:61502 size=2830 bytes
+2024-12-20 11:01:20 named[225]: query: MX c2.stealthy.io IN from 192.168.1.101:18626 size=4819 bytes
+Dec 20 12:09:00 server1 kernel: [SUDO] root: COMMAND=/bin/chmod 000 /var/www/html/uploads/document.pdf
+2024-12-20 14:11:30 198.51.100.50 - - "GET /api/auth?callback=https://phishing.org/steal HTTP/1.1" 200 2919 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+2024-12-20 12:39:00 10.0.0.50 - - "GET / HTTP/1.1" 200 2564
+2024-12-20 16:21:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 2774
+2024-12-20 10:03:36 kernel: [ Firewall] TCP: SYN flood from 91.121.87.18:48994 to 192.168.1.10:80 rate=5540pps
+2024-12-20 11:00:00 10.0.0.50 - - "GET /api/users HTTP/1.1" 200 3665
+2024-12-20 15:07:30 45.154.255.147 mysql[6988]: Warning: UNION injection detected in query
+2024-12-20 14:36:00 192.168.1.100 - - "GET /about HTTP/1.1" 200 2721
+2024-12-20 10:00:09 kernel: [ Firewall] HTTP: GET flood from 103.35.74.12:52160 to 192.168.1.10:443 rate=8000pps
+2024-12-20 10:03:39 kernel: [ Firewall] UDP: UDP flood from 91.121.87.18:1605 to 192.168.1.10:53 rate=4493pps
+2024-12-20 16:33:00 192.168.1.101 - - "GET / HTTP/1.1" 200 1145
+2024-12-20 17:03:00 10.0.0.50 - - "GET /about HTTP/1.1" 200 1147
+2024-12-20 14:11:20 45.154.255.147 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 1099 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 14:07:30 198.51.100.50 - - "POST /login.php HTTP/1.1" 302 - "username=admin&password=pass123"
+2024-12-20 14:06:40 103.35.74.12 - - "GET /apple/id/login?token=STOLEN HTTP/1.1" 200 4543 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
+2024-12-20 10:01:04 kernel: [ Firewall] TCP: SYN flood from 23.129.64.213:8410 to 192.168.1.10:53 rate=3459pps
+2024-12-20 10:00:59 kernel: [ Firewall] TCP: ACK flood from 45.154.255.147:21780 to 192.168.1.10:80 rate=2156pps
+2024-12-20 10:02:14 kernel: [ Firewall] DNS: QUERY flood from 103.35.74.12:26336 to 192.168.1.10:443 rate=6106pps
+2024-12-20 11:00:05 named[615]: query: TXT tunnel.encoded.io IN from 192.168.1.101:24257 size=2268 bytes
+2024-12-20 11:03:10 named[302]: query: MX cmd.control.secure IN from 192.168.1.101:40640 size=3943 bytes
+2024-12-20 15:05:00 185.220.101.46 mysql[1978]: Warning: DROP TABLE detected in query
+2024-12-20 10:04:56 kernel: [ Firewall] TCP: RST flood from 23.129.64.213:12566 to 192.168.1.10:53 rate=7262pps
+2024-12-20 14:12:20 45.154.255.147 - - "GET /secure/login?return=https://evil.com/callback HTTP/1.1" 200 3368 "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)"
