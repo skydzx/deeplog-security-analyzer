@@ -43,6 +43,8 @@ models/
 *.log
 logs/*.log
 !logs/*_dataset.log
+!logs/Apache.log
+!logs/SSH.log
 
 # OS
 .DS_Store
