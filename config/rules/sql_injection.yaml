@@ -1,0 +1,56 @@
+# SQL注入检测规则
+# SQL Injection Detection Rules
+---
+name: "SQL Injection - Basic"
+pattern:
+  url: "('|%27|%25).*(or|and).*(=|%3D|--|%2D%2D)"
+severity: "high"
+category: "injection"
+mitre_ttp: "T1190"
+description: "Possible SQL injection attempt detected"
+remediation: "Review database queries and enable WAF"
+confidence: 0.8
+
+---
+name: "SQL Injection - UNION SELECT"
+pattern:
+  url: "union.*select|union all select"
+severity: "critical"
+category: "injection"
+mitre_ttp: "T1190"
+description: "UNION SELECT injection attempt"
+remediation: "Check for database data exfiltration"
+confidence: 0.95
+
+---
+name: "SQL Injection - Error Based"
+pattern:
+  url: "mysql.*error|oracle.*error|mssql.*error|postgresql.*error"
+severity: "high"
+category: "injection"
+mitre_ttp: "T1190"
+description: "Database error revealing SQL injection"
+remediation: "Disable error display in production"
+confidence: 0.9
+
+---
+name: "SQL Injection - Time Based"
+pattern:
+  url: "sleep|benchmark|pg_sleep"
+severity: "high"
+category: "injection"
+mitre_ttp: "T1190"
+description: "Time-based blind SQL injection"
+remediation: "Check for time-delayed responses"
+confidence: 0.85
+
+---
+name: "SQL Injection - xp_cmdshell"
+pattern:
+  url: "xp_cmdshell|sp_executesql|declare\\s+@|set\\s+@"
+severity: "critical"
+category: "injection"
+mitre_ttp: "T1190"
+description: "SQL server command execution"
+remediation: "Disable xp_cmdshell immediately"
+confidence: 0.95

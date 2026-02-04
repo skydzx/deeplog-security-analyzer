@@ -1,0 +1,45 @@
+# RCE/命令注入检测规则
+# Remote Code Execution Detection Rules
+---
+name: "RCE - Command Injection Characters"
+pattern:
+  url: "[;|\\$`\\\\]"
+severity: "high"
+category: "command_injection"
+mitre_ttp: "T1059"
+description: "Command injection characters detected"
+remediation: "Review input validation and command execution"
+confidence: 0.7
+
+---
+name: "RCE - System Function"
+pattern:
+  url: "system\\(|shell_exec\\(|exec\\(|passthru\\(|proc_open\\(|popen\\("
+severity: "critical"
+category: "command_injection"
+mitre_ttp: "T1059"
+description: "PHP system function call in input"
+remediation: "Block PHP system functions from user input"
+confidence: 0.95
+
+---
+name: "RCE - Python OS Module"
+pattern:
+  url: "os\\.system|subprocess|eval\\(.*request"
+severity: "critical"
+category: "command_injection"
+mitre_ttp: "T1059"
+description: "Python OS command execution attempt"
+remediation: "Block OS commands from user input"
+confidence: 0.9
+
+---
+name: "RCE - Reverse Shell"
+pattern:
+  url: "bash\\s+-i|sh\\s+-i|nc\\s+-e|/bin/sh"
+severity: "critical"
+category: "command_injection"
+mitre_ttp: "T1059"
+description: "Reverse shell connection attempt"
+remediation: "IMMEDIATELY ISOLATE SERVER - Reverse shell detected"
+confidence: 0.95

@@ -1,0 +1,61 @@
+# 路径遍历检测规则
+# Path Traversal Detection Rules
+---
+name: "Path Traversal - Basic"
+pattern:
+  url: "(\\.\\./|\\.\\.\\\\)"
+  http_status: null
+severity: "high"
+category: "path_traversal"
+mitre_ttp: "T1190"
+description: "Directory traversal attempt detected"
+remediation: "Review file access controls"
+confidence: 0.8
+
+---
+name: "Path Traversal - Double Encoding"
+pattern:
+  url: "(\\%2e\\%2e/|\\%2e\\%2e\\\\)"
+  http_status: null
+severity: "high"
+category: "path_traversal"
+mitre_ttp: "T1190"
+description: "Double-encoded path traversal"
+remediation: "Decode and validate all path inputs"
+confidence: 0.9
+
+---
+name: "Path Traversal - Unicode"
+pattern:
+  url: "(\\\\x[0-9a-fA-F]{2}|\\\\u[0-9a-fA-F]{4})"
+  http_status: null
+severity: "high"
+category: "path_traversal"
+mitre_ttp: "T1190"
+description: "Unicode-encoded path traversal"
+remediation: "Check for Unicode bypass attempts"
+confidence: 0.85
+
+---
+name: "Path Traversal - Sensitive Files"
+pattern:
+  url: "(/etc/passwd|/boot.ini|/win.ini|\\.\\./\\.\\./\\.\\./etc)"
+  http_status: null
+severity: "critical"
+category: "path_traversal"
+mitre_ttp: "T1190"
+description: "Attempt to access sensitive files"
+remediation: "IMMEDIATELY CHECK SYSTEM INTEGRITY"
+confidence: 0.95
+
+---
+name: "Path Traversal - Config Files"
+pattern:
+  url: "(/\\.env|/config\\.php|/wp-config\\.php|/application\\.properties)"
+  http_status: null
+severity: "critical"
+category: "path_traversal"
+mitre_ttp: "T1190"
+description: "Attempt to access configuration files"
+remediation: "Check for config file exposure"
+confidence: 0.95

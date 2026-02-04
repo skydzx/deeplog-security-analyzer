@@ -1,0 +1,49 @@
+# XSS攻击检测规则
+# Cross-Site Scripting Detection Rules
+---
+name: "XSS - Script Tag"
+pattern:
+  url: "(<script|</script>)"
+  http_status: null
+severity: "high"
+category: "xss"
+mitre_ttp: "T1190"
+description: "Script tag injection attempt"
+remediation: "Implement input sanitization and CSP headers"
+confidence: 0.9
+
+---
+name: "XSS - JavaScript Event"
+pattern:
+  url: "(onload|onerror|onmouseover|onclick|onfocus).*="
+  http_status: null
+severity: "high"
+category: "xss"
+mitre_ttp: "T1190"
+description: "JavaScript event handler injection"
+remediation: "Encode output and sanitize inputs"
+confidence: 0.85
+
+---
+name: "XSS - Iframe Injection"
+pattern:
+  url: "(<iframe|<object|<embed)"
+  http_status: null
+severity: "high"
+category: "xss"
+mitre_ttp: "T1190"
+description: "Iframe or object injection"
+remediation: "Block iframe and object tags in user input"
+confidence: 0.9
+
+---
+name: "XSS - SVG Injection"
+pattern:
+  url: "(<svg|<math|<foreignObject)"
+  http_status: null
+severity: "high"
+category: "xss"
+mitre_ttp: "T1190"
+description: "SVG/MathML injection attempt"
+remediation: "Filter SVG and MathML elements"
+confidence: 0.8

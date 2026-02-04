@@ -1,0 +1,55 @@
+# WebShell检测规则 - Simplified
+---
+name: "WebShell - Eval"
+pattern:
+  url: "\\$\\w+.*=.*eval|@eval"
+severity: "critical"
+category: "webshell"
+mitre_ttp: "T1505"
+description: "One-liner webshell with eval detected"
+remediation: "ISOLATE FILE IMMEDIATELY"
+confidence: 0.95
+
+---
+name: "WebShell - Base64"
+pattern:
+  url: "eval\\(gzinflate\\(base64_decode"
+severity: "critical"
+category: "webshell"
+mitre_ttp: "T1505"
+description: "Base64 encoded webshell detected"
+remediation: "Decode and analyze"
+confidence: 0.9
+
+---
+name: "WebShell - Filename"
+pattern:
+  url: "shell\\.php|cmd\\.php|backdoor"
+severity: "critical"
+category: "webshell"
+mitre_ttp: "T1505"
+description: "Suspicious webshell filename"
+remediation: "ISOLATE FILE"
+confidence: 0.95
+
+---
+name: "WebShell - preg_replace"
+pattern:
+  url: "preg_replace.*\\$_"
+severity: "critical"
+category: "webshell"
+mitre_ttp: "T1505"
+description: "preg_replace code execution"
+remediation: "ISOLATE IMMEDIATELY"
+confidence: 0.95
+
+---
+name: "WebShell - Uploads Path"
+pattern:
+  url: "/uploads/.*\\.php|/temp/.*\\.php"
+severity: "high"
+category: "webshell"
+mitre_ttp: "T1505"
+description: "Suspicious path to PHP file"
+remediation: "Review uploaded files"
+confidence: 0.8

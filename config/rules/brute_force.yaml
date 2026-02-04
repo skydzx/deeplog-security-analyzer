@@ -1,0 +1,73 @@
+# 暴力破解检测规则
+# Brute Force Detection Rules
+---
+name: "SSH - Failed Password"
+pattern:
+  url: "Failed password for"
+  http_status: null
+severity: "medium"
+category: "brute_force"
+mitre_ttp: "T1110"
+description: "SSH failed password attempt"
+remediation: "Review authentication logs"
+confidence: 1.0
+
+---
+name: "SSH - Invalid User"
+pattern:
+  url: "Invalid user"
+  http_status: null
+severity: "medium"
+category: "brute_force"
+mitre_ttp: "T1110"
+description: "SSH invalid username attempt"
+remediation: "Check for user enumeration attacks"
+confidence: 1.0
+
+---
+name: "SSH - PAM Auth Failure"
+pattern:
+  url: "authentication failure.*ip="
+  http_status: null
+severity: "medium"
+category: "brute_force"
+mitre_ttp: "T1110"
+description: "PAM authentication failure"
+remediation: "Review PAM authentication logs"
+confidence: 0.9
+
+---
+name: "HTTP - Login Brute Force"
+pattern:
+  url: "(login|signin|auth|admin).*401|403"
+  http_status: "[4][0-9][0-9]"
+severity: "medium"
+category: "brute_force"
+mitre_ttp: "T1110"
+description: "HTTP login failure - possible brute force"
+remediation: "Check for multiple failed login attempts"
+confidence: 0.7
+
+---
+name: "SSH - Pre-auth Disconnect"
+pattern:
+  url: "Connection closed by.*port.*\\[preauth\\]"
+  http_status: null
+severity: "low"
+category: "brute_force"
+mitre_ttp: "T1110"
+description: "SSH pre-auth connection close"
+remediation: "Possible brute force precursor"
+confidence: 0.7
+
+---
+name: "Windows - Login Failure"
+pattern:
+  url: "EventID=4625"
+  http_status: null
+severity: "medium"
+category: "brute_force"
+mitre_ttp: "T1110"
+description: "Windows login failure detected"
+remediation: "Review Windows security logs"
+confidence: 1.0

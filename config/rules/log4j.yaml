@@ -1,0 +1,45 @@
+# Log4j漏洞利用检测规则
+# Log4j CVE-2021-44228 Detection Rules
+---
+name: "Log4Shell - JNDI LDAP"
+pattern:
+  url: "\\$\\{jndi:ldap"
+severity: "critical"
+category: "log4j"
+mitre_ttp: "T1190"
+description: "Log4j JNDI LDAP injection attempt"
+remediation: "BLOCK IMMEDIATELY - CVE-2021-44228 exploitation"
+confidence: 1.0
+
+---
+name: "Log4Shell - JNDI RMI"
+pattern:
+  url: "\\$\\{jndi:rmi"
+severity: "critical"
+category: "log4j"
+mitre_ttp: "T1190"
+description: "Log4j JNDI RMI injection attempt"
+remediation: "BLOCK IMMEDIATELY - CVE-2021-44228 exploitation"
+confidence: 1.0
+
+---
+name: "Log4Shell - JNDI DNS"
+pattern:
+  url: "\\$\\{jndi:dns"
+severity: "critical"
+category: "log4j"
+mitre_ttp: "T1190"
+description: "Log4j JNDI DNS lookup attempt"
+remediation: "Block DNS lookups from Java applications"
+confidence: 0.95
+
+---
+name: "Log4Shell - Remote Class Loading"
+pattern:
+  url: "Loaded remote class|ClassNotFoundException"
+severity: "critical"
+category: "log4j"
+mitre_ttp: "T1190"
+description: "Log4j loaded remote class - RCE successful"
+remediation: "SYSTEM COMPROMISED - Immediate incident response required"
+confidence: 1.0
