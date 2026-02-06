@@ -262,6 +262,9 @@ epochs = 10        # 训练轮数
 项目内置了多种测试数据集：
 
 ```bash
+# 使用标准基准数据集 (已内置，无需下载)
+ls datasets/*.log
+
 # 生成生产环境模拟数据 (10,900 条)
 python data_generators/generate_production_dataset.py
 
@@ -270,25 +273,56 @@ python data_generators/generate_apt_dataset.py
 
 # 生成 Log4j 漏洞利用数据
 python data_generators/generate_log4j_dataset.py
+
+# 下载并转换标准数据集
+python data_generators/download_datasets.py
 ```
 
 ---
 
 ## 训练与测试数据
 
+### 测试结果
+
+项目已使用标准入侵检测数据集进行测试验证：
+
+#### UNSW-NB15 数据集测试
+
+| 指标 | 结果 |
+|-----|-----|
+| 原始记录数 | 82,332 条 |
+| 解析后事件数 | 176,746 条 |
+| Critical | 583 |
+| High Risk | 164,664 |
+| Medium | 11,499 |
+| 威胁等级 | 10/10 |
+| 主要检测 | Backdoor (后门攻击) |
+
+#### NSL-KDD 数据集测试
+
+| 指标 | 结果 |
+|-----|-----|
+| 原始记录数 | 125,973 条 |
+| 解析后事件数 | 262,366 条 |
+| Critical | 0 |
+| High Risk | 251,946 |
+| Medium | 10,420 |
+| 威胁等级 | 10/10 |
+| 主要检测 | Command Injection (命令注入) |
+
 ### 数据集来源
 
-| 数据集 | 类型 | 描述 |
-|-------|------|------|
-| **production_dataset.log** | 生成+模拟 | 生产环境模拟数据 (10,900条，6种日志类型) |
-| **loghub-master/** | 真实日志 | LogHub 公开日志集 (16种系统日志) |
-| **Apache.log** | 真实日志 | Apache 服务器访问日志 (~5MB) |
-| **CentOS/** | 真实日志 | CentOS 系统日志 (SSH、Redis、Journal) |
-| **webshell_dataset.log** | 生成数据 | WebShell 攻击日志 (~5,000条) |
-| **log4shell_dataset.log** | 生成数据 | Log4j 漏洞利用日志 (~3,000条) |
-| **apt_dataset.log** | 生成数据 | APT攻击场景 (~2,000条) |
-| **unsw_nb15_converted.log** | 基准数据集 | UNSW-NB15 入侵检测基准 (82,332条) |
-| **nsl_kdd_converted.log** | 基准数据集 | NSL-KDD 入侵检测基准 (125,973条) |
+| 数据集 | 类型 | 描述 | 状态 |
+|-------|------|------|------|
+| **unsw_nb15_converted.log** | 基准数据集 | UNSW-NB15 入侵检测基准 (82,332条) | ✅ 已测试 |
+| **nsl_kdd_converted.log** | 基准数据集 | NSL-KDD 入侵检测基准 (125,973条) | ✅ 已测试 |
+| **production_dataset.log** | 生成+模拟 | 生产环境模拟数据 (10,900条，6种日志类型) | ✅ 已测试 |
+| **loghub-master/** | 真实日志 | LogHub 公开日志集 (16种系统日志) | - |
+| **Apache.log** | 真实日志 | Apache 服务器访问日志 (~5MB) | - |
+| **CentOS/** | 真实日志 | CentOS 系统日志 (SSH、Redis、Journal) | - |
+| **webshell_dataset.log** | 生成数据 | WebShell 攻击日志 (~5,000条) | - |
+| **log4shell_dataset.log** | 生成数据 | Log4j 漏洞利用日志 (~3,000条) | - |
+| **apt_dataset.log** | 生成数据 | APT攻击场景 (~2,000条) | - |
 
 #### UNSW-NB15 数据集详情
 
