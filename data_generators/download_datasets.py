@@ -101,6 +101,28 @@ def convert_to_log_format():
             f.write('\n'.join(logs))
         print(f"已保存: {output_path} ({len(logs)} 条记录)")
 
+    # 转换 UNSW-NB15
+    unsw_path = os.path.join(DATASETS_DIR, 'unsw_nb15_dataset.csv')
+    if os.path.exists(unsw_path):
+        print("转换 UNSW-NB15 数据集...")
+        df = pd.read_csv(unsw_path)
+
+        # 转换为日志格式
+        logs = []
+        for _, row in df.iterrows():
+            log = f"[{row['proto'].upper()}] {row['service']} | " \
+                  f"SPKTS:{row['spkts']} DPKTS:{row['dpkts']} | " \
+                  f"SBYTES:{row['sbytes']} DBYTES:{row['dbytes']} | " \
+                  f"RATE:{row['rate']:.2f} | " \
+                  f"STATE:{row['state']} | " \
+                  f"ATTACK:{row['attack_cat']} LABEL:{row['label']}"
+            logs.append(log)
+
+        output_path = os.path.join(DATASETS_DIR, 'unsw_nb15_converted.log')
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(logs))
+        print(f"已保存: {output_path} ({len(logs)} 条记录)")
+
 if __name__ == '__main__':
     print("=" * 60)
     print("DeepLog 标准数据集下载脚本")

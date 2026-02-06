@@ -287,11 +287,41 @@ python data_generators/generate_log4j_dataset.py
 | **webshell_dataset.log** | 生成数据 | WebShell 攻击日志 (~5,000条) |
 | **log4shell_dataset.log** | 生成数据 | Log4j 漏洞利用日志 (~3,000条) |
 | **apt_dataset.log** | 生成数据 | APT攻击场景 (~2,000条) |
+| **unsw_nb15_converted.log** | 基准数据集 | UNSW-NB15 入侵检测基准 (82,332条) |
 | **nsl_kdd_converted.log** | 基准数据集 | NSL-KDD 入侵检测基准 (125,973条) |
+
+#### UNSW-NB15 数据集详情
+
+**来源:** https://github.com/Sagarshivalingappaathani/Cyber-Threat-Detection
+
+**包含的攻击类型:**
+- Normal (正常流量)
+- Exploits (漏洞利用)
+- DoS (拒绝服务攻击)
+- Fuzzers (模糊测试)
+- Generic (通用攻击)
+- Reconnaissance (侦察)
+- Worms (蠕虫)
+- Shellcode (Shell代码)
+- Backdoor (后门)
+- Analysis (分析)
+
+**数据规模:**
+- 原始数据: 82,332 条记录
+- 转换为日志格式: 8.6 MB
+
+**下载命令:**
+```bash
+# 已内置！直接使用
+ls datasets/unsw_nb15_converted.log
+
+# 重新下载和转换
+python data_generators/download_datasets.py
+```
 
 #### NSL-KDD 数据集详情
 
-**来源:** https://www.unb.ca/cic/datasets/nsl-kdd.html
+**来源:** https://raw.githubusercontent.com/defcom17/NSL_KDD/master/
 
 **包含的攻击类型:**
 - DoS攻击: back, land, neptune, pod, smurf, teardrop
@@ -299,23 +329,10 @@ python data_generators/generate_log4j_dataset.py
 - R2L攻击: ftp_write, guess_passwd, imap, multihop, phf, spy, warezclient, warezmaster
 - U2R攻击: buffer_overflow, loadmodule, rootkit, perl
 
-**下载命令:**
-```bash
-python data_generators/download_datasets.py
-```
-
-#### UNSW-NB15 数据集 (需要手动下载)
-
-**来源:** https://research.unsw.edu.au/projects/unsw-nb15-dataset
-
-**包含的攻击类型:**
-- Normal, Exploits, DoS, Fuzzers, Generic, Reconnaissance, Worms, Shellcode, Backdoor, Analysis
-
-**下载步骤:**
-1. 访问 https://research.unsw.edu.au/projects/unsw-nb15-dataset
-2. 注册账号并同意条款
-3. 下载 UNSW-NB15_1.csv 和 UNSW-NB15_2.csv
-4. 解压到 datasets/ 目录
+**数据规模:**
+- 训练集: 125,973 条记录
+- 测试集: 22,544 条记录
+- 转换为日志格式: 9.1 MB
 
 ### 训练数据要求
 
