@@ -163,8 +163,85 @@ deeplog-security-analyzer/
 - **Lucide React** - 图标库
 
 ### 核心算法
-- **LSTM** - 长短期记忆网络 (DeepLog CCS'17)
-- **MITRE ATT&CK** - 企业安全框架
+
+#### DeepLog 深度学习模型
+
+DeepLog 基于 **LSTM (Long Short-Term Memory)** 长短期记忆神经网络，这是论文 **"DeepLog: Anomaly Detection and Diagnosis from System Logs through Deep Learning" (CCS'17)** 的开源实现。
+
+##### 核心思想
+
+系统日志是按时间顺序生成的日志序列，具有固定的模式。LSTM 能够学习"正常日志应该长什么样"，从而检测出异常日志。
+
+```
+正常日志: INFO → INFO → INFO → INFO → INFO
+攻击日志: INFO → INFO → ERROR → ERROR → FATAL
+                         ↑
+                      异常偏离
+```
+
+##### 模型架构
+
+```
+输入日志序列 ──→ One-Hot编码 ──→ LSTM×2层 ──→ Dense层 ──→ 预测下一个日志键
+                                                    ↓
+                                          概率分布 [P(A), P(B), P(C)...]
+```
+
+##### 两类异常检测模型
+
+| 模型 | 输入 | 输出 | 检测目标 |
+|-----|------|------|---------|
+| **LogKeyModel** | 日志键序列 (如 `GET`, `POST`, `ERROR`) | 预测下一个键的概率分布 | 日志模式异常 |
+| **ParameterValueModel** | 参数值向量 | 预测下一个参数值 | 参数值异常 |
+
+##### 训练流程
+
+```
+正常日志 → LogParser解析 → 构建词汇表 → 滑动窗口 → LSTM训练 → 保存模型
+    ↓              ↓            ↓            ↓           ↓
+  数据源      提取日志键    唯一键映射    序列切分    TensorFlow
+```
+
+**滑动窗口示意 (window_size=3):**
+```
+日志序列: [A, B, C, D, E, F, G, H]
+训练样本: [A,B,C]→D, [B,C,D]→E, [C,D,E]→F, [D,E,F]→G, [E,F,G]→H
+```
+
+##### 检测原理
+
+1. **日志键异常**: 预测的下一个日志键概率 < 阈值，则触发告警
+2. **参数值异常**: 预测参数与实际参数的 MSE > 阈值，则触发告警
+
+##### 与传统机器学习对比
+
+| 特性 | 传统机器学习 (RF/SVM) | DeepLog (LSTM) |
+|-----|---------------------|----------------|
+| 特征工程 | 需手工提取统计特征 | 自动学习特征 |
+| 输入格式 | 固定维度向量 | 变长序列 |
+| 时序依赖 | 无法利用 | 充分利用 |
+| 典型算法 | Random Forest, Isolation Forest | LSTM, Transformer |
+| 可解释性 | 较高 | 较低 |
+
+##### 模型配置 (可调整)
+
+```python
+window_size = 10    # 历史窗口大小
+lstm_layers = 2     # LSTM层层数
+lstm_units = 64    # 每层单元数
+batch_size = 32    # 批次大小
+epochs = 10        # 训练轮数
+```
+
+##### 输出文件
+
+训练完成后会生成两个文件：
+- `.weights.h5` - LSTM模型权重
+- `.config.pkl` - 词汇表和配置参数
+
+#### MITRE ATT&CK
+
+自动将检测到的威胁映射到 MITRE ATT&CK 企业框架，帮助安全分析师理解攻击者的战术和技术。
 
 ---
 
