@@ -1,0 +1,209 @@
+Nov 25 10:13:52 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+Nov 25 10:13:52 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6781] dhcp4 (ens33):   address 192.168.30.133
+Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6786] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   gateway 192.168.30.2
+Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6787] dhcp4 (ens33):   lease time 1800
+Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6788] dhcp4 (ens33):   nameserver '192.168.30.2'
+Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6789] dhcp4 (ens33):   domain name 'localdomain'
+Nov 25 10:13:52 localhost NetworkManager[3530]: <info>  [1764036832.6789] dhcp4 (ens33): state changed bound -> bound
+Nov 25 10:13:52 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 879 seconds.
+Nov 25 10:20:01 localhost systemd: Started Session 47 of user root.
+Nov 25 10:28:31 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+Nov 25 10:28:31 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037711.9998] dhcp4 (ens33):   address 192.168.30.133
+Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   gateway 192.168.30.2
+Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0001] dhcp4 (ens33):   lease time 1800
+Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33):   nameserver '192.168.30.2'
+Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33):   domain name 'localdomain'
+Nov 25 10:28:32 localhost NetworkManager[3530]: <info>  [1764037712.0002] dhcp4 (ens33): state changed bound -> bound
+Nov 25 10:28:32 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 764 seconds.
+Nov 25 10:30:01 localhost systemd: Started Session 48 of user root.
+Nov 25 10:40:01 localhost systemd: Started Session 49 of user root.
+Nov 25 10:41:16 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+Nov 25 10:41:16 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7431] dhcp4 (ens33):   address 192.168.30.133
+Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7436] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7436] dhcp4 (ens33):   gateway 192.168.30.2
+Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7437] dhcp4 (ens33):   lease time 1800
+Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7437] dhcp4 (ens33):   nameserver '192.168.30.2'
+Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7438] dhcp4 (ens33):   domain name 'localdomain'
+Nov 25 10:41:16 localhost NetworkManager[3530]: <info>  [1764038476.7438] dhcp4 (ens33): state changed bound -> bound
+Nov 25 10:41:16 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 725 seconds.
+Nov 25 10:50:01 localhost systemd: Started Session 50 of user root.
+Nov 25 10:52:02 localhost systemd: Removed slice User Slice of root.
+Nov 25 10:53:21 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+Nov 25 10:53:21 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7705] dhcp4 (ens33):   address 192.168.30.133
+Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7709] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   gateway 192.168.30.2
+Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7710] dhcp4 (ens33):   lease time 1800
+Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7711] dhcp4 (ens33):   nameserver '192.168.30.2'
+Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7711] dhcp4 (ens33):   domain name 'localdomain'
+Nov 25 10:53:21 localhost NetworkManager[3530]: <info>  [1764039201.7712] dhcp4 (ens33): state changed bound -> bound
+Nov 25 10:53:21 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 838 seconds.
+Nov 25 11:00:01 localhost systemd: Created slice User Slice of root.
+Nov 25 11:00:01 localhost systemd: Started Session 52 of user root.
+Nov 25 11:00:01 localhost systemd: Started Session 51 of user root.
+Nov 25 11:00:01 localhost systemd: Removed slice User Slice of root.
+Nov 25 11:01:02 localhost systemd: Created slice User Slice of root.
+Nov 25 11:01:02 localhost systemd: Started Session 53 of user root.
+Nov 25 11:01:02 localhost systemd: Removed slice User Slice of root.
+Nov 25 11:07:19 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+Nov 25 11:07:19 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+Nov 25 11:07:19 localhost NetworkManager[3530]: <info>  [1764040039.1225] dhcp4 (ens33):   address 192.168.30.133
+Nov 25 11:07:19 localhost NetworkManager[3530]: <info>  [1764040039.1230] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Nov 25 11:07:19 localhost NetworkManager[3530]: <info>  [1764040039.1230] dhcp4 (ens33):   gateway 192.168.30.2
+Nov 25 11:07:19 localhost NetworkManager[3530]: <info>  [1764040039.1231] dhcp4 (ens33):   lease time 1800
+Nov 25 11:07:19 localhost NetworkManager[3530]: <info>  [1764040039.1232] dhcp4 (ens33):   nameserver '192.168.30.2'
+Nov 25 11:07:19 localhost NetworkManager[3530]: <info>  [1764040039.1233] dhcp4 (ens33):   domain name 'localdomain'
+Nov 25 11:07:19 localhost NetworkManager[3530]: <info>  [1764040039.1233] dhcp4 (ens33): state changed bound -> bound
+Nov 25 11:07:19 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 781 seconds.
+Nov 25 11:10:01 localhost systemd: Created slice User Slice of root.
+Nov 25 11:10:01 localhost systemd: Started Session 54 of user root.
+Nov 25 11:10:01 localhost systemd: Removed slice User Slice of root.
+Nov 25 11:20:01 localhost systemd: Created slice User Slice of root.
+Nov 25 11:20:01 localhost systemd: Started Session 55 of user root.
+Nov 25 11:20:01 localhost systemd: Removed slice User Slice of root.
+Nov 25 11:20:20 localhost dhclient[8987]: DHCPREQUEST on ens33 to 192.168.30.254 port 67 (xid=0xc8d2bb6)
+Nov 25 11:20:20 localhost dhclient[8987]: DHCPACK from 192.168.30.254 (xid=0xc8d2bb6)
+Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4160] dhcp4 (ens33):   address 192.168.30.133
+Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4163] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4163] dhcp4 (ens33):   gateway 192.168.30.2
+Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4164] dhcp4 (ens33):   lease time 1800
+Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4164] dhcp4 (ens33):   nameserver '192.168.30.2'
+Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4164] dhcp4 (ens33):   domain name 'localdomain'
+Nov 25 11:20:20 localhost NetworkManager[3530]: <info>  [1764040820.4165] dhcp4 (ens33): state changed bound -> bound
+Nov 25 11:20:20 localhost dhclient[8987]: bound to 192.168.30.133 -- renewal in 763 seconds.
+Nov 25 11:30:01 localhost systemd: Created slice User Slice of root.
+Nov 25 11:30:01 localhost systemd: Started Session 56 of user root.
+Nov 25 11:30:01 localhost systemd: Removed slice User Slice of root.
+Nov 25 13:25:25 localhost systemd: Time has been changed
+Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.5805] manager: disable requested (sleeping: no  enabled: yes)
+Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.5839] device (virbr0): state change: disconnected -> unmanaged (reason 'sleeping', sys-iface-state: 'managed')
+Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.6369] manager: NetworkManager state is now ASLEEP
+Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7412] audit: op="networking-control" arg="off" pid=11369 uid=0 result="success"
+Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7438] device (ens33): state change: activated -> deactivating (reason 'sleeping', sys-iface-state: 'managed')
+Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.7905] device (ens33): state change: deactivating -> disconnected (reason 'sleeping', sys-iface-state: 'managed')
+Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for fe80::20c:29ff:fe34:765 on ens33.
+Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9318] dhcp4 (ens33): canceled DHCP transaction, DHCP client pid 8987
+Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9323] dhcp4 (ens33): state changed bound -> done
+Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for 192.168.30.133 on ens33.
+Nov 25 13:25:42 localhost avahi-daemon[599]: Leaving mDNS multicast group on interface ens33.IPv4 with address 192.168.30.133.
+Nov 25 13:25:42 localhost avahi-daemon[599]: Interface ens33.IPv4 no longer relevant for mDNS.
+Nov 25 13:25:43 localhost kernel: usb 2-2.1: USB disconnect, device number 6
+Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9318] dhcp4 (ens33): canceled DHCP transaction, DHCP client pid 8987
+Nov 25 13:25:42 localhost NetworkManager[3530]: <info>  [1764048342.9323] dhcp4 (ens33): state changed bound -> done
+Nov 25 13:25:42 localhost avahi-daemon[599]: Withdrawing address record for 192.168.30.133 on ens33.
+Nov 25 13:25:42 localhost avahi-daemon[599]: Leaving mDNS multicast group on interface ens33.IPv4 with address 192.168.30.133.
+Nov 25 13:25:42 localhost avahi-daemon[599]: Interface ens33.IPv4 no longer relevant for mDNS.
+Nov 25 13:25:43 localhost kernel: usb 2-2.1: USB disconnect, device number 6
+Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint unregistered: sender=:1.74 path=/MediaEndpoint/A2DPSource
+Jan 20 10:44:56 localhost systemd: Time has been changed
+Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint unregistered: sender=:1.74 path=/MediaEndpoint/A2DPSink
+Jan 20 10:44:56 localhost systemd: Starting update of the root trust anchor for DNSSEC validation in unbound...
+Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+Jan 20 10:44:56 localhost systemd: Stopping Load/Save RF Kill Switch Status of rfkill2...
+Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+Jan 20 10:44:56 localhost dbus[586]: [system] Rejected send message, 1 matched rules; type="error", sender=":1.74" (uid=1000 pid=2137 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.2" (uid=0 pid=602 comm="/usr/libexec/bluetooth/bluetoothd ")
+Jan 20 10:44:56 localhost dnsmasq[1388]: no servers found in /etc/resolv.conf, will retry
+Jan 20 10:44:56 localhost systemd: Stopped target Bluetooth.
+Jan 20 10:44:56 localhost rsyslogd: imjournal: journal reloaded... [v8.24.0-57.el7_9.3 try http://www.rsyslog.com/e/0 ]
+Jan 20 10:44:56 localhost NetworkManager[3530]: <info>  [1768877096.4665] device (ens33): state change: disconnected -> unmanaged (reason 'sleeping', sys-iface-state: 'managed')
+Jan 20 10:44:56 localhost systemd: Stopped Load/Save RF Kill Switch Status of rfkill2.
+Jan 20 10:44:56 localhost kernel: usb 2-2.1: new full-speed USB device number 7 using uhci_hcd
+Jan 20 10:44:56 localhost systemd: Started update of the root trust anchor for DNSSEC validation in unbound.
+Jan 20 10:44:56 localhost kernel: usb 2-2.1: New USB device found, idVendor=0e0f, idProduct=0008, bcdDevice= 1.00
+Jan 20 10:44:56 localhost kernel: usb 2-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Jan 20 10:44:56 localhost kernel: usb 2-2.1: Product: Virtual Bluetooth Adapter
+Jan 20 10:44:56 localhost kernel: usb 2-2.1: Manufacturer: VMware
+Jan 20 10:44:56 localhost kernel: usb 2-2.1: SerialNumber: 000650268328
+Jan 20 10:44:56 localhost systemd: Starting Load/Save RF Kill Switch Status of rfkill3...
+Jan 20 10:44:56 localhost systemd: Reached target Bluetooth.
+Jan 20 10:44:56 localhost systemd: Started Load/Save RF Kill Switch Status of rfkill3.
+Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint registered: sender=:1.74 path=/MediaEndpoint/A2DPSource
+Jan 20 10:44:56 localhost bluetoothd[602]: Endpoint registered: sender=:1.74 path=/MediaEndpoint/A2DPSink
+Jan 20 10:44:57 localhost journal: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): virbr0: link is not ready
+Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): virbr0: link is not ready
+Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_UP): virbr0: link is not ready
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3780] manager: enable requested (sleeping: no  enabled: no)
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3781] device (ens33): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'managed')
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3827] device (virbr0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'managed')
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3844] manager: NetworkManager state is now DISCONNECTED
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3846] audit: op="networking-control" arg="on" pid=11424 uid=0 result="success"
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.3847] device (virbr0): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+Jan 20 10:44:57 localhost kernel: e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Jan 20 10:44:57 localhost kernel: IPv6: ADDRCONF(NETDEV_CHANGE): ens33: link becomes ready
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4158] device (ens33): carrier: link connected
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4161] device (ens33): state change: unavailable -> disconnected (reason 'carrier-changed', sys-iface-state: 'managed')
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4175] policy: auto-activating connection 'ens33' (c96bc909-188e-ec64-3a96-6a90982b08ad)
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4179] device (ens33): Activation: starting connection 'ens33' (c96bc909-188e-ec64-3a96-6a90982b08ad)
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4180] device (ens33): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4182] manager: NetworkManager state is now CONNECTING
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4184] device (ens33): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4190] device (ens33): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4195] dhcp4 (ens33): activation: beginning transaction (timeout in 45 seconds)
+Jan 20 10:44:57 localhost NetworkManager[3530]: <info>  [1768877097.4999] dhcp4 (ens33): dhclient started with pid 11426
+Jan 20 10:44:57 localhost journal: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Jan 20 10:44:57 localhost dbus[586]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service'
+Jan 20 10:44:57 localhost systemd: Starting Fingerprint Authentication Daemon...
+Jan 20 10:44:57 localhost dhclient[11426]: DHCPDISCOVER on ens33 to 255.255.255.255 port 67 interval 6 (xid=0x4771c881)
+Jan 20 10:44:57 localhost dbus[586]: [system] Successfully activated service 'net.reactivated.Fprint'
+Jan 20 10:44:57 localhost systemd: Started Fingerprint Authentication Daemon.
+Jan 20 10:44:57 localhost journal: unable to get EDID for xrandr-Virtual1: unable to get EDID for output
+Jan 20 10:44:57 localhost journal: clutter_actor_get_n_children: assertion 'CLUTTER_IS_ACTOR (self)' failed
+Jan 20 10:44:58 localhost dhclient[11426]: DHCPREQUEST on ens33 to 255.255.255.255 port 67 (xid=0x4771c881)
+Jan 20 10:44:58 localhost dhclient[11426]: DHCPOFFER from 192.168.30.254
+Jan 20 10:44:58 localhost dhclient[11426]: DHCPACK from 192.168.30.254 (xid=0x4771c881)
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6724] dhcp4 (ens33):   address 192.168.30.133
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6728] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6729] dhcp4 (ens33):   gateway 192.168.30.2
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6729] dhcp4 (ens33):   lease time 1800
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6729] dhcp4 (ens33):   nameserver '192.168.30.2'
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6729] dhcp4 (ens33):   domain name 'localdomain'
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6729] dhcp4 (ens33): state changed unknown -> bound
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6740] device (ens33): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6743] device (ens33): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6744] device (ens33): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.6751] manager: NetworkManager state is now CONNECTED_LOCAL
+Jan 20 10:44:58 localhost avahi-daemon[599]: Joining mDNS multicast group on interface ens33.IPv4 with address 192.168.30.133.
+Jan 20 10:44:58 localhost avahi-daemon[599]: New relevant interface ens33.IPv4 for mDNS.
+Jan 20 10:44:58 localhost avahi-daemon[599]: Registering new address record for 192.168.30.133 on ens33.IPv4.
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.7173] manager: NetworkManager state is now CONNECTED_SITE
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.7174] policy: set 'ens33' (ens33) as default for IPv4 routing and DNS
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.7314] device (ens33): Activation: successful, device activated.
+Jan 20 10:44:58 localhost NetworkManager[3530]: <info>  [1768877098.7316] manager: NetworkManager state is now CONNECTED_GLOBAL
+Jan 20 10:44:58 localhost dnsmasq[1388]: reading /etc/resolv.conf
+Jan 20 10:44:58 localhost dnsmasq[1388]: using nameserver 192.168.30.2#53
+Jan 20 10:44:58 localhost dhclient[11426]: bound to 192.168.30.133 -- renewal in 710 seconds.
+Jan 20 10:44:59 localhost avahi-daemon[599]: Registering new address record for fe80::20c:29ff:fe34:765 on ens33.*.
+Jan 20 10:45:07 localhost dbus[586]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+Jan 20 10:45:07 localhost systemd: Starting Hostname Service...
+Jan 20 10:45:07 localhost dbus[586]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Jan 20 10:45:07 localhost systemd: Started Hostname Service.
+Jan 20 10:45:07 localhost NetworkManager[3530]: <info>  [1768877107.2675] agent-manager: req[0x5639b71331f0, :1.70/org.gnome.Shell.NetworkAgent/1000]: agent registered
+Jan 20 10:45:17 localhost journal: shell-extensions did not set error for gs_plugin_refresh
+Jan 20 10:46:19 localhost chronyd[605]: Forward time jump detected!
+Jan 20 10:46:19 localhost chronyd[605]: Can't synchronise: no selectable sources
+Jan 20 10:47:28 localhost journal: clutter_actor_set_size: assertion 'CLUTTER_IS_ACTOR (self)' failed
+Jan 20 10:47:28 localhost journal: clutter_actor_show: assertion 'CLUTTER_IS_ACTOR (self)' failed
+Jan 20 10:47:28 localhost journal: clutter_actor_set_size: assertion 'CLUTTER_IS_ACTOR (self)' failed
+Jan 20 10:47:28 localhost journal: clutter_actor_show: assertion 'CLUTTER_IS_ACTOR (self)' failed
+Jan 20 10:47:28 localhost journal: clutter_actor_set_size: assertion 'CLUTTER_IS_ACTOR (self)' failed
+Jan 20 10:47:28 localhost journal: clutter_actor_show: assertion 'CLUTTER_IS_ACTOR (self)' failed
+Jan 20 10:47:28 localhost journal: clutter_actor_set_size: assertion 'CLUTTER_IS_ACTOR (self)' failed
+Jan 20 10:47:28 localhost journal: clutter_actor_show: assertion 'CLUTTER_IS_ACTOR (self)' failed
+Jan 20 10:48:15 localhost su: (to root) dzx on pts/2
+Jan 20 10:48:15 localhost dbus[586]: [system] Activating service name='org.freedesktop.problems' (using servicehelper)
+Jan 20 10:48:15 localhost dbus[586]: [system] Successfully activated service 'org.freedesktop.problems'
+Jan 20 10:49:32 localhost chronyd[605]: Selected source 139.199.215.251
+Jan 20 10:49:32 localhost chronyd[605]: System clock wrong by 2.342484 seconds, adjustment started
+Jan 20 10:50:01 localhost systemd: Created slice User Slice of root.
+Jan 20 10:50:02 localhost systemd: Started Session 57 of user root.
+Jan 20 10:50:02 localhost systemd: Removed slice User Slice of root.
+Jan 20 10:51:44 localhost chronyd[605]: Source 162.159.200.1 replaced with 5.79.108.34

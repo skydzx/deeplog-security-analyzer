@@ -1,0 +1,5 @@
+1月 20 10:48:09 localhost.localdomain sudo[11559]:      dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/grep -i ^logfile /etc/redis.conf /etc/redis/redis.conf
+1月 20 10:49:33 localhost.localdomain sudo[11624]:      dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/cp /var/log/redis/redis.log /root/redis_unauth_all.log
+1月 20 10:52:29 localhost.localdomain sudo[11677]:      dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/messages
+1月 20 10:52:38 localhost.localdomain sudo[11680]:      dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/secure
+1月 20 10:52:49 localhost.localdomain sudo[11683]:      dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/chown dzx:dzx redis_in_messages.log redis_in_secure.log

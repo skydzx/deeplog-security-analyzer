@@ -1,224 +1,223 @@
-# DeepLog: 基于深度学习的系统日志异常检测框架
+# DeepLog Security Analyzer
 
-DeepLog是一个基于LSTM的深度神经网络模型，用于系统日志的异常检测和诊断。
+基于深度学习的智能安全日志分析平台
 
-## 功能特性
+[![GitHub stars](https://img.shields.io/github/stars/skydzx/deeplog-security-analyzer)](https://github.com/skydzx/deeplog-security-analyzer/stargazers)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue)](https://www.python.org/downloads/)
+[![React 18](https://img.shields.io/badge/React-18-61dafb)](https://reactjs.org/)
+[![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-FF6B6B)](https://attack.mitre.org/)
 
-- **日志键异常检测**：使用LSTM模型检测执行路径异常
-- **参数值异常检测**：检测性能异常和参数值异常
-- **在线检测**：支持实时流式异常检测
-- **增量学习**：支持在线更新模型以适应新模式
-- **工作流模型构建**：从日志序列构建有限状态自动机（FSA）工作流
-- **多任务分离**：支持基于LSTM和密度聚类的任务分离方法
-- **异常诊断**：使用工作流模型进行异常诊断和根本原因分析
-- **评估框架**：提供完整的评估指标和对比工具
+---
+
+## 项目简介
+
+DeepLog Security Analyzer 是一个基于 **DeepLog (CCS'17)** 论文架构的智能安全日志分析平台，结合深度学习与规则引擎，实现对系统日志的实时威胁检测与分析。
+
+### 核心特性
+
+- **🤖 深度学习检测**: 基于 LSTM 神经网络的日志异常检测
+- **⚡ 实时分析**: 支持日志文件上传与在线粘贴分析
+- **🎨 现代化界面**: React + Tailwind + Framer Motion 构建的酷炫 UI
+- **📊 可视化报告**: 生成 HTML/JSON 格式的详细分析报告
+- **🔗 MITRE ATT&CK**: 自动关联企业安全框架战术与技术
+- **📁 多格式支持**: Apache、Nginx、SSH、Windows、K8s、数据库等
+
+---
+
+## 界面预览
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  🛡️ DeepLog                    Dashboard  Analyze  Reports │
+│                                                             │
+│           Next-Gen Security Analytics                       │
+│                                                             │
+│     ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐  │
+│     │ Critical │  │ High    │  │ Medium  │  │ Total   │  │
+│     │   253   │  │  6306   │  │  4381   │  │  10940  │  │
+│     └─────────┘  └─────────┘  └─────────┘  └─────────┘  │
+│                                                             │
+│     Threat Level: ████████████░░░░░  8.5/10              │
+│                                                             │
+│     Upload File  or  Paste Logs                           │
+│     ┌─────────────────────────────────────────────┐         │
+│     │  Drag & drop your log file here            │         │
+│     └─────────────────────────────────────────────┘         │
+│                                                             │
+│     Deep Learning  |  MITRE ATT&CK  |  Multi-Format      │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 快速开始
+
+### 1. 安装依赖
+
+```bash
+# 克隆项目
+git clone https://github.com/skydzx/deeplog-security-analyzer.git
+cd deeplog-security-analyzer
+
+# 安装 Python 依赖
+pip install -r requirements.txt
+
+# 安装前端依赖
+cd frontend
+npm install
+npm run build
+cd ..
+```
+
+### 2. 启动服务
+
+```bash
+# 启动后端服务 (端口 5090)
+python backend/app.py
+```
+
+### 3. 访问界面
+
+打开浏览器访问: **http://localhost:5090**
+
+---
+
+## 功能演示
+
+### 上传日志文件分析
+
+1. 点击 `Upload File` 或拖拽日志文件
+2. 支持 `.log`、`.txt`、`.json` 格式
+3. 点击 `Start Analysis` 开始分析
+
+### 粘贴日志快速分析
+
+1. 点击 `Paste Logs` 切换到粘贴模式
+2. 直接粘贴日志内容
+3. 点击 `Start Analysis` 快速分析
+
+### 检测的攻击类型
+
+| 攻击类型 | 描述 | MITRE ATT&CK |
+|---------|------|--------------|
+| SQL 注入 | UNION SELECT、OR '1'='1 等 | T1190 |
+| XSS 攻击 | 跨站脚本注入 | T1059 |
+| WebShell | 可疑脚本文件名 | T1505 |
+| 暴力破解 | SSH/FTP 密码尝试 | T1110 |
+| 路径遍历 | ../ 敏感文件读取 | T1068 |
+| 命令注入 | 系统命令执行 | T1059 |
+
+---
 
 ## 项目结构
 
 ```
-deeplog/
-├── deeplog/
-│   ├── __init__.py
-│   ├── parser.py              # 日志解析器
-│   ├── models.py              # LSTM模型定义
-│   ├── trainer.py             # 训练模块
-│   ├── detector.py            # 异常检测模块
-│   ├── workflow.py            # 工作流模型构建
-│   ├── incremental_learner.py # 增量学习模块
-│   ├── evaluator.py          # 评估模块
-│   └── utils.py               # 工具函数
-├── scripts/               # 实用脚本
-├── tests/                 # 测试代码
-├── requirements.txt       # 依赖包
+deeplog-security-analyzer/
+├── backend/                    # Flask 后端
+│   └── app.py                  # API 服务
+├── frontend/                   # React 前端
+│   ├── src/                    # 源代码
+│   │   ├── App.jsx             # 主应用组件
+│   │   └── index.css           # Tailwind 样式
+│   └── dist/                   # 构建产物
+├── tools/                      # 工具脚本
+│   ├── analyze.py              # 日志分析工具
+│   ├── security_incident_analyzer.py
+│   ├── incident_response.py
+│   └── ...
+├── tests/                      # 测试文件
+│   ├── test_anomaly_detection.py
+│   ├── test_basic.py
+│   └── run_tests.py
+├── data_generators/            # 测试数据生成器
+│   ├── generate_production_dataset.py
+│   └── ...
+├── config/                     # 配置文件
+│   └── rules/                  # YAML 检测规则
+│       ├── sql_injection.yaml
+│       ├── webshell.yaml
+│       └── ...
+├── deeplog/                    # DeepLog 核心库
+├── logs/                       # 日志文件目录
+├── datasets/                   # 数据集目录
+├── docs/                       # 文档
+├── scripts/                    # 收集日志脚本
+├── enhanced_security_analyzer.py  # 核心分析器
 └── README.md
 ```
 
-## 安装
+---
 
-### 方法1：开发模式安装（推荐）
+## 技术栈
 
-```bash
-# 安装依赖
-pip install -r requirements.txt
+### 后端
+- **Python 3.8+** - 主语言
+- **Flask** - Web 框架
+- **Flask-CORS** - 跨域支持
 
-# 以开发模式安装包
-pip install -e .
-```
+### 前端
+- **React 18** - UI 框架
+- **Tailwind CSS** - 原子化 CSS
+- **Framer Motion** - 动画库
+- **Recharts** - 图表库
+- **Lucide React** - 图标库
 
-### 方法2：直接使用（无需安装）
+### 核心算法
+- **LSTM** - 长短期记忆网络 (DeepLog CCS'17)
+- **MITRE ATT&CK** - 企业安全框架
 
-如果不想安装包，示例脚本已经自动添加项目路径，可以直接运行：
+---
 
-```bash
-# 安装依赖
-pip install -r requirements.txt
+## API 接口
 
-# 直接运行脚本（脚本会自动处理路径）
-python scripts/basic_example.py
-```
+| 接口 | 方法 | 说明 |
+|-----|------|------|
+| `/api/analyze` | POST | 上传文件分析 |
+| `/api/quick-analyze` | POST | 粘贴日志分析 |
+| `/api/rules` | GET | 获取检测规则 |
+| `/api/reports` | GET | 获取报告列表 |
+| `/api/health` | GET | 健康检查 |
 
-## 快速开始
+---
 
-### 基础使用
+## 演示数据
 
-```python
-from deeplog import DeepLog
-
-# 1. 初始化DeepLog
-deeplog = DeepLog(window_size=10, top_g=5, lstm_layers=2, lstm_units=64)
-
-# 2. 准备正常日志数据（用于训练）
-normal_logs = [
-    "2024-01-01 10:00:00 INFO Starting application",
-    "2024-01-01 10:00:01 INFO Connected to database",
-    "2024-01-01 10:00:02 INFO User login successful",
-    # ... 更多正常日志
-]
-
-# 3. 训练模型
-deeplog.train(normal_logs, epochs=10, batch_size=32)
-
-# 4. 检测异常
-is_anomaly, anomaly_type, details = deeplog.detect("2024-01-01 10:00:10 ERROR Database error")
-if is_anomaly:
-    print(f"检测到异常: {anomaly_type}")
-    print(f"详细信息: {details}")
-
-# 5. 批量检测
-results = deeplog.detect_batch(log_lines)
-
-# 6. 保存模型
-deeplog.save("models")
-
-# 7. 加载模型
-deeplog.load("models")
-
-# 8. 构建工作流模型
-workflows = deeplog.build_workflows(log_lines, method="lstm")
-
-# 9. 异常诊断
-is_anomaly, anomaly_type, workflow, diagnosis = deeplog.diagnose_anomaly(log_line)
-
-# 10. 评估
-from deeplog import evaluate_on_dataset
-metrics = evaluate_on_dataset(deeplog, test_logs, ground_truth)
-```
-
-### 运行示例
+项目内置了多种测试数据集：
 
 ```bash
-# 基础训练和检测（使用logs目录下的真实日志）
-python scripts/basic_example.py
+# 生成生产环境模拟数据 (10,900 条)
+python data_generators/generate_production_dataset.py
 
-# 高级功能演示
-python scripts/advanced_example.py
+# 生成 APT 攻击数据
+python data_generators/generate_apt_dataset.py
 
-# 工作流构建
-python scripts/workflow_example.py
-
-# 评估功能
-python scripts/evaluation_example.py
+# 生成 Log4j 漏洞利用数据
+python data_generators/generate_log4j_dataset.py
 ```
 
-## 参数说明
+---
 
-- `window_size (h)`: 历史窗口大小，默认10
-- `top_g (g)`: 预测输出中top-g个候选键被视为正常，默认5
-- `lstm_layers (L)`: LSTM层数，默认2
-- `lstm_units (α)`: 每个LSTM块的单元数，默认64
+## 许可证
 
-## 日志导出工具
+MIT License
 
-项目提供了日志导出工具，位于 `tools/` 目录：
+---
 
-### Windows系统日志导出
+## 参考资料
 
-```bash
-# 导出System日志
-python tools/export_windows_logs.py --log System --output system_log.txt --max-events 1000
+- **DeepLog Paper**: "DeepLog: Anomaly Detection and Diagnosis from System Logs through Deep Learning" (CCS'17)
+- **MITRE ATT&CK**: https://attack.mitre.org/
+- **Tailwind CSS**: https://tailwindcss.com/
+- **React**: https://reactjs.org/
 
-# 导出所有主要日志（System, Application, Security）
-python tools/export_windows_logs.py --all --output-dir logs
-```
+---
 
-**PowerShell方法（无需Python）:**
-```powershell
-Get-WinEvent -LogName System -MaxEvents 1000 | 
-    Format-Table TimeCreated, Id, LevelDisplayName, Message -AutoSize | 
-    Out-File -FilePath "windows_system_log.txt" -Encoding UTF8
-```
+## 作者
 
-### Linux系统日志导出
+**DeepLog Security Analyzer**
 
-```bash
-# 导出syslog
-python tools/export_linux_logs.py --log-file /var/log/syslog --output syslog.txt
+基于 DeepLog (CCS'17) 架构，结合现代 Web 技术构建的智能安全分析平台。
 
-# 导出最近10000行
-python tools/export_linux_logs.py --log-file /var/log/syslog --lines 10000
+---
 
-# 导出所有找到的日志
-python tools/export_linux_logs.py --all --output-dir logs/linux_logs
-
-# 查找Linux日志文件
-python tools/export_linux_logs.py --find
-```
-
-**直接复制方法:**
-```bash
-# 复制日志文件
-sudo cp /var/log/syslog ./syslog.txt
-sudo cp /var/log/messages ./messages.txt
-
-# 或只复制最近N行
-sudo tail -n 10000 /var/log/syslog > syslog_recent.txt
-```
-
-### Apache日志导出
-
-```bash
-# 导出访问日志
-python tools/export_apache_logs.py --log-file /var/log/apache2/access.log --output apache_access.txt
-
-# 导出最近10000行
-python tools/export_apache_logs.py --log-file access.log --lines 10000 --output recent_logs.txt
-
-# 按日期范围导出
-python tools/export_apache_logs.py --log-file access.log --start-date 2024-01-01 --end-date 2024-01-31
-
-# 查找Apache日志文件
-python tools/export_apache_logs.py --find
-```
-
-**直接复制方法:**
-```bash
-# Linux
-cp /var/log/apache2/access.log ./apache_access.log
-tail -n 10000 /var/log/apache2/access.log > apache_recent.log
-
-# Windows
-copy C:\Apache24\logs\access.log apache_access.log
-```
-
-### 使用导出的日志
-
-```python
-from deeplog import DeepLog
-
-# 读取日志文件
-with open('windows_system_log.txt', 'r', encoding='utf-8') as f:
-    log_lines = [line.strip() for line in f if line.strip()]
-
-# 训练模型
-deeplog = DeepLog()
-deeplog.train(log_lines, epochs=10)
-
-# 检测异常
-is_anomaly, anomaly_type, details = deeplog.detect(new_log_line)
-```
-
-## 参考文献
-
-DeepLog: Anomaly Detection and Diagnosis from System Logs through Deep Learning
-ACM Conference on Computer and Communications Security (CCS'17)
-
+**Star us on GitHub!** ⭐

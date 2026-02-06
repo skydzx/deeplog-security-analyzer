@@ -1,0 +1,25 @@
+Jan 20 10:45:06 localhost gdm-password]: gkr-pam: unlocked login keyring
+Jan 20 10:47:27 localhost su: pam_unix(su:session): session closed for user root
+Jan 20 10:48:09 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/grep -i ^logfile /etc/redis.conf /etc/redis/redis.conf
+Jan 20 10:48:09 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+Jan 20 10:48:09 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jan 20 10:48:15 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/su
+Jan 20 10:48:15 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+Jan 20 10:48:15 localhost su: pam_unix(su:session): session opened for user root by dzx(uid=0)
+Jan 20 10:49:33 localhost sudo:     dzx : TTY=pts/2 ; PWD=/home/dzx ; USER=root ; COMMAND=/bin/cp /var/log/redis/redis.log /root/redis_unauth_all.log
+Jan 20 10:49:33 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+Jan 20 10:49:33 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jan 20 10:52:29 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/messages
+Jan 20 10:52:29 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+Jan 20 10:52:29 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jan 20 10:52:38 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/grep -i redis /var/log/secure
+Jan 20 10:52:38 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+Jan 20 10:52:38 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jan 20 10:52:49 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/chown dzx:dzx redis_in_messages.log redis_in_secure.log
+Jan 20 10:52:49 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+Jan 20 10:52:49 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jan 20 10:53:04 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/cp /var/log/messages ./messages_all.log
+Jan 20 10:53:04 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)
+Jan 20 10:53:04 localhost sudo: pam_unix(sudo:session): session closed for user root
+Jan 20 10:53:12 localhost sudo:     dzx : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/bin/cp /var/log/secure ./secure_all.log
+Jan 20 10:53:12 localhost sudo: pam_unix(sudo:session): session opened for user root by dzx(uid=0)

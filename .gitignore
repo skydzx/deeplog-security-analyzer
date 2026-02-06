@@ -40,13 +40,27 @@ models/
 *.config.pkl
 
 # Logs
-*.log
 logs/*.log
 !logs/*_dataset.log
 !logs/Apache.log
-!logs/SSH.log
+!logs/loghub-master/
+
+# Generated directories
+reports/
+uploads/
+htmlcov/
+.pytest_cache/
+
+# Frontend build
+frontend/dist/
+frontend/node_modules/
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Test reports
+*.html
+*.json
+!README.md
 

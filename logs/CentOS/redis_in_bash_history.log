@@ -1,0 +1,62 @@
+vi redis.conf
+cd redis-7.0.0
+vi redis.conf
+./redis-server /usr/local/redis-7.0.0/redis.conf
+./redis-server /user/local/redis-7.0.0/redis-conf
+./redis-server /user/local/redis-7.0.0/redis.conf
+cat redis.conf
+./redis-server /user/local/redis-7.0.0/redis.conf
+./src/redis-server /usr/local/redis-7.0.0/redis.conf
+ps -ef|grep redis
+./redis-cli
+./redis-cli shutdown
+yum install redis-cil
+yum install redis-cli
+./redis-cli
+./redis-cli
+find / -name redis
+uninstall redis
+sudo yum remove redis
+ps -ef|grep redis
+vm redis.conf
+vi redis.conf
+./redis-cli
+vim redis.conf 
+./redis-cli
+./redis-cli
+cd redis-7.0.0/
+ps -ef | grep redis
+ps -ef | grep redis
+ps -ef | grep redis
+ps -ef | grep redis
+ps -ef | grep redis
+vim redis.conf 
+cd /usr/local/redis-7.0.0
+./redis
+./redis-cli
+sudo systemctl status redis
+./redis-server
+cd redis-bin/
+sudo systemctl restart redis --protected-mode no
+cd redis-bin
+./redis-server
+cd /usr/local/redis-7.0.0
+cd redis.conf
+vim redis.conf
+vim redis.conf
+vim redis.conf
+ps -ef | grep redis-server
+ps -ef | grep redis-server
+cp /usr/local/redis-7.0.0
+cp /usr/local/redis-7.0.0 /bin
+cp /usr/local/redis-7.0.0/src /bin
+cp /usr/local/redis-7.0.0/src ~/bin
+mkdir -p ~/redis-bin
+cp /usr/local/redis-7.0.0/src/redis-server ~/redis-bin/
+cp /usr/local/redis-7.0.0/src/redis-cli ~/redis-bin/
+export PATH=$PATH:~/redis-bin
+./redis-server
+vim redis.conf
+sudo systemctl restart redis
+sudo systemctl restart redis.server
+redis-server /etc/redis.conf 
