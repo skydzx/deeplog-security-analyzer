@@ -280,12 +280,42 @@ python data_generators/generate_log4j_dataset.py
 
 | 数据集 | 类型 | 描述 |
 |-------|------|------|
-| **production_dataset.log** | 混合 | 生产环境模拟数据 (10,900条，6种日志类型) |
+| **production_dataset.log** | 生成+模拟 | 生产环境模拟数据 (10,900条，6种日志类型) |
 | **loghub-master/** | 真实日志 | LogHub 公开日志集 (16种系统日志) |
-| **Apache.log** | 真实日志 | Apache 服务器访问日志 (5MB) |
+| **Apache.log** | 真实日志 | Apache 服务器访问日志 (~5MB) |
 | **CentOS/** | 真实日志 | CentOS 系统日志 (SSH、Redis、Journal) |
-| **unsw-nb15.zip** | 基准数据集 | 澳大利亚网络数据集 (网络流量分类) |
-| **nsl-kdd.zip** | 基准数据集 | KDD Cup 99 改进版 (入侵检测基准) |
+| **webshell_dataset.log** | 生成数据 | WebShell 攻击日志 (~5,000条) |
+| **log4shell_dataset.log** | 生成数据 | Log4j 漏洞利用日志 (~3,000条) |
+| **apt_dataset.log** | 生成数据 | APT攻击场景 (~2,000条) |
+| **nsl_kdd_converted.log** | 基准数据集 | NSL-KDD 入侵检测基准 (125,973条) |
+
+#### NSL-KDD 数据集详情
+
+**来源:** https://www.unb.ca/cic/datasets/nsl-kdd.html
+
+**包含的攻击类型:**
+- DoS攻击: back, land, neptune, pod, smurf, teardrop
+- Probe攻击: ipsweep, nmap, portsweep, satan
+- R2L攻击: ftp_write, guess_passwd, imap, multihop, phf, spy, warezclient, warezmaster
+- U2R攻击: buffer_overflow, loadmodule, rootkit, perl
+
+**下载命令:**
+```bash
+python data_generators/download_datasets.py
+```
+
+#### UNSW-NB15 数据集 (需要手动下载)
+
+**来源:** https://research.unsw.edu.au/projects/unsw-nb15-dataset
+
+**包含的攻击类型:**
+- Normal, Exploits, DoS, Fuzzers, Generic, Reconnaissance, Worms, Shellcode, Backdoor, Analysis
+
+**下载步骤:**
+1. 访问 https://research.unsw.edu.au/projects/unsw-nb15-dataset
+2. 注册账号并同意条款
+3. 下载 UNSW-NB15_1.csv 和 UNSW-NB15_2.csv
+4. 解压到 datasets/ 目录
 
 ### 训练数据要求
 
